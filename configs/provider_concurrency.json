@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "registered",
+  "protocol_path": "PROTOCOL_ADDENDUM_06_TT_HEALTH_HOLD.md",
+  "protocol_sha256": "bbd9b6d1827a874eccc26e5fbd5586079245c27d14bd0122066eee3ccd68af1e",
+  "base_sqlite_authority_sha256": "0c88765669f30b31289b4365bb99d0f9703f2672c4416f359dc43c19a2cccb43",
+  "base_sqlite_runner_sha256": "b1074d573bf7768bc911e86c352cbe1e776357e0f3c6418b0ed7a8eb3248070b",
+  "policy": {
+    "maximum": 64,
+    "minimum": 1,
+    "window_seconds": 60,
+    "unknown_window_posts": 20,
+    "unknown_minimum_posts": 10,
+    "unknown_fraction": 0.05,
+    "server_error_burst": 3,
+    "halve_cooldown_seconds": 15,
+    "clean_seconds": 60,
+    "clean_successes": 5,
+    "restore_step": 8,
+    "persistent_throttle_seconds": 120
+  },
+  "extraction_concurrency": 256,
+  "classification_concurrency": 320,
+  "runtime_sha256": {
+    "src/chl_rag/adaptive_transport.py": "8072aca9d7897c57ddd64965e7054f0258751985b9f607c2206d1901988a9bc4",
+    "scripts/run_adaptive_production.py": "b8a62d181d011abe4e28dba7d992b73dfc0997027210207c5250684027e124e6"
+  },
+  "model_requests_changed": false,
+  "authority": "INBOX2026-11-14 07:55 coordinator operational decision",
+  "feedback_revision": "cumulative_observed_POST_fraction; recent20 diagnostic only; state retained",
+  "route_health_holds": [
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "phase": "production_classification",
+      "provider_tag": "tenstorrent/fp8",
+      "reason": "persistent_known_free_http_429",
+      "evidence_path": "results/production_uncorrected/provider_rate_limit_exhaustion.json",
+      "evidence_sha256": "c0698da4916d50799cb5f06e143e5550c78754ada408dc6b03138b889e11bd67",
+      "authority": "Coordinator operational provider-health hold under INBOX2026-11-14 07:55, after fully drained classification and verified no-generation429 exhaustion; no model-quality selection."
+    }
+  ],
+  "draft_note": "Coordinator must bind the new signed health-hold protocol before registration; immutable SQLite authority/base runner and original registry stay unchanged."
+}

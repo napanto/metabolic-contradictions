@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "models": {
+    "qwen/qwen3.6-35b-a3b": {
+      "provider_tag": "primeintellect/fp8",
+      "canonical_slug": "qwen/qwen3.6-35b-a3b-20260415",
+      "quantization": "fp8",
+      "input_price": 6.9e-08,
+      "output_price": 6.35e-07,
+      "request_price": 0.0,
+      "source_file": "configs/provider_snapshots/qwen36_endpoints_recheck2.json",
+      "source_sha256": "4461a9359081f964c82f3fe7126a429c23025ee0055616e9648baf21c4671556",
+      "verified_at": "2026-11-12T23:02:23.630352+00:00",
+      "input_ceiling": 2e-07,
+      "output_ceiling": 2e-06,
+      "request_ceiling": 0.0
+    }
+  }
+}

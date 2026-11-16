@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "status": "registered",
+  "kind": "instrument_wording",
+  "authority": "Antonio, 15 November 2026: a participant reported that the red key-rule box named «Manca un dato» while the row offers only «Sì», «No», «Non posso stabilirlo»; every instruction must give every step and quote every label; Antonio approved the texts and asked for an immediate text-only deploy (~19:45).",
+  "instrument_version": "2.0",
+  "configuration_snapshot_sha256": "65c3f4255f61d46697c484733c5adec1c99008b46b2f90d90057f5f09c91023a",
+  "configuration_snapshot_unchanged": true,
+  "codes_paths_derivations_changed": false,
+  "deploys": [
+    {
+      "tag": "v2.1-boxes-20261115",
+      "commit": "e848c63",
+      "reloaded_at": "2026-11-15T19:48:43+01:00",
+      "previous_instrument_export_sha256": "a97a9474ebfb5b4b7290251c61ccee658fd3372c4433eb41c9eb6a07a309fb2e",
+      "instrument_export_sha256": "2d6b04df6d17302fde809c40e0024799f24f9d6683f55dd925f6ec355afb16bb",
+      "changes": [
+        "Q1 key-rule boxes for Finding, Sample size, Statistical evidence and relevance give the row, «No», the question «Qual è il problema?» and the option, with exact quoted labels (IT/EN)",
+        "Statistical evidence box explains that «Significatività secondo gli autori» holds only what the authors declare, so «Non riportato» is correct when the abstract gives only numbers",
+        "Sample size box: «riporta solo la numerosità dei gruppi»; relevance box keeps the examples reversed direction, unsupported «nessun effetto», invented comparison group",
+        "sentence under the first question: «Non estratto»/«Non riportato» correct only when the abstract lacks the information; a field that does not concern the finding is correct if empty and wrong if it holds a value the abstract does not give",
+        "row sub-lines for Finding, Sample size and Context restated"
+      ],
+      "not_changed": "options offered, answer validation, templates, scripts, practice items, guidelines and «?» help (these follow with the full wording deploy)",
+      "note": "Instrument changes between 14 November 16:04:58 (32ad70b5…) and this deploy (5ad6d7de…, a97a9474…) are recorded in the site deploy log (chl/metabolic-evidence-deploy.md); this file starts with today's wording deploys. Answers are separable by submission time.",
+      "analysis_split": "Same split rule as the next entry, with reloaded_at 19:48:43; this deploy changed text only, so ambiguous answers differ only in the wording shown."
+    },
+    {
+      "tag": "v2.1-wording-20261115",
+      "commit": "df80318",
+      "reloaded_at": "2026-11-15T19:59:19+01:00",
+      "previous_instrument_export_sha256": "2d6b04df6d17302fde809c40e0024799f24f9d6683f55dd925f6ec355afb16bb",
+      "instrument_export_sha256": "94a198d25ae5219840f9d3b5b39bda2ba13fe00418476560b4dff5271ed2446a",
+      "reason": "chiarezza: la segnalazione di chi partecipava (il riquadro «Attenzione» saltava un passaggio) e la revisione delle risposte raccolte; decisione di Antonio, 15 novembre 2026",
+      "changes": [
+        "every instruction that says what to press gives every step in order (row or question, button, the question that opens below, its option) with the exact on-screen labels quoted, «…» in Italian and “…” in English: «?» help, Q2–Q5 boxes, notices, errors, review step, guidelines, tutorial, practice explanations; the five boxes and three sub-lines of v2.1-boxes-20261115 are kept byte for byte",
+        "general rule before the first row check (q1_frame), in the practice introduction and at the start of the guidelines; the same short line under every row check (missing_line)",
+        "«?» help receives what left the boxes: secondary finding and note, reversed direction, undeclared «Significativo», wrong exposure or outcome",
+        "A3: Q3 box and help say where to look (the conclusion of each abstract; «not significant», «no better», «did not», «no difference» mean an effect not confirmed)",
+        "A5: Q4 option `opposite` reads «Entrambi trovano un effetto o un’associazione, ma in direzioni opposte» / “Both find an effect or association, but in opposite directions”; Q4 labels lose their final full stop; the Q4 box names the first option in full",
+        "A1 wording: «Se uno studio trova l’effetto e l’altro no, i risultati restano confrontabili» in the Q2 box and help",
+        "key-rule boxes at 375 px, Italian, before this deploy → after: Finding 9 → 9, sample size 11 → 11, statistical evidence 19 → 19, relevance 11 → 11 (unchanged from v2.1-boxes), same exposure 4 → 4, measures and comparisons 7 → 8, Q3 5 → 9, Q4 4 → 5"
+      ],
+      "options_offered": {
+        "A1_q2_comparison_reason": "«Cosa impedisce il confronto?» after «No» at «Le misure e i confronti sono abbastanza simili?» offers comparator («Gruppo di confronto»), other («Tipo di confronto o momento della misura», with its short description) and outcome_definition («Definizione o misura dell’esito»); before, the 15 Q5 factors, with other labelled «Un’altra differenza»",
+        "A2_q1_relevance": "cannot_establish_comparison («Non riesco a stabilire cosa si sta confrontando») is offered only when a Risultato or Confronto row of either abstract is «No» or «Non posso stabilirlo»",
+        "server": "validate_path unchanged: every earlier option is still accepted, so a page loaded before the deploy and submitted after it is saved, paid and exported",
+        "drafts_and_corrections": "a draft or correction prefill holding an option no longer offered drops it and opens the first question left unanswered; a draft saved before the deploy also drops a Q2 `other` reason, whose label changed"
+      },
+      "presentation": {
+        "direction_row": "«Direzione della stima» / “Direction of the estimate” (was «Direzione» / “Direction”)",
+        "within_group_sentence": "A4: a change within one group without a group name is described from its extracted times when a direction or a no-change assertion is extracted; 5 of 70 results in the 35 live pairs change (v2-pair-1032 A and B, v2-pair-1051 A and B, v2-pair-1069 B); practice and preview items: none",
+        "between_group_missing_labels": "unchanged: 12 live results show «L’estrazione non identifica entrambi i gruppi»; using «Riferimento usato» there would promote a comparator into a group, which the presentation contract and its test forbid"
+      },
+      "synthetic_items": {
+        "file_sha256": "282f8e795fb0c77d4c31edcf6dc311786ff3a0ae9fa5635863f988eb9844bf6c",
+        "previous": "e4fcde097336f56ad8717cb3892552d927b57b61f5ab2fd9a19a95fe815f38fb",
+        "change": "explanations of practice-1, practice-2, practice-3 only (explanation and explanation_path, IT and EN)",
+        "originality_audits": "regenerated, passed; only synthetic_file_sha256 moved"
+      },
+      "not_changed": "answer codes, step ids, paths, derivations, validate_path, INSTRUMENT_VERSION 2.0, configuration snapshot",
+      "tests": "656 passed on df80318; verify_wording_20261115 (old side = live e848c63), verify_retry_browser, verify_instrument_v21 (1440/390 px, IT/EN) and verify_stage_navigation pass on df80318",
+      "analysis_notes": [
+        "Split rule (from the peer review of this record): submission time alone is not enough, because a page loaded before a deploy submits the earlier wording and options after it, and answers carry no served-instrument hash. Use assignments.started (first time the pair was served; a page reload does not change it): submitted < reloaded_at → earlier wording; started ≥ reloaded_at → new wording; started < reloaded_at ≤ submitted → ambiguous, a page reload may have shown either wording. Settle ambiguous answers from the option set where possible (a Q2 comparison reason outside the three now offered, or cannot_establish_comparison without a Finding or Comparison issue, means the earlier page; for `other` read other_detail) and flag the rest. At 19:59:19 no answer was ambiguous: the last answer before the deploy was submitted at 19:56:53.",
+        "Answers submitted before and after this deploy used different wording; for A1 and A2 they also had different options available. Split by reloaded_at on answers.submitted.",
+        "A page loaded before the deploy and submitted after it carries the earlier options, which the server accepts: a Q2 comparison reason outside the three offered, or cannot_establish_comparison without a Finding or Comparison issue.",
+        "Q2 comparison reason `other` means «Un’altra differenza» before this deploy and «Tipo di confronto o momento della misura» after it: read other_detail.",
+        "Self-corrections saved after the deploy are made on the new interface."
+      ]
+    },
+    {
+      "tag": "v2.1-layout-20261115",
+      "commit": "61c08a1",
+      "reloaded_at": "2026-11-15T21:05:09+01:00",
+      "previous_instrument_export_sha256": "94a198d25ae5219840f9d3b5b39bda2ba13fe00418476560b4dff5271ed2446a",
+      "instrument_export_sha256": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+      "authority": "Antonio, 15 November evening, after a reviewer's suggestion (an objective/design/population/control group/intervention/analysis/outcome layout with fixed parts filled from the abstract): «rendere la nostra presentazione più vicina a quello che dice lui», «non accorpiamo dati non estratti», the finding back at the start, the comparison next to it; dev site approved («Il sito di sviluppo va bene»).",
+      "kind": "presentation and order of the seven extraction checks",
+      "changes": [
+        "check order: Risultato, Confronto, Evidenza statistica (what the result sentence states), then Studio e analisi, Persone e gruppi, Numerosità, Contesto (the methods in reading order); before: Risultato, Persone e gruppi, Numerosità, Confronto, Studio e analisi, Evidenza statistica, Contesto",
+        "fixed labels, identical for every study: «Popolazione in studio» and «Gruppo di confronto» are always shown in «Persone e gruppi» (each with «Nome usato nello studio» and «Popolazione») and in «Numerosità» (with «Intero studio»); the extracted group name is a value, with a case/control/cohort role in parentheses; before, the group name was the row label in «Numerosità» and the reference slot was hidden for associations and within-group changes",
+        "when the extraction has no reference group (association or within-group change), its slot says «Nessuno: l’estrazione indica un’associazione» / «… una variazione nello stesso gruppo» (a statement of the extraction that readers can mark wrong), replacing the note «Questo tipo di risultato non ha un gruppo di confronto»",
+        "plain labels: «Riferimento usato» → «Confrontato con», «Momento iniziale» → «Momento di partenza», «Verso del confronto» → «Descrizione del confronto», «Si riferisce a» → «A cosa si riferiscono», «Nome del gruppo» → «Nome usato nello studio»; direction text «nel gruppo studiato» → «nella popolazione in studio»",
+        "«Studio e analisi» shows the stated aims first; «Persone incluse nell’analisi» moves to the end of «Persone e gruppi»",
+        "every empty field keeps its own row with «Non estratto»; nothing is grouped",
+        "row guidance updated for the new labels (groups, sample-size box, comparison), and the analysis help notes that the stated aims help tell a main from a secondary finding; guidelines and tutorial explain the order",
+        "the Q2 side-by-side table is unchanged"
+      ],
+      "not_changed": "the seven checks, their questions, codes, fields assigned to each check, problem options, answer paths, validate_path, INSTRUMENT_VERSION 2.0, configuration snapshot; every value displayed before is still displayed under the same check (332 claim views compared: preview, the 35 live pairs and practice items, IT and EN)",
+      "analysis_notes": [
+        "Answers before and after this deploy saw the checks in a different order and with different labels: split with the rule of the first entry (assignments.started, submitted), and report the split. Per-check answers and codes are directly comparable.",
+        "Order effects within the extraction checks are possible; report the counts on each side of the split."
+      ],
+      "tests": "656 passed; browser checks passed on the tagged tree: verify_wording_20261115 with the live df80318 as old side (page loaded before the switch saved and paid, old drafts, old HTML with new script and the reverse, resubmission during the reload), verify_retry_browser, verify_instrument_v21 (1440/390 px, IT/EN), verify_stage_navigation; dev site checked by Antonio",
+      "deploy_note": "Last participant action 3121 s before the reload; checkout and reload back to back; healthz 200 local and public; configuration snapshot 65c3f425… unchanged."
+    },
+    {
+      "tag": "v2.1-noqc-20261116",
+      "commit": "612dcc2",
+      "reloaded_at": "2026-11-16T13:27:29.61+01:00",
+      "previous_instrument_export_sha256": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+      "instrument_export_sha256": "51050cdfbd385e9003011b26082fa9ff2c122d2c743aef10ad45bf2a6879f208",
+      "authority": "Antonio, 16 November 13:2x CET: «Fai il deploy velocissimo» (main-reason labels, after a tester's report) and «Eliminiamo la funzione che esclude le persone in automatico per basso accordo. Al massimo le escludiamo a posteriori ma non a priori».",
+      "kind": "main-reason option labels; withdrawal of the live low-peer-agreement exclusion (deviation from amendment 06, QC paragraph)",
+      "changes": [
+        "main reason (shown when two or more comparability checks fail): the options read «Esposizione diversa», «Esito diverso», «Misure o confronti diversi» (EN «Different exposure», «Different outcome», «Different measures or comparisons») instead of the names of the checks («Stessa esposizione», «Stesso esito», «Misure e confronti»), which read as the opposite; answer codes unchanged",
+        "live quality control: low agreement with peers (at least 6 shared pairs, at most 1 agreement) no longer excludes a session; it is still computed and reported (posthoc_reasons) for a decision after collection; the fast-response rule stays live",
+        "one session excluded live at 2026-11-16T10:56:05+01:00 by the withdrawn rule was re-included at about 13:28 through the site's logged manual include (audit action 'include'); its 7 real reads count again; decided without reference to oracle answers"
+      ],
+      "analysis_note": "Amendment 06 says the primary analysis uses unflagged reads and the QC sensitivity analysis all reads. Whether low agreement is applied after collection is Antonio's decision, to be fixed before the analysis freeze and reported as a deviation."
+    },
+    {
+      "tag": "v2.1-scarce-20261116",
+      "commit": "9aad3df",
+      "reloaded_at": "2026-11-16T13:49:50.30+01:00",
+      "previous_instrument_export_sha256": "51050cdfbd385e9003011b26082fa9ff2c122d2c743aef10ad45bf2a6879f208",
+      "instrument_export_sha256": "51050cdfbd385e9003011b26082fa9ff2c122d2c743aef10ad45bf2a6879f208",
+      "authority": "Antonio, 16 November about 13:45 CET: «Per ciascuna persona dai priorità nel loro ordine a quelle che possono revisionare solo loro, considerati tutti, non solo loro 3» and «Velocissimo fai subito deploy di questa cosa se i test passano» (657 passed).",
+      "kind": "assignment order (deviation from amendment 07, section 5 tie-breaks); no wording change",
+      "changes": [
+        "within step 3 (third and fourth reads) each reader first gets the pair that the fewest other readers could still take: sessions with a real assignment, not excluded, not flagged, not under eligibility review, without an assignment of that pair or of its retired version; then the registered tie-breaks (arm furthest behind, more valid reads, hash order, lowest slot)",
+        "only who read which pair is used, never an answer; steps 1, 2, 4 and 5 unchanged"
+      ],
+      "counts_at_deploy": "9 pairs waiting for a third read (biomarker 5, drug 2, diet 2); readers who could still take them, out of 7: 3 for v2-pair-1030, 4 for v2-pair-1002 and v2-pair-1007, 5 for each of the others"
+    },
+    {
+      "tag": "v2.1-corrvotes-20261116",
+      "commit": "a5d0c8d",
+      "reloaded_at": "2026-11-16T14:45:53.92+01:00",
+      "previous_instrument_export_sha256": "51050cdfbd385e9003011b26082fa9ff2c122d2c743aef10ad45bf2a6879f208",
+      "instrument_export_sha256": "51050cdfbd385e9003011b26082fa9ff2c122d2c743aef10ad45bf2a6879f208",
+      "authority": "Antonio, 16 November about 14:40 CET: «Meglio se fai contare al sito anche le correzioni» (658 tests passed).",
+      "kind": "vote counting on the site (deviation from the correction design of 14 November, under which a correction never changed the meter); no wording change",
+      "changes": [
+        "consensus, third and fourth reads, the completion meter and the scarcity order count each vote with the category of its latest participant correction, as the analysis already does; answers rows, payments, assignments and the export are unchanged",
+        "at deploy one pair (biomarker) became resolved through a correction saved at 13:22; a third read already held on it is accepted as usual"
+      ]
+    },
+    {
+      "tag": "v2.1-relchange-20261116",
+      "commit": "2a1e98d",
+      "reloaded_at": "2026-11-16T15:14:37.85+01:00",
+      "previous_instrument_export_sha256": "51050cdfbd385e9003011b26082fa9ff2c122d2c743aef10ad45bf2a6879f208",
+      "instrument_export_sha256": "51050cdfbd385e9003011b26082fa9ff2c122d2c743aef10ad45bf2a6879f208",
+      "authority": "Antonio, 16 November about 15:05 CET, after a reader's report (screenshot 15:01): «risolvi in fretta il problema facendo subito deploy».",
+      "kind": "presentation of the relevance step (page script only); no wording, option or code change",
+      "changes": [
+        "the list «I problemi che hai indicato» / «The problems you identified» at the relevance step names the abstract of each problem («Abstract A · Finding») and gives each row a «Change» button that opens that check and then returns to the first open question",
+        "the reported stale list could not be reproduced in a browser (back, summary change, stage buttons, reload, correction page; 390 and 1440 px); the saved answer of that read is consistent with the list it showed"
+      ]
+    }
+  ]
+}

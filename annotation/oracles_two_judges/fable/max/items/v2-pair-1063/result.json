@@ -1,0 +1,307 @@
+{
+  "stage": "final_evaluation",
+  "judge": "fable",
+  "requested_model": "claude-fable-5-2",
+  "effort": "max",
+  "reference_revision": {
+    "pair_binding": "61c08a1"
+  },
+  "item_id": "v2-pair-1063",
+  "task": "pair",
+  "package_sha256": "def4666aaaf96ccbad39cc23bfef3b99d71683a9a0b768e05771f71571c2bd25",
+  "binding": {
+    "loader": "amendment08_two_judge_plan",
+    "evaluation_config_sha256": "416d06f0c4ef8af0709a3a891b593d6fb23e22af29a368ca6b411643773843f3",
+    "protocol_sha256": "32fcc9639a5d8be479e443f4d961b744058bbddd07e9f8df441042c901ff48a3",
+    "pair_binding_record_sha256": "4d66121c2f2196d43d88c321edd72802751c759b79eef1a99f396e265823da6a",
+    "package_sha256": "c8915e23f840e657a21f4e9f393a57856951ad93c389650b951a5f778d746afb",
+    "live_package_sha256": "def4666aaaf96ccbad39cc23bfef3b99d71683a9a0b768e05771f71571c2bd25",
+    "retired_item_ids": [
+      "v2-pair-1100"
+    ],
+    "reference_revision": {
+      "pair_binding": "61c08a1"
+    }
+  },
+  "item_sha256": "1c62a1a2c16ef329c9be5bd952cf5bb03c9ab1bd07ab4bb53076347f8baa324c",
+  "displayed_public_item_sha256": "7267a7ede321236054797bef6e4a99c2632dfbc4fcbbb0ae11342bf60e1668ba",
+  "prompt_sha256": "7c7d3e5a01542acfbff27e520c876be5e49967d726700e7c6371c05e9f2c1878",
+  "instructions_sha256": "975e119783bd3c6411350e1bd7f98ea3e8ba8c73e30d65a0400a05c8119b4f20",
+  "instrument_sha256": "ce6161a93e705d57ed8f276b383148d7c577d50875b6564edc2572d187141581",
+  "pair_instrument_sha256": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+  "canonical_schema_sha256": "97c584732dcf060f9a756f5f0ab6284dfa75255e9071f73ddf6a299790a2cd3f",
+  "wire_schema_sha256": "bc09a7e10e77f2a825c14992e4fefe57ceaa8895884aa1926fdcac3ccac3da86",
+  "pair_binding": "61c08a1",
+  "pair_wire_version": "v2-pair-required-null-61c08a1",
+  "params_fingerprint": "9dcbc72485d5940c8747ca8596996adaaee112cb12e3c325a0712a9c92faaaf6",
+  "max_attempts": 2,
+  "output_cap": 128000,
+  "transport_policy": "per_item_batch_then_full_price_after_cutoff; pilot full price",
+  "classifier_outputs_in_prompt": false,
+  "peer_outputs_in_prompt": false,
+  "human_answers_in_prompt": false,
+  "status": "valid",
+  "schema_valid": true,
+  "answer": {
+    "instrument_version": "2.0",
+    "pipeline_version": "2.0",
+    "item_id": "v2-pair-1063",
+    "task": "pair",
+    "path": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "groups": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "no",
+            "problems": [
+              "not_supported_by_abstract"
+            ]
+          },
+          "context": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          }
+        }
+      },
+      "q1_relevance": "not_material",
+      "q2": {
+        "exposure": {
+          "answer": "yes"
+        },
+        "outcome": {
+          "answer": "yes"
+        },
+        "comparison": {
+          "answer": "yes"
+        }
+      },
+      "q3": "no",
+      "q4": "effect_vs_no_effect"
+    },
+    "rationale": "A (type 2 diabetes, dapagliflozin 10 mg, 12 weeks) reports lower systolic BP versus placebo (-3.7 mmHg), a secondary finding with no significance stated. B (kidney transplant recipients, dapagliflozin 10 mg daily) states dapagliflozin did not lower systolic BP versus placebo at 1 or 12 weeks. Extraction problems: A omits the stated aim; B omits the two groups, the no-difference direction, and the dose and duration, and labels the null result 'Significant', which the abstract does not support. None of these changes the findings, since B's extraction still describes 'no lowering'. The populations differ (type 2 diabetes versus kidney transplant recipients).",
+    "label": "not_replicated",
+    "factor": "none",
+    "binary_inconsistent": true,
+    "field_problems": {
+      "a": {
+        "analysis": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        }
+      },
+      "b": {
+        "result": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        },
+        "groups": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        },
+        "significance": {
+          "answer": "no",
+          "problems": [
+            "not_supported_by_abstract"
+          ]
+        },
+        "context": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        }
+      }
+    },
+    "relevance": "not_material",
+    "other_detail": "",
+    "wire_version": "v2-pair-required-null-61c08a1",
+    "reference_wording_revision": "site-61c08a1-2026-11-15-2105"
+  },
+  "raw_response": {
+    "instrument_version": "2.0",
+    "pipeline_version": "2.0",
+    "item_id": "v2-pair-1063",
+    "task": "pair",
+    "path": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "groups": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "no",
+            "problems": [
+              "not_supported_by_abstract"
+            ]
+          },
+          "context": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          }
+        }
+      },
+      "q1_relevance": "not_material",
+      "q2": {
+        "exposure": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        },
+        "outcome": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        },
+        "comparison": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        }
+      },
+      "q2_primary": null,
+      "q3": "no",
+      "q4": "effect_vs_no_effect",
+      "q5": null
+    },
+    "rationale": "A (type 2 diabetes, dapagliflozin 10 mg, 12 weeks) reports lower systolic BP versus placebo (-3.7 mmHg), a secondary finding with no significance stated. B (kidney transplant recipients, dapagliflozin 10 mg daily) states dapagliflozin did not lower systolic BP versus placebo at 1 or 12 weeks. Extraction problems: A omits the stated aim; B omits the two groups, the no-difference direction, and the dose and duration, and labels the null result 'Significant', which the abstract does not support. None of these changes the findings, since B's extraction still describes 'no lowering'. The populations differ (type 2 diabetes versus kidney transplant recipients)."
+  },
+  "attempt_count": 1,
+  "attempt_statuses": [
+    "valid"
+  ],
+  "dispatches": [
+    {
+      "dispatch": 1,
+      "route": "batch",
+      "phase": "full",
+      "status": "valid",
+      "counts_as_attempt": true,
+      "attempt": 1,
+      "batch_id": "msgbatch_01MXoSupzs9GVXySPhB5BWeh"
+    }
+  ],
+  "finalized_in_phase": "full",
+  "missing_reason": null,
+  "cost_usd": 0.666188,
+  "annotator_type": "LLM",
+  "reference_role": "final_two_judge_oracle",
+  "finalized_at": "2026-11-16T01:29:20.727156+00:00"
+}

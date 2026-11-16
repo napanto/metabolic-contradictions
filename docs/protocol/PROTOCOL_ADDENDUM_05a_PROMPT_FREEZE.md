@@ -1,0 +1,18 @@
+# Final prompt, schema and calibration freeze for fixed v2
+
+14 November2026, before the first production request. The final plan is the prespecified GLM pipeline in addendum05, not the retired comparative S/H design. This record and `results/v2/prompt_freeze.json` freeze the exact reviewed bytes, caps and runtime inputs; amendment06 governs production and final evaluation.
+
+Extraction uses reviewed revision2; metabolic classification revision3; the shared instrument/pair oracle remains site-aligned revision3. The new private same-call v2/D0 extraction prompt is prospective oracle revision4, independently reviewed before C exists. Verification revision2 and development judging revision4 are preserved in the manifest as inactive historical artifacts, not active production stages. No prompt was tuned on S, H, F or C or on human answers. Review records distinguish wording/input-contract approval from semantic model accuracy.
+
+P evidence for the actual configuration:
+
+- GLM-5.3-Flash high extraction, P round4: nine of nine first-attempt and final-valid outputs on three original P sources plus six synthetic abstracts; no truncation. Maximum observed total completion11816. Frozen cap131072, with no required larger-cap rerun.
+- GLM-5.3-Flash low classification, synthetic P round4: twelve of twelve first-attempt valid, twelve category/material-error checks matching, eleven of twelve factors matching; maximum observed completion499. Frozen cap65536. These are technical/development checks, not comparative selection or final accuracy estimates.
+
+`results/v2/P_GLM_calibration.json` binds original plans, attempts, prompts and source/schema identities. P costs and latency remain measured, not guarantees: the extraction nine-item mean is59.1seconds, while the three natural abstracts average145.2seconds including scheduling/provider waiting. Their mean cost is about0.00110USD per source; synthetic-inclusive means understate typical natural-source work. Classification P averages about0.000532USD and6.1seconds per pair. Production forecasts will be updated from actual F throughput and the resulting pair-frame size. Only five current registered GLM routes meet the full frozen endpoint requirements; the coordinator’s broader catalogue rationale must not be reported as five-plus additional routes actually used.
+
+The canonical strong extraction schema and model wire schema remain distinct only where the transport cannot express a constraint; strong local validation still applies. Source display uses policy4: Unicode whitespace-only normalization, unchanged non-whitespace text/sentence IDs, metadata supplied consistently, explicit context-only sections excluded as result evidence. Raw sources/outputs remain unchanged; exact or whitespace-equivalent quote validation is disclosed. No free correction of model output is permitted.
+
+All scientific prompt files and their independently reviewed SHA256 values are listed in the signed freeze manifest. The final comparison prompt is `1f50faa05455963294b96489a951ebb20b3fd96d4e0d71c4fbd747fb06734e05`. Model requests exclude review histories, expected synthetic labels, system verdicts and human records. Same-call D0/v2 inventory exposure and same-family single-judge limitations are explicitly retained in06.
+
+Production is GLM high/low only, full F; no verifier, S/H experiment or metabolic classifier comparison is activated by this freeze. Heavy Astra calls remain on the01:17 hold, requiring a later signed explicit-go companion bound to the immutable evaluation config. The exact deployed student configuration likewise uses a separate signed collection lock before the first real student read. Neither later companion rewrites this freeze or the production identity.

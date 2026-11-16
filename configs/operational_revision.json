@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "registered",
+  "kind": "operational",
+  "base_config_path": "configs/evaluation_system.json",
+  "base_config_sha256": "d8f7d94abc966626d5153bcb6307678ee34541c942787aeb904380a939c1d80a",
+  "production_binding_changed": false,
+  "glm_prompts_changed": false,
+  "compatibility_module_sha256": "18149aa88ece29df52b844483425a51a57c7ba768ade6b9b18bdee7f7f7d8c6f",
+  "protocol_path": "PROTOCOL_ADDENDUM_06_SQLITE_ACCOUNTING.md",
+  "protocol_sha256": "4f90f670915362ec1d8374d6de636f5f8c9d7457b7cf70d07347a0cb94461b03",
+  "review_path": "results/sqlite_accounting_review.json",
+  "review_sha256": "96225a50a30c9a85279efc976dd581baa794a776fc86ae1fb310a0061bb479a3",
+  "replacements": {
+    "src/chl_rag/spend_budget.py": {
+      "original_sha256": "7b052c7f4b9dfbf0158f4fa78bc90eef8c9bdeacdf8a530600fb93fe894617f0",
+      "approved_sha256": "8423680c5b964dc0bf4e8ff607b1544499feaa84b08bf01451f91227e9df290f",
+      "archive_path": "data/frozen/v2_initial_runtime/src/chl_rag/spend_budget.py"
+    },
+    "src/chl_rag/model_client.py": {
+      "original_sha256": "252b8481d0d9dade312fd920d879d7866305aac3d333f849bdcd9aead50ffb10",
+      "approved_sha256": "5705f61959dda5b7d3d129e17e435025b4e097a6ee743fd9aa45faa725431169",
+      "archive_path": "data/frozen/v2_initial_runtime/src/chl_rag/model_client.py"
+    },
+    "src/chl_rag/model_runs.py": {
+      "original_sha256": "89382317940392fc0f5e65aafe8ff0cdcd10b2f87deb823847be458f5474475f",
+      "approved_sha256": "25d72edaa6a676eb539ab5f19aad2b36e501dad98765c9452cdad8ed65a99b44",
+      "archive_path": "data/frozen/v2_initial_runtime/src/chl_rag/model_runs.py"
+    },
+    "src/chl_rag/production.py": {
+      "original_sha256": "4bd113f6f25274351985a843afded3085d1a8198352a2b7b9760d3e977c27f50",
+      "approved_sha256": "b0f9a892ff231acf8fb35a465cefb370a963ed560957b8a6aac40ef1a3903aa5",
+      "archive_path": "data/frozen/v2_initial_runtime/src/chl_rag/production.py"
+    }
+  },
+  "new_files": {
+    "src/chl_rag/sqlite_ledger.py": "0a1704db0e2bad9b3ee99a8f0bd07a90bea2a5b268e9a1f4451beb8d5e5b775a",
+    "scripts/run_v2_sqlite_production.py": "b1074d573bf7768bc911e86c352cbe1e776357e0f3c6418b0ed7a8eb3248070b"
+  },
+  "supersedes_operational_revision_sha256": "ef1efd434f4d85767e78e5ad600b49e2594d8cf321f500aa04b472cd72262c71"
+}

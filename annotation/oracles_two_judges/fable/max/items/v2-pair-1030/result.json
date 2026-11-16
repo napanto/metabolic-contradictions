@@ -1,0 +1,296 @@
+{
+  "stage": "final_evaluation",
+  "judge": "fable",
+  "requested_model": "claude-fable-5-2",
+  "effort": "max",
+  "reference_revision": {
+    "pair_binding": "61c08a1"
+  },
+  "item_id": "v2-pair-1030",
+  "task": "pair",
+  "package_sha256": "def4666aaaf96ccbad39cc23bfef3b99d71683a9a0b768e05771f71571c2bd25",
+  "binding": {
+    "loader": "amendment08_two_judge_plan",
+    "evaluation_config_sha256": "416d06f0c4ef8af0709a3a891b593d6fb23e22af29a368ca6b411643773843f3",
+    "protocol_sha256": "32fcc9639a5d8be479e443f4d961b744058bbddd07e9f8df441042c901ff48a3",
+    "pair_binding_record_sha256": "4d66121c2f2196d43d88c321edd72802751c759b79eef1a99f396e265823da6a",
+    "package_sha256": "c8915e23f840e657a21f4e9f393a57856951ad93c389650b951a5f778d746afb",
+    "live_package_sha256": "def4666aaaf96ccbad39cc23bfef3b99d71683a9a0b768e05771f71571c2bd25",
+    "retired_item_ids": [
+      "v2-pair-1100"
+    ],
+    "reference_revision": {
+      "pair_binding": "61c08a1"
+    }
+  },
+  "item_sha256": "77180cb81047c8481ded3dd9fa40306697ef79949f62f1907f0512ad9cf50188",
+  "displayed_public_item_sha256": "53cd1ec8bb247c81fb425c50c5b4299fcf5f39b0644a2e480f339356e0b24c54",
+  "prompt_sha256": "0e8d6dd00ded92db493b7acbaef0e88e49794a12b0a48a242a43ff664565df10",
+  "instructions_sha256": "975e119783bd3c6411350e1bd7f98ea3e8ba8c73e30d65a0400a05c8119b4f20",
+  "instrument_sha256": "ce6161a93e705d57ed8f276b383148d7c577d50875b6564edc2572d187141581",
+  "pair_instrument_sha256": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+  "canonical_schema_sha256": "1bc9ed3eed697bf435c9ec302b0cdf821ee86b28b6e49b360e78e434df5960c6",
+  "wire_schema_sha256": "8c1c2c21a3b46fe9c5cab5e2b846377fc9fe4511bbc9d66c293866bb1a611f7a",
+  "pair_binding": "61c08a1",
+  "pair_wire_version": "v2-pair-required-null-61c08a1",
+  "params_fingerprint": "01ed122da5bc04b2b5ed331b1db32a80229163183f41ce267e892749850571c0",
+  "max_attempts": 2,
+  "output_cap": 128000,
+  "transport_policy": "per_item_batch_then_full_price_after_cutoff; pilot full price",
+  "classifier_outputs_in_prompt": false,
+  "peer_outputs_in_prompt": false,
+  "human_answers_in_prompt": false,
+  "status": "valid",
+  "schema_valid": true,
+  "answer": {
+    "instrument_version": "2.0",
+    "pipeline_version": "2.0",
+    "item_id": "v2-pair-1030",
+    "task": "pair",
+    "path": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "sample_size": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q1_relevance": "not_material",
+      "q2": {
+        "exposure": {
+          "answer": "yes"
+        },
+        "outcome": {
+          "answer": "yes"
+        },
+        "comparison": {
+          "answer": "yes"
+        }
+      },
+      "q3": "no",
+      "q4": "effect_vs_no_effect"
+    },
+    "rationale": "A concludes that resistin is not associated with BMI in T2DM patients. B reports that serum resistin correlated with BMI, skinfold, arm measures and fat mass in the whole sample and among obese subjects, and its conclusion calls the association significant. B's extraction omits that significance wording, the population (children and adolescents aged 10-16) and the group sizes (124 eutrophic, 178 obese); these omissions do not change the finding. The extraction swaps exposure and outcome in B and selects fat mass rather than BMI. I treated the pair as comparable because both address the resistin-adiposity association and B's same sentence also covers BMI; this is a judgement call, since BMI and fat mass are distinct measures. One abstract reports an association and the other does not. The populations differ (T2DM patients versus children and adolescents).",
+    "label": "not_replicated",
+    "factor": "none",
+    "binary_inconsistent": true,
+    "field_problems": {
+      "a": {},
+      "b": {
+        "groups": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        },
+        "sample_size": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        },
+        "significance": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        }
+      }
+    },
+    "relevance": "not_material",
+    "other_detail": "",
+    "wire_version": "v2-pair-required-null-61c08a1",
+    "reference_wording_revision": "site-61c08a1-2026-11-15-2105"
+  },
+  "raw_response": {
+    "instrument_version": "2.0",
+    "pipeline_version": "2.0",
+    "item_id": "v2-pair-1030",
+    "task": "pair",
+    "path": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "sample_size": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q1_relevance": "not_material",
+      "q2": {
+        "exposure": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        },
+        "outcome": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        },
+        "comparison": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        }
+      },
+      "q2_primary": null,
+      "q3": "no",
+      "q4": "effect_vs_no_effect",
+      "q5": null
+    },
+    "rationale": "A concludes that resistin is not associated with BMI in T2DM patients. B reports that serum resistin correlated with BMI, skinfold, arm measures and fat mass in the whole sample and among obese subjects, and its conclusion calls the association significant. B's extraction omits that significance wording, the population (children and adolescents aged 10-16) and the group sizes (124 eutrophic, 178 obese); these omissions do not change the finding. The extraction swaps exposure and outcome in B and selects fat mass rather than BMI. I treated the pair as comparable because both address the resistin-adiposity association and B's same sentence also covers BMI; this is a judgement call, since BMI and fat mass are distinct measures. One abstract reports an association and the other does not. The populations differ (T2DM patients versus children and adolescents)."
+  },
+  "attempt_count": 2,
+  "attempt_statuses": [
+    "invalid",
+    "valid"
+  ],
+  "dispatches": [
+    {
+      "dispatch": 1,
+      "route": "batch",
+      "phase": "full",
+      "status": "invalid",
+      "counts_as_attempt": true,
+      "attempt": 1,
+      "batch_id": "msgbatch_01KJRfdAdiFXdRzJvH6uNBN4"
+    },
+    {
+      "dispatch": 2,
+      "route": "batch",
+      "phase": "full",
+      "status": "valid",
+      "counts_as_attempt": true,
+      "attempt": 2,
+      "batch_id": "msgbatch_017FTotXyN4Rk7cyo3uc3d3N"
+    }
+  ],
+  "finalized_in_phase": "full",
+  "missing_reason": null,
+  "cost_usd": 1.9925206,
+  "annotator_type": "LLM",
+  "reference_role": "final_two_judge_oracle",
+  "finalized_at": "2026-11-16T01:38:31.836575+00:00"
+}

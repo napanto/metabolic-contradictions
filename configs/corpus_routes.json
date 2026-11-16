@@ -1,0 +1,616 @@
+{
+ "schema_version": 1,
+ "purpose": "addendum 08A v2.1 corpus routes",
+ "fetched_at_utc": "20261116T004830Z",
+ "source_url": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3-flash/endpoints",
+ "eligibility_cap": 131072,
+ "decisions": [
+  {
+   "tag": "relace/fp4",
+   "provider_name": "Relace",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4",
+    "no response_format/structured_outputs"
+   ]
+  },
+  {
+   "tag": "wafer/us",
+   "provider_name": "Wafer",
+   "quantization": "nvfp4",
+   "eligible": false,
+   "reasons": [
+    "quantization nvfp4"
+   ]
+  },
+  {
+   "tag": "open-inference/fp4",
+   "provider_name": "OpenInference",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4"
+   ]
+  },
+  {
+   "tag": "darkbloom/fp4",
+   "provider_name": "Darkbloom",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4",
+    "status -2",
+    "max_completion_tokens 65536"
+   ]
+  },
+  {
+   "tag": "wafer/nvfp4",
+   "provider_name": "Wafer",
+   "quantization": "nvfp4",
+   "eligible": false,
+   "reasons": [
+    "quantization nvfp4"
+   ]
+  },
+  {
+   "tag": "tenstorrent/fp8",
+   "provider_name": "Tenstorrent",
+   "quantization": "fp8",
+   "eligible": false,
+   "reasons": [
+    "max_completion_tokens 131000",
+    "cap 131000 below 131072; most requests rejected on 14 November"
+   ]
+  },
+  {
+   "tag": "gmicloud/fp8",
+   "provider_name": "GMICloud",
+   "quantization": "fp8",
+   "eligible": true,
+   "reasons": []
+  },
+  {
+   "tag": "near-ai/fp8",
+   "provider_name": "Near AI",
+   "quantization": "fp8",
+   "eligible": true,
+   "reasons": []
+  },
+  {
+   "tag": "novita/fp8",
+   "provider_name": "Novita",
+   "quantization": "fp8",
+   "eligible": true,
+   "reasons": []
+  },
+  {
+   "tag": "streamlake/fp8",
+   "provider_name": "StreamLake",
+   "quantization": "fp8",
+   "eligible": false,
+   "reasons": [
+    "max_completion_tokens 128000",
+    "no seed"
+   ]
+  },
+  {
+   "tag": "siliconflow/fp8",
+   "provider_name": "SiliconFlow",
+   "quantization": "fp8",
+   "eligible": false,
+   "reasons": [
+    "no seed"
+   ]
+  },
+  {
+   "tag": "dekallm",
+   "provider_name": "DekaLLM",
+   "quantization": "unknown",
+   "eligible": false,
+   "reasons": [
+    "quantization unknown"
+   ]
+  },
+  {
+   "tag": "inference-net/us",
+   "provider_name": "InferenceNet",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4"
+   ]
+  },
+  {
+   "tag": "inference-net/fp4",
+   "provider_name": "InferenceNet",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4"
+   ]
+  },
+  {
+   "tag": "digitalocean",
+   "provider_name": "DigitalOcean",
+   "quantization": "unknown",
+   "eligible": false,
+   "reasons": [
+    "quantization unknown",
+    "no seed"
+   ]
+  },
+  {
+   "tag": "reka",
+   "provider_name": "Reka",
+   "quantization": "unknown",
+   "eligible": false,
+   "reasons": [
+    "quantization unknown",
+    "status -2"
+   ]
+  },
+  {
+   "tag": "coreweave/nvfp4",
+   "provider_name": "CoreWeave",
+   "quantization": "nvfp4",
+   "eligible": false,
+   "reasons": [
+    "quantization nvfp4"
+   ]
+  },
+  {
+   "tag": "river",
+   "provider_name": "River",
+   "quantization": "unknown",
+   "eligible": false,
+   "reasons": [
+    "quantization unknown"
+   ]
+  },
+  {
+   "tag": "nextbit/fp4",
+   "provider_name": "NextBit",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4",
+    "max_completion_tokens 128000"
+   ]
+  },
+  {
+   "tag": "particle-ai/nvfp4",
+   "provider_name": "Particle AI",
+   "quantization": "nvfp4",
+   "eligible": false,
+   "reasons": [
+    "quantization nvfp4"
+   ]
+  },
+  {
+   "tag": "makora/fp4",
+   "provider_name": "Makora",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4"
+   ]
+  },
+  {
+   "tag": "mistral",
+   "provider_name": "Mistral",
+   "quantization": "unknown",
+   "eligible": false,
+   "reasons": [
+    "quantization unknown"
+   ]
+  },
+  {
+   "tag": "kt",
+   "provider_name": "KT",
+   "quantization": "unknown",
+   "eligible": false,
+   "reasons": [
+    "quantization unknown",
+    "no seed"
+   ]
+  },
+  {
+   "tag": "cohere/nvfp4",
+   "provider_name": "Cohere",
+   "quantization": "nvfp4",
+   "eligible": false,
+   "reasons": [
+    "quantization nvfp4"
+   ]
+  },
+  {
+   "tag": "nebius/fp4",
+   "provider_name": "Nebius",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4"
+   ]
+  },
+  {
+   "tag": "modal/fp4",
+   "provider_name": "Modal",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4",
+    "no seed"
+   ]
+  },
+  {
+   "tag": "crusoe/fp4",
+   "provider_name": "Crusoe",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4"
+   ]
+  },
+  {
+   "tag": "atlas-cloud/fp8",
+   "provider_name": "AtlasCloud",
+   "quantization": "fp8",
+   "eligible": false,
+   "reasons": [
+    "no response_format/structured_outputs"
+   ]
+  },
+  {
+   "tag": "fireworks",
+   "provider_name": "Fireworks",
+   "quantization": "unknown",
+   "eligible": false,
+   "reasons": [
+    "quantization unknown",
+    "no seed"
+   ]
+  },
+  {
+   "tag": "friendli",
+   "provider_name": "Friendli",
+   "quantization": "unknown",
+   "eligible": false,
+   "reasons": [
+    "quantization unknown"
+   ]
+  },
+  {
+   "tag": "together",
+   "provider_name": "Together",
+   "quantization": "unknown",
+   "eligible": false,
+   "reasons": [
+    "quantization unknown",
+    "no seed"
+   ]
+  },
+  {
+   "tag": "parasail/fp4",
+   "provider_name": "Parasail",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4"
+   ]
+  },
+  {
+   "tag": "baseten/fp8",
+   "provider_name": "BaseTen",
+   "quantization": "fp8",
+   "eligible": false,
+   "reasons": [
+    "no seed"
+   ]
+  },
+  {
+   "tag": "venice",
+   "provider_name": "Venice",
+   "quantization": "unknown",
+   "eligible": false,
+   "reasons": [
+    "quantization unknown",
+    "no seed"
+   ]
+  },
+  {
+   "tag": "deepinfra/fp4",
+   "provider_name": "DeepInfra",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4"
+   ]
+  },
+  {
+   "tag": "z-ai/fp8",
+   "provider_name": "Z.AI",
+   "quantization": "fp8",
+   "eligible": false,
+   "reasons": [
+    "no seed"
+   ]
+  },
+  {
+   "tag": "morph/fp8",
+   "provider_name": "Morph",
+   "quantization": "fp8",
+   "eligible": true,
+   "reasons": []
+  },
+  {
+   "tag": "inceptron/fp8",
+   "provider_name": "Inceptron",
+   "quantization": "fp8",
+   "eligible": true,
+   "reasons": []
+  },
+  {
+   "tag": "sail-research/us",
+   "provider_name": "Sail Research",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4"
+   ]
+  },
+  {
+   "tag": "sail-research/fp4",
+   "provider_name": "Sail Research",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4"
+   ]
+  },
+  {
+   "tag": "parasail/fast",
+   "provider_name": "Parasail",
+   "quantization": "fp4",
+   "eligible": false,
+   "reasons": [
+    "quantization fp4"
+   ]
+  },
+  {
+   "tag": "fireworks/us",
+   "provider_name": "Fireworks",
+   "quantization": "unknown",
+   "eligible": false,
+   "reasons": [
+    "quantization unknown",
+    "no seed"
+   ]
+  }
+ ],
+ "models": {
+  "z-ai/glm-5.3-flash": {
+   "canonical_slug": "z-ai/glm-5.3-flash-20260826",
+   "reasoning": {
+    "mandatory": true,
+    "default_enabled": true,
+    "supported_efforts": [
+     "max",
+     "high",
+     "low"
+    ],
+    "default_effort": "max"
+   },
+   "snapshot": "configs/provider_snapshots/glm-5.3-flash_endpoints_20261116T004830Z.json",
+   "snapshot_sha256": "c2f4180686a7cf145269fe6bc662486cc38fbf46c26bacd72b2c1a2f7132b0d2",
+   "execution_hold": false,
+   "authorization": "Antonio, 16 November 2026 (addendum 08A): every eligible fp8 route",
+   "routes": [
+    {
+     "tag": "gmicloud/fp8",
+     "provider_name": "GMICloud",
+     "quantization": "fp8",
+     "model_id": "z-ai/glm-5.3-flash",
+     "name": "GMICloud | z-ai/glm-5.3-flash-20260826",
+     "context_length": 1048576,
+     "max_completion_tokens": 943718,
+     "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "seed",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+     ],
+     "pricing": {
+      "prompt": "0.000000075",
+      "completion": "0.00000025",
+      "input_cache_read": "0.000000015",
+      "discount": 0.5
+     },
+     "price_source": "configs/provider_snapshots/glm-5.3-flash_endpoints_20261116T004830Z.json",
+     "price_source_sha256": "c2f4180686a7cf145269fe6bc662486cc38fbf46c26bacd72b2c1a2f7132b0d2",
+     "price_ceiling": {
+      "prompt": "1.50E-7",
+      "completion": "5.0E-7",
+      "request": "0"
+     }
+    },
+    {
+     "tag": "near-ai/fp8",
+     "provider_name": "Near AI",
+     "quantization": "fp8",
+     "model_id": "z-ai/glm-5.3-flash",
+     "name": "Near AI | z-ai/glm-5.3-flash-20260826",
+     "context_length": 1048576,
+     "max_completion_tokens": 943718,
+     "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+     ],
+     "pricing": {
+      "prompt": "0.00000008",
+      "completion": "0.0000005",
+      "input_cache_read": "0.000000012",
+      "discount": 0
+     },
+     "price_source": "configs/provider_snapshots/glm-5.3-flash_endpoints_20261116T004830Z.json",
+     "price_source_sha256": "c2f4180686a7cf145269fe6bc662486cc38fbf46c26bacd72b2c1a2f7132b0d2",
+     "price_ceiling": {
+      "prompt": "1.6E-7",
+      "completion": "0.0000010",
+      "request": "0"
+     }
+    },
+    {
+     "tag": "novita/fp8",
+     "provider_name": "Novita",
+     "quantization": "fp8",
+     "model_id": "z-ai/glm-5.3-flash",
+     "name": "Novita | z-ai/glm-5.3-flash-20260826",
+     "context_length": 1048576,
+     "max_completion_tokens": 131072,
+     "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+     ],
+     "pricing": {
+      "prompt": "0.000000084",
+      "completion": "0.00000028",
+      "input_cache_read": "0.0000000168",
+      "discount": 0.44
+     },
+     "price_source": "configs/provider_snapshots/glm-5.3-flash_endpoints_20261116T004830Z.json",
+     "price_source_sha256": "c2f4180686a7cf145269fe6bc662486cc38fbf46c26bacd72b2c1a2f7132b0d2",
+     "price_ceiling": {
+      "prompt": "1.68E-7",
+      "completion": "5.6E-7",
+      "request": "0"
+     }
+    },
+    {
+     "tag": "morph/fp8",
+     "provider_name": "Morph",
+     "quantization": "fp8",
+     "model_id": "z-ai/glm-5.3-flash",
+     "name": "Morph | z-ai/glm-5.3-flash-20260826",
+     "context_length": 1048576,
+     "max_completion_tokens": 943718,
+     "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+     ],
+     "pricing": {
+      "prompt": "0.000000174",
+      "completion": "0.000000183",
+      "input_cache_read": "0.000000075",
+      "discount": 0
+     },
+     "price_source": "configs/provider_snapshots/glm-5.3-flash_endpoints_20261116T004830Z.json",
+     "price_source_sha256": "c2f4180686a7cf145269fe6bc662486cc38fbf46c26bacd72b2c1a2f7132b0d2",
+     "price_ceiling": {
+      "prompt": "3.48E-7",
+      "completion": "3.66E-7",
+      "request": "0"
+     }
+    },
+    {
+     "tag": "inceptron/fp8",
+     "provider_name": "Inceptron",
+     "quantization": "fp8",
+     "model_id": "z-ai/glm-5.3-flash",
+     "name": "Inceptron | z-ai/glm-5.3-flash-20260826",
+     "context_length": 1048576,
+     "max_completion_tokens": 943718,
+     "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "parallel_tool_calls",
+      "presence_penalty",
+      "reasoning",
+      "reasoning_effort",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_logprobs",
+      "top_p"
+     ],
+     "pricing": {
+      "prompt": "0.000000175",
+      "completion": "0.00000047",
+      "input_cache_read": "0.00000004",
+      "discount": 0
+     },
+     "price_source": "configs/provider_snapshots/glm-5.3-flash_endpoints_20261116T004830Z.json",
+     "price_source_sha256": "c2f4180686a7cf145269fe6bc662486cc38fbf46c26bacd72b2c1a2f7132b0d2",
+     "price_ceiling": {
+      "prompt": "3.50E-7",
+      "completion": "9.4E-7",
+      "request": "0"
+     }
+    }
+   ]
+  }
+ }
+}

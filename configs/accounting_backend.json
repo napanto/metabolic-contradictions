@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "registered",
+  "backend": "sqlite",
+  "vendor": "openrouter",
+  "database_path": "data/raw/v2/accounting/openrouter.sqlite3",
+  "json_export_path": "results/openrouter_spend.json",
+  "source_json_sha256": "c473f08a820fea761df73155869ea71b80c3417a41a8eb005c34c2b1513d7b70",
+  "evaluation_config_sha256": "d8f7d94abc966626d5153bcb6307678ee34541c942787aeb904380a939c1d80a",
+  "protocol_path": "PROTOCOL_ADDENDUM_06_SQLITE_ACCOUNTING.md",
+  "protocol_sha256": "4f90f670915362ec1d8374d6de636f5f8c9d7457b7cf70d07347a0cb94461b03",
+  "model_post_wall_deadline_seconds": 480,
+  "runtime_sha256": {
+    "src/chl_rag/sqlite_ledger.py": "0a1704db0e2bad9b3ee99a8f0bd07a90bea2a5b268e9a1f4451beb8d5e5b775a",
+    "scripts/run_v2_sqlite_production.py": "b1074d573bf7768bc911e86c352cbe1e776357e0f3c6418b0ed7a8eb3248070b",
+    "src/chl_rag/spend_budget.py": "8423680c5b964dc0bf4e8ff607b1544499feaa84b08bf01451f91227e9df290f",
+    "src/chl_rag/model_runs.py": "25d72edaa6a676eb539ab5f19aad2b36e501dad98765c9452cdad8ed65a99b44"
+  }
+}

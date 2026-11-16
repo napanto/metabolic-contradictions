@@ -1,0 +1,46 @@
+{
+ "addendum": "08E (lists prepared before registration; nothing classified)",
+ "encoder": "MedCPT query encoder (primary by the registered criterion)",
+ "claims_sha256": "c84ecd680bcaf08494a7ae2850449fd016e663ebfa544c2fd602783fe2c09f38",
+ "frame_08D_sha256": "ff181a613fb648ae4dc3968640bd6c0fc4f58a9932c95d6570d47f4aa7733543",
+ "new_pairs_enumerated_at_or_above": 0.88,
+ "lists": {
+  "0.90": {
+   "path": "./data/derived/production_v21_08e/pairs_08e_tau090.jsonl",
+   "sha256": "04fb598223bb8c749dea71550a929bb5c40e9a3587473acec04ba6fa71beedda",
+   "pairs": 31598,
+   "steps": {
+    "1_controls_T3": 1500,
+    "2a_T1": 5993,
+    "2b_T2": 12992,
+    "3_band_T1T2": 11113
+   },
+   "band": [
+    0.88,
+    0.9
+   ],
+   "classify_through_step_2": 20485
+  },
+  "0.92": {
+   "path": "./data/derived/production_v21_08e/pairs_08e_tau092.jsonl",
+   "sha256": "1aaf81deb264fbad32ea095cf2f23053bfb848efd44d50521dc7432352bd821f",
+   "pairs": 20485,
+   "steps": {
+    "1_controls_T3": 1500,
+    "2a_T1": 3177,
+    "2b_T2": 7383,
+    "3_band_T1T2": 8425
+   },
+   "band": [
+    0.9,
+    0.92
+   ],
+   "classify_through_step_2": 12060
+  }
+ },
+ "offline_request_check": {
+  "requests_built": 6,
+  "api_calls": 0
+ },
+ "seconds": 58.4
+}

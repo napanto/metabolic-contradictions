@@ -1,0 +1,171 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "pmid": {
+      "type": "string"
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "candidate_alias": {
+            "type": "string"
+          },
+          "claims": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "claim_id": {
+                  "type": "string"
+                },
+                "core": {
+                  "enum": [
+                    "supported",
+                    "unsupported",
+                    "unclear"
+                  ]
+                },
+                "critical_errors": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "invented_comparison",
+                      "reversed_direction"
+                    ]
+                  }
+                },
+                "matched_result_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "field_groups": {
+                  "type": "object",
+                  "properties": {
+                    "comparison": {
+                      "$ref": "#/$defs/shape_c6e1bb7fefd6908b"
+                    },
+                    "significance": {
+                      "$ref": "#/$defs/shape_c6e1bb7fefd6908b"
+                    },
+                    "population": {
+                      "$ref": "#/$defs/shape_c6e1bb7fefd6908b"
+                    },
+                    "sample_size": {
+                      "$ref": "#/$defs/shape_c6e1bb7fefd6908b"
+                    },
+                    "analysis": {
+                      "$ref": "#/$defs/shape_c6e1bb7fefd6908b"
+                    }
+                  },
+                  "required": [
+                    "comparison",
+                    "significance",
+                    "population",
+                    "sample_size",
+                    "analysis"
+                  ],
+                  "additionalProperties": false
+                },
+                "duplicate_of": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "note": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "claim_id",
+                "core",
+                "critical_errors",
+                "matched_result_ids",
+                "field_groups",
+                "duplicate_of",
+                "note"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "candidate_alias",
+          "claims"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "pmid",
+    "candidates"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "shape_291dd79b0f076502": {
+      "type": "object",
+      "properties": {
+        "detail_id": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "judgment": {
+          "enum": [
+            "supported",
+            "unsupported",
+            "unclear"
+          ]
+        },
+        "matched_inventory_detail_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "detail_id",
+        "text",
+        "judgment",
+        "matched_inventory_detail_ids"
+      ],
+      "additionalProperties": false
+    },
+    "shape_c6e1bb7fefd6908b": {
+      "type": "object",
+      "properties": {
+        "judgment": {
+          "enum": [
+            "supported",
+            "unsupported",
+            "unclear",
+            "not_represented"
+          ]
+        },
+        "emitted_details": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/shape_291dd79b0f076502"
+          }
+        }
+      },
+      "required": [
+        "judgment",
+        "emitted_details"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,1146 @@
+{
+  "instrument_version": "2.0",
+  "pipeline_version": "2.0",
+  "wording": {
+    "it": {
+      "heading": "Controlla un risultato per ciascun abstract, poi confrontali.",
+      "help": "Usa gli abstract qui sotto. Non servono gli articoli completi né altri studi.",
+      "yes": "Sì",
+      "no": "No",
+      "cannot_tell": "Non posso stabilirlo",
+      "q1_title": "Il risultato estratto corrisponde all’abstract {side}?",
+      "q1_help": "Controlla tutte le righe, anche i campi indicati come Non estratto o Non riportato.",
+      "q1_absence": "Un campo vuoto è corretto solo se l’abstract non riporta quell’informazione. Se l’informazione è nell’abstract ma manca nell’estrazione, scegli No. Scegli Sì anche per un campo che non si applica a questo risultato e non è stato inventato. Non posso stabilirlo significa che il testo non ti permette di giudicare, non che l’informazione manca.",
+      "rows": [
+        [
+          "result",
+          "Risultato: cosa è stato studiato, misurato e osservato."
+        ],
+        [
+          "groups",
+          "Persone o gruppi, compreso il sottogruppo a cui si riferisce il risultato."
+        ],
+        [
+          "sample_size",
+          "Numerosità: il numero e il gruppo a cui si riferisce."
+        ],
+        [
+          "comparison",
+          "Confronto: tra gruppi, rispetto al valore iniziale o associazione."
+        ],
+        [
+          "analysis",
+          "Studio e analisi, compresi gli aggiustamenti e le analisi separate dei sottogruppi."
+        ],
+        [
+          "significance",
+          "Evidenza statistica: il p-value, l’intervallo o le parole degli autori sostengono il risultato estratto."
+        ],
+        [
+          "context",
+          "Contesto: dose, durata, luogo e materiale biologico."
+        ]
+      ],
+      "problem_title": "Qual è il problema? Puoi scegliere più risposte.",
+      "problems": [
+        [
+          "wrong_value",
+          "Un valore o una formulazione è diverso dall’abstract"
+        ],
+        [
+          "not_supported_by_abstract",
+          "L’abstract non lo sostiene"
+        ],
+        [
+          "missing_from_extraction",
+          "Manca un dato o un’eccezione che l’abstract riporta"
+        ],
+        [
+          "wrong_group_time",
+          "Gruppo o momento della misura errati"
+        ],
+        [
+          "wrong_direction",
+          "Direzione del risultato invertita"
+        ],
+        [
+          "wrong_exposure_outcome",
+          "Esposizione o esito errati"
+        ],
+        [
+          "planned_as_observed",
+          "Un risultato atteso è presentato come osservato"
+        ]
+      ],
+      "q1_relevance_title": "Il problema cambia il risultato o il confronto?",
+      "q1_relevance_help": "Una numerosità mancante è un errore, ma di solito il risultato resta lo stesso. Un gruppo di confronto inventato cambia il risultato. Se in uno dei due risultati c’è un errore che lo cambia, scegli Sì anche se l’altro è incerto.",
+      "relevance_options": [
+        [
+          "material",
+          "Sì, cambia il risultato o il confronto"
+        ],
+        [
+          "not_material",
+          "No, il risultato e il confronto restano gli stessi"
+        ],
+        [
+          "cannot_establish_comparison",
+          "Non riesco a stabilire cosa si sta confrontando"
+        ]
+      ],
+      "q2_title": "Questi due risultati si possono confrontare?",
+      "q2_rows": [
+        [
+          "exposure",
+          "Riguardano la stessa esposizione o lo stesso intervento?"
+        ],
+        [
+          "outcome",
+          "Misurano lo stesso esito?"
+        ],
+        [
+          "comparison",
+          "Le misure e i confronti sono abbastanza simili?"
+        ]
+      ],
+      "q2_help": "Controlla il gruppo di riferimento, la misura e il momento in cui è stata fatta. Popolazioni o metodi diversi possono comunque essere confrontabili. Unità convertibili non impediscono da sole il confronto. Un farmaco e la sua classe si possono confrontare solo quando il confronto ha senso.",
+      "reason": "Cosa impedisce il confronto?",
+      "exposure_reasons": [
+        [
+          "different_exposure",
+          "Esposizioni o interventi diversi"
+        ],
+        [
+          "molecule_class",
+          "Un farmaco specifico rispetto a una classe di farmaci"
+        ]
+      ],
+      "outcome_reason": "Gli esiti differiscono per ciò che misurano o per come sono definiti.",
+      "primary_reason": "Qual è il motivo principale per cui non puoi confrontarli?",
+      "q3_title": "I due studi riportano lo stesso risultato?",
+      "q3_help": "Scegli Sì se i risultati vanno nella stessa direzione, oppure se entrambi dichiarano di non aver trovato differenze. Effetti di entità diversa possono concordare. Una differenza nella sola significatività statistica non è un risultato opposto. Se uno studio riporta un effetto e l’altro dice di non averlo confermato, scegli No anche se le stime vanno nella stessa direzione.",
+      "q4_title": "In cosa differiscono i risultati?",
+      "q4_options": [
+        [
+          "effect_vs_no_effect",
+          "Uno riporta un effetto o un’associazione; l’altro non trova un effetto o non lo conferma."
+        ],
+        [
+          "opposite",
+          "Riportano effetti o associazioni in direzioni opposte."
+        ],
+        [
+          "size_only",
+          "Differiscono solo per entità, non per direzione o conclusione."
+        ],
+        [
+          "insufficient",
+          "Gli abstract non danno informazioni sufficienti per decidere."
+        ]
+      ],
+      "q4_help": "Considera le conclusioni degli abstract. Non trovare o non confermare un effetto è diverso dal trovare l’effetto opposto.",
+      "q5_title": "Negli abstract c’è una differenza che potrebbe spiegare i risultati opposti?",
+      "q5_help": "Confronta ciò che ogni abstract dice del proprio studio. Gli autori non devono discutere l’altro studio. Scegli una differenza sostenuta dai testi, senza ricorrere a spiegazioni esterne. Scegli No se gli studi sono descritti abbastanza bene ma non trovi una spiegazione. Se mancano dettagli essenziali, scegli Non posso stabilirlo.",
+      "q5_factor": "Quale differenza potrebbe spiegarli?",
+      "q5_factor_help": "Scegli la differenza meglio sostenuta dai testi. Una numerosità diversa non basta da sola: deve aiutare a spiegare il risultato. Puoi citare altre differenze nella nota facoltativa.",
+      "factors": [
+        [
+          "population",
+          "Persone studiate: età, sesso o altre condizioni"
+        ],
+        [
+          "region",
+          "Luogo di reclutamento"
+        ],
+        [
+          "disease_subtype",
+          "Sottotipo della malattia"
+        ],
+        [
+          "design",
+          "Disegno dello studio"
+        ],
+        [
+          "comparator",
+          "Gruppo di confronto"
+        ],
+        [
+          "molecule_class",
+          "Un farmaco specifico rispetto a una classe di farmaci"
+        ],
+        [
+          "dose",
+          "Dose"
+        ],
+        [
+          "duration",
+          "Durata o periodo di osservazione"
+        ],
+        [
+          "outcome_definition",
+          "Definizione o misura dell’esito"
+        ],
+        [
+          "biological_sample",
+          "Materiale biologico, come siero o plasma"
+        ],
+        [
+          "statistical_analysis",
+          "Analisi statistica o aggiustamenti"
+        ],
+        [
+          "sample_size",
+          "Numerosità, se aiuta a spiegare il risultato"
+        ],
+        [
+          "other",
+          "Un’altra differenza"
+        ],
+        [
+          "missing_context",
+          "Non indicato: mancano informazioni essenziali sul contesto"
+        ],
+        [
+          "cannot_determine",
+          "Non si può stabilire da questi abstract"
+        ]
+      ],
+      "other_detail": "Descrivi brevemente la differenza",
+      "select": "Scegli una risposta",
+      "next": "Continua",
+      "back": "Indietro",
+      "review": "Le risposte sono pronte per l’invio",
+      "review_help": "Puoi tornare indietro e modificarle prima di salvarle.",
+      "review_choices": "Rivedi le tue scelte",
+      "note": "Nota facoltativa su questi risultati",
+      "note_help": "Puoi citare un’altra differenza o un altro risultato omesso dall’estrazione.",
+      "save": "Salva e continua",
+      "draft": "La bozza viene salvata su questo dispositivo, se il browser lo consente. Viene cancellata quando il server conferma la risposta.",
+      "error": "Completa tutte le righe visibili. Per ogni No, indica il problema o il motivo che impedisce il confronto.",
+      "no_identified_error": "Indica prima un errore preciso, oppure scegli che non riesci a stabilire il confronto.",
+      "keyboard": "Usa Tab e le frecce per spostarti tra le scelte visibili. Le scorciatoie non saltano domande.",
+      "no_js": "Per seguire le domande serve JavaScript. Attivalo e ricarica la pagina: nessuna risposta è stata inviata.",
+      "block": "Domanda",
+      "note_saved": "Il commento sarà salvato insieme alla risposta.",
+      "field_labels": {
+        "sample_size": "Numerosità",
+        "exposure": "Esposizione o intervento",
+        "outcome": "Esito",
+        "direction": "Direzione",
+        "group_name": "Nome del gruppo",
+        "population": "Popolazione",
+        "subgroup": "Sottogruppo del risultato",
+        "design": "Disegno",
+        "adjustment": "Aggiustamento",
+        "covariates": "Variabili di aggiustamento",
+        "estimate": "Stima",
+        "p_value": "p-value",
+        "interval": "Intervallo di confidenza",
+        "authors_significance": "Significatività secondo gli autori",
+        "hedged": "Formulato come ipotesi",
+        "region": "Luogo",
+        "no_stats": "Il sistema non ha trovato p-value, intervallo né parole degli autori sulla significatività: controlla l’abstract."
+      },
+      "keywords": {
+        "result": "Risultato",
+        "groups": "Persone e gruppi",
+        "sample_size": "Numerosità",
+        "comparison": "Confronto",
+        "analysis": "Studio e analisi",
+        "significance": "Evidenza statistica",
+        "context": "Contesto",
+        "relevance": "Effetto sul risultato",
+        "exposure": "Stessa esposizione",
+        "outcome": "Stesso esito",
+        "measures": "Misure e confronti",
+        "primary": "Motivo principale",
+        "q3": "Stesso risultato",
+        "q4": "Tipo di differenza",
+        "q5": "Spiegazione negli abstract",
+        "factor": "Differenza indicata"
+      },
+      "missing_help": "Non estratto significa che il sistema ha lasciato il campo vuoto; Non riportato significa che il sistema dice che l’abstract non lo riporta. Entrambe le indicazioni possono essere sbagliate: controlla tutto l’abstract.",
+      "checks": {
+        "result": {
+          "name": "Risultato",
+          "question": "L’estrazione riporta correttamente che cosa è stato studiato, misurato e osservato nell’abstract {side}?",
+          "how": "Confronta il risultato con il testo evidenziato, anche nella direzione.",
+          "help": "Controlla esposizione o intervento, esito e risultato. Scegli No se la direzione è invertita o un risultato atteso è presentato come già osservato.",
+          "example": "Se l’abstract riporta un livello più basso e l’estrazione dice più alto, scegli No e Direzione del risultato invertita."
+        },
+        "groups": {
+          "name": "Persone e gruppi",
+          "question": "L’estrazione indica correttamente le persone, i gruppi e il sottogruppo di questo risultato nell’abstract {side}?",
+          "how": "Controlla a chi si riferisce il risultato, compresi eventuali sottogruppi.",
+          "help": "Controlla i gruppi dello studio e il sottogruppo di questo risultato, non solo la popolazione generale. Non supporre che tutti i partecipanti appartengano a un sottogruppo.",
+          "example": "Se il risultato riguarda donne con una certa condizione e l’estrazione dice tutte le donne, scegli No."
+        },
+        "sample_size": {
+          "name": "Numerosità",
+          "question": "L’estrazione riporta le numerosità corrette, per l’intero studio e per ciascun gruppo, nell’abstract {side}?",
+          "how": "Controlla ogni numero e il suo gruppo: un numero presente nell’abstract ma assente qui è un errore.",
+          "help": "Distingui l’intero studio da un gruppo o sottogruppo e le persone dagli studi o dagli eventi. Non ricavare una numerosità non riportata a partire dal totale.",
+          "example": "Se 80 è il totale dei due gruppi ma l’estrazione attribuisce 80 a ciascun gruppo, scegli No."
+        },
+        "comparison": {
+          "name": "Confronto",
+          "question": "L’estrazione descrive correttamente che cosa viene confrontato nell’abstract {side}?",
+          "how": "Distingui confronto tra gruppi, variazione dal valore iniziale e associazione.",
+          "help": "Controlla il gruppo di riferimento e il momento della misura. Una variazione nello stesso gruppo non è una differenza tra trattamenti; un’associazione non richiede due gruppi di trattamento.",
+          "example": "Se la glicemia diminuisce in entrambi i gruppi, questo da solo non dimostra che un trattamento la riduca più dell’altro."
+        },
+        "analysis": {
+          "name": "Studio e analisi",
+          "question": "L’estrazione descrive correttamente lo studio e l’analisi nell’abstract {side}?",
+          "how": "Controlla il disegno, gli aggiustamenti e le analisi separate dei sottogruppi.",
+          "help": "Considerare una variabile nell’aggiustamento non equivale ad analizzare sottogruppi separati. Controlla nel testo anche la popolazione e il metodo dell’analisi.",
+          "example": "Usare il BMI come variabile di aggiustamento non significa aver analizzato separatamente persone normopeso e sovrappeso."
+        },
+        "significance": {
+          "name": "Evidenza statistica",
+          "question": "L’estrazione corrisponde all’evidenza statistica riportata nell’abstract {side}?",
+          "how": "Controlla p-value, intervallo o parole degli autori e a cosa si riferiscono.",
+          "help": "Controlla sia i numeri sia le parole degli autori. Un p-value per l’interazione non è automaticamente quello del confronto principale. Non dedurre la significatività dalla direzione o dall’assenza del p-value.",
+          "example": "Un p-value relativo all’andamento nel tempo non va presentato come prova di una differenza tra due trattamenti."
+        },
+        "context": {
+          "name": "Contesto",
+          "question": "L’estrazione riporta correttamente dose, durata, luogo e materiale biologico dell’abstract {side}?",
+          "how": "Un campo vuoto è corretto solo se l’abstract non riporta quell’informazione.",
+          "help": "Verifica nel testo ogni valore mostrato. Il materiale biologico è, per esempio, siero o plasma: non è il numero dei partecipanti.",
+          "example": "Se l’abstract parla di plasma e l’estrazione indica siero, scegli No."
+        }
+      },
+      "how": {
+        "q2_exposure": "Controlla che cosa è stato studiato, non solo se i nomi si somigliano.",
+        "q2_outcome": "Controlla che cosa è stato misurato e come è stato definito.",
+        "q2_comparison": "Controlla riferimento, misura e momento; unità convertibili possono concordare.",
+        "q1_relevance": "Un errore resta un errore: qui decidi solo se cambia il risultato o il confronto.",
+        "q3": "Confronta direzione e conclusioni, non la sola significatività statistica.",
+        "q4": "Distingui mancata conferma, direzioni opposte e sola differenza di entità.",
+        "q5": "Usa una differenza pertinente descritta negli abstract, non conoscenze esterne.",
+        "q5_factor": "Scegli la differenza meglio sostenuta dai testi.",
+        "q2_primary": "Conserva tutti i motivi; scegli quello decisivo per il tuo giudizio."
+      },
+      "examples": {
+        "q2_exposure": "Un farmaco e la sua classe sono confrontabili solo se il confronto ha senso per questi risultati.",
+        "q2_outcome": "Glicemia e peso corporeo sono esiti diversi, anche se entrambi gli studi riguardano il diabete.",
+        "q2_comparison": "Un valore alla settimana 12 e una variazione dal valore iniziale non sono automaticamente lo stesso confronto.",
+        "q1_relevance": "Un numero mancante è un errore che di solito lascia invariato il risultato; un gruppo di confronto inventato lo cambia.",
+        "q3": "Due riduzioni possono concordare anche se diverse per entità. Un’esplicita mancata conferma passa alla domanda successiva.",
+        "q4": "Un aumento rispetto a un effetto non confermato è diverso da un aumento rispetto a una diminuzione.",
+        "q5": "Dosi diverse descritte negli abstract possono spiegare risultati opposti; una dieta non menzionata non è una spiegazione disponibile.",
+        "q5_factor": "Scegli Analisi statistica per aggiustamenti diversi e Numerosità per una differenza numerica pertinente.",
+        "q2_primary": "Se differiscono sia l’esposizione sia l’esito, conserva entrambe le risposte e scegli qui il motivo decisivo."
+      },
+      "q1_frame": "Per ognuna delle 7 righe, confronta l’estrazione con l’abstract.",
+      "help_label": "Aiuto per questa domanda",
+      "help_close": "Chiudi",
+      "example_label": "Esempio",
+      "answer_guide": "Scegli Sì se corrisponde al testo, No se trovi un errore. Se il testo non basta per giudicare, scegli Non posso stabilirlo.",
+      "review_block": "Rivedi",
+      "completed_block": "{side}: {count} di 7 controlli fatti"
+    },
+    "en": {
+      "heading": "Check one finding from each abstract, then compare them.",
+      "help": "Use the abstracts shown here. You do not need full texts or other studies.",
+      "yes": "Yes",
+      "no": "No",
+      "cannot_tell": "Cannot tell",
+      "q1_title": "Does this extracted finding match abstract {side}?",
+      "q1_help": "Check every row, including fields marked Not extracted or Not reported.",
+      "q1_absence": "An empty field is correct only when the abstract does not give that information. If the abstract gives it but the extraction leaves it out, choose No. Choose Yes for a field that does not apply to this finding and has not been invented. Cannot tell means the text does not let you judge, not that the information is missing.",
+      "rows": [
+        [
+          "result",
+          "Finding: what was studied, measured and found."
+        ],
+        [
+          "groups",
+          "People or groups, including the subgroup for this finding."
+        ],
+        [
+          "sample_size",
+          "Sample size: the number and the group it refers to."
+        ],
+        [
+          "comparison",
+          "Comparison: between groups, a change from baseline, or an association."
+        ],
+        [
+          "analysis",
+          "Study and analysis, including adjustment or separate subgroup analyses."
+        ],
+        [
+          "significance",
+          "Statistical evidence: the p-value, interval or wording supports the extracted finding."
+        ],
+        [
+          "context",
+          "Context: dose, duration, place and biological material."
+        ]
+      ],
+      "problem_title": "What is wrong? Select all that apply.",
+      "problems": [
+        [
+          "wrong_value",
+          "A value or wording differs from the abstract"
+        ],
+        [
+          "not_supported_by_abstract",
+          "Not supported by the abstract"
+        ],
+        [
+          "missing_from_extraction",
+          "A value or exception given in the abstract is missing"
+        ],
+        [
+          "wrong_group_time",
+          "Wrong group or time point"
+        ],
+        [
+          "wrong_direction",
+          "Wrong direction"
+        ],
+        [
+          "wrong_exposure_outcome",
+          "Wrong exposure or outcome"
+        ],
+        [
+          "planned_as_observed",
+          "A planned result is presented as observed"
+        ]
+      ],
+      "q1_relevance_title": "Does the problem change the finding or the comparison?",
+      "q1_relevance_help": "A missing sample size is an error, but the finding usually stays the same. An invented comparison group changes the finding. If one finding has an error that changes it, choose Yes even if the other is uncertain.",
+      "relevance_options": [
+        [
+          "material",
+          "Yes, it changes the finding or the comparison"
+        ],
+        [
+          "not_material",
+          "No, the finding and the comparison stay the same"
+        ],
+        [
+          "cannot_establish_comparison",
+          "I cannot establish what is being compared"
+        ]
+      ],
+      "q2_title": "Can these two findings be compared?",
+      "q2_rows": [
+        [
+          "exposure",
+          "Do they concern the same exposure or intervention?"
+        ],
+        [
+          "outcome",
+          "Do they measure the same outcome?"
+        ],
+        [
+          "comparison",
+          "Are the measurements and comparisons similar enough?"
+        ]
+      ],
+      "q2_help": "Check the reference group, measurement and time point. Different populations or methods may still be comparable. Units that can be converted do not by themselves prevent comparison. A specific medicine and its class can be compared only when that comparison makes sense.",
+      "reason": "What prevents comparison?",
+      "exposure_reasons": [
+        [
+          "different_exposure",
+          "Different exposures or interventions"
+        ],
+        [
+          "molecule_class",
+          "A specific medicine versus a medicine class"
+        ]
+      ],
+      "outcome_reason": "The outcomes differ in what they measure or how they are defined.",
+      "primary_reason": "Which of these is the main reason you cannot compare them?",
+      "q3_title": "Do both studies report the same finding?",
+      "q3_help": "Choose Yes if both report the same direction, or both explicitly report no difference. Different effect sizes can still agree. A difference in statistical significance alone is not an opposite finding. If one study reports an effect and the other says it did not confirm it, choose No, even if the estimates point in the same direction.",
+      "q4_title": "How do the results differ?",
+      "q4_options": [
+        [
+          "effect_vs_no_effect",
+          "One reports an effect or association; the other reports no effect or does not confirm it."
+        ],
+        [
+          "opposite",
+          "They report effects or associations in opposite directions."
+        ],
+        [
+          "size_only",
+          "They differ only in size, not in direction or conclusion."
+        ],
+        [
+          "insufficient",
+          "The abstracts do not give enough information to decide."
+        ]
+      ],
+      "q4_help": "Choose what the abstracts conclude. Reporting no effect or not confirming an effect is different from reporting the opposite effect.",
+      "q5_title": "Do the abstracts describe a difference that could explain the opposite findings?",
+      "q5_help": "Compare what each abstract says about its own study. The authors do not need to discuss the other study. Choose a difference supported by the texts, not an explanation from outside knowledge. Choose No when the studies are described well enough but you find no explanation. If essential details are missing, choose Cannot tell.",
+      "q5_factor": "Which difference could explain this?",
+      "q5_factor_help": "Choose the best-supported difference. A different sample size alone is not enough: it must help explain the finding. You can mention other differences in the optional note.",
+      "factors": [
+        [
+          "population",
+          "People studied: age, sex or other conditions"
+        ],
+        [
+          "region",
+          "Where participants were recruited"
+        ],
+        [
+          "disease_subtype",
+          "Disease subtype"
+        ],
+        [
+          "design",
+          "Study design"
+        ],
+        [
+          "comparator",
+          "Comparison group"
+        ],
+        [
+          "molecule_class",
+          "A specific medicine versus a medicine class"
+        ],
+        [
+          "dose",
+          "Dose"
+        ],
+        [
+          "duration",
+          "Duration or follow-up"
+        ],
+        [
+          "outcome_definition",
+          "How the outcome was defined or measured"
+        ],
+        [
+          "biological_sample",
+          "Biological material, such as serum or plasma"
+        ],
+        [
+          "statistical_analysis",
+          "Statistical analysis or adjustment"
+        ],
+        [
+          "sample_size",
+          "Sample size, when it helps explain the finding"
+        ],
+        [
+          "other",
+          "Another difference"
+        ],
+        [
+          "missing_context",
+          "Not stated: essential context is missing"
+        ],
+        [
+          "cannot_determine",
+          "Cannot determine from these abstracts"
+        ]
+      ],
+      "other_detail": "Briefly describe the difference",
+      "select": "Choose an answer",
+      "next": "Continue",
+      "back": "Back",
+      "review": "Your answers are ready to save",
+      "review_help": "You can go back to change them before saving.",
+      "review_choices": "Review your choices",
+      "note": "Optional note about these findings",
+      "note_help": "You can mention another difference or another result omitted from the extraction.",
+      "save": "Save and continue",
+      "draft": "Your draft is saved on this device when browser storage is available. It is removed after the server confirms your answer.",
+      "error": "Complete each visible row. For every No, choose what is wrong or why the findings cannot be compared.",
+      "no_identified_error": "Choose an identified error first, or choose that you cannot establish the comparison.",
+      "keyboard": "Use Tab and the arrow keys to move through the visible choices. Shortcuts never skip a question.",
+      "no_js": "JavaScript is needed to follow the question path. Enable it and reload; no answer has been sent.",
+      "block": "Question",
+      "note_saved": "Your answer will include this comment.",
+      "field_labels": {
+        "sample_size": "Sample size",
+        "exposure": "Exposure or intervention",
+        "outcome": "Outcome",
+        "direction": "Direction",
+        "group_name": "Group name",
+        "population": "Population",
+        "subgroup": "Subgroup for this finding",
+        "design": "Design",
+        "adjustment": "Adjustment",
+        "covariates": "Adjustment variables",
+        "estimate": "Estimate",
+        "p_value": "p-value",
+        "interval": "Confidence interval",
+        "authors_significance": "Significance according to the authors",
+        "hedged": "Stated as a hypothesis",
+        "region": "Location",
+        "no_stats": "The system found no p-value, interval or authors’ wording about significance: check the abstract."
+      },
+      "keywords": {
+        "result": "Finding",
+        "groups": "People and groups",
+        "sample_size": "Sample size",
+        "comparison": "Comparison",
+        "analysis": "Study and analysis",
+        "significance": "Statistical evidence",
+        "context": "Context",
+        "relevance": "Effect on the finding",
+        "exposure": "Same exposure",
+        "outcome": "Same outcome",
+        "measures": "Measures and comparisons",
+        "primary": "Main reason",
+        "q3": "Same finding",
+        "q4": "How they differ",
+        "q5": "Explanation in the abstracts",
+        "factor": "Difference chosen"
+      },
+      "missing_help": "Not extracted means the system left the field empty; Not reported means the system says the abstract does not give it. Either can be wrong: check the whole abstract.",
+      "checks": {
+        "result": {
+          "name": "Finding",
+          "question": "Does the extraction correctly report what was studied, measured and found in abstract {side}?",
+          "how": "Compare the finding with the highlighted text, including its direction.",
+          "help": "Check the exposure or intervention, the outcome and the result. Choose No for a wrong direction or an intended result presented as observed.",
+          "example": "If the abstract reports a lower level but the extraction says higher, choose No and Wrong direction."
+        },
+        "groups": {
+          "name": "People and groups",
+          "question": "Does the extraction correctly identify the people, groups and subgroup for this finding in abstract {side}?",
+          "how": "Check who the finding applies to, including any stated subgroup.",
+          "help": "Check the study groups and the subgroup for this result, not just the whole study population. Do not infer that all participants belong to a subgroup.",
+          "example": "If a finding concerns women with a particular condition but the extraction says all women, choose No."
+        },
+        "sample_size": {
+          "name": "Sample size",
+          "question": "Does the extraction give the correct sample sizes, for the whole study and for each group, in abstract {side}?",
+          "how": "Check each number and its group: a number given in the abstract but missing here is an error.",
+          "help": "Distinguish the whole study from a group or subgroup, and people from studies or events. Do not calculate an unreported group size from a total.",
+          "example": "If 80 is the total for two groups but the extraction assigns 80 to each group, choose No."
+        },
+        "comparison": {
+          "name": "Comparison",
+          "question": "Does the extraction correctly describe what was compared in abstract {side}?",
+          "how": "Distinguish groups, change from baseline and association.",
+          "help": "Check the reference group and time point. A change within one group is not a difference between treatments; an association does not require two treatment groups.",
+          "example": "If glucose fell within both treatment groups, that alone does not show that one treatment lowered it more."
+        },
+        "analysis": {
+          "name": "Study and analysis",
+          "question": "Does the extraction correctly describe the study and analysis in abstract {side}?",
+          "how": "Check the design, adjustment and any separate subgroup analyses.",
+          "help": "Adjusting for a variable is different from analysing separate subgroups. Check the analysis population and method against the abstract.",
+          "example": "Using BMI as an adjustment variable does not mean the study analysed normal-weight and overweight groups separately."
+        },
+        "significance": {
+          "name": "Statistical evidence",
+          "question": "Does the extraction match the statistical evidence reported in abstract {side}?",
+          "how": "Check the p-value, interval or wording and what it refers to.",
+          "help": "Check both numbers and the authors’ wording. An interaction p-value is not automatically the p-value for the main comparison. Do not infer significance from a direction or from an absent p-value.",
+          "example": "A p-value for a time trend must not be presented as evidence for a difference between two treatments."
+        },
+        "context": {
+          "name": "Context",
+          "question": "Does the extraction correctly report the dose, duration, place and biological material for abstract {side}?",
+          "how": "An empty field is correct only when the abstract does not give that information.",
+          "help": "Check each value shown against the abstract. Biological material means, for example, serum or plasma; it is not the sample size.",
+          "example": "If the abstract says plasma but the extraction says serum, choose No."
+        }
+      },
+      "how": {
+        "q2_exposure": "Check what was studied, not just whether the names look alike.",
+        "q2_outcome": "Check what was measured and how it was defined.",
+        "q2_comparison": "Check the reference, measurement and time point; convertible units can agree.",
+        "q1_relevance": "An error is still an error: here you only decide whether it changes the finding or the comparison.",
+        "q3": "Compare direction and conclusions, not statistical significance alone.",
+        "q4": "Distinguish non-confirmation, opposite directions and size alone.",
+        "q5": "Use a relevant difference described by the abstracts, not outside knowledge.",
+        "q5_factor": "Choose the difference best supported by the texts.",
+        "q2_primary": "Keep all your reasons; select the one that determines your decision."
+      },
+      "examples": {
+        "q2_exposure": "A particular medicine and its class are comparable only if that comparison makes sense for these findings.",
+        "q2_outcome": "Blood glucose and body weight are different outcomes even if both studies concern diabetes.",
+        "q2_comparison": "A value at week 12 and a change from baseline are not automatically the same comparison.",
+        "q1_relevance": "A missing number is an error that usually leaves the finding unchanged; an invented comparison group changes it.",
+        "q3": "Two reductions can agree despite different sizes. An explicit statement that an effect was not confirmed goes to the next question.",
+        "q4": "An increase versus no confirmed effect is different from an increase versus a decrease.",
+        "q5": "Different doses described in the abstracts may explain opposite findings; an unmentioned diet is not an available explanation.",
+        "q5_factor": "Choose Statistical analysis for different adjustment methods, and Sample size for a relevant numerical difference.",
+        "q2_primary": "If both exposure and outcome differ, retain both checks and select the decisive reason here."
+      },
+      "q1_frame": "For each of the 7 rows, compare the extraction with the abstract.",
+      "help_label": "Help for this question",
+      "help_close": "Close",
+      "example_label": "Example",
+      "answer_guide": "Choose Yes if it matches the text, No if you find an error. If the text is insufficient to judge, choose Cannot tell.",
+      "review_block": "Review",
+      "completed_block": "{side}: {count} of 7 checks done"
+    }
+  },
+  "example_paths": {
+    "extraction_error": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "no",
+            "problems": [
+              "wrong_direction"
+            ]
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q1_relevance": "material"
+    },
+    "not_comparable": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q2": {
+        "exposure": {
+          "answer": "yes"
+        },
+        "outcome": {
+          "answer": "no",
+          "reason": "outcome_definition"
+        },
+        "comparison": {
+          "answer": "yes"
+        }
+      },
+      "q2_primary": "outcome"
+    },
+    "concordant": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q2": {
+        "exposure": {
+          "answer": "yes"
+        },
+        "outcome": {
+          "answer": "yes"
+        },
+        "comparison": {
+          "answer": "yes"
+        }
+      },
+      "q3": "yes"
+    },
+    "not_replicated": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q2": {
+        "exposure": {
+          "answer": "yes"
+        },
+        "outcome": {
+          "answer": "yes"
+        },
+        "comparison": {
+          "answer": "yes"
+        }
+      },
+      "q3": "no",
+      "q4": "effect_vs_no_effect"
+    },
+    "apparent_contradiction": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q2": {
+        "exposure": {
+          "answer": "yes"
+        },
+        "outcome": {
+          "answer": "yes"
+        },
+        "comparison": {
+          "answer": "yes"
+        }
+      },
+      "q3": "no",
+      "q4": "opposite",
+      "q5": {
+        "answer": "yes",
+        "factor": "population"
+      }
+    },
+    "contradictory": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q2": {
+        "exposure": {
+          "answer": "yes"
+        },
+        "outcome": {
+          "answer": "yes"
+        },
+        "comparison": {
+          "answer": "yes"
+        }
+      },
+      "q3": "no",
+      "q4": "opposite",
+      "q5": {
+        "answer": "no"
+      }
+    }
+  },
+  "validation_source": "app/instrument.py",
+  "presentation_source": "app/presentation.py"
+}

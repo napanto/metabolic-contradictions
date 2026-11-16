@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v2-human-collection-closure-1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "const": "recorded"
+    },
+    "human_analysis_policy_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "authorized_by": {
+      "const": "Antonio"
+    },
+    "authorization_quote": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorized_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "relayed_by": {
+      "const": "Claude"
+    },
+    "closed_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "schema_version",
+    "status",
+    "human_analysis_policy_sha256",
+    "authorized_by",
+    "authorization_quote",
+    "authorized_at",
+    "recorded_at",
+    "relayed_by",
+    "closed_at"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": "v2-source-4",
+  "numbering": "unchanged v1 sentence numbering and literal text",
+  "override": "explicit context-only section headings exclude result evidence",
+  "context_sections": [
+    "background",
+    "aim",
+    "aims",
+    "objective",
+    "objectives",
+    "method",
+    "methods",
+    "methodology",
+    "study design",
+    "materials and methods",
+    "primary endpoint",
+    "outcome measures"
+  ],
+  "result_sections": [
+    "result",
+    "results",
+    "conclusion",
+    "conclusions",
+    "finding",
+    "findings"
+  ],
+  "mixed_result_context_heading": "retain frozen base eligibility when a result/conclusion heading is also explicit",
+  "other_sections": "retain existing source eligibility, including the frozen unstructured heuristic",
+  "mutation": "never edit original text or strip context",
+  "quote_matching": "exact substring first; otherwise collapse Unicode whitespace runs to one ASCII space in comparison only; preserve case and every non-whitespace code point; retain raw text",
+  "model_display": "v2-model-source-view-1: collapse Unicode whitespace runs in displayed source sentences to ASCII space before calls; preserve raw source and all non-whitespace code points; bind both views",
+  "policy_sha256": "4145d235eef7adef9886c1b2976d754adcd1a1a6f6c4832a093ab18775257958"
+}

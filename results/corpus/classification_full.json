@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "scope": "full",
+  "binding": {
+    "config_sha256": "d8f7d94abc966626d5153bcb6307678ee34541c942787aeb904380a939c1d80a",
+    "protocol_commit": "5dd323c3753530ac2431126ef37bb8b26471f2e8",
+    "authority_commits": {
+      "PROTOCOL_ADDENDUM_05_ASTRA_ONLY.md": "613ca4767f144df1c39c028927025d5740ff71f5",
+      "PROTOCOL_ADDENDUM_05_PRESPECIFIED_GLM.md": "f197714eb594efd5aa8a4d9ee567f39af93e1ff9"
+    },
+    "production_design": "prespecified_fixed",
+    "judge_policy": "astra_only",
+    "reference_design": "single_astra_max",
+    "comparison_status": {
+      "S": "not_run",
+      "H": "not_run",
+      "metabolic_classifier_experiment": "not_run"
+    },
+    "prompt_freeze_sha256": "fa22e3313ae6b6279a08042e5aa99d6656b799cebc731fb60bd823075ca03c2b",
+    "prespecified_configuration_sha256": "887e9623d2d6f4618cb2605ce62ac0f1f9165bcde27777f4a4f911e8a2523146",
+    "production_F_sha256": "b882d9107bba2e62d41ed817931731a5110738a0cc52e77193c3f5623025b40c",
+    "operational_failure_path": "configs/v2_operational_failure.json",
+    "corpus_run": {
+      "addendum": "PROTOCOL_ADDENDUM_08A_V21_CORPUS.md",
+      "config_sha256": "0d47a40f51c971a79c123807241452b9f7f36c42861313a5fd6a84fb699da6d4",
+      "prompt_addition_sha256": "5a0f98a25f2df6b44b2039a156198585cff5d21cb3e57b685274baa2f059aeca",
+      "wire_schema_sha256": "c97a6a0d92ca1a6ba25e7493232b9e48493e4953faf76fe6007ccd96d1821ec9",
+      "routing_config_sha256": "e78cd08a7a2bcb8c92a7c3c97308d35a8d99f61291da1df4f8110a64c1b10499"
+    }
+  },
+  "requested_pairs": 42972,
+  "terminal_pairs": 42972,
+  "valid_pairs": 42592,
+  "invalid_pairs": 380,
+  "output_sha256": "25f7b06716a3ad9823bf963fd12316f69c32d05775fcef594c06538d1e519f3f",
+  "completed_at": "2026-11-16T06:30:59.286463+00:00",
+  "classifier_binding": {
+    "selection_basis": "prespecified_before_F_C_results",
+    "fixed_configuration_sha256": "8e52261cde8e4ed8b316929c8dfc37564e1d3a81155aeb1e55dd2c29e850d071",
+    "benchmark_selection_sha256": "dbdd956e713a4382033727722d87970eac49c5ba8eae5105ced9c2a6c797709f",
+    "benchmark_merge_commit": "012037450788193b09c6f02aaf638219f02ad662",
+    "metabolic_classifier_experiment": "not_run",
+    "addendum_08C": {
+      "effort": "high",
+      "decision_sha256": "285057487d5f3af50ff44feacb87d06089129c8298da9e08607e63820c9e275a",
+      "commit": "40da89ac7c05f3e157274208f0a8dd214215fd2f"
+    }
+  }
+}

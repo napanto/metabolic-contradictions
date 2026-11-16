@@ -1,0 +1,13 @@
+abstracts in common: 39
+                            frozen run       control  order_prompt order_prompt3
+abstracts                           37            39            39            38
+claims                             280           295           298           290
+directional                        20%           19%           83%           85%
+neg                                80%           81%           12%           13%
+HARD neg+significant          62 (22%)      81 (27%)        0 (0%)        0 (0%)
+neg+direction                      52%           62%            3%            3%
+total_n filled                     35%           28%           18%           74%
+sample filled                      10%           16%           24%           27%
+region filled                      54%           51%           38%           38%
+assoc population                   86%           36%           95%           97%
+invalid                                            0             0             1

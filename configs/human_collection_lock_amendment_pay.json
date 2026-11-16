@@ -1,0 +1,69 @@
+{
+ "schema_version": 1,
+ "status": "amended",
+ "amends": {
+  "path": "configs/human_collection_lock.json",
+  "sha256": "34de3ae3bae33976460b0324e6f44ab09cd89a6709ea7949036d2a584933e7ea",
+  "after": {
+   "path": "configs/human_collection_lock_amendment_eligibility.json",
+   "sha256": "f1164829e89b53f0d5823601f1c6c19da343503139a0ac2d306aad646382272c"
+  }
+ },
+ "amended_at": "2026-11-15T17:39:58+01:00",
+ "authority": "Antonio, 15 November 2026: new payment rules from 17:00; «subito almeno la dicitura nelle pagine e le condizioni per esteso», stated clearly «per evitare problemi»; on the spending limits: «non ci sono limiti»; on the home page: «Sulla home scrivi solo l'offerta attuale, non i cambiamenti, quelli vanno nelle condizioni per esteso», «Fai questa modifica veloce», «Devi ridurre quella frase»; «Scrivi che la coppia di prova vale 1 euro, al singolare, non al plurale»",
+ "reason": "decisione di Antonio, 15 novembre 2026",
+ "payment": {
+  "effective_at": "2026-11-15T17:00:00+01:00",
+  "effective_epoch": 1794758400,
+  "rule": "the price of a paid answer follows its submission time (answers.submitted); no answer row is rewritten",
+  "real_pair_from_effective_eur": "3.00",
+  "practice_and_control_pairs_eur": "1.00 always, before and after the effective time (kind other than real; not recognisable by item id)",
+  "real_pair_before_effective_eur": "1.00",
+  "personal_rate": "one session has a personal rate of 5.00 EUR per real pair submitted from the effective time, recorded in the site's audit table (practice and earlier pairs stay at 1.00); it is shown only inside that session",
+  "configured_price": "PRICE_PER_PAIR_EUR stays 1.00 in the signed configuration: it is the practice price and the price before the effective time"
+ },
+ "limits": {
+  "lifted": {
+   "BUDGET_CAP_EUR": "310, no longer stops real, late or practice payments",
+   "PAID_READ_CAP": "144, no longer stops free slots, admission, closure or payment",
+   "MAX_SYNTHETIC_SCREENS": "60, no longer stops practice assignments",
+   "worst_case": "not applicable; status and the ledger report it as such"
+  },
+  "kept": {
+   "MAX_FOURTH_PAIRS": 8,
+   "REPLACEMENT_READS": 16,
+   "why": "reading protocol, not spending; kept pending a separate question to Antonio"
+  }
+ },
+ "mechanism": {
+  "terms": "constants in site code, engine.PAY_AMENDMENT (effective time, 300 and 500 cents, at most one personal session, lifted and kept limits), following the amendable-programme pattern",
+  "activation": "`flask amend-pay --reason ...` (metadata pay_amendment, audit amend-pay), activated 2026-11-15T17:39:58+01:00",
+  "personal_rate": "`flask personal-rate --reason ...` reads the participation code from stdin, hashes it with the site's own code digest as /resume does, and stores only the session id (metadata pay_amendment.personal_sessions, audit personal-rate); recorded 2026-11-15T17:40:04+01:00; the code was passed on standard input only and the site stores no form of it",
+  "before_activation": "behaviour, prices, limits and page text exactly as before (tests)"
+ },
+ "site_text": {
+  "home": "current offer only: 3.00 EUR per completed pair (the viewer's own rate), payment from 5 pairs, and «La coppia di prova vale €1,00» / «The practice pair is worth €1.00» (singular: one practice pair per session)",
+  "rules_page": "the viewer's rate with the note on when it applies (17:00 on 15 November 2026), that the practice pair is always 1.00 EUR and that earlier pairs stay at 1.00 EUR; first rule paragraph states the same; the closure rule no longer mentions a spending limit",
+  "languages": "Italian and English"
+ },
+ "site": {
+  "tags": [
+   "v2.1-paytext-20261115 (385541f, reloaded 17:27:34: wording only, static display)",
+   "v2.1-homeoffer-20261115 (d18e113, reloaded 17:36:27: home shows the current offer only)",
+   "v2.1-payamend-20261115 (88ef8a1, reloaded 17:40:10 after amend-pay and personal-rate)",
+   "v2.1-practice1-20261115 (6edafd2, reloaded 17:42:00: practice pair price in the singular)"
+  ],
+  "later_tags": "later site tags keep this payment code unchanged (v2.1-onepair-20261115, 3d5a8ff, reloaded 18:12:43)",
+  "configuration_snapshot_sha256": "65c3f4255f61d46697c484733c5adec1c99008b46b2f90d90057f5f09c91023a",
+  "configuration_snapshot_unchanged": true,
+  "tests": "588 passed (385541f and d18e113), 598 passed (88ef8a1, with tests/test_pay_amendment.py), 598 passed (6edafd2)"
+ },
+ "state_after_activation": {
+  "real_answers_since_effective": 0,
+  "practice_answers_since_effective": 1,
+  "ledger_spend_eur": "33.00 (20 real and 13 practice answers, all at 1.00)",
+  "paid_reads": "20 (former ceiling 144)",
+  "synthetic_issued": "31 (former ceiling 60)"
+ },
+ "analysis_note": "pay changes neither the instrument nor answer validation; answers given before and after 17:00 can be compared by submission time if needed"
+}

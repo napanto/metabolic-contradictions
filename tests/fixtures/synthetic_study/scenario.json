@@ -1,0 +1,14 @@
+{
+ "roles": {
+  "P1": "v2-pair-1001",
+  "P2": "v2-pair-1002",
+  "P8": "v2-pair-1007",
+  "P3": "v2-pair-1040",
+  "P4": "v2-pair-1043",
+  "P5": "v2-pair-1069",
+  "P6": "v2-pair-1071",
+  "P7": "v2-pair-1074"
+ },
+ "synthetic": true,
+ "built_with_site_tag": "v2.1-layout-20261115"
+}

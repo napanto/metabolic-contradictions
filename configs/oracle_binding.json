@@ -1,0 +1,85 @@
+{
+ "status": "registered_with_amendment_08",
+ "note": "Binding record of amendment 08 (pair task, site 61c08a1). Registered by the signed commit that registers configs/evaluation_two_judges.json; derived from configs/v2_oracle_binding_61c08a1_DRAFT.json without changing any value.",
+ "scope": {
+  "pair": "in this run",
+  "extraction_comparison": "not in this run",
+  "extraction_comparison_note": "Antonio's decision of 2026-11-16: the whole-abstract task is dropped from the final oracle run for now. The 5208dfa extraction-comparison files are unchanged and not regenerated."
+ },
+ "site": {
+  "repository": "metabolic-evidence",
+  "commit": "61c08a1e77824b39cd7d4f3f1f27ec7d5682fa20",
+  "tag": "v2.1-layout-20261115",
+  "instrument_export_sha256": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+  "live_since": "2026-11-15T21:05:09+01:00"
+ },
+ "binding": {
+  "spec": "configs/instrument.json",
+  "spec_revision": 5,
+  "reference_wording_revision": "site-61c08a1-2026-11-15-2105",
+  "renderer": "v2-en-site-61c08a1",
+  "pair_wire_version": "v2-pair-required-null-61c08a1",
+  "validator_logic": "AST-identical to 5208dfa; DISPLAY_ORDER added",
+  "source_validator_sha256": "a95aa23b3d01ef736c8ea64f20098f1bdaf1aa2ff6195333b55537dcd4dbd880",
+  "source_validator_selected_sha256": "9b5c3a28bfe92bd809b67b2a03984d36d8346d02f055826f24f469e13bbda8d9",
+  "site_presentation_sha256": "baaa7ead3e3c10306e6edfb8e11c6cc4b44ae3ff1d002efc776093c0a86f855a",
+  "pair_wire_schema_template_sha256": "fbe917fa81ed10b63033f9c168c461a1734b812f4aaddd722d9891f85e75a73c",
+  "pair_canonical_schema_template_sha256": "61bc01ce7648a10dd32c19d5ba6548c79e26c5d840dd23a2b8208653b7f5beae",
+  "page_offer_rules": {
+   "comparison_reasons": [
+    "comparator",
+    "other",
+    "outcome_definition"
+   ],
+   "cannot_establish_comparison_requires_issue_in": [
+    "result",
+    "comparison"
+   ],
+   "empty_check_problems": [
+    "missing_from_extraction"
+   ],
+   "relevance_notice_problems": [
+    "not_supported_by_abstract",
+    "wrong_direction",
+    "wrong_exposure_outcome",
+    "planned_as_observed"
+   ]
+  },
+  "transitive_dependency": "markupsafe 3.0.4 (locked in uv.lock via jinja2), imported by the vendored site renderer"
+ },
+ "files_sha256": {
+  "configs/site_instrument.json": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+  "configs/site_guidelines_en.md": "9ccda2e8a3841cc693fe619a61c244221d4c13a2e2563c73860da0164a0cec7d",
+  "src/chl_rag/pair_instrument.py": "6cdd8dc82bf0432f12a8759e168c76d7b19fc17481c1d63c3926b3f08f03756b",
+  "src/chl_rag/site_presentation.py": "baaa7ead3e3c10306e6edfb8e11c6cc4b44ae3ff1d002efc776093c0a86f855a",
+  "src/chl_rag/site_instrument.py": "a26fe074e8fa67144037aac954a04782e65285fa7bcd612a42b7549744c92dcd",
+  "configs/instrument.json": "ce6161a93e705d57ed8f276b383148d7c577d50875b6564edc2572d187141581",
+  "configs/oracle_prompt.json": "8ea67caed45b20f592271129fa378a9ef0eb1eb1be34c195f29e7eac67ba6029",
+  "tests/test_site_instrument.py": "9622ba156fca9287d99464ce8c0e6ff49870b4a4bbdfd591433bdb5d64958c83",
+  "docs/oracle_binding.md": "9dde2d554e8bdaae9a0fd2ef3d4e09ef621ccbf30886955fe6aec9ea0a640771"
+ },
+ "sizes": {
+  "chars_per_token_estimate": 4,
+  "system_prompt": {
+   "before_5208dfa_chars": 36983,
+   "after_chars": 39446,
+   "before_tokens_est": 9246,
+   "after_tokens_est": 9862
+  },
+  "pair_user_message_36_handoff_items": {
+   "before_median_chars": 21893.5,
+   "after_median_chars": 24737.0,
+   "after_max_chars": 31166,
+   "before_median_tokens_est": 5473,
+   "after_median_tokens_est": 6184
+  },
+  "wire_schema": {
+   "before_chars": 4050,
+   "after_chars": 4428
+  }
+ },
+ "integration": {
+  "reference_oracles": "Unchanged in this branch. For pair items use site_instrument.prepare_reference and annotation_from_reference_response (same output keys; wire_schema is the strict required-null grammar). Add the files above to RUNTIME when the switch is made.",
+  "tests": "tests/test_site_instrument.py: 16 passed. Related suites at 45b5811: 21 pre-existing failures (reference_revision bound to site b5e77f9), identical with and without this branch."
+ }
+}

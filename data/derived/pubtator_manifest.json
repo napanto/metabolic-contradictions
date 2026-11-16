@@ -1,0 +1,2245 @@
+{
+  "retrieved_utc": "2026-11-12T16:36:58.431581+00:00",
+  "endpoint": "https://www.ncbi.nlm.nih.gov/research/pubtator3-api/publications/export/biocjson",
+  "source_pmids_sha256": "2a0eb3534a1a448ba5c430c306500f85e0cefd80ad3d9a6c118d5eca26a383ff",
+  "requested": 29559,
+  "available": 29481,
+  "missing_pmids": [
+    "39133725",
+    "39134001",
+    "39134066",
+    "39134173",
+    "39134462",
+    "39134463",
+    "39135091",
+    "39136228",
+    "39137064",
+    "39137110",
+    "39138683",
+    "39138876",
+    "39138963",
+    "39139038",
+    "39139128",
+    "39140231",
+    "39140772",
+    "39141075",
+    "39141201",
+    "39141404",
+    "39142677",
+    "39142721",
+    "39142723",
+    "39142859",
+    "39143654",
+    "39143657",
+    "39143849",
+    "39145312",
+    "39145401",
+    "39145614",
+    "39145861",
+    "39146479",
+    "39147076",
+    "39147102",
+    "39147157",
+    "39150336",
+    "39150432",
+    "39150883",
+    "39150916",
+    "39151204",
+    "39151543",
+    "39151723",
+    "39152660",
+    "39153085",
+    "39153140",
+    "39153426",
+    "39153754",
+    "39154180",
+    "39155138",
+    "39155319",
+    "39157750",
+    "39157881",
+    "39157890",
+    "39158701",
+    "39158775",
+    "39159661",
+    "39159917",
+    "39160300",
+    "39160334",
+    "39160356",
+    "39160513",
+    "39160557",
+    "39161069",
+    "39161072",
+    "39162279",
+    "39162956",
+    "39162984",
+    "39163055",
+    "39163556",
+    "39163706",
+    "39163798",
+    "39163956",
+    "39167190",
+    "39167630",
+    "39168098",
+    "39169259",
+    "39171569",
+    "39171608"
+  ],
+  "failed_batches": [],
+  "entity_mentions": 751613,
+  "relations": 99300,
+  "batches": [
+    {
+      "file": "data/raw/pubtator/000000-88a9dffaa6.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "6f1bd8792ea5d33b1e36f69d52b256c0c6b8c08adaf409053b85608478b9d268"
+    },
+    {
+      "file": "data/raw/pubtator/000100-48d48c7481.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "68bf6f82d90ee29f030288b14df924911a2a7ab6b6c45ca3ada5817a3d2a7df3"
+    },
+    {
+      "file": "data/raw/pubtator/000200-dab291d602.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "32ca577824f8d861184dade36f0ebbd05cea7c1901b0270f04b7dfa345db6b46"
+    },
+    {
+      "file": "data/raw/pubtator/000300-c98c3c90d9.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "3abbaa25fc132dc88eaed46197de62c44ba7be43761a8e7b961fffa5cece16a3"
+    },
+    {
+      "file": "data/raw/pubtator/000400-790de080a3.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "3aa1569bf5bcd24b3331b33f70d37fd41208a9debfc61a8cb46beeea4a5e8447"
+    },
+    {
+      "file": "data/raw/pubtator/000500-86682461dc.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "3e2d2783a9f00d09828205b915e4d15f76119270bce6a0d9eb0fe42c4b35f3b3"
+    },
+    {
+      "file": "data/raw/pubtator/000600-2ff028da0d.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "b44aa1219df884c4bd8abde9d3e08e540be2db468a202ef0dd396d7ffb4ed595"
+    },
+    {
+      "file": "data/raw/pubtator/000700-80b2fbe1c1.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "bf1aebf96f55492fe87d1a2e647a3f9c24e166d781b7ec38a8bedf9f682b75e9"
+    },
+    {
+      "file": "data/raw/pubtator/000800-b3852bc3c2.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "01f68de11be5498c4a1756499c111592c7e2611fb5d053476c15dfc2e37da006"
+    },
+    {
+      "file": "data/raw/pubtator/000900-0ce8709160.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "70f21703cd0deb2043c3a2f4788d0c112487163178ce795a7f226c0e4e6f6f7d"
+    },
+    {
+      "file": "data/raw/pubtator/001000-26c3b5e977.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "9dc149ffc5e8c2e2b90865d28b5197e2e50486d34300705ef4b8bbe5867ebe1d"
+    },
+    {
+      "file": "data/raw/pubtator/001100-48e943ec13.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "03484f4dd6532602078aaf43bfb3340f5c6a820e25540e53f0b8d23fddf4d70f"
+    },
+    {
+      "file": "data/raw/pubtator/001200-da458ba3d2.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "0fe192f72f720b325dacf0939348a761b747efaf1e15a8a8c47a67b7ffae3a02"
+    },
+    {
+      "file": "data/raw/pubtator/001300-641c4a01ee.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "605476662f93a20bca5a7eb2b1fb93a6db5ae467dfca095c7a1add5efabc37ce"
+    },
+    {
+      "file": "data/raw/pubtator/001400-be60446627.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a4e3386a1a1af77a21262a023f1c2fb9fa1c9b5d27fd1e1ef02e8117deb11462"
+    },
+    {
+      "file": "data/raw/pubtator/001500-4e21cd3310.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c3cd70bc7823317a4e5dea7fb2563961e876f53dc84119ccf409c98c0fe51a4f"
+    },
+    {
+      "file": "data/raw/pubtator/001600-5b1305887f.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "69dcb1d23532b972b9010fd81f33ff80d806a9680f4e1d4a3be0cd1ed3dcdb6d"
+    },
+    {
+      "file": "data/raw/pubtator/001700-df295e2741.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a297c711cb930994f8ce1a1e5661a6d62089377fe0deb9667be8d61b02a5fae6"
+    },
+    {
+      "file": "data/raw/pubtator/001800-8b9769ae7d.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "59d77e8260b90fb866ee1767081fd81b1f65ce9e06c4c48fa54cad37308c442a"
+    },
+    {
+      "file": "data/raw/pubtator/001900-fe0ba96dba.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "f5c159cd7ac5b96b098ce39cda01fb42c54d101f435d8c2510c1169503c95c69"
+    },
+    {
+      "file": "data/raw/pubtator/002000-d49fdc09bf.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "ed0ea86a8dcc4065021d15583e0e46201bd673f574ac4a65de117c825c9173ec"
+    },
+    {
+      "file": "data/raw/pubtator/002100-72f4fd47ba.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "0730b4d7a9b77fe6ec60a4661a3df38c02a52e6f6b894d989b599e29866aa438"
+    },
+    {
+      "file": "data/raw/pubtator/002200-794e109206.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "267c74d816c4574628034f64d18154925290245fdc536f718a7581848cac5055"
+    },
+    {
+      "file": "data/raw/pubtator/002300-a23fe1f23f.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c90224dbb8a0f40f22b4b08a3f6f45593b50699771c708f06f31a556452e7bee"
+    },
+    {
+      "file": "data/raw/pubtator/002400-612b3db400.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "5e4d06d5217a6ea38b7b503767723314f1dd4a0d8c378bce6b7c1228a9e6082b"
+    },
+    {
+      "file": "data/raw/pubtator/002500-7b828f775b.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "1ce082fb3731e7caa348272bfa5c9e942926834115545449bdfc11f1c93293e4"
+    },
+    {
+      "file": "data/raw/pubtator/002600-be20ef15f5.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "389b02bc08a4eaeb355dc4e8eaf33586eb6a4ce2609a81ad6b399af84420dad3"
+    },
+    {
+      "file": "data/raw/pubtator/002700-bc5069904d.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "0552c1201a8f93fee7a48971e4e2b4824336d03eb4a8cd008dd9b093e7802398"
+    },
+    {
+      "file": "data/raw/pubtator/002800-43a33875df.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a96c899ab9bddd8329a97b4e28f5202fd6941e891012d7ea71d6686ec7f16c38"
+    },
+    {
+      "file": "data/raw/pubtator/002900-587a0a87bc.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "5d3e0ebdf9085a89280cdb1810968f608c6120ada1abd9b8bbd259ef4bc25c00"
+    },
+    {
+      "file": "data/raw/pubtator/003000-942734c51d.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "20573a59b6641f23fa91b5fd4f77b6a6c889f273ec0e12b11c764a45aec57402"
+    },
+    {
+      "file": "data/raw/pubtator/003100-61272a0d7c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "7b6b5e5d6069b19ae22a32f34741e890585fc621eac7e73140890ee7ecc38a21"
+    },
+    {
+      "file": "data/raw/pubtator/003200-65dd22f438.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "ef186d451f545d157183d23ed7b6d66c2701e7b0f052d4e5f5bd9427e74a5b9f"
+    },
+    {
+      "file": "data/raw/pubtator/003300-2a3d9a84ef.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "1253231815bec13dddcfe606b0e5655c15b194f6fd14c648ce786d57a1712e52"
+    },
+    {
+      "file": "data/raw/pubtator/003400-b0db377fba.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "fff86f2c905ff0800d384a6b28fccad90bfc7b6dc59e637d19fffc7db6cf1477"
+    },
+    {
+      "file": "data/raw/pubtator/003500-c4ac9bf634.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c1326b027a722853174d46033af2692b530eb742f53820f6fd98004bae833e9a"
+    },
+    {
+      "file": "data/raw/pubtator/003600-a46667324a.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "8ba193eb8d47d10e374dce9ae0a03f7b8de0aa4aa3fde5f2973b7aa161ead6d5"
+    },
+    {
+      "file": "data/raw/pubtator/003700-6915cd488e.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "cf9127bac407af1fac9ad0d67f85323cc9ff28c496d287ca7fe9ebdb8bc52167"
+    },
+    {
+      "file": "data/raw/pubtator/003800-a8a89fbd10.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "2bfa241099caebbd187fb9617955fbedb0ef574a73c4d731a36643e5123375ca"
+    },
+    {
+      "file": "data/raw/pubtator/003900-0b1a25567c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c9140d37475069d0e6665014c2f49abd2168f2516e78bff7884d266fcdd35603"
+    },
+    {
+      "file": "data/raw/pubtator/004000-217a4fd80c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "ed787b8abce82bcedc7b05f2a26ba180020af9a104462ead0bf010b45e85cef0"
+    },
+    {
+      "file": "data/raw/pubtator/004100-710a015146.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e6d9f7b6a5d5050081d61a9a7cd20b72dfa0f787ad64499a750daf91f69556b9"
+    },
+    {
+      "file": "data/raw/pubtator/004200-a2da3e5223.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "232595bd631d7cf3395de034ef3fe40654d21d6476c8e2bca3f012516511b4b2"
+    },
+    {
+      "file": "data/raw/pubtator/004300-009de4c50b.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "6d2dee71b2b9b35b38a1a235e3665c79f0b4c61fc15aae09006775d380381199"
+    },
+    {
+      "file": "data/raw/pubtator/004400-91d6dfba5b.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "b3539325e62d8fb718039233368282d051698b817abb4145d0f1d3a04577b41e"
+    },
+    {
+      "file": "data/raw/pubtator/004500-828aac1778.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "69f8ccbdf00f9d779a73a905b4194525ebc30fa0c16df9907492e0ad39d0dc05"
+    },
+    {
+      "file": "data/raw/pubtator/004600-f3e4322e77.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "07e35a230901f04cf917476e264187760e6012e6cfa52ba4c04f2e5bdb9c3633"
+    },
+    {
+      "file": "data/raw/pubtator/004700-d0ac14e097.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "f10a1fed576f86552c517abc16d4b1cbfab760a749fa14e1e1201fd38e2af82b"
+    },
+    {
+      "file": "data/raw/pubtator/004800-619dbd231c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "1e25020008d08351b5225d90c933a8154b607cec850b3600c9cbe6ba7a3fb262"
+    },
+    {
+      "file": "data/raw/pubtator/004900-ff6488f43a.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "f0f044e418337c44074696ee6ac4d2d450e78851bca715d3bfb1ab25d4181558"
+    },
+    {
+      "file": "data/raw/pubtator/005000-4bc0ff2b98.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "4c65cf911c04117754a798809e5733164f26ed287bbd4eea6590e1859af783d3"
+    },
+    {
+      "file": "data/raw/pubtator/005100-2710dc5655.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e2930106ef04e80157929ccf48c15e5815a3c28730d7107704f54964b8f532f9"
+    },
+    {
+      "file": "data/raw/pubtator/005200-c863d8c80b.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "091768cae35f642dab51a3426cff4d0aaa568abc4d030bd8ed539367fcad7359"
+    },
+    {
+      "file": "data/raw/pubtator/005300-e794174a23.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "62a84adeee297f404def155cdbf156ac862bbd1863acaabd15cfe3857301f070"
+    },
+    {
+      "file": "data/raw/pubtator/005400-45fb341a18.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "9b351fd064e5db65da09486984e42a7ffe40a70e2407161453099a9aa06c7a90"
+    },
+    {
+      "file": "data/raw/pubtator/005500-12ecd5dd66.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "8a40f43947037ea3fad579cbf5f93ced64e5a52d72c065cc4239ab3f7eca576d"
+    },
+    {
+      "file": "data/raw/pubtator/005600-3fbd1b3b15.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c66853e16a37323f592e1c88edea82ed8ee02ea0805c6c752679c81f3549370a"
+    },
+    {
+      "file": "data/raw/pubtator/005700-60bc9f5976.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "6c3df43a38ce1e12bf3aeff1209ccd82076a6e7c699f159492f408223184a8ae"
+    },
+    {
+      "file": "data/raw/pubtator/005800-96ac15d854.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "44260c7f96b06955509fe22903bf50aa3b5d05238b48ddf24aac07fc3daed316"
+    },
+    {
+      "file": "data/raw/pubtator/005900-1eac67bf9d.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "37259136e2ac354f547a7ee2592897cfd54861f1a75afc01423c96504e5cf091"
+    },
+    {
+      "file": "data/raw/pubtator/006000-e0750ee12d.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "ee11ee2b667409e77b2f38576dc9d85f1b27b33b5b0d4eaaf675fee79ff0dec4"
+    },
+    {
+      "file": "data/raw/pubtator/006100-df8a6a88b4.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "6e94dd7d1f9e41a88a7c32bfef74581cd3961d63160f0d082af8ec9a42716295"
+    },
+    {
+      "file": "data/raw/pubtator/006200-2f61b0c9dd.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "fd521f17357d54f2064c54206fa2b49fdda9dc1a0cb252851b47ac8cb463b7cd"
+    },
+    {
+      "file": "data/raw/pubtator/006300-55c89eadde.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c0ed6caa1975f3326bc7c3620b5e02feb69ca660e57a7ef5502679a4ba2e6279"
+    },
+    {
+      "file": "data/raw/pubtator/006400-3e3a5c58f9.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "489c12222bf25c34576e2ffbc7c6250c0439918d92a45191f804ec5c9eaef19c"
+    },
+    {
+      "file": "data/raw/pubtator/006500-e024357fed.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "01f875c4a93f81b8f82f1c7a5a2172db77bb8b5d8a9751ce3829c41adfd4ab8f"
+    },
+    {
+      "file": "data/raw/pubtator/006600-01a247bbe4.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e7b327818f94fc6036f17f9ac9de21578a330bf2c39983b6effec5e71ca7a32f"
+    },
+    {
+      "file": "data/raw/pubtator/006700-561a6ce2e5.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "71e2bfe22fb8d69132496a133664d6d11f5caea078751fc8aa5bb9ca03a9569f"
+    },
+    {
+      "file": "data/raw/pubtator/006800-fa0c43bfaa.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "57a8a62ba47b66fd5f0d732c6f704f1b441d8614ee019d2626a10d0cc76bdce6"
+    },
+    {
+      "file": "data/raw/pubtator/006900-834b1b74ca.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "096f07f0548404a030918d80e79fbe7bc24fbae4de169e75257f6edacff7132f"
+    },
+    {
+      "file": "data/raw/pubtator/007000-be360ef33c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e4dfd84f84d70c5f995dbb74040677e34b6282f9c5b6a7ce79d159a29705421f"
+    },
+    {
+      "file": "data/raw/pubtator/007100-9556308906.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "6924ee2da4aa7a640e1b47207910b5a758a74e615bf279adee9c2011e2c8aeca"
+    },
+    {
+      "file": "data/raw/pubtator/007200-6ac547cfa5.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "06deb770ae2b0ea2a93b369f67bd4b2f8a958752e9f7be60dc533a50696ce99b"
+    },
+    {
+      "file": "data/raw/pubtator/007300-a4f43c85dc.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "d89554bcfa5296b6bbb570cd93df77bd0ebd65868f626cce03b3f3ed35c95e76"
+    },
+    {
+      "file": "data/raw/pubtator/007400-f2710a9da4.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "150ae69c3cf5b19d9bc9f3bdafbf10a09e288b372cb23f89d9f9717170ce3e17"
+    },
+    {
+      "file": "data/raw/pubtator/007500-597beecf5a.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "664fe592ceffb6b6ff297f643c06150552277d4af87c53ab2d5f7937bfad557a"
+    },
+    {
+      "file": "data/raw/pubtator/007600-cf9dca0643.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a5a3a48008c632713ed3d1186cf40da103d2de7f63a5ffa0809946420cc835e6"
+    },
+    {
+      "file": "data/raw/pubtator/007700-10882209af.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "45b7f0212012b7a9c1fbdc02fe08ccfc69a898a42141a1ba0ec9fad7da7d24d9"
+    },
+    {
+      "file": "data/raw/pubtator/007800-aeb8285a7b.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "f27bafa7181a3c086ec63db75aaee0f3e6ca5f121092338b69fdbf9cff1b9c50"
+    },
+    {
+      "file": "data/raw/pubtator/007900-3e6d266e9a.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "ed060c6642d35f8e44afecfed0c8dd047276e96b4474fe15e2e341b02b925b93"
+    },
+    {
+      "file": "data/raw/pubtator/008000-ed296b4a44.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "5db6fc2074251cb22550341a7f1df60f9fbcba45dffafb149d76bc4a5e2a789d"
+    },
+    {
+      "file": "data/raw/pubtator/008100-b71fcdf114.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "6cf6b61845814c64271820a2acbb186666246f6b4c4422bce85d49d9f5b6071a"
+    },
+    {
+      "file": "data/raw/pubtator/008200-29dfccb666.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "2278ab388dfbbe23dd66786d6eb417efd5db9463b1b98c9d468b50e2f97e8909"
+    },
+    {
+      "file": "data/raw/pubtator/008300-7139a06862.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "1dca777672c7c88c353e19008d98e6f3cfa7bf9500981d57593518f752f30461"
+    },
+    {
+      "file": "data/raw/pubtator/008400-173a538a8c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "f179a472a751a99122a9b8faa64f7c874ba2b11a23d4a5b62c16acaf4f9f5628"
+    },
+    {
+      "file": "data/raw/pubtator/008500-92d47b251d.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "9fd061861ea18c1b82cbcf41f35ba3e0a4fea2717baf487e738025f393694729"
+    },
+    {
+      "file": "data/raw/pubtator/008600-56c00cdb6c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "95c9b80c045ff0673bbb47c98248c24c12d8f4520d9c916b39492f36d6ec2cc8"
+    },
+    {
+      "file": "data/raw/pubtator/008700-2449d9d890.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "6d846cddc1e5d27d9e92ae99645bb24c0e541565979fcd39f7af06ba0ba0cd5f"
+    },
+    {
+      "file": "data/raw/pubtator/008800-cfaf3021c5.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "1e2798f8a81f8125fcf17002cdbc38996d7ad2ad471d0ff9782ca7bd6b8e037a"
+    },
+    {
+      "file": "data/raw/pubtator/008900-c22703ffc7.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "52c691a369083d6f789b5761430fd17ae060739c4b40ac7aaa0eb4e197ba78e7"
+    },
+    {
+      "file": "data/raw/pubtator/009000-0e613051ad.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "dc79f5441c9ca4a67248b7c0fd2afcd657384fc37e2772930c4ebfbc888b97b7"
+    },
+    {
+      "file": "data/raw/pubtator/009100-564c4b84cf.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "af57799a06cb6ac1092c52df2a9c58141869d2f6b5184b90359f45d079aee3d6"
+    },
+    {
+      "file": "data/raw/pubtator/009200-473db8738b.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "290f2dd003c9abb3d58b9ede138f65318d84e9fd477e26260847deee021039bb"
+    },
+    {
+      "file": "data/raw/pubtator/009300-22269efb99.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "8fa9cbb28f1b16d331df12833ca7af2ab8f0469fccc6e872c828e1a3b9e67044"
+    },
+    {
+      "file": "data/raw/pubtator/009400-01577bfebd.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "674fe69a7de876140d97aa4ccc75fe61eef4d2fadd7ca27cd79f89da7d765519"
+    },
+    {
+      "file": "data/raw/pubtator/009500-3b1564088c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "66f1999932282e220122c0316a83d955aa6e0f17fb65d6beeb1fd8cfe54e8b91"
+    },
+    {
+      "file": "data/raw/pubtator/009600-8f5210ee0e.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "0d382bb9c0a5eb67521d466850a5deea738ba2ad0ed179899792513c353903f7"
+    },
+    {
+      "file": "data/raw/pubtator/009700-a70a334d2a.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e842352743aefb37cbb778d0a4751705aee707bf8188bc5acd27ce124c06dd54"
+    },
+    {
+      "file": "data/raw/pubtator/009800-f59150f2a4.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "5aac6719d1d13cc8c778ac2098db08553bdeaa6d50426f9cdb2eb9652e9b6e9b"
+    },
+    {
+      "file": "data/raw/pubtator/009900-bf7f6a9ab0.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "2cbd4aa61d3de214e9a01589933a8cfd5464c5647ed26f9287faf016c5dbc723"
+    },
+    {
+      "file": "data/raw/pubtator/010000-d867d37b9b.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "ad7ad1fcc171f9f71eab600904a8ac076b862d3747fa2a107567e03664a3b5e8"
+    },
+    {
+      "file": "data/raw/pubtator/010100-729e713817.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "0d2022b4f76be909a745fbdf6b8000495198c5801c8c6cd70d981ae6de1a1da5"
+    },
+    {
+      "file": "data/raw/pubtator/010200-9a02e8fccd.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a15c57158e69dd7507f4fdf0198b52476a7a97c3ce8463a648ffb2215af8fb39"
+    },
+    {
+      "file": "data/raw/pubtator/010300-d1c5fa2da6.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "23cb63add5388a4e0925a80fb73bb5f6deb1b41a167dc83bfca0bba4f5476fab"
+    },
+    {
+      "file": "data/raw/pubtator/010400-a1d752e56b.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "08d112e2a9da63de09fe5a5d8f6ca12ff5c6abed369f7fc2487745876b8a72fa"
+    },
+    {
+      "file": "data/raw/pubtator/010500-51723448bc.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "bf61d83935146b8a5d900581d2d84ca7ded5aadae3ab1dff04255156a69e80f1"
+    },
+    {
+      "file": "data/raw/pubtator/010600-e776c037f8.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "8d0aa77051a0abedd021e856876a585e09f9a69d352f90f12d6cf86eaeea2bf6"
+    },
+    {
+      "file": "data/raw/pubtator/010700-e5bc56c6f4.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "5f7590c239a54a72bb547f23c1a0f0bf9561b878260a7e7f46bf7b8db91d67e3"
+    },
+    {
+      "file": "data/raw/pubtator/010800-9856ebebfa.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e9f1018105daa84943dc86af5f955504096aec0be818c419185c8a3926022186"
+    },
+    {
+      "file": "data/raw/pubtator/010900-f112a0907b.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a438b3c27ec756c786c7808ef872af48dcec8a9eed135f7237abe6c87d80b23b"
+    },
+    {
+      "file": "data/raw/pubtator/011000-755104512b.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c11d73e716bbf231972e79494eb3e240fba8d3331e667fc6dde833d014679fa0"
+    },
+    {
+      "file": "data/raw/pubtator/011100-0c07dc1645.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "745c3865be059beedb0104056927b045669372ca04712f0c4f6461b18b1b08bb"
+    },
+    {
+      "file": "data/raw/pubtator/011200-4b29c5c5ee.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "6a3069da75dc85c0ce2bb1f0fea8b6d1362b87e4cd49245dee44aa532b84abaf"
+    },
+    {
+      "file": "data/raw/pubtator/011300-573d7bdd06.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "5c7e3dfd510350f8a2b654b2eae9e37eb98ff1bce45f0b00e782de428e47feda"
+    },
+    {
+      "file": "data/raw/pubtator/011400-40c9c06936.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "5051d04ba4782471bb9f26c0bb6972ccaeaed2135fe8665589c52c2e180ebade"
+    },
+    {
+      "file": "data/raw/pubtator/011500-fb2e888bba.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "ef79b57fe1ea52a3900970f152d5dfbf41df87a133682c9f0e3c7e92a9634d48"
+    },
+    {
+      "file": "data/raw/pubtator/011600-16c4adeb0e.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "2fed55c38961bc22a2b827f08da7cd11dac21bc03275700491631618a358b7d9"
+    },
+    {
+      "file": "data/raw/pubtator/011700-cb94a53428.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "2cf1d1710b2d58349596c39418e21c7f5107ff83562ff6c4df15f3dae63ae8a7"
+    },
+    {
+      "file": "data/raw/pubtator/011800-0475a61189.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "aeefec97314ac8395280be009ba593eaef724284e9a6cd2f9933a2ed2f59f0f9"
+    },
+    {
+      "file": "data/raw/pubtator/011900-6a7cc7dfc3.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "8debecc404605939edf0338c6db7136dc748bd7f920ff45d0ecf01bb59cc3ba1"
+    },
+    {
+      "file": "data/raw/pubtator/012000-10843fe0f3.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "2ee353129be3194f6c4ffeaa37d16cd91f2bc5fa2b891e700cec54fa91523d64"
+    },
+    {
+      "file": "data/raw/pubtator/012100-0aae41f0ee.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "9123f5487ec84d47333bd4138384b04edd5297e12b2fb1cebd1d2f1482c37789"
+    },
+    {
+      "file": "data/raw/pubtator/012200-51733a428c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c50f74035549b5cc732576e072238e669288a85cc0c933bffb127e8bb6b17430"
+    },
+    {
+      "file": "data/raw/pubtator/012300-2c75cb1a5e.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "2e1f60c3e4aaf89d570bf4ad522d95450f6115440a38ecb869021a19a22c939a"
+    },
+    {
+      "file": "data/raw/pubtator/012400-5a9f32ca73.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "8b9ba1694ec50c5703784b84e888f7dbd3065cf21b52d1d6fda4a1f5362a8358"
+    },
+    {
+      "file": "data/raw/pubtator/012500-2dd57379f6.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "8a2507f4f6c58c82e5aaa270bb896a0f0312adea74eb9c2c42074e563ac92960"
+    },
+    {
+      "file": "data/raw/pubtator/012600-890b3e43c5.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "f50c4623677aee9052f4cfeafd10c4ae7df76ff293403cd9df2789ec0437ad21"
+    },
+    {
+      "file": "data/raw/pubtator/012700-a2a21d3ab3.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "8385d21e8a14ad2e79bffe66acfb738443380f8ae14cc4be5845e76a9f0c4314"
+    },
+    {
+      "file": "data/raw/pubtator/012800-db46a41863.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "b4bb008d71202b48a6b16f879ca26ad35bb5ea637149a4198258879fa423cfd9"
+    },
+    {
+      "file": "data/raw/pubtator/012900-5ca2d3e687.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "454192f26057123a06c83ba4e42f149564f2754bb779b874b8ab479f2e918351"
+    },
+    {
+      "file": "data/raw/pubtator/013000-561a44926d.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "078b325dbb1f6c40cbfbb77a395d7067a981645da91d649ba2043ab5e39156b8"
+    },
+    {
+      "file": "data/raw/pubtator/013100-d87c66016a.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "91ec756b671c029cb15cac52aed8aaacabf6ab3138302a2a4e28d589756d903a"
+    },
+    {
+      "file": "data/raw/pubtator/013200-5b677f1bb0.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "333ed7a429d7c26a90c30b21aad0699049b585aa53e18e2da1c4ad1baf5604a7"
+    },
+    {
+      "file": "data/raw/pubtator/013300-726e5a812a.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "5c752d1223f05c03bc5eb605220d5dbd87f21fa79869713752aab4810c4d5b4d"
+    },
+    {
+      "file": "data/raw/pubtator/013400-a5a44d5328.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "6e7808e8d74a92c3aad5f91a8175de93778e51e4ac28612e3c9f9067b39346eb"
+    },
+    {
+      "file": "data/raw/pubtator/013500-7dc5ed0a3d.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "cc9188e34c73fb8ecb4a13a1c2f0d9b70001475233946b4cc220723932060526"
+    },
+    {
+      "file": "data/raw/pubtator/013600-d092b9f604.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "592475ebc9e2f7ca9e5f234f8eb014c47c2b7b04e4ee63466aaac646e1d0af6e"
+    },
+    {
+      "file": "data/raw/pubtator/013700-bfcd2fbeff.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "f97849d44934b20a828f18527c1f9e75a53968b708c47aa44e9f3170f2cca4ab"
+    },
+    {
+      "file": "data/raw/pubtator/013800-d8a1bfa828.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "d23d855e22e9411e1870bb8779d64d6b7438ee0c9eaaff86e439904490a5bf89"
+    },
+    {
+      "file": "data/raw/pubtator/013900-a6e397e76b.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "684ad2f58bbe9a0277c9b2febb5fa14304565014a3a06db7277e2a2aa39bb6d9"
+    },
+    {
+      "file": "data/raw/pubtator/014000-62fe27d310.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "315d887c6473536fe82292da097919620b63385c3da7b8b51a4a061abf2b23a7"
+    },
+    {
+      "file": "data/raw/pubtator/014100-df99d17f24.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "fe495d9f9e808b71261e84536d3acd605d4dd97336c8dd76b3d7b067f62fbeb1"
+    },
+    {
+      "file": "data/raw/pubtator/014200-22b6f03bb5.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c8d0b1d39a84c6f57ea3e15966226b8d1e5de170a60c19053f0ba66040822261"
+    },
+    {
+      "file": "data/raw/pubtator/014300-6e66cadfe8.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e694d00a4349cb7b31d7cd4e33b0cd41b6c65f053048f80b10ed5d515adf56b7"
+    },
+    {
+      "file": "data/raw/pubtator/014400-f7678493cf.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "572084812ceff9b4e3bb700a73f4660c65879354b403d347b3d4089ffa9db7ec"
+    },
+    {
+      "file": "data/raw/pubtator/014500-9f0c9f1ece.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a960120552c450cb1e4a7fd3a3ccc336a992ce14210ce901262f325fda92b244"
+    },
+    {
+      "file": "data/raw/pubtator/014600-5b649eb2ff.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "02017d00979bc304318054a38c7bc642fe320070d9ae0043ac882d92177c4393"
+    },
+    {
+      "file": "data/raw/pubtator/014700-af7eaa32a3.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "98646d67f1166c4807bdb1ee5a181e5511d644644d10403bccee7f21519b5a0e"
+    },
+    {
+      "file": "data/raw/pubtator/014800-ca1b949458.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "3500ed47eadcc50217ce5a6e283682054f25fba166b415c905affb26290ac4b1"
+    },
+    {
+      "file": "data/raw/pubtator/014900-6975fb0cb0.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a35357fbadf66766b6715872bc1200f2bd1f29893e28d43ddf1a9f44b4209bbd"
+    },
+    {
+      "file": "data/raw/pubtator/015000-9eba886625.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "3313451f25382e5f581ea48a6bf88aecd8c7d25e3a665490e719d34d3c2b3a74"
+    },
+    {
+      "file": "data/raw/pubtator/015100-72f8ab8e97.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "eb98cf81767b6e9e2dd69b792da503e6250673edb1082fec5f0a9f0c59b11c2c"
+    },
+    {
+      "file": "data/raw/pubtator/015200-ce66e7727c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "36c939032ef0251c1e285d91011abf5a774cf77f99dd1942776b17d9f2879824"
+    },
+    {
+      "file": "data/raw/pubtator/015300-16f5de6147.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "35b014eac01d0a954dc5605cc48a5ef5cdc34fbdcc5b3674945560eacbd7f63f"
+    },
+    {
+      "file": "data/raw/pubtator/015400-18fc51dc86.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e6c11c8b238ccbfd4addf68e6aa06f8674d17a35e99421648185daae036165ed"
+    },
+    {
+      "file": "data/raw/pubtator/015500-4ff042619d.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "4f500387d9f966fa5f564b8ed6c60d791c605c693ff92c24b372e4e57f41f640"
+    },
+    {
+      "file": "data/raw/pubtator/015600-b774360510.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "7d7d2586b79f29e0db43f02e4cb7cbff2061065bfff8efa536261baa3ad5bdc9"
+    },
+    {
+      "file": "data/raw/pubtator/015700-e780cf765b.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "d2915d98c00cbbb96b048c319092ce4818810ef8afa3918f3c2fcd088d102fac"
+    },
+    {
+      "file": "data/raw/pubtator/015800-975367484a.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "3873850d2d70f5c810c0e8015498a094a158174886e02ba95ee94732abeb095b"
+    },
+    {
+      "file": "data/raw/pubtator/015900-6a93ea17f4.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "cbbea2fd91cc82f21340487ba793e19f707fac8ae7b30267c07c24ad74011a42"
+    },
+    {
+      "file": "data/raw/pubtator/016000-93e2b9c619.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "fa7d5e09b4c880b06df79c22e0a96ed621472fefc2d75b8910ad9435464f2b68"
+    },
+    {
+      "file": "data/raw/pubtator/016100-9a8e5834a8.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c8b9558b0055545865a7ba8563590956b7356a00d1d023e6763ee3889994b4d7"
+    },
+    {
+      "file": "data/raw/pubtator/016200-2c11f46f73.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "024905487ec44c536879b78a965e5d47fe5b28fc2b9d30349bb9b3c9436a68ba"
+    },
+    {
+      "file": "data/raw/pubtator/016300-9a2a1aca5a.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "4bdb22f2c541990154d76c2a34de5a0f46d1b0e808be60870d1110c797557ddf"
+    },
+    {
+      "file": "data/raw/pubtator/016400-2aea02aaae.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "3c66e4fa94b06f769aa4c8d5323042a9f3f8340f7a6cb03c512fb41236c7f20c"
+    },
+    {
+      "file": "data/raw/pubtator/016500-625462b3eb.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "eba50c802b55f2c64354c473a5e0ad1c174b1d6eb776633718cdc992942bcb95"
+    },
+    {
+      "file": "data/raw/pubtator/016600-558320f56e.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "ff7fd42c1d60b4f9b6358927260d082b9d5dd4e602744c1bebcbc8c4ac32fa89"
+    },
+    {
+      "file": "data/raw/pubtator/016700-5e1ece67a8.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "f23aa7d58e77a137917dc286dc0144817311c756d25ea3d53d3ee27a21eb9c81"
+    },
+    {
+      "file": "data/raw/pubtator/016800-84eb9750aa.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "d9f0a12a3c45a88cac228667c26141413b14c668a99bbb225625a8776a4f06f9"
+    },
+    {
+      "file": "data/raw/pubtator/016900-b3cc521018.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "892f918d0cfeb772daba4fee4d3b972bd92c8f70699164f4aed62e6791ac45ea"
+    },
+    {
+      "file": "data/raw/pubtator/017000-f30bc96274.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "3d7a1d4d739c760fca3617b98650ea2316c6c393cb700a682e2ec55a4dab03c4"
+    },
+    {
+      "file": "data/raw/pubtator/017100-093b103993.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "1702eef84d5e685ccc921ffba96e33a544640a5a2a5e46403f52319acfd5245f"
+    },
+    {
+      "file": "data/raw/pubtator/017200-4efc49dcd4.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "be5e17ef07b6b3e23ae16ebeabeea589819838d0b46f3d215e8ffd8db6189b82"
+    },
+    {
+      "file": "data/raw/pubtator/017300-668e258404.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "5d30273793cc0b35e55d7ee19ec900c2ec50543a2d2dfb377fc21e6fcb353bf4"
+    },
+    {
+      "file": "data/raw/pubtator/017400-78e9546a65.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "5ce08c7ff1e183f83ada9869f16fcc0ee23a75c963ef37acdb9ff2157f9f46d9"
+    },
+    {
+      "file": "data/raw/pubtator/017500-b3d37c3990.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "363f56732cab4b46cc1cc17202f732cc01916e455b7badc6ac804b151525c6ea"
+    },
+    {
+      "file": "data/raw/pubtator/017600-8626e12a85.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e6b9dbc2f118ad3b29e76a967a9569d6d9c1bdebf2bf0ee2be4d6edff2820e48"
+    },
+    {
+      "file": "data/raw/pubtator/017700-03af76fcf3.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "ccf51916be3c4c6029c45674fce371b6151c315d896c3fc9672b838543e1dc28"
+    },
+    {
+      "file": "data/raw/pubtator/017800-2e593c8c56.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "f93b23f7998e969889b4df3a6fad82a128ed022e3774041eb34173b67819c8de"
+    },
+    {
+      "file": "data/raw/pubtator/017900-48ff52094a.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c53c9f88b16d226e3b2d74af66b014bacc3e705e234210fd67cfc60f161fc4c2"
+    },
+    {
+      "file": "data/raw/pubtator/018000-c372ae7bba.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "406660af112c390e8b05c9753d665119c1a885ce0c9d7581e03117a08c0c2dc6"
+    },
+    {
+      "file": "data/raw/pubtator/018100-6d96e6382e.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "fd7f4282339445fc32aafb9846024ade30fade0fde8d7fe10a30bd83093c000c"
+    },
+    {
+      "file": "data/raw/pubtator/018200-c63e3b9bc2.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "7adfbfa7955b9a7d53b03cf88b75913ffa1ac3b8a03a60e077c40753546fc12f"
+    },
+    {
+      "file": "data/raw/pubtator/018300-5c9a946f67.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "d68c626596310a1439b5366c337267d2fdc39eab86ec160c1b731930294de86e"
+    },
+    {
+      "file": "data/raw/pubtator/018400-3e782d7c38.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a69b3dde832f78d2c708e93f22e27d20e4b4f5e921bd7326b14b8a8bb256dcbb"
+    },
+    {
+      "file": "data/raw/pubtator/018500-b8c52baa50.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e455e9020f9d9e2adc612ad8a6ad8e66cd3ee8ee3ebf3dc12034acbc644214d9"
+    },
+    {
+      "file": "data/raw/pubtator/018600-e68c1c32b1.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "acfe75fde11e38195fd2975674979b4ccbf432daad43ad932c76be10f2ec6722"
+    },
+    {
+      "file": "data/raw/pubtator/018700-8d06f49369.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "d673941377e1c70f67416162e96d3f95494f5135c181836c23ad8bbf01a928db"
+    },
+    {
+      "file": "data/raw/pubtator/018800-25f8f5b290.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c47ac833712eb42c5337a08c9b104140dfb41feb7878ed625822d36aa75badec"
+    },
+    {
+      "file": "data/raw/pubtator/018900-411c0f5fb2.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "15917de0335efd82111b262173b1c239c8c4b0ed3717f3195de87d286960d228"
+    },
+    {
+      "file": "data/raw/pubtator/019000-399ebf5e65.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a0be59c33e9dd777f4076029bd3409759c5ca2fe306e8bcf12eee303c9175373"
+    },
+    {
+      "file": "data/raw/pubtator/019100-a339f9b2d4.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "dd57bdcfbece8fba01dde022dc0b501438f6d2d929306fce1c937d56ad923642"
+    },
+    {
+      "file": "data/raw/pubtator/019200-03eb4c54e2.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "37819772c836fc3f9cbd0bdcaf223135f93bd7ddc32c8b4666c7e53c9bdd1dcb"
+    },
+    {
+      "file": "data/raw/pubtator/019300-01dd0bf77c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a7868716d5df64e1d8d26ff608d7d5b58a3cf21df923904bb4c32f559596e059"
+    },
+    {
+      "file": "data/raw/pubtator/019400-b33e87eac4.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "1b259460b780a6ea9d73f7e697dc26a252c54d1c071bcfaca7ca6236ac1cea61"
+    },
+    {
+      "file": "data/raw/pubtator/019500-036433de9d.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e8a3a4f39bb675f0f30b4549a0f6cf3f3d33ab0011052a35d9c2fbb2e1151a7e"
+    },
+    {
+      "file": "data/raw/pubtator/019600-017c94b4d9.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "76f13d93ee8b2f3e5bf67f5ed9f00f8ad17443b367d302cf9823b6ad685741ba"
+    },
+    {
+      "file": "data/raw/pubtator/019700-93d6b9c12f.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "cd84ffa6b06229f755befd847243dc21daed826224426b7bb9e4bd1db23f007f"
+    },
+    {
+      "file": "data/raw/pubtator/019800-5bf80232b7.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a87e716bc76d1cfc28fa6df6d8993983c7f7af1c3e2b8c7cd516919f007eab28"
+    },
+    {
+      "file": "data/raw/pubtator/019900-47edc80b00.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "186315c3ffec9d9b42ccb2e6102da0c12c904ee65bddf6075687c175c355f82d"
+    },
+    {
+      "file": "data/raw/pubtator/020000-e40f4e3b62.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e85106f10479aa78aaf606b10303eb90ace517cc953c15e904e68598d35abab7"
+    },
+    {
+      "file": "data/raw/pubtator/020100-737ff7ccab.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "ae4eaddefa6e199a7aefcf1c30625b2bf8a9359f5e5e46d9ca41bcf53d7dfd08"
+    },
+    {
+      "file": "data/raw/pubtator/020200-15c190c2b3.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "792c5dd8ab1fd6620e00052d8d3144175a4d2edd35c6e6cebb4f7f224221d82f"
+    },
+    {
+      "file": "data/raw/pubtator/020300-b9790d88b5.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "278a464853e89359e5438f2e8302ed146e3f21b9ed7e665b73013ddc870bd412"
+    },
+    {
+      "file": "data/raw/pubtator/020400-d50202148a.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "beadb39f7be7ade91f9fecb10878dee99723b96053df6b03bdfabc14a1b22a28"
+    },
+    {
+      "file": "data/raw/pubtator/020500-e5a0532724.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "d8a6636774b1b87a09061d96590b879a13ef759b16f323b29a05b561dfb395c9"
+    },
+    {
+      "file": "data/raw/pubtator/020600-2472ece753.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "235768af79b07476f7485cd5564cb274c0fc73a653bcbcd79ac204af0e31e689"
+    },
+    {
+      "file": "data/raw/pubtator/020700-57fe0e04e3.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "8a7a5db9041d644251a13fcd268fd176b5f102315634de68ac72711607908d1f"
+    },
+    {
+      "file": "data/raw/pubtator/020800-8fc5fd55e6.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "da24d3e18811c9bd41c08667eb6c1d42e49a0fb1f7ede07fbd88ce51d92dca73"
+    },
+    {
+      "file": "data/raw/pubtator/020900-7603ff1247.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "fa550f366a1b045b400fb4d3d25f2b8e750463b912d2489fae0f24a2605e485a"
+    },
+    {
+      "file": "data/raw/pubtator/021000-7b84fb2514.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "7d9f25e18744d557bdd7593ce530e1dcf2af7361263d182c94eeffc076d967f4"
+    },
+    {
+      "file": "data/raw/pubtator/021100-f47be8e8df.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "fa9a35808590322ca021961819030722f3d790d721383a7593f03ce234b0c0b3"
+    },
+    {
+      "file": "data/raw/pubtator/021200-e96aaddf2c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "89c0d0d9421ef72449507554dded5b8f86af769da8aac9a24eb27cf0a2b4189f"
+    },
+    {
+      "file": "data/raw/pubtator/021300-f7226fb569.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "8c3d49fee2638bf2b9243899bf2f62281bfbca37ab7a0e0dc02e19c25a23a34c"
+    },
+    {
+      "file": "data/raw/pubtator/021400-b85da50372.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "21788d76268fb60fe20dfc342ce91c078938cda36194b62a7c7f6c205514ccc2"
+    },
+    {
+      "file": "data/raw/pubtator/021500-282feaa632.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "dbe726684a02e78110aa22dbe25a559ee316b2ec4f091aaf1c33e974be47b88d"
+    },
+    {
+      "file": "data/raw/pubtator/021600-3c81924a1d.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "d2d3574c29d0627e3c0a5e8a7ada95b604c5dbc868b6702ee042372a7b5b40e2"
+    },
+    {
+      "file": "data/raw/pubtator/021700-8e593391c9.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c27db2d3240d5fdfd56c11b58d7e5532c3b50d8ccf7678792333c8e92710a207"
+    },
+    {
+      "file": "data/raw/pubtator/021800-fdf5298326.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "3901ba39fc04bcdc77b40f458d364eb282d9139b891d8b40d29042435d3a2330"
+    },
+    {
+      "file": "data/raw/pubtator/021900-29fc6bd4c1.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c7b764b2e9d95faa2a6f6c3bac3fc53ae66dae2e50940982b451f1a758a92443"
+    },
+    {
+      "file": "data/raw/pubtator/022000-add55790ab.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "cac7a6480a6628e02a12e199ba695122a46ec2828ef32f96c3fb5ce779c5b6e7"
+    },
+    {
+      "file": "data/raw/pubtator/022100-4dc5e0ccb8.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "df28e66441b36ecc226fbe4fe3f96644e02bbdc7561814716128915f6a8ddb57"
+    },
+    {
+      "file": "data/raw/pubtator/022200-75b5f6e3c6.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a5c9163d9eee20546b152814333dff7abd0bdd2bba8325033619ceb996816ae9"
+    },
+    {
+      "file": "data/raw/pubtator/022300-267cc076e6.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "56065dd8c849fa65eedb099c6ef8d931beee27fc80ee2f8a87950c71d0667c02"
+    },
+    {
+      "file": "data/raw/pubtator/022400-71a30e52c0.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e6020ee7924fb6786b6755bc45cf985913b7685efde063ba4d87fec4292be189"
+    },
+    {
+      "file": "data/raw/pubtator/022500-fcfaa94152.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "291e53c10d2fadf7eb57c10081d1d6e984d3b5d107a5548682a0bc0a935a055f"
+    },
+    {
+      "file": "data/raw/pubtator/022600-36ee79380f.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "027098954d5f69956653894e3bd979c41177f38c55bdb224d52df6ef85325251"
+    },
+    {
+      "file": "data/raw/pubtator/022700-28120bc311.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "480071a93a5dd36ec8568c500dd536d23f57f57ed52342b17648624c377204bd"
+    },
+    {
+      "file": "data/raw/pubtator/022800-251c282d5a.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "f6eafbcb41c737283ff091bd210d1b55495d886b1e0e7e6ff85cae4fee869f36"
+    },
+    {
+      "file": "data/raw/pubtator/022900-b60549d6a5.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "6e32f36148e13c21093e02bd3c4243e0937de024cd5738189f48ff19d7c0c6e0"
+    },
+    {
+      "file": "data/raw/pubtator/023000-00ae268d35.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "7918e658367b3cad05bd39351b5f9f8d10368af7038f33550c8ecb53b38c1368"
+    },
+    {
+      "file": "data/raw/pubtator/023100-52429cfccf.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e4debbec6b7ff775be9ba116ce2c922fc6f70bec0afa0ef726272a38a13e75f6"
+    },
+    {
+      "file": "data/raw/pubtator/023200-697a3b4242.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "46f832acfced77bd3584c922e62e99019eb78ff1d2c4c0758cbd3f3f145c70f7"
+    },
+    {
+      "file": "data/raw/pubtator/023300-b29b184f66.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "b566228bcd4704802981215e597337fc97b8221a298da8df98dae5ed8e0d856e"
+    },
+    {
+      "file": "data/raw/pubtator/023400-f2905c3bfc.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e4024b349afb109101092d15efac65420bdf9cded43f79c86e6efd2fb7af0123"
+    },
+    {
+      "file": "data/raw/pubtator/023500-183edb01fd.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "17fc9572c8c76edf855ad3fc58dadfa4f842c66d83885f0ee77379f4688ba4b6"
+    },
+    {
+      "file": "data/raw/pubtator/023600-824d786399.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c81907ed84c11316e18301bbee122aa86533bbd13c5e8ff1b2dd482ffe2a0294"
+    },
+    {
+      "file": "data/raw/pubtator/023700-f4881fb434.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "3511202289e39785c8787bc40782c30163513610b135c17e84c45959a526633f"
+    },
+    {
+      "file": "data/raw/pubtator/023800-c6216f25d5.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "d982bdd62228a86d9f046c9be942199e97a1c2a201b1f8748d3ef0ffaf6c9001"
+    },
+    {
+      "file": "data/raw/pubtator/023900-c2efc18540.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e59ae6fc3b31d9d751cafe93d7024bc0f6f4a65cd20cd57d6a11ff28bbb75409"
+    },
+    {
+      "file": "data/raw/pubtator/024000-194f69ed48.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "44e0fff70712ea1f62761fbfbef03c9d7d09f74bb9b268330466ff0acb95e546"
+    },
+    {
+      "file": "data/raw/pubtator/024100-cfe44344d7.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "07fc3b5d6cb7cdb70bf5ec7e34a2a9425aaec137719c46612802cd9a6c979ebe"
+    },
+    {
+      "file": "data/raw/pubtator/024200-b655075c27.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "f805e680bca911954639573eda414554be5a0dead2af26cb5c3642a100350efb"
+    },
+    {
+      "file": "data/raw/pubtator/024300-9f2d31e97b.json.gz",
+      "requested": 100,
+      "returned": 48,
+      "missing": [
+        "39133725",
+        "39134001",
+        "39134066",
+        "39134173",
+        "39134462",
+        "39134463",
+        "39135091",
+        "39136228",
+        "39137064",
+        "39137110",
+        "39138683",
+        "39138876",
+        "39138963",
+        "39139038",
+        "39139128",
+        "39140231",
+        "39140772",
+        "39141075",
+        "39141201",
+        "39141404",
+        "39142677",
+        "39142721",
+        "39142723",
+        "39142859",
+        "39143654",
+        "39143657",
+        "39143849",
+        "39145312",
+        "39145401",
+        "39145614",
+        "39145861",
+        "39146479",
+        "39147076",
+        "39147102",
+        "39147157",
+        "39150336",
+        "39150432",
+        "39150883",
+        "39150916",
+        "39151204",
+        "39151543",
+        "39151723",
+        "39152660",
+        "39153085",
+        "39153140",
+        "39153426",
+        "39153754",
+        "39154180",
+        "39155138",
+        "39155319",
+        "39157750",
+        "39157881"
+      ],
+      "sha256_uncompressed": "a870d28866bd645db7c23221037f32ba70c15a6d1bff09d3857680fff744c19a"
+    },
+    {
+      "file": "data/raw/pubtator/024400-3cf048e5a9.json.gz",
+      "requested": 100,
+      "returned": 74,
+      "missing": [
+        "39157890",
+        "39158701",
+        "39158775",
+        "39159661",
+        "39159917",
+        "39160300",
+        "39160334",
+        "39160356",
+        "39160513",
+        "39160557",
+        "39161069",
+        "39161072",
+        "39162279",
+        "39162956",
+        "39162984",
+        "39163055",
+        "39163556",
+        "39163706",
+        "39163798",
+        "39163956",
+        "39167190",
+        "39167630",
+        "39168098",
+        "39169259",
+        "39171569",
+        "39171608"
+      ],
+      "sha256_uncompressed": "33f337b4a395741dcaca12e7f374f54727220d3cc32d18997e38becfd2a11890"
+    },
+    {
+      "file": "data/raw/pubtator/024500-7a002d4cd3.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "6fdc6932097987520df173c2cadbc8a8f7834737c6e8b026108fef4752366226"
+    },
+    {
+      "file": "data/raw/pubtator/024600-9f1a7afde2.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "b82cf52503bfcb5e1bf557017dabb906ea6340a28281d5d4367f944ba4fd3056"
+    },
+    {
+      "file": "data/raw/pubtator/024700-8221df4283.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "1d5303e38c9dc4e95bfcea7d84969753835d7753f933a275745d3944378c5cb6"
+    },
+    {
+      "file": "data/raw/pubtator/024800-ac1ebc9311.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "54c04499b5cb82c867145c67f637c2be0c8bcc7c897c30c760325e47920258f0"
+    },
+    {
+      "file": "data/raw/pubtator/024900-98b749d74d.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "5f8dcb00e556ce7cf39b79db75df6f68602bfb4ec79aeb780a1cd3ae93b5636b"
+    },
+    {
+      "file": "data/raw/pubtator/025000-84aa381301.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "11befa0e84b4c48e709d842b710c3441fa3bdf796278e02582aa154c622bc8df"
+    },
+    {
+      "file": "data/raw/pubtator/025100-de616c11c1.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "4e02cb04a14ab3d702575839d5a1346bc805683aa767ba621158e0b19d42564f"
+    },
+    {
+      "file": "data/raw/pubtator/025200-5888375638.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "ff67d30a1fc6766620222d6eb1be955ada87157c0fc4e7ca5b3eade4b413e061"
+    },
+    {
+      "file": "data/raw/pubtator/025300-dba9f00a71.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "1af439a2f2cc7f8582db07e4946da8839119aced12fac5b141457273164d9c74"
+    },
+    {
+      "file": "data/raw/pubtator/025400-c0608b887a.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e47c9dadd46376ed62c3dbf69fc6274cd5428979a5238523d0048763cd69e61e"
+    },
+    {
+      "file": "data/raw/pubtator/025500-3047010615.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "5597956e4c3a9c0e1fe44552c1cd611f8e9bc754f2fcad2b0ba2f271729bbd9a"
+    },
+    {
+      "file": "data/raw/pubtator/025600-b6458a3802.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "268305e888183342794da33668c46c0c7ec5f0fb238772ea1709a96d640c51aa"
+    },
+    {
+      "file": "data/raw/pubtator/025700-4f8bf12022.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "98514b75aacd14fff957c5961d33741996c595a244222045c85e7e2100cb9146"
+    },
+    {
+      "file": "data/raw/pubtator/025800-013361e114.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "1e42a8d0f7db287e05ecdc574d195bda874b2bb1cdfd05af436a5f320fb563d9"
+    },
+    {
+      "file": "data/raw/pubtator/025900-7149dab024.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "d9cda21bb6f58c9c95c95506cf042c268891f4ff2174f2db4bc114e842150c32"
+    },
+    {
+      "file": "data/raw/pubtator/026000-9c5568fc23.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "3bf8d52481fad91e60e81d33e84b0d07eebf4501a04e8bec8bb851097580c145"
+    },
+    {
+      "file": "data/raw/pubtator/026100-0245331c47.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "fdfc2e2d7a16d8f6b0a6d79805e1534648111f9b6c6b13cc1f577d8bd3017f2d"
+    },
+    {
+      "file": "data/raw/pubtator/026200-dec95fdc57.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "daa3de11a298d49f192bd0f5686271a718e404787169336f363153211f241dd4"
+    },
+    {
+      "file": "data/raw/pubtator/026300-7395ef6ebe.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a23f755d3abadfbc430e3621412dd458293a8af72f6eb693b3161bdab8d5d267"
+    },
+    {
+      "file": "data/raw/pubtator/026400-b62de29f41.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "e270d44b628f4c9943fbb89c55f7ba3e8b39bbf7eb6fb5cb7fc4aa6ba844732f"
+    },
+    {
+      "file": "data/raw/pubtator/026500-e92ec63ebd.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "aa02f20f53ed84cc23e77e3ef1ace5f89d474ef44c171f85af03ca1d7db6b870"
+    },
+    {
+      "file": "data/raw/pubtator/026600-c6d9bcd920.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "0d3503fcc6f03b03d5c89a250af680864999dce6d7de2a1be75449bed919c22a"
+    },
+    {
+      "file": "data/raw/pubtator/026700-455ea19077.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "975009b100ca38a898ab75c17848289a4e8694aee7383f46eade7714f4211ff5"
+    },
+    {
+      "file": "data/raw/pubtator/026800-0d9e854281.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "f483963cc7f90c19f6dbdb77c88cb59de3a1233ffafa60b06021996b289d3d8a"
+    },
+    {
+      "file": "data/raw/pubtator/026900-94d044df90.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "956bf753d50263080a256e1d241c0458643dd31d801efafe932a1fe6f4b7b917"
+    },
+    {
+      "file": "data/raw/pubtator/027000-928a2abb66.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "21e7e5d4a6ebb1f569efc1e8daba7b95abd09a1c34071696445ce3fc50d90e14"
+    },
+    {
+      "file": "data/raw/pubtator/027100-5b71e6a31c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "22df5c4c5b85b651cfd82cfcb87a84d649ebdf8d79934050f1a10a2844618598"
+    },
+    {
+      "file": "data/raw/pubtator/027200-e7e57e8ef0.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "77f65927da1026292f04cb698e0cb65449fa286c5467ada0ef19ebe21979596b"
+    },
+    {
+      "file": "data/raw/pubtator/027300-43f1aa9bee.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "ee13ceac303e41f9082f1578dbe8cc5ddf427381ce1994752b0acc8b72c3c76f"
+    },
+    {
+      "file": "data/raw/pubtator/027400-0f690bcd3f.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "353fe28e4d7f3a10045d0c27ac2f2201ab52fcc6a08765ea47f30e4e940afae0"
+    },
+    {
+      "file": "data/raw/pubtator/027500-8d9b21194f.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "79ad78251c73c4715d08d919ec2c8c132d7d247edc5c670b59e90eed3cccde81"
+    },
+    {
+      "file": "data/raw/pubtator/027600-eb57c0dffd.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "361c9a8aa3df7a8d0499824e3ea0dff16f839fcb485b33cb3846833bf36aced0"
+    },
+    {
+      "file": "data/raw/pubtator/027700-a7f1aacf86.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "33ad1aed627564bd8e0478dcc72ba5f0171a63e2122be6d8e8aeaf05ce71526f"
+    },
+    {
+      "file": "data/raw/pubtator/027800-bd9e9deeb5.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "ca71e023c3c1dd52edfa52e0d6053507505a5635d851f781673fc62a2b39e5f2"
+    },
+    {
+      "file": "data/raw/pubtator/027900-d69cd6c3cc.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a3c70edd95aa7aca44fcbb25c1c54c74f4010ea69bdafe7e1556c26063e4e01e"
+    },
+    {
+      "file": "data/raw/pubtator/028000-dd469277d1.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "34ad2eb9aaf2fa5418c67d56d4ea8d7b87f06f3291429a1fe906db49e64c1d93"
+    },
+    {
+      "file": "data/raw/pubtator/028100-94156e3cc1.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "fe432e4b9c8c0f786ea00b19667214198dd51fc20feed28b8d8eda8bd09997de"
+    },
+    {
+      "file": "data/raw/pubtator/028200-751183d6f9.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "cc8af41bd611be66c2b80209c752281196afc909be09acc688eaae546e5886a8"
+    },
+    {
+      "file": "data/raw/pubtator/028300-7cfc68bbc6.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "a785f73f144f6a3081b1973cba68d4fd32de62c939786691e2b0f6835e754320"
+    },
+    {
+      "file": "data/raw/pubtator/028400-dae08b6091.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "f30231b7c521385abb82dea813d71c8137c1e58f88cf2cc1bdd35213e2013a2d"
+    },
+    {
+      "file": "data/raw/pubtator/028500-aa98dbd590.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "9a6489e4f1c9a6908e1d47e86a51f2e19a45b4fd1d1114bd37a0fdfccd7550e5"
+    },
+    {
+      "file": "data/raw/pubtator/028600-8c1a0c98b0.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "30203f79956a33c33bdc5128ce0fdfc9f8ae050f8f56b17aac3435815386015d"
+    },
+    {
+      "file": "data/raw/pubtator/028700-a27fcf8b6c.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "0fe3bda341ea6bf063ff9bf4854a1d92c06aee634d4db7940fce9633abe0208f"
+    },
+    {
+      "file": "data/raw/pubtator/028800-87c3f888c0.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "59b1ede91c4b9d5472ec503bf016c41ede7359a09f4e4bf2cfb43335f0808045"
+    },
+    {
+      "file": "data/raw/pubtator/028900-c9c937670f.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "11ede6fc1743d7eac1e7440d7769799ec9bcedab80e5263609f27167dfa655a5"
+    },
+    {
+      "file": "data/raw/pubtator/029000-8fd00ec863.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "75a5c0f31b75027ef2b4faf2180e1ad13223df60893d9267e078b8b65cf2ef68"
+    },
+    {
+      "file": "data/raw/pubtator/029100-7264352ca8.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "d261552855b719dff2eb5d83b4dbb314758015d0370eaf9817967dbcc27d95d6"
+    },
+    {
+      "file": "data/raw/pubtator/029200-9861d693d8.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "4c0bd7a18ad9a97167a4fbc4cf01c312ac0e1aff4eeb4e60d877305e2cae6612"
+    },
+    {
+      "file": "data/raw/pubtator/029300-b1e3200f56.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "d16b2ca291ab765df35c8febcb5aff9c278035c1225d1105bcda863f51ecbeb8"
+    },
+    {
+      "file": "data/raw/pubtator/029400-51742574e0.json.gz",
+      "requested": 100,
+      "returned": 100,
+      "missing": [],
+      "sha256_uncompressed": "c0344eb9d4035f8acc39163cd5cd3e7518512b96b68ddd908a8ce4ae41e998a3"
+    },
+    {
+      "file": "data/raw/pubtator/029500-242076f314.json.gz",
+      "requested": 59,
+      "returned": 59,
+      "missing": [],
+      "sha256_uncompressed": "98e0565b1ce0602c1db7577d12e4cf958a9d998232e67b919ceb5a7b44eeff3a"
+    }
+  ],
+  "sha256": "015099a661e9c026a157834e764525a2392bbfa4af4f1a61f6e439e705ad4166"
+}

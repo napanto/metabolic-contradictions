@@ -1,0 +1,41 @@
+{
+  "addendum": "08C",
+  "addendum_sha256": "2e1cd95551e623287e6dfd85940b4819c10388bab06cb17b2eeceed2fe58381a",
+  "decision_sha256": "285057487d5f3af50ff44feacb87d06089129c8298da9e08607e63820c9e275a",
+  "effort": "high",
+  "inputs_sha256": {
+    "classification_high": "7fc0d646d5aef9f8115cd2aa427ff8117a1cf128a5e8787490c4fa200fd4862f",
+    "classification_low": "fc8c6d0d7aea3e295bbb0e001202a464ddc539cbb54a58e111adaf4f66794135",
+    "classification_max": "a38f91ce763199548c9c299aa63679362322c89a49cdfeb18e611f7568176851",
+    "oracle_astra_08b": "48b8dfbe68a835815a994d74e305d89317de112241f11701ad20f9dabfde371c",
+    "oracle_fable_08b": "b38640e35453af06436d9fb03f9b92ae78733e5a00ce95535991b852164d255c",
+    "package": "c8915e23f840e657a21f4e9f393a57856951ad93c389650b951a5f778d746afb"
+  },
+  "primary": {
+    "best": 22,
+    "counts": {
+      "high": 21,
+      "low": 19,
+      "max": 22
+    },
+    "invalid_labels": {
+      "high": 0,
+      "low": 1,
+      "max": 1
+    },
+    "measure": "reference pairs whose binary flag equals the reference flag; an invalid label counts as a mismatch",
+    "threshold": 21
+  },
+  "reference": "category on which Astra and Fable agree, validity under addendum 08B",
+  "reference_pairs": 25,
+  "rule": "in the order low, high, max, the lowest effort whose primary measure is at most one pair below the best (addendum 08C)",
+  "secondary": {
+    "counts": {
+      "high": 20,
+      "low": 14,
+      "max": 17
+    },
+    "measure": "reference pairs whose category matches (reported, does not decide)"
+  },
+  "students_used": false
+}

@@ -1,0 +1,20 @@
+{
+ "addendum": "PROTOCOL_ADDENDUM_08B_FREE_TEXT.md",
+ "addendum_registered_sha256": "8ac2bf5ee96b893a861d9fd645d99d64d01accd7efe29e829ffa5833b80de817",
+ "addendum_sha256": "d14d12941e74f40da34978d77f55424e45af9e7c77304e6a438fb968c6149ae4",
+ "counts": {
+  "final_attempt_changed_from_original": 4,
+  "free_text_adapted_in_used_attempt": 14,
+  "invalid_08b": 0,
+  "items": 35,
+  "made_valid_by_08b": 10,
+  "valid_08b": 35,
+  "valid_strict": 25
+ },
+ "existing_files_modified": false,
+ "generated_at": "2026-11-16T02:03:36.149551+00:00",
+ "judge": "fable",
+ "output": "two_judge_final_08b.jsonl",
+ "output_sha256": "b38640e35453af06436d9fb03f9b92ae78733e5a00ce95535991b852164d255c",
+ "rule": "validity on coded answers; free text removed where no box and cut at 200 characters only in the validation copy; rule 3 as written: the first attempt valid under 08B is final for every item; the attempt final under the original rule, where different, is recorded as the literal_rule_attempt alternative (Correction, 03:02 CET)"
+}

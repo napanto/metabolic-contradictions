@@ -1,0 +1,53 @@
+{
+ "schema_version": 1,
+ "status": "amended",
+ "amends": {
+  "path": "configs/human_collection_lock.json",
+  "sha256": "34de3ae3bae33976460b0324e6f44ab09cd89a6709ea7949036d2a584933e7ea",
+  "after": {
+   "path": "configs/human_collection_lock_amendment_rebuilt_pairs.json",
+   "sha256": "564f58a1f46ac57b76c1cbb0f0c6ccd0843d5accaf2cd8381a77191958f4bd22"
+  }
+ },
+ "amended_at": "2026-11-14T14:24:25+01:00",
+ "authority": "Antonio, 14 November 2026: «Può aver senso aggiungere laureati in ingegneria biomedica ammessi allo studio?»; «Vai con la 1 intanto […] e nel frattempo cerca di sistemare anche il database facendo tutte le prove del caso senza rompere nulla»; «Aggiungi sul sito qualcosa che ti spinga a mettere una nota in circostanze particolari»; «No scusa, metti Ingegneria Biomedica nell'elenco come gli altri. La precisazione su \"laureato\" mettila che valga per tutti. Sistema anche l'informativa privacy.»",
+ "eligibility": {
+  "added": "Biomedical Engineering listed like the other programmes (key bme, label 'Ingegneria biomedica'); adults of the University of Pisa enrolled in or graduated from any listed programme",
+  "mechanism": "amendable programme in site code (engine.AMENDABLE_PROGRAMMES), activated with the audited `flask add-programme bme` (14:30:01); the earlier activation bme_graduate (14:23:47) is ignored and was never used; the signed configuration snapshot is unchanged",
+  "activated_at": "2026-11-14T14:30:01+01:00",
+  "eligible_rule": "identity declared after activation, eligibility declared, no review flag: basis adult_unipi_approved_programme; graduates write 'laureata/laureato' or 'graduate' as the year of study",
+  "export": "student_export_metadata demographics.programme gains the optional bucket biomedical_engineering"
+ },
+ "export_after_rebase": "export-v2 leaves out reads of pairs retired by the v2.1 rebase (they carry the previous package hash; pilot data kept in the database and snapshots)",
+ "instrument": {
+  "changes": [
+   "note help and guidelines invite a few words when a choice does not convince or an option is unusual (4ee3482)",
+   "visible key-rule boxes at Result, relevance, same exposure, population, Q3, Q4; relevance title names the extraction error and the extracted data (dc79db0)",
+   "key-rule boxes for authors' significance (declared only) and sample size (no sums of groups) at the statistical-evidence and sample-size checks (5300f51, deployed 16:04:58)"
+  ],
+  "instrument_export_sha256": "32ad70b50ec9ed3d8c49f8789a93a45d2b7f27db16b5efffb659f360e3afffc1",
+  "previous": [
+   "ab8f4870855116c39b2e42472b642b503d3a6e91b0dc3ddf4cce520332db63f7",
+   "8149cb12f09f61e20090a875ebdb1ec9f79fd21cd8caf429b0105fb3c0e7039f",
+   "a460e7c92665a0c11693d5c806ff8ad0cb5f9caf2a63de9de62e117c5dec7b05"
+  ],
+  "codes_paths_derivations_changed": false,
+  "deployed": "2026-11-14T16:04:58+01:00 (tag v2.1-keyrules2-20261114)"
+ },
+ "site": {
+  "tag": "v2.1-programmes-20261114",
+  "commit": "554e50d",
+  "previous_tag": "v2.1-eligibility-20261114 (4ee3482)",
+  "configuration_snapshot_sha256": "65c3f4255f61d46697c484733c5adec1c99008b46b2f90d90057f5f09c91023a",
+  "configuration_snapshot_unchanged": true
+ },
+ "analysis_notes": [
+  "Sample-size 'missing' marks given before 16:04:58 (no-sums rule not yet shown) must be treated uniformly for all readers: a declared rule or a before/after split; individual corrections cover only the readers who asked."
+ ],
+ "export_participant_corrections": {
+  "site": "v2.1-corrections-20261114 (6423026), deployed 16:13",
+  "files": "corrections.jsonl next to answers.jsonl; metadata participant_corrections and participant_corrections_sha256; schema docs/v2-export/participant_correction.schema.json",
+  "rule": "answers rows never modified; chain entries up to the cutoff exported, last applied and revalidated; primary analysis applies stated corrections, sensitivity uses the original answers; payments unchanged",
+  "command": "flask record-correction"
+ }
+}

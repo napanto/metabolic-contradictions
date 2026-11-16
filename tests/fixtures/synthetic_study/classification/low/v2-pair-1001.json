@@ -1,0 +1,33 @@
+{
+ "attempts": [],
+ "model": "synthetic",
+ "pair_id": "v2-pair-1001",
+ "reasoning": "low",
+ "setting": "low",
+ "status": "valid",
+ "verdict": {
+  "diagnostics": {
+   "comparison_sufficient": true,
+   "error_fields": [],
+   "error_sides": [],
+   "material_extraction_error": false,
+   "notes": "",
+   "source_evidence": [
+    {
+     "quote": "synthetic",
+     "sentence_id": 1,
+     "side": "a"
+    },
+    {
+     "quote": "synthetic",
+     "sentence_id": 1,
+     "side": "b"
+    }
+   ],
+   "uncertain_extraction": false
+  },
+  "factor": "none",
+  "label": "contradictory",
+  "rationale": "Synthetic classification"
+ }
+}

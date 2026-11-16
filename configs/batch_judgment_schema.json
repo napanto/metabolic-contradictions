@@ -1,0 +1,360 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "pmid": {
+      "type": "string"
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "candidate_alias": {
+            "type": "string"
+          },
+          "claims": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "claim_id": {
+                  "type": "string"
+                },
+                "core": {
+                  "enum": [
+                    "supported",
+                    "unsupported",
+                    "unclear"
+                  ]
+                },
+                "critical_errors": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "invented_comparison",
+                      "reversed_direction"
+                    ]
+                  }
+                },
+                "matched_result_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "field_groups": {
+                  "type": "object",
+                  "properties": {
+                    "comparison": {
+                      "type": "object",
+                      "properties": {
+                        "judgment": {
+                          "enum": [
+                            "supported",
+                            "unsupported",
+                            "unclear",
+                            "not_represented"
+                          ]
+                        },
+                        "emitted_details": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "detail_id": {
+                                "type": "string"
+                              },
+                              "text": {
+                                "type": "string"
+                              },
+                              "judgment": {
+                                "enum": [
+                                  "supported",
+                                  "unsupported",
+                                  "unclear"
+                                ]
+                              },
+                              "matched_inventory_detail_ids": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "required": [
+                              "detail_id",
+                              "text",
+                              "judgment",
+                              "matched_inventory_detail_ids"
+                            ],
+                            "additionalProperties": false
+                          }
+                        }
+                      },
+                      "required": [
+                        "judgment",
+                        "emitted_details"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "significance": {
+                      "type": "object",
+                      "properties": {
+                        "judgment": {
+                          "enum": [
+                            "supported",
+                            "unsupported",
+                            "unclear",
+                            "not_represented"
+                          ]
+                        },
+                        "emitted_details": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "detail_id": {
+                                "type": "string"
+                              },
+                              "text": {
+                                "type": "string"
+                              },
+                              "judgment": {
+                                "enum": [
+                                  "supported",
+                                  "unsupported",
+                                  "unclear"
+                                ]
+                              },
+                              "matched_inventory_detail_ids": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "required": [
+                              "detail_id",
+                              "text",
+                              "judgment",
+                              "matched_inventory_detail_ids"
+                            ],
+                            "additionalProperties": false
+                          }
+                        }
+                      },
+                      "required": [
+                        "judgment",
+                        "emitted_details"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "population": {
+                      "type": "object",
+                      "properties": {
+                        "judgment": {
+                          "enum": [
+                            "supported",
+                            "unsupported",
+                            "unclear",
+                            "not_represented"
+                          ]
+                        },
+                        "emitted_details": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "detail_id": {
+                                "type": "string"
+                              },
+                              "text": {
+                                "type": "string"
+                              },
+                              "judgment": {
+                                "enum": [
+                                  "supported",
+                                  "unsupported",
+                                  "unclear"
+                                ]
+                              },
+                              "matched_inventory_detail_ids": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "required": [
+                              "detail_id",
+                              "text",
+                              "judgment",
+                              "matched_inventory_detail_ids"
+                            ],
+                            "additionalProperties": false
+                          }
+                        }
+                      },
+                      "required": [
+                        "judgment",
+                        "emitted_details"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "sample_size": {
+                      "type": "object",
+                      "properties": {
+                        "judgment": {
+                          "enum": [
+                            "supported",
+                            "unsupported",
+                            "unclear",
+                            "not_represented"
+                          ]
+                        },
+                        "emitted_details": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "detail_id": {
+                                "type": "string"
+                              },
+                              "text": {
+                                "type": "string"
+                              },
+                              "judgment": {
+                                "enum": [
+                                  "supported",
+                                  "unsupported",
+                                  "unclear"
+                                ]
+                              },
+                              "matched_inventory_detail_ids": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "required": [
+                              "detail_id",
+                              "text",
+                              "judgment",
+                              "matched_inventory_detail_ids"
+                            ],
+                            "additionalProperties": false
+                          }
+                        }
+                      },
+                      "required": [
+                        "judgment",
+                        "emitted_details"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "analysis": {
+                      "type": "object",
+                      "properties": {
+                        "judgment": {
+                          "enum": [
+                            "supported",
+                            "unsupported",
+                            "unclear",
+                            "not_represented"
+                          ]
+                        },
+                        "emitted_details": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "detail_id": {
+                                "type": "string"
+                              },
+                              "text": {
+                                "type": "string"
+                              },
+                              "judgment": {
+                                "enum": [
+                                  "supported",
+                                  "unsupported",
+                                  "unclear"
+                                ]
+                              },
+                              "matched_inventory_detail_ids": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "required": [
+                              "detail_id",
+                              "text",
+                              "judgment",
+                              "matched_inventory_detail_ids"
+                            ],
+                            "additionalProperties": false
+                          }
+                        }
+                      },
+                      "required": [
+                        "judgment",
+                        "emitted_details"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "comparison",
+                    "significance",
+                    "population",
+                    "sample_size",
+                    "analysis"
+                  ],
+                  "additionalProperties": false
+                },
+                "duplicate_of": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "note": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "claim_id",
+                "core",
+                "critical_errors",
+                "matched_result_ids",
+                "field_groups",
+                "duplicate_of",
+                "note"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "candidate_alias",
+          "claims"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 10
+    }
+  },
+  "required": [
+    "schema_version",
+    "pmid",
+    "candidates"
+  ],
+  "additionalProperties": false
+}

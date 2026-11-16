@@ -1,0 +1,267 @@
+{
+  "type": "object",
+  "properties": {
+    "instrument_version": {
+      "const": "2.0",
+      "type": "string"
+    },
+    "pipeline_version": {
+      "const": "2.0",
+      "type": "string"
+    },
+    "item_id": {
+      "type": "string"
+    },
+    "task": {
+      "const": "extraction",
+      "type": "string"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "fields": {
+            "type": "object",
+            "properties": {
+              "exposure": {
+                "type": "string",
+                "enum": [
+                  "correct",
+                  "incorrect",
+                  "uncertain"
+                ]
+              },
+              "outcome": {
+                "type": "string",
+                "enum": [
+                  "correct",
+                  "incorrect",
+                  "uncertain"
+                ]
+              },
+              "sign": {
+                "type": "string",
+                "enum": [
+                  "correct",
+                  "incorrect",
+                  "uncertain"
+                ]
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "correct",
+                  "incorrect",
+                  "uncertain"
+                ]
+              },
+              "comparator": {
+                "type": "string",
+                "enum": [
+                  "correct",
+                  "incorrect",
+                  "uncertain"
+                ]
+              },
+              "context": {
+                "type": "string",
+                "enum": [
+                  "correct",
+                  "incorrect",
+                  "uncertain"
+                ]
+              }
+            },
+            "required": [
+              "exposure",
+              "outcome",
+              "sign",
+              "kind",
+              "comparator",
+              "context"
+            ],
+            "additionalProperties": false
+          },
+          "support": {
+            "type": "string",
+            "enum": [
+              "supported",
+              "unsupported",
+              "uncertain"
+            ]
+          },
+          "diagnostics": {
+            "type": "object",
+            "properties": {
+              "comparison": {
+                "type": "string",
+                "enum": [
+                  "correct",
+                  "incorrect",
+                  "uncertain"
+                ]
+              },
+              "population": {
+                "type": "string",
+                "enum": [
+                  "correct",
+                  "incorrect",
+                  "uncertain"
+                ]
+              },
+              "sample_size": {
+                "type": "string",
+                "enum": [
+                  "correct",
+                  "incorrect",
+                  "uncertain"
+                ]
+              },
+              "analysis": {
+                "type": "string",
+                "enum": [
+                  "correct",
+                  "incorrect",
+                  "uncertain"
+                ]
+              },
+              "significance": {
+                "type": "string",
+                "enum": [
+                  "correct",
+                  "incorrect",
+                  "uncertain"
+                ]
+              }
+            },
+            "required": [
+              "comparison",
+              "population",
+              "sample_size",
+              "analysis",
+              "significance"
+            ],
+            "additionalProperties": false
+          },
+          "diagnostic_problems": {
+            "type": "object",
+            "properties": {
+              "comparison": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "wrong_value",
+                    "unsupported",
+                    "missing_detail",
+                    "wrong_group_time",
+                    "wrong_direction",
+                    "wrong_exposure_outcome",
+                    "planned_as_observed"
+                  ]
+                },
+                "uniqueItems": true
+              },
+              "population": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "wrong_value",
+                    "unsupported",
+                    "missing_detail",
+                    "wrong_group_time",
+                    "wrong_direction",
+                    "wrong_exposure_outcome",
+                    "planned_as_observed"
+                  ]
+                },
+                "uniqueItems": true
+              },
+              "sample_size": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "wrong_value",
+                    "unsupported",
+                    "missing_detail",
+                    "wrong_group_time",
+                    "wrong_direction",
+                    "wrong_exposure_outcome",
+                    "planned_as_observed"
+                  ]
+                },
+                "uniqueItems": true
+              },
+              "analysis": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "wrong_value",
+                    "unsupported",
+                    "missing_detail",
+                    "wrong_group_time",
+                    "wrong_direction",
+                    "wrong_exposure_outcome",
+                    "planned_as_observed"
+                  ]
+                },
+                "uniqueItems": true
+              },
+              "significance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "wrong_value",
+                    "unsupported",
+                    "missing_detail",
+                    "wrong_group_time",
+                    "wrong_direction",
+                    "wrong_exposure_outcome",
+                    "planned_as_observed"
+                  ]
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "comparison",
+              "population",
+              "sample_size",
+              "analysis",
+              "significance"
+            ],
+            "additionalProperties": false
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "claim_id",
+          "fields",
+          "support",
+          "diagnostics",
+          "diagnostic_problems",
+          "note"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "instrument_version",
+    "pipeline_version",
+    "item_id",
+    "task",
+    "claims"
+  ],
+  "additionalProperties": false
+}

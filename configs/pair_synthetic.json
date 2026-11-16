@@ -1,0 +1,4046 @@
+{
+  "purpose": "synthetic_P_only",
+  "schema_version": "2.0",
+  "cases": [
+    {
+      "private_case": "same_direction_different_size",
+      "private_expected": {
+        "label": "concordant",
+        "factor": "none",
+        "material_extraction_error": false
+      },
+      "item": {
+        "item_id": "v2-pair-901",
+        "task": "pair",
+        "arm": "biomarker",
+        "a": {
+          "article": {
+            "pmid": "887700002",
+            "title": "SYNTHETIC medical report 1-a",
+            "abstract": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks. The stated aim was to assess the reported marker. Marker farin was lower in the condition Morven cases than in the disease-free controls at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Observational Study"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700002/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the condition Morven cases than in the disease-free controls at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "case-control study",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-ac20d36211edbbb0db8680f8",
+            "arm": "biomarker",
+            "exposure": "condition Morven",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "level",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "condition Morven cases",
+                "population": "adults aged 20 to 40 years",
+                "role": "case",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "disease-free controls",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                  }
+                ]
+              },
+              "comparator": "disease-free controls",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "condition Morven cases versus disease-free controls"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the condition Morven cases than in the disease-free controls at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": null,
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                }
+              ]
+            }
+          }
+        },
+        "b": {
+          "article": {
+            "pmid": "887700003",
+            "title": "SYNTHETIC medical report 1-b",
+            "abstract": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks. The stated aim was to assess the reported marker. Marker farin was lower in the condition Morven cases than in the disease-free controls at four weeks, with a reported difference of 4 units.",
+            "year": 2026,
+            "publication_types": [
+              "Observational Study"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700003/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the condition Morven cases than in the disease-free controls at four weeks, with a reported difference of 4 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "case-control study",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-a451169902d58b87aefd7ee2",
+            "arm": "biomarker",
+            "exposure": "condition Morven",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "level",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "condition Morven cases",
+                "population": "adults aged 20 to 40 years",
+                "role": "case",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "disease-free controls",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                  }
+                ]
+              },
+              "comparator": "disease-free controls",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "condition Morven cases versus disease-free controls"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the condition Morven cases than in the disease-free controls at four weeks, with a reported difference of 4 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": null,
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A case-control study in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the condition Morven cases and 30 were in the disease-free controls, with unadjusted analyses of plasma marker Farin at four weeks."
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "private_case": "same_sign_significance_alone",
+      "private_expected": {
+        "label": "concordant",
+        "factor": "none",
+        "material_extraction_error": false
+      },
+      "item": {
+        "item_id": "v2-pair-902",
+        "task": "pair",
+        "arm": "drug",
+        "a": {
+          "article": {
+            "pmid": "887700004",
+            "title": "SYNTHETIC medical report 2-a",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units. This finding was statistically significant (p=0.02).",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700004/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              },
+              {
+                "id": 4,
+                "text": "This finding was statistically significant (p=0.02).",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-3a77d7fae517eb2646b0512b",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": {
+                "operator": "=",
+                "value": 0.02,
+                "target": "reported group contrast",
+                "reported_text": "p=0.02"
+              },
+              "confidence_interval": null,
+              "authors_significance": "significant",
+              "significance_basis": [
+                "p_value",
+                "explicit_wording"
+              ],
+              "significance_wording": "statistically significant",
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                },
+                {
+                  "sentence_id": 4,
+                  "quote": "This finding was statistically significant (p=0.02)."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        },
+        "b": {
+          "article": {
+            "pmid": "887700005",
+            "title": "SYNTHETIC medical report 2-b",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units. This directional finding was not statistically significant (p=0.20).",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700005/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              },
+              {
+                "id": 4,
+                "text": "This directional finding was not statistically significant (p=0.20).",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-f0c9da8f71cedf02543817ae",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": {
+                "operator": "=",
+                "value": 0.2,
+                "target": "reported group contrast",
+                "reported_text": "p=0.20"
+              },
+              "confidence_interval": null,
+              "authors_significance": "not_significant",
+              "significance_basis": [
+                "p_value",
+                "explicit_wording"
+              ],
+              "significance_wording": "not statistically significant",
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                },
+                {
+                  "sentence_id": 4,
+                  "quote": "This directional finding was not statistically significant (p=0.20)."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "private_case": "effect_and_explicit_no_difference",
+      "private_expected": {
+        "label": "not_replicated",
+        "factor": "none",
+        "material_extraction_error": false
+      },
+      "item": {
+        "item_id": "v2-pair-903",
+        "task": "pair",
+        "arm": "drug",
+        "a": {
+          "article": {
+            "pmid": "887700006",
+            "title": "SYNTHETIC medical report 3-a",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700006/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-1385cfc0444e2cf60513bd68",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        },
+        "b": {
+          "article": {
+            "pmid": "887700007",
+            "title": "SYNTHETIC medical report 3-b",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. The authors reported no difference in marker Farin between the Dorafen group and the placebo group at four weeks.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700007/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "The authors reported no difference in marker Farin between the Dorafen group and the placebo group at four weeks.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-1ac08cb71224cc1bd629cc7d",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "explicit_no_difference",
+              "estimate_direction": null,
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "The authors reported no difference in marker Farin between the Dorafen group and the placebo group at four weeks."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "private_case": "same_sign_explicit_nonconfirmation",
+      "private_expected": {
+        "label": "not_replicated",
+        "factor": "none",
+        "material_extraction_error": false
+      },
+      "item": {
+        "item_id": "v2-pair-904",
+        "task": "pair",
+        "arm": "drug",
+        "a": {
+          "article": {
+            "pmid": "887700008",
+            "title": "SYNTHETIC medical report 4-a",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700008/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-d92e63be8b184fa3142beeda",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        },
+        "b": {
+          "article": {
+            "pmid": "887700009",
+            "title": "SYNTHETIC medical report 4-b",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. The point estimate for marker Farin was lower in the Dorafen group than the placebo group, but the authors did not confirm an effect at four weeks. This directional finding was not statistically significant (p=0.20).",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700009/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "The point estimate for marker Farin was lower in the Dorafen group than the placebo group, but the authors did not confirm an effect at four weeks.",
+                "section": "RESULTS"
+              },
+              {
+                "id": 4,
+                "text": "This directional finding was not statistically significant (p=0.20).",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-ac607383bd4af0db6e1ff7c7",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "not_confirmed",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": {
+                "operator": "=",
+                "value": 0.2,
+                "target": "reported group contrast",
+                "reported_text": "p=0.20"
+              },
+              "confidence_interval": null,
+              "authors_significance": "not_significant",
+              "significance_basis": [
+                "p_value",
+                "explicit_wording"
+              ],
+              "significance_wording": "not statistically significant",
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "The point estimate for marker Farin was lower in the Dorafen group than the placebo group, but the authors did not confirm an effect at four weeks."
+                },
+                {
+                  "sentence_id": 4,
+                  "quote": "This directional finding was not statistically significant (p=0.20)."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "private_case": "opposed_with_documented_population",
+      "private_expected": {
+        "label": "apparent_contradiction",
+        "factor": "population",
+        "material_extraction_error": false
+      },
+      "item": {
+        "item_id": "v2-pair-905",
+        "task": "pair",
+        "arm": "drug",
+        "a": {
+          "article": {
+            "pmid": "887700010",
+            "title": "SYNTHETIC medical report 5-a",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700010/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-3e79fb2fa141e4faccd01ba1",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        },
+        "b": {
+          "article": {
+            "pmid": "887700011",
+            "title": "SYNTHETIC medical report 5-b",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 70 to 80 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. Marker farin was higher in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700011/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 70 to 80 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was higher in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 70 to 80 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 70 to 80 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-b8db328b14d3160288f789be",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 70 to 80 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 70 to 80 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 70 to 80 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 70 to 80 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 70 to 80 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 70 to 80 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 70 to 80 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 70 to 80 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "+",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was higher in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 70 to 80 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "private_case": "opposed_matched_context",
+      "private_expected": {
+        "label": "contradictory",
+        "factor": "none",
+        "material_extraction_error": false
+      },
+      "item": {
+        "item_id": "v2-pair-906",
+        "task": "pair",
+        "arm": "drug",
+        "a": {
+          "article": {
+            "pmid": "887700012",
+            "title": "SYNTHETIC medical report 6-a",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units. This finding was statistically significant (p=0.02).",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700012/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              },
+              {
+                "id": 4,
+                "text": "This finding was statistically significant (p=0.02).",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-678a56e51b9dbbf930dae1f8",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": {
+                "operator": "=",
+                "value": 0.02,
+                "target": "reported group contrast",
+                "reported_text": "p=0.02"
+              },
+              "confidence_interval": null,
+              "authors_significance": "significant",
+              "significance_basis": [
+                "p_value",
+                "explicit_wording"
+              ],
+              "significance_wording": "statistically significant",
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                },
+                {
+                  "sentence_id": 4,
+                  "quote": "This finding was statistically significant (p=0.02)."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        },
+        "b": {
+          "article": {
+            "pmid": "887700013",
+            "title": "SYNTHETIC medical report 6-b",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. Marker farin was higher in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units. This finding was statistically significant (p=0.02).",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700013/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was higher in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              },
+              {
+                "id": 4,
+                "text": "This finding was statistically significant (p=0.02).",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-b267d07e750b8b8f96654c06",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "+",
+              "estimate": null,
+              "p_value": {
+                "operator": "=",
+                "value": 0.02,
+                "target": "reported group contrast",
+                "reported_text": "p=0.02"
+              },
+              "confidence_interval": null,
+              "authors_significance": "significant",
+              "significance_basis": [
+                "p_value",
+                "explicit_wording"
+              ],
+              "significance_wording": "statistically significant",
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was higher in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                },
+                {
+                  "sentence_id": 4,
+                  "quote": "This finding was statistically significant (p=0.02)."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "private_case": "unknown_comparison",
+      "private_expected": {
+        "label": "not_comparable",
+        "factor": "unknown",
+        "material_extraction_error": false
+      },
+      "item": {
+        "item_id": "v2-pair-907",
+        "task": "pair",
+        "arm": "drug",
+        "a": {
+          "article": {
+            "pmid": "887700014",
+            "title": "SYNTHETIC medical report 7-a",
+            "abstract": "60 adults aged 20 to 40 years were enrolled in an observational report on Dorafen in the fictional region Selora; analysis groups and timing were not stated. The stated aim was to assess the reported marker. Marker farin was lower in relation to Dorafen, but the comparison and reference were not described.",
+            "year": 2026,
+            "publication_types": [
+              "Observational Study"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700014/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "60 adults aged 20 to 40 years were enrolled in an observational report on Dorafen in the fictional region Selora; analysis groups and timing were not stated.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in relation to Dorafen, but the comparison and reference were not described.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "report",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "60 adults aged 20 to 40 years were enrolled in an observational report on Dorafen in the fictional region Selora; analysis groups and timing were not stated."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "60 adults aged 20 to 40 years were enrolled in an observational report on Dorafen in the fictional region Selora; analysis groups and timing were not stated."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-9bb4049ff6f408744088f9f3",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "association",
+            "comparison": {
+              "type": "unclear",
+              "index_group": null,
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "60 adults aged 20 to 40 years were enrolled in an observational report on Dorafen in the fictional region Selora; analysis groups and timing were not stated."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "unclear",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in relation to Dorafen, but the comparison and reference were not described."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "60 adults aged 20 to 40 years were enrolled in an observational report on Dorafen in the fictional region Selora; analysis groups and timing were not stated."
+                }
+              ]
+            }
+          }
+        },
+        "b": {
+          "article": {
+            "pmid": "887700015",
+            "title": "SYNTHETIC medical report 7-b",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700015/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-752d8986d0b3748ed267c877",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "private_case": "material_direction_extraction_error",
+      "private_expected": {
+        "label": "not_comparable",
+        "factor": "none",
+        "material_extraction_error": true
+      },
+      "item": {
+        "item_id": "v2-pair-908",
+        "task": "pair",
+        "arm": "drug",
+        "a": {
+          "article": {
+            "pmid": "887700016",
+            "title": "SYNTHETIC medical report 8-a",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700016/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-24e4152a8fc900ef26e0833c",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "+",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        },
+        "b": {
+          "article": {
+            "pmid": "887700017",
+            "title": "SYNTHETIC medical report 8-b",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700017/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-f13098295dfee480ee292b86",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "private_case": "different_outcomes",
+      "private_expected": {
+        "label": "not_comparable",
+        "factor": "outcome_definition",
+        "material_extraction_error": false
+      },
+      "item": {
+        "item_id": "v2-pair-909",
+        "task": "pair",
+        "arm": "diet",
+        "a": {
+          "article": {
+            "pmid": "887700018",
+            "title": "SYNTHETIC medical report 9-a",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Farin at four weeks; the food Nuvora group received 10 mg daily. The stated aim was to assess the reported marker. Marker farin was lower in the food Nuvora group than in the control-food group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700018/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Farin at four weeks; the food Nuvora group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the food Nuvora group than in the control-food group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Farin at four weeks; the food Nuvora group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Farin at four weeks; the food Nuvora group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-72d4bbdaa54816bf6261b434",
+            "arm": "diet",
+            "exposure": "food Nuvora",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "food Nuvora group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Farin at four weeks; the food Nuvora group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Farin at four weeks; the food Nuvora group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "control-food group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Farin at four weeks; the food Nuvora group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Farin at four weeks; the food Nuvora group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "control-food group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "food Nuvora group versus control-food group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Farin at four weeks; the food Nuvora group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the food Nuvora group than in the control-food group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Farin at four weeks; the food Nuvora group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        },
+        "b": {
+          "article": {
+            "pmid": "887700019",
+            "title": "SYNTHETIC medical report 9-b",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Govin at four weeks; the food Nuvora group received 10 mg daily. The stated aim was to assess the reported marker. Marker govin was lower in the food Nuvora group than in the control-food group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700019/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Govin at four weeks; the food Nuvora group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker govin was lower in the food Nuvora group than in the control-food group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Govin at four weeks; the food Nuvora group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Govin at four weeks; the food Nuvora group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-3a5b4a68ab7f74de7bed3a3d",
+            "arm": "diet",
+            "exposure": "food Nuvora",
+            "exposure_class": null,
+            "outcome": "marker Govin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "food Nuvora group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Govin at four weeks; the food Nuvora group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Govin at four weeks; the food Nuvora group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "control-food group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Govin at four weeks; the food Nuvora group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Govin at four weeks; the food Nuvora group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "control-food group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "food Nuvora group versus control-food group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Govin at four weeks; the food Nuvora group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker govin was lower in the food Nuvora group than in the control-food group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the food Nuvora group and 30 were in the control-food group, with unadjusted analyses of plasma marker Govin at four weeks; the food Nuvora group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "private_case": "different_aims_same_observed_contrast",
+      "private_expected": {
+        "label": "concordant",
+        "factor": "none",
+        "material_extraction_error": false
+      },
+      "item": {
+        "item_id": "v2-pair-910",
+        "task": "pair",
+        "arm": "drug",
+        "a": {
+          "article": {
+            "pmid": "887700020",
+            "title": "SYNTHETIC medical report 10-a",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess marker changes. Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700020/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess marker changes.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess marker changes"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess marker changes."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-6cdd19c7cc3edf43dc4f4217",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        },
+        "b": {
+          "article": {
+            "pmid": "887700021",
+            "title": "SYNTHETIC medical report 10-b",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess adherence. Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700021/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess adherence.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess adherence"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess adherence."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-b8977adda99d22530c267c30",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "private_case": "within_versus_between_questions",
+      "private_expected": {
+        "label": "not_comparable",
+        "factor": "comparator",
+        "material_extraction_error": false
+      },
+      "item": {
+        "item_id": "v2-pair-911",
+        "task": "pair",
+        "arm": "drug",
+        "a": {
+          "article": {
+            "pmid": "887700022",
+            "title": "SYNTHETIC medical report 11-a",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. In the Dorafen group, marker Farin decreased from baseline to four weeks.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700022/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "In the Dorafen group, marker Farin decreased from baseline to four weeks.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-728687a07a2bb7daa922c76e",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "within_group_change",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": "baseline",
+              "outcome_time": "four weeks",
+              "orientation_text": "follow-up versus baseline"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "In the Dorafen group, marker Farin decreased from baseline to four weeks."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        },
+        "b": {
+          "article": {
+            "pmid": "887700023",
+            "title": "SYNTHETIC medical report 11-b",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily. The stated aim was to assess the reported marker. Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700023/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-24d60dca826ef90a36023e00",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "10 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 10 mg daily."
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "private_case": "opposed_with_documented_dose",
+      "private_expected": {
+        "label": "apparent_contradiction",
+        "factor": "dose",
+        "material_extraction_error": false
+      },
+      "item": {
+        "item_id": "v2-pair-912",
+        "task": "pair",
+        "arm": "drug",
+        "a": {
+          "article": {
+            "pmid": "887700024",
+            "title": "SYNTHETIC medical report 12-a",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 1 mg daily. The stated aim was to assess the reported marker. Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700024/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 1 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 1 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 1 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-dff013ea1068c04114a84f75",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 1 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 1 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 1 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 1 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 1 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was lower in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "1 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 1 mg daily."
+                }
+              ]
+            }
+          }
+        },
+        "b": {
+          "article": {
+            "pmid": "887700025",
+            "title": "SYNTHETIC medical report 12-b",
+            "abstract": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 20 mg daily. The stated aim was to assess the reported marker. Marker farin was higher in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+            "year": 2026,
+            "publication_types": [
+              "Randomized Controlled Trial"
+            ],
+            "url": "https://pubmed.ncbi.nlm.nih.gov/887700025/",
+            "sentences": [
+              {
+                "id": 1,
+                "text": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 20 mg daily.",
+                "section": "METHODS"
+              },
+              {
+                "id": 2,
+                "text": "The stated aim was to assess the reported marker.",
+                "section": "METHODS"
+              },
+              {
+                "id": 3,
+                "text": "Marker farin was higher in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units.",
+                "section": "RESULTS"
+              }
+            ],
+            "study": {
+              "design": "randomized parallel-group trial",
+              "aims_reported": [
+                "assess the reported marker"
+              ],
+              "total_n": {
+                "value": 60,
+                "unit": "participants",
+                "scope": "enrolled",
+                "reported_text": "60",
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 20 mg daily."
+                  }
+                ]
+              },
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 20 mg daily."
+                },
+                {
+                  "sentence_id": 2,
+                  "quote": "The stated aim was to assess the reported marker."
+                }
+              ]
+            }
+          },
+          "claim": {
+            "claim_id": "v2-claim-c62a4a049e7786bd7e8c6931",
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Farin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Dorafen group",
+                "population": "adults aged 20 to 40 years",
+                "role": "intervention",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 20 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 20 mg daily."
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo group",
+                "population": "adults aged 20 to 40 years",
+                "role": "control",
+                "n": {
+                  "value": 30,
+                  "unit": "participants",
+                  "scope": "enrolled",
+                  "reported_text": "30",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 20 mg daily."
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 20 mg daily."
+                  }
+                ]
+              },
+              "comparator": "placebo group",
+              "reference_time": null,
+              "outcome_time": "four weeks",
+              "orientation_text": "Dorafen group versus placebo group"
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "adults aged 20 to 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 20 mg daily."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "+",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "Marker farin was higher in the Dorafen group than in the placebo group at four weeks, with a reported difference of 2 units."
+                }
+              ]
+            },
+            "context": {
+              "region": "Selora",
+              "duration": "four weeks",
+              "dose": "20 mg daily",
+              "sample": "plasma",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "A randomized parallel-group trial in the fictional region Selora enrolled 60 adults aged 20 to 40 years; 30 were in the Dorafen group and 30 were in the placebo group, with unadjusted analyses of plasma marker Farin at four weeks; the Dorafen group received 20 mg daily."
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "notice": "Invented development acceptance cases only, not medical evidence or final evaluation. private_case and private_expected never enter model inputs."
+}

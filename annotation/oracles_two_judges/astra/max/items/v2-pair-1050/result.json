@@ -1,0 +1,297 @@
+{
+  "stage": "final_evaluation",
+  "judge": "astra",
+  "requested_model": "gpt-6-astra",
+  "effort": "max",
+  "reference_revision": {
+    "pair_binding": "61c08a1"
+  },
+  "item_id": "v2-pair-1050",
+  "task": "pair",
+  "package_sha256": "def4666aaaf96ccbad39cc23bfef3b99d71683a9a0b768e05771f71571c2bd25",
+  "binding": {
+    "loader": "amendment08_two_judge_plan",
+    "evaluation_config_sha256": "416d06f0c4ef8af0709a3a891b593d6fb23e22af29a368ca6b411643773843f3",
+    "protocol_sha256": "32fcc9639a5d8be479e443f4d961b744058bbddd07e9f8df441042c901ff48a3",
+    "pair_binding_record_sha256": "4d66121c2f2196d43d88c321edd72802751c759b79eef1a99f396e265823da6a",
+    "package_sha256": "c8915e23f840e657a21f4e9f393a57856951ad93c389650b951a5f778d746afb",
+    "live_package_sha256": "def4666aaaf96ccbad39cc23bfef3b99d71683a9a0b768e05771f71571c2bd25",
+    "retired_item_ids": [
+      "v2-pair-1100"
+    ],
+    "reference_revision": {
+      "pair_binding": "61c08a1"
+    }
+  },
+  "item_sha256": "f823cee2b8639f1a1d8d06a3f3dcf743931355aa69874c8ae25945485c85f685",
+  "displayed_public_item_sha256": "aa0238ea535d737028459efa02d977a9b22dda279abffa35ec04c9da446ccd11",
+  "prompt_sha256": "5b5cbea28b80e8c236c7a4010f7afb8f08c22329b2a59757f78e772bb017db00",
+  "instructions_sha256": "975e119783bd3c6411350e1bd7f98ea3e8ba8c73e30d65a0400a05c8119b4f20",
+  "instrument_sha256": "ce6161a93e705d57ed8f276b383148d7c577d50875b6564edc2572d187141581",
+  "pair_instrument_sha256": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+  "canonical_schema_sha256": "abb1d473dd3cc4bdaff9b5276e33ed2968ab1f78e55141111195bc02f538c306",
+  "wire_schema_sha256": "6380479cc414bd9463cbf14c4914e23d545166083915e2cb1e26bfb19e65cacf",
+  "pair_binding": "61c08a1",
+  "pair_wire_version": "v2-pair-required-null-61c08a1",
+  "params_fingerprint": "ce5cd1c9d2601936cd7c4a7b50d72a181004d2799740c83c7e0bc59d32a58732",
+  "max_attempts": 2,
+  "output_cap": 128000,
+  "transport_policy": "per_item_batch_then_full_price_after_cutoff; pilot full price",
+  "classifier_outputs_in_prompt": false,
+  "peer_outputs_in_prompt": false,
+  "human_answers_in_prompt": false,
+  "status": "valid",
+  "schema_valid": true,
+  "answer": {
+    "instrument_version": "2.0",
+    "pipeline_version": "2.0",
+    "item_id": "v2-pair-1050",
+    "task": "pair",
+    "path": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q1_relevance": "not_material",
+      "q2": {
+        "exposure": {
+          "answer": "yes"
+        },
+        "outcome": {
+          "answer": "no",
+          "reason": "outcome_definition"
+        },
+        "comparison": {
+          "answer": "yes"
+        }
+      },
+      "q2_primary": "outcome"
+    },
+    "rationale": "Missing study-aim and group-description fields do not change the selected findings. A addresses HF hospitalization alone, whereas B's selected finding spans multiple cardiovascular and renal outcomes. B's exception for HF hospitalization in Asian populations is retained in the extraction.",
+    "label": "not_comparable",
+    "factor": "outcome_definition",
+    "binary_inconsistent": false,
+    "field_problems": {
+      "a": {
+        "groups": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        },
+        "analysis": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        }
+      },
+      "b": {
+        "groups": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        },
+        "analysis": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        }
+      }
+    },
+    "relevance": "not_material",
+    "other_detail": "",
+    "wire_version": "v2-pair-required-null-61c08a1",
+    "reference_wording_revision": "site-61c08a1-2026-11-15-2105"
+  },
+  "raw_response": {
+    "instrument_version": "2.0",
+    "pipeline_version": "2.0",
+    "item_id": "v2-pair-1050",
+    "task": "pair",
+    "path": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q1_relevance": "not_material",
+      "q2": {
+        "exposure": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        },
+        "outcome": {
+          "answer": "no",
+          "reason": "outcome_definition",
+          "detail": null
+        },
+        "comparison": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        }
+      },
+      "q2_primary": null,
+      "q3": null,
+      "q4": null,
+      "q5": null
+    },
+    "rationale": "Missing study-aim and group-description fields do not change the selected findings. A addresses HF hospitalization alone, whereas B's selected finding spans multiple cardiovascular and renal outcomes. B's exception for HF hospitalization in Asian populations is retained in the extraction."
+  },
+  "attempt_count": 1,
+  "attempt_statuses": [
+    "valid"
+  ],
+  "dispatches": [
+    {
+      "dispatch": 1,
+      "route": "batch",
+      "phase": "full",
+      "status": "valid",
+      "counts_as_attempt": true,
+      "attempt": 1,
+      "batch_id": "batch_6afa5b73ed408190a38bb9afc54e7cb4"
+    }
+  ],
+  "finalized_in_phase": "full",
+  "missing_reason": null,
+  "cost_usd": 0.26430125,
+  "annotator_type": "LLM",
+  "reference_role": "final_two_judge_oracle",
+  "finalized_at": "2026-11-16T01:28:19.048865+00:00"
+}

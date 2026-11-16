@@ -1,0 +1,58 @@
+{
+  "addendum": "08E",
+  "protocol": {
+    "path": "PROTOCOL_ADDENDUM_08E_NEW_PAIRING.md",
+    "commit": "67df4f1ac339bc122037383e1555306899ff998b",
+    "sha256": "362b135792bfb81d08f4684afda7a89d6ed364d9f86a0b66dfa452e13ffe39ed",
+    "list_sha256_in_addendum": true,
+    "budget_in_addendum": false
+  },
+  "list_path": "data/derived/production_v21_08e/pairs_08e_tau088.jsonl",
+  "list_sha256": "87e2dd5c5b9ad057803966a9c2843ad2e604fcac508252001cfc8df085baf1a5",
+  "list_pairs": 63400,
+  "budget_usd": 30.437720628,
+  "stop_admitting_at": "2026-11-16T11:00:00+01:00",
+  "started_at_08E": "2026-11-16T06:39:13.244598+00:00",
+  "finished_at": "2026-11-16T09:49:29.079768+00:00",
+  "admitted_this_invocation": 26529,
+  "terminal_pairs": 26529,
+  "valid_pairs": 26239,
+  "invalid_pairs": 290,
+  "by_step": {
+    "1_controls_T3/invalid": 10,
+    "1_controls_T3/valid": 1490,
+    "2a_T1/invalid": 103,
+    "2a_T1/valid": 9697,
+    "2b_T2/invalid": 177,
+    "2b_T2/not_classified": 5069,
+    "2b_T2/valid": 15052,
+    "3_band_T1T2/not_classified": 31802
+  },
+  "first_unadmitted_position": 26530,
+  "refusal": {
+    "position": 26530,
+    "reason": "budget",
+    "at": "2026-11-16T09:16:34.920111+00:00",
+    "projected_usd": 30.440205558536203,
+    "spent_usd": 29.0623437906,
+    "inflight": 639
+  },
+  "prefix_property": true,
+  "last_classified_position": 26529,
+  "spent_08E_usd": 29.8382890006,
+  "ledger_calls_08E": 27610,
+  "unknown_billing_08E": 137,
+  "cost_per_pair_08D": {
+    "source": "data/derived/production_v21_uncapped/classification",
+    "pairs": 31880,
+    "mean": 0.0009308929362045169,
+    "p50": 0.000770448,
+    "p95": 0.001776685,
+    "p99": 0.00279688,
+    "max": 0.06438284
+  },
+  "effort": "high",
+  "model": "z-ai/glm-5.3-flash",
+  "wall_seconds_this_invocation": 11452.1,
+  "errors": []
+}

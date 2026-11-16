@@ -1,0 +1,78 @@
+{
+  "stage": "final_evaluation",
+  "judge": "fable",
+  "requested_model": "claude-fable-5-2",
+  "effort": "max",
+  "reference_revision": {
+    "pair_binding": "61c08a1"
+  },
+  "item_id": "v2-pair-1019",
+  "task": "pair",
+  "package_sha256": "def4666aaaf96ccbad39cc23bfef3b99d71683a9a0b768e05771f71571c2bd25",
+  "binding": {
+    "loader": "amendment08_two_judge_plan",
+    "evaluation_config_sha256": "416d06f0c4ef8af0709a3a891b593d6fb23e22af29a368ca6b411643773843f3",
+    "protocol_sha256": "32fcc9639a5d8be479e443f4d961b744058bbddd07e9f8df441042c901ff48a3",
+    "pair_binding_record_sha256": "4d66121c2f2196d43d88c321edd72802751c759b79eef1a99f396e265823da6a",
+    "package_sha256": "c8915e23f840e657a21f4e9f393a57856951ad93c389650b951a5f778d746afb",
+    "live_package_sha256": "def4666aaaf96ccbad39cc23bfef3b99d71683a9a0b768e05771f71571c2bd25",
+    "retired_item_ids": [
+      "v2-pair-1100"
+    ],
+    "reference_revision": {
+      "pair_binding": "61c08a1"
+    }
+  },
+  "item_sha256": "b7ab866491c1c891bd98ff3ed9faca83370e63f3a49da0a693b9861ab23fb670",
+  "displayed_public_item_sha256": "446929ac2a659c01127f0ecf47e2c51b05ca161cf5702b3f95b1398ce0aeddce",
+  "prompt_sha256": "c4112a9ddb9cdb13c407a886568a323da61a32176af6aa46c5ac9b667eb20e24",
+  "instructions_sha256": "975e119783bd3c6411350e1bd7f98ea3e8ba8c73e30d65a0400a05c8119b4f20",
+  "instrument_sha256": "ce6161a93e705d57ed8f276b383148d7c577d50875b6564edc2572d187141581",
+  "pair_instrument_sha256": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+  "canonical_schema_sha256": "db76fa94bea26dd31139468800e8004ad5eeed6759f9200cff165eac26467e9d",
+  "wire_schema_sha256": "28b5523ae8f76d29717e7a4ea1e787d6cd020376559beb6705582f4627aab11d",
+  "pair_binding": "61c08a1",
+  "pair_wire_version": "v2-pair-required-null-61c08a1",
+  "params_fingerprint": "d7097e3fb55dc85f4296559a8cf9f54909d7fb99d58bbd7edd20b18545731cc7",
+  "max_attempts": 2,
+  "output_cap": 128000,
+  "transport_policy": "per_item_batch_then_full_price_after_cutoff; pilot full price",
+  "classifier_outputs_in_prompt": false,
+  "peer_outputs_in_prompt": false,
+  "human_answers_in_prompt": false,
+  "status": "invalid",
+  "schema_valid": false,
+  "answer": null,
+  "raw_response": null,
+  "attempt_count": 2,
+  "attempt_statuses": [
+    "invalid",
+    "invalid"
+  ],
+  "dispatches": [
+    {
+      "dispatch": 1,
+      "route": "batch",
+      "phase": "full",
+      "status": "invalid",
+      "counts_as_attempt": true,
+      "attempt": 1,
+      "batch_id": "msgbatch_01Wpsi6zE4T7r7V4ouGXYdie"
+    },
+    {
+      "dispatch": 2,
+      "route": "batch",
+      "phase": "full",
+      "status": "invalid",
+      "counts_as_attempt": true,
+      "attempt": 2,
+      "batch_id": "msgbatch_01Vj5Y7o4za8LQ8wQgdq1DMv"
+    }
+  ],
+  "finalized_in_phase": "full",
+  "missing_reason": null,
+  "cost_usd": 0.5827962999999999,
+  "annotator_type": "LLM",
+  "reference_role": "final_two_judge_oracle",
+  "finalized_at": "2026-11-16T01:31:23.860847+00:00"
+}

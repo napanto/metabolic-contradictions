@@ -1,0 +1,23 @@
+{
+ "status": "released",
+ "scope": "full_run",
+ "evaluation_config_sha256": "416d06f0c4ef8af0709a3a891b593d6fb23e22af29a368ca6b411643773843f3",
+ "protocol_sha256": "32fcc9639a5d8be479e443f4d961b744058bbddd07e9f8df441042c901ff48a3",
+ "released_at": "2026-11-16T02:25:00+01:00",
+ "authority": {
+  "actor": "Antonio",
+  "kind": "explicit_go",
+  "verbatim": "Ok vai",
+  "source": "Chat with Claude Code, 16 November 2026, about 02:08 CET, approving Claude's proposed wording: «Via alla prova sulle 2 coppie e, se le 4 risposte sono valide e non troncate, via al run completo». Antonio added at about 02:22 CET: «Se la prova ha un problema, risolvilo e poi fai partire».",
+  "condition_checked": {
+   "pilot_released_at": "2026-11-16T02:08:39+01:00",
+   "checked_at": "2026-11-16T02:25:00+01:00",
+   "result": "4/4 pilot answers valid on the first attempt, none truncated (Astra output 9937 and 8326 tokens, status complete; Fable stop_reason end_turn, 16212 and 15164 tokens; cap 128000 for both)",
+   "pilot_cost_usd": {
+    "astra": 1.26956,
+    "fable": 1.776894
+   },
+   "launcher_note": "scripts/run_reference_batches.py crashes in pilot/run with UnboundLocalError before any request; it is hash-bound, so it is unchanged and logs/two_judges_launcher.py calls the same bound functions."
+  }
+ }
+}

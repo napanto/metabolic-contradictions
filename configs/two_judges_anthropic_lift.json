@@ -1,0 +1,12 @@
+{
+ "status": "lifted",
+ "scope": "amendment_08_two_judge_run_only",
+ "evaluation_config_sha256": "416d06f0c4ef8af0709a3a891b593d6fb23e22af29a368ca6b411643773843f3",
+ "lifted_at": "2026-11-16T02:08:39+01:00",
+ "authority": {
+  "actor": "Antonio",
+  "kind": "explicit_lift",
+  "verbatim": "Ok vai",
+  "source": "Chat with Claude Code, 16 November 2026, about 02:08 CET. Proposta di Claude in chat, a cui Antonio ha risposto: 1. «Revoco lo stop alle chiamate Anthropic solo per il run dell'emendamento 08» 2. «Via alla prova sulle 2 coppie e, se le 4 risposte sono valide e non troncate, via al run completo». Antonio's reply «Ok vai» approves both sentences as written."
+ }
+}

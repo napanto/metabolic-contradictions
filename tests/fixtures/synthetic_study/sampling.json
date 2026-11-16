@@ -1,0 +1,296 @@
+{
+ "items": [
+  {
+   "arm": "biomarker",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-001",
+   "stratum": "biomarker/contradictory",
+   "task": "pair"
+  },
+  {
+   "arm": "biomarker",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-002",
+   "stratum": "biomarker/apparent_contradiction",
+   "task": "pair"
+  },
+  {
+   "arm": "biomarker",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-007",
+   "stratum": "biomarker/not_replicated",
+   "task": "pair"
+  },
+  {
+   "arm": "biomarker",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-008",
+   "stratum": "biomarker/contradictory",
+   "task": "pair"
+  },
+  {
+   "arm": "biomarker",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-011",
+   "stratum": "biomarker/apparent_contradiction",
+   "task": "pair"
+  },
+  {
+   "arm": "biomarker",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-013",
+   "stratum": "biomarker/not_replicated",
+   "task": "pair"
+  },
+  {
+   "arm": "biomarker",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-017",
+   "stratum": "biomarker/contradictory",
+   "task": "pair"
+  },
+  {
+   "arm": "biomarker",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-019",
+   "stratum": "biomarker/apparent_contradiction",
+   "task": "pair"
+  },
+  {
+   "arm": "biomarker",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-021",
+   "stratum": "biomarker/not_replicated",
+   "task": "pair"
+  },
+  {
+   "arm": "biomarker",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-022",
+   "stratum": "biomarker/contradictory",
+   "task": "pair"
+  },
+  {
+   "arm": "biomarker",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-030",
+   "stratum": "biomarker/apparent_contradiction",
+   "task": "pair"
+  },
+  {
+   "arm": "biomarker",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-032",
+   "stratum": "biomarker/not_replicated",
+   "task": "pair"
+  },
+  {
+   "arm": "biomarker",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-033",
+   "stratum": "biomarker/contradictory",
+   "task": "pair"
+  },
+  {
+   "arm": "drug",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-040",
+   "stratum": "drug/apparent_contradiction",
+   "task": "pair"
+  },
+  {
+   "arm": "drug",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-043",
+   "stratum": "drug/not_replicated",
+   "task": "pair"
+  },
+  {
+   "arm": "drug",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-050",
+   "stratum": "drug/contradictory",
+   "task": "pair"
+  },
+  {
+   "arm": "drug",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-051",
+   "stratum": "drug/apparent_contradiction",
+   "task": "pair"
+  },
+  {
+   "arm": "drug",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-052",
+   "stratum": "drug/not_replicated",
+   "task": "pair"
+  },
+  {
+   "arm": "drug",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-056",
+   "stratum": "drug/contradictory",
+   "task": "pair"
+  },
+  {
+   "arm": "drug",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-059",
+   "stratum": "drug/apparent_contradiction",
+   "task": "pair"
+  },
+  {
+   "arm": "drug",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-061",
+   "stratum": "drug/not_replicated",
+   "task": "pair"
+  },
+  {
+   "arm": "drug",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-062",
+   "stratum": "drug/contradictory",
+   "task": "pair"
+  },
+  {
+   "arm": "drug",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-063",
+   "stratum": "drug/apparent_contradiction",
+   "task": "pair"
+  },
+  {
+   "arm": "drug",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-064",
+   "stratum": "drug/not_replicated",
+   "task": "pair"
+  },
+  {
+   "arm": "drug",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-066",
+   "stratum": "drug/contradictory",
+   "task": "pair"
+  },
+  {
+   "arm": "diet",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-069",
+   "stratum": "diet/apparent_contradiction",
+   "task": "pair"
+  },
+  {
+   "arm": "diet",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-071",
+   "stratum": "diet/not_replicated",
+   "task": "pair"
+  },
+  {
+   "arm": "diet",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-074",
+   "stratum": "diet/contradictory",
+   "task": "pair"
+  },
+  {
+   "arm": "diet",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-079",
+   "stratum": "diet/apparent_contradiction",
+   "task": "pair"
+  },
+  {
+   "arm": "diet",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-083",
+   "stratum": "diet/not_replicated",
+   "task": "pair"
+  },
+  {
+   "arm": "diet",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-084",
+   "stratum": "diet/contradictory",
+   "task": "pair"
+  },
+  {
+   "arm": "diet",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-087",
+   "stratum": "diet/apparent_contradiction",
+   "task": "pair"
+  },
+  {
+   "arm": "diet",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-090",
+   "stratum": "diet/not_replicated",
+   "task": "pair"
+  },
+  {
+   "arm": "diet",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-091",
+   "stratum": "diet/contradictory",
+   "task": "pair"
+  },
+  {
+   "arm": "diet",
+   "inclusion_probability": 0.2,
+   "item_id": "v2-pair-098",
+   "stratum": "diet/apparent_contradiction",
+   "task": "pair"
+  }
+ ],
+ "pair_frames": {
+  "biomarker/apparent_contradiction": {
+   "arm": "biomarker",
+   "frame_count": 30,
+   "predicted_class": "apparent_contradiction"
+  },
+  "biomarker/contradictory": {
+   "arm": "biomarker",
+   "frame_count": 30,
+   "predicted_class": "contradictory"
+  },
+  "biomarker/not_replicated": {
+   "arm": "biomarker",
+   "frame_count": 30,
+   "predicted_class": "not_replicated"
+  },
+  "diet/apparent_contradiction": {
+   "arm": "diet",
+   "frame_count": 30,
+   "predicted_class": "apparent_contradiction"
+  },
+  "diet/contradictory": {
+   "arm": "diet",
+   "frame_count": 30,
+   "predicted_class": "contradictory"
+  },
+  "diet/not_replicated": {
+   "arm": "diet",
+   "frame_count": 30,
+   "predicted_class": "not_replicated"
+  },
+  "drug/apparent_contradiction": {
+   "arm": "drug",
+   "frame_count": 30,
+   "predicted_class": "apparent_contradiction"
+  },
+  "drug/contradictory": {
+   "arm": "drug",
+   "frame_count": 30,
+   "predicted_class": "contradictory"
+  },
+  "drug/not_replicated": {
+   "arm": "drug",
+   "frame_count": 30,
+   "predicted_class": "not_replicated"
+  }
+ }
+}

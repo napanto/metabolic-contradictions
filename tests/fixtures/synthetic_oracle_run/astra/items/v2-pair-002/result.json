@@ -1,0 +1,252 @@
+{
+  "stage": "final_evaluation",
+  "judge": "astra",
+  "requested_model": "gpt-6-astra",
+  "effort": "max",
+  "reference_revision": {
+    "base_evaluation_config_sha256": "949c8b82192a5ec7ee0f9629f815c16ec76c4f02c9382fa5bddeedb9fde67e0b",
+    "reference_revision_sha256": "502e3b1b9e19ef77fdeb4f0780ea5bb8d8ee8bbbaa551e2ce37d4f47b6ff548b",
+    "reference_effective_sha256": "92cb014681889fc16f0f93684ff3c3a2c909ef8ca80f3cf67a9da5e5a2064bb2",
+    "site_commit": "b5e77f9",
+    "site_instrument_sha256": "9ad34d2a75ebae868af7532122427982edd964166eecf41c4fe47a84eca44873"
+  },
+  "item_id": "v2-pair-002",
+  "task": "pair",
+  "package_sha256": "d84835f4edc07b062e0b1ea12e9df9e42cbb536579b07bb6fd18f093b05ecd43",
+  "binding": {
+    "reference_revision": {
+      "base_evaluation_config_sha256": "949c8b82192a5ec7ee0f9629f815c16ec76c4f02c9382fa5bddeedb9fde67e0b",
+      "reference_revision_sha256": "502e3b1b9e19ef77fdeb4f0780ea5bb8d8ee8bbbaa551e2ce37d4f47b6ff548b",
+      "reference_effective_sha256": "92cb014681889fc16f0f93684ff3c3a2c909ef8ca80f3cf67a9da5e5a2064bb2",
+      "site_commit": "b5e77f9",
+      "site_instrument_sha256": "9ad34d2a75ebae868af7532122427982edd964166eecf41c4fe47a84eca44873"
+    }
+  },
+  "item_sha256": "e04a0bb87b659afa40e6d68d057cc09eb80992041a4be3e8989f0229a4b09da0",
+  "displayed_public_item_sha256": "c597d96859b8a1d5aa1cf986eb90c8ccf296c2993c8f17a2c89d5a3537d43aab",
+  "prompt_sha256": "2224691ae66b3f3553dfe18e0208b9377d823b47a132362c3f2af556021e5d54",
+  "instructions_sha256": "975e119783bd3c6411350e1bd7f98ea3e8ba8c73e30d65a0400a05c8119b4f20",
+  "instrument_sha256": "ce6161a93e705d57ed8f276b383148d7c577d50875b6564edc2572d187141581",
+  "pair_instrument_sha256": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+  "canonical_schema_sha256": "1682417931aa25fa4e10809adb7e9cf39f54aef0974090c1d808ea00dca794d5",
+  "wire_schema_sha256": "5d2b0bd6063b3351cf7bf9b0b0cdd322097cbbebe6fd5f39e026aea22f514437",
+  "pair_binding": "61c08a1",
+  "pair_wire_version": "v2-pair-required-null-61c08a1",
+  "params_fingerprint": "5275f9da97f0b2886c7a0eedca43997be42b8e5036b36b1ba577831346b08a38",
+  "max_attempts": 2,
+  "output_cap": 128000,
+  "transport_policy": "per_item_batch_then_full_price_after_cutoff; pilot full price",
+  "classifier_outputs_in_prompt": false,
+  "peer_outputs_in_prompt": false,
+  "human_answers_in_prompt": false,
+  "status": "valid",
+  "schema_valid": true,
+  "answer": {
+    "instrument_version": "2.0",
+    "pipeline_version": "2.0",
+    "item_id": "v2-pair-002",
+    "task": "pair",
+    "path": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q2": {
+        "exposure": {
+          "answer": "yes"
+        },
+        "outcome": {
+          "answer": "yes"
+        },
+        "comparison": {
+          "answer": "yes"
+        }
+      },
+      "q3": "yes"
+    },
+    "rationale": "",
+    "label": "concordant",
+    "factor": "none",
+    "binary_inconsistent": false,
+    "field_problems": {
+      "a": {},
+      "b": {}
+    },
+    "relevance": "not_needed",
+    "other_detail": "",
+    "wire_version": "v2-pair-required-null-61c08a1",
+    "reference_wording_revision": "site-61c08a1-2026-11-15-2105"
+  },
+  "raw_response": {
+    "instrument_version": "2.0",
+    "pipeline_version": "2.0",
+    "item_id": "v2-pair-002",
+    "task": "pair",
+    "path": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q1_relevance": null,
+      "q2": {
+        "exposure": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        },
+        "outcome": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        },
+        "comparison": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        }
+      },
+      "q2_primary": null,
+      "q3": "yes",
+      "q4": null,
+      "q5": null
+    },
+    "rationale": ""
+  },
+  "attempt_count": 1,
+  "attempt_statuses": [
+    "valid"
+  ],
+  "dispatches": [
+    {
+      "dispatch": 1,
+      "route": "batch",
+      "phase": "full",
+      "status": "valid",
+      "counts_as_attempt": true,
+      "attempt": 1,
+      "batch_id": "batch_2"
+    }
+  ],
+  "finalized_in_phase": "full",
+  "missing_reason": null,
+  "cost_usd": 0.1695,
+  "annotator_type": "LLM",
+  "reference_role": "final_two_judge_oracle",
+  "finalized_at": "2026-11-16T00:51:05.979002+00:00"
+}

@@ -1,0 +1,89 @@
+{
+ "list": "data/derived/production_v21_08e/pairs_08e_tau088.jsonl",
+ "list_sha256": "87e2dd5c5b9ad057803966a9c2843ad2e604fcac508252001cfc8df085baf1a5",
+ "output": "data/derived/production_v21_08e/pairs_classified.jsonl",
+ "output_sha256": "3d75dd9f5576311ab0be31a26597c00bc8b829f96f936fcc5f37aa4a5c3e043e",
+ "flagged_labels": [
+  "apparent_contradiction",
+  "contradictory",
+  "not_replicated"
+ ],
+ "interval": "Wilson 95% on the flagged share of valid pairs",
+ "steps": {
+  "1_controls_T3": {
+   "listed": 1500,
+   "classified": 1500,
+   "not_classified": 0,
+   "coverage": 1.0,
+   "valid": 1490,
+   "invalid": 10,
+   "categories": {
+    "apparent_contradiction": 3,
+    "concordant": 1077,
+    "contradictory": 1,
+    "not_comparable": 403,
+    "not_replicated": 6
+   },
+   "flagged": 10,
+   "flagged_share": 0.0067,
+   "flagged_share_wilson95": [
+    0.0036,
+    0.0123
+   ]
+  },
+  "2a_T1": {
+   "listed": 9800,
+   "classified": 9800,
+   "not_classified": 0,
+   "coverage": 1.0,
+   "valid": 9697,
+   "invalid": 103,
+   "categories": {
+    "apparent_contradiction": 1117,
+    "concordant": 2301,
+    "contradictory": 145,
+    "not_comparable": 5963,
+    "not_replicated": 171
+   },
+   "flagged": 1433,
+   "flagged_share": 0.1478,
+   "flagged_share_wilson95": [
+    0.1409,
+    0.155
+   ]
+  },
+  "2b_T2": {
+   "listed": 20298,
+   "classified": 15229,
+   "not_classified": 5069,
+   "coverage": 0.7503,
+   "valid": 15052,
+   "invalid": 177,
+   "categories": {
+    "apparent_contradiction": 313,
+    "concordant": 617,
+    "contradictory": 101,
+    "not_comparable": 10018,
+    "not_replicated": 4003
+   },
+   "flagged": 4417,
+   "flagged_share": 0.2934,
+   "flagged_share_wilson95": [
+    0.2862,
+    0.3008
+   ]
+  },
+  "3_band_T1T2": {
+   "listed": 31802,
+   "classified": 0,
+   "not_classified": 31802,
+   "coverage": 0.0,
+   "valid": 0,
+   "invalid": 0,
+   "categories": {},
+   "flagged": 0,
+   "flagged_share": null,
+   "flagged_share_wilson95": null
+  }
+ }
+}

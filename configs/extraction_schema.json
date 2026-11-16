@@ -1,0 +1,885 @@
+{
+  "type": "object",
+  "properties": {
+    "study": {
+      "type": "object",
+      "properties": {
+        "design": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "aims_reported": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "total_n": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 0
+                },
+                "unit": {
+                  "type": "string",
+                  "enum": [
+                    "participants",
+                    "studies",
+                    "events",
+                    "other",
+                    "not_reported"
+                  ]
+                },
+                "scope": {
+                  "type": "string",
+                  "enum": [
+                    "enrolled",
+                    "randomized",
+                    "analysed",
+                    "not_reported"
+                  ]
+                },
+                "reported_text": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "sentence_id": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "quote": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "sentence_id",
+                      "quote"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "value",
+                "unit",
+                "scope",
+                "reported_text",
+                "evidence"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sentence_id": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "quote": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "sentence_id",
+              "quote"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "design",
+        "aims_reported",
+        "total_n",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "arm": {
+            "type": "string",
+            "enum": [
+              "biomarker",
+              "drug",
+              "diet"
+            ]
+          },
+          "exposure": {
+            "type": "string",
+            "minLength": 1
+          },
+          "exposure_class": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "outcome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "level",
+              "association",
+              "effect",
+              "risk"
+            ]
+          },
+          "comparison": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "between_group",
+                  "within_group_change",
+                  "association",
+                  "unclear"
+                ]
+              },
+              "index_group": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "label": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "population": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "role": {
+                        "type": "string",
+                        "enum": [
+                          "case",
+                          "control",
+                          "intervention",
+                          "reference",
+                          "cohort",
+                          "other",
+                          "unknown"
+                        ]
+                      },
+                      "n": {
+                        "anyOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "value": {
+                                "type": [
+                                  "integer",
+                                  "null"
+                                ],
+                                "minimum": 0
+                              },
+                              "unit": {
+                                "type": "string",
+                                "enum": [
+                                  "participants",
+                                  "studies",
+                                  "events",
+                                  "other",
+                                  "not_reported"
+                                ]
+                              },
+                              "scope": {
+                                "type": "string",
+                                "enum": [
+                                  "enrolled",
+                                  "randomized",
+                                  "analysed",
+                                  "not_reported"
+                                ]
+                              },
+                              "reported_text": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "evidence": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sentence_id": {
+                                      "type": "integer",
+                                      "minimum": 1
+                                    },
+                                    "quote": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  },
+                                  "required": [
+                                    "sentence_id",
+                                    "quote"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              }
+                            },
+                            "required": [
+                              "value",
+                              "unit",
+                              "scope",
+                              "reported_text",
+                              "evidence"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "evidence": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "sentence_id": {
+                              "type": "integer",
+                              "minimum": 1
+                            },
+                            "quote": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "sentence_id",
+                            "quote"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "label",
+                      "population",
+                      "role",
+                      "n",
+                      "evidence"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "reference_group": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "label": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "population": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "role": {
+                        "type": "string",
+                        "enum": [
+                          "case",
+                          "control",
+                          "intervention",
+                          "reference",
+                          "cohort",
+                          "other",
+                          "unknown"
+                        ]
+                      },
+                      "n": {
+                        "anyOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "value": {
+                                "type": [
+                                  "integer",
+                                  "null"
+                                ],
+                                "minimum": 0
+                              },
+                              "unit": {
+                                "type": "string",
+                                "enum": [
+                                  "participants",
+                                  "studies",
+                                  "events",
+                                  "other",
+                                  "not_reported"
+                                ]
+                              },
+                              "scope": {
+                                "type": "string",
+                                "enum": [
+                                  "enrolled",
+                                  "randomized",
+                                  "analysed",
+                                  "not_reported"
+                                ]
+                              },
+                              "reported_text": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "evidence": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "sentence_id": {
+                                      "type": "integer",
+                                      "minimum": 1
+                                    },
+                                    "quote": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  },
+                                  "required": [
+                                    "sentence_id",
+                                    "quote"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              }
+                            },
+                            "required": [
+                              "value",
+                              "unit",
+                              "scope",
+                              "reported_text",
+                              "evidence"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "evidence": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "sentence_id": {
+                              "type": "integer",
+                              "minimum": 1
+                            },
+                            "quote": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "sentence_id",
+                            "quote"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "label",
+                      "population",
+                      "role",
+                      "n",
+                      "evidence"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "comparator": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reference_time": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "outcome_time": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "orientation_text": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "type",
+              "index_group",
+              "reference_group",
+              "comparator",
+              "reference_time",
+              "outcome_time",
+              "orientation_text"
+            ],
+            "additionalProperties": false
+          },
+          "subgroup": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "description": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "sentence_id": {
+                          "type": "integer",
+                          "minimum": 1
+                        },
+                        "quote": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "sentence_id",
+                        "quote"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "description",
+                  "evidence"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "analysis": {
+            "type": "object",
+            "properties": {
+              "method": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "adjustment": {
+                "type": "string",
+                "enum": [
+                  "adjusted",
+                  "unadjusted",
+                  "not_reported"
+                ]
+              },
+              "covariates": {
+                "anyOf": [
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "analysis_population": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "sentence_id": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "quote": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "sentence_id",
+                    "quote"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "method",
+              "adjustment",
+              "covariates",
+              "analysis_population",
+              "evidence"
+            ],
+            "additionalProperties": false
+          },
+          "result": {
+            "type": "object",
+            "properties": {
+              "assertion": {
+                "type": "string",
+                "enum": [
+                  "directional",
+                  "explicit_no_difference",
+                  "not_confirmed",
+                  "unclear"
+                ]
+              },
+              "estimate_direction": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "+",
+                  "-",
+                  "0",
+                  null
+                ]
+              },
+              "estimate": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "measure": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "value": {
+                        "type": "number"
+                      },
+                      "unit": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "measure",
+                      "value",
+                      "unit"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "p_value": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "operator": {
+                        "type": "string",
+                        "enum": [
+                          "=",
+                          "<",
+                          "<=",
+                          ">",
+                          ">="
+                        ]
+                      },
+                      "value": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                      },
+                      "target": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "reported_text": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "operator",
+                      "value",
+                      "target",
+                      "reported_text"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "confidence_interval": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "level": {
+                        "type": "number",
+                        "exclusiveMinimum": 0,
+                        "maximum": 100
+                      },
+                      "lower": {
+                        "type": "number"
+                      },
+                      "upper": {
+                        "type": "number"
+                      },
+                      "target": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "reported_text": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "level",
+                      "lower",
+                      "upper",
+                      "target",
+                      "reported_text"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "authors_significance": {
+                "type": "string",
+                "enum": [
+                  "significant",
+                  "not_significant",
+                  "not_reported",
+                  "not_tested",
+                  "unclear"
+                ]
+              },
+              "significance_basis": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "p_value",
+                    "confidence_interval",
+                    "explicit_wording"
+                  ]
+                },
+                "uniqueItems": true
+              },
+              "significance_wording": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "authors_trend_wording": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "hedged": {
+                "type": "boolean"
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "sentence_id": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "quote": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "sentence_id",
+                    "quote"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1
+              }
+            },
+            "required": [
+              "assertion",
+              "estimate_direction",
+              "estimate",
+              "p_value",
+              "confidence_interval",
+              "authors_significance",
+              "significance_basis",
+              "significance_wording",
+              "authors_trend_wording",
+              "hedged",
+              "evidence"
+            ],
+            "additionalProperties": false
+          },
+          "context": {
+            "type": "object",
+            "properties": {
+              "region": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "duration": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "dose": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sample": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "sentence_id": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "quote": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "sentence_id",
+                    "quote"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "region",
+              "duration",
+              "dose",
+              "sample",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "arm",
+          "exposure",
+          "exposure_class",
+          "outcome",
+          "kind",
+          "comparison",
+          "subgroup",
+          "analysis",
+          "result",
+          "context"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "study",
+    "claims"
+  ],
+  "additionalProperties": false
+}

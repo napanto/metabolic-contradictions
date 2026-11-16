@@ -1,0 +1,92 @@
+{
+ "schema_version": 1,
+ "status": "registered",
+ "addendum": "PROTOCOL_ADDENDUM_08A_V21_CORPUS.md",
+ "addendum_sha256": "3a709a77e391fa2131b5e4cf53b903ae6ac583bb0c974ff9ecff4dbf38fed2d5",
+ "authority": "Antonio, 16 November 2026 ~01:40 CET (go for full-corpus extraction and classification) and ~01:45 CET (maximum parallelism, every eligible fp8 route, rejection retries, no batch), relayed by Claude",
+ "base_configuration": {
+  "path": "configs/evaluation_system.json",
+  "sha256": "d8f7d94abc966626d5153bcb6307678ee34541c942787aeb904380a939c1d80a"
+ },
+ "scope": {
+  "partition": "F",
+  "sources": 14218,
+  "partitions_path": "data/derived/partitions.json",
+  "partitions_sha256": "02e29556687fa1de33ad2ed8a8f679764823e5366814f620564b78129fed5bc7",
+  "order": "reserve_first_production_order restricted to F",
+  "previous_failures_reattempted": true
+ },
+ "extraction_revision": {
+  "name": "v2.1",
+  "model": "z-ai/glm-5.3-flash",
+  "reasoning": "high",
+  "max_tokens": 131072,
+  "temperature": 0,
+  "seed": 42,
+  "base_prompt_path": "configs/extraction_prompt.json",
+  "base_prompt_sha256": "8c9a0a40baab32f2341acbcb9079667ef510645f1acfc1192cd5c633450dc422",
+  "prompt_addition": "\n\nAdditional result-assertion rules. Decide result.assertion last, after copying the evidence, the estimate direction and the statistical information for this finding. Use 'directional' whenever the abstract reports for this finding that a quantity was higher, lower, increased, decreased, improved, worsened, reduced, associated, correlated or predicted, whether or not it was statistically significant. Use 'explicit_no_difference' only when the authors explicitly state for this finding that there was no difference, no change, no association or no significant effect (for example 'did not differ', 'was not associated', 'no significant change', 'similar between groups'). Use 'not_confirmed' only when the authors explicitly state, for this exact analysis, that an expected or hypothesised effect was not confirmed or did not persist (for example after adjustment). A significant p-value, a confidence interval that excludes the null, or wording such as 'significantly' for this finding is incompatible with 'explicit_no_difference' and 'not_confirmed'. Examples: 'X showed a significant inverse correlation with HbA1c (P < 0.05)' is directional with '-'; 'Y increased significantly with the number of components' is directional with '+'; 'the risk was significantly lower in group A than in group B (HR 0.80; 95% CI 0.70-0.90)' is directional with '-'; 'drug A reduced body weight compared with placebo' is directional with '-'; 'HbA1c did not differ between groups (p = 0.41)' is explicit_no_difference.\n\nSample size. Fill study.total_n whenever any sentence states how many participants the study included, enrolled, randomized or analysed; leave it null only when no such count is stated anywhere in the abstract. Examples: 'A cross-sectional study was conducted (N = 87, aged 30-65 years)' gives value 87, unit participants, scope enrolled, reported_text 'N = 87'; 'Among a total of 12 480 newly treated patients' gives value 12480, reported_text 'a total of 12 480 newly treated patients'; 'Of 2350 patients, 1410 achieved the target' gives value 2350, reported_text 'Of 2350 patients'. When the abstract states a group's count, record it in that group's n. Never add, subtract or divide stated numbers to obtain a count.\n\nPopulation, material and place. For an association without groups, record the population analysed (for example 'adults with type 2 diabetes') in analysis.analysis_population. Record the biological material (for example serum, plasma, urine, whole blood or tissue) in context.sample, and the country or city where the study was conducted (for example 'Lyon, France') in context.region, whenever the abstract states them.",
+  "prompt_addition_sha256": "5a0f98a25f2df6b44b2039a156198585cff5d21cb3e57b685274baa2f059aeca",
+  "wire_schema_transform": "WIRE_MODEL_EXTRACTION with claims.items.result.properties.assertion moved last",
+  "wire_schema_sha256": "c97a6a0d92ca1a6ba25e7493232b9e48493e4953faf76fe6007ccd96d1821ec9",
+  "provenance": "scripts/system/extraction_correction_test.py arm order_prompt3 (commit ccae444); verified byte-identical to 5 cached human-pair request bodies of 14 November",
+  "verify": false
+ },
+ "classification": {
+  "configuration_id": "glm-5.3-flash__low",
+  "model": "z-ai/glm-5.3-flash",
+  "reasoning": "low",
+  "max_tokens": 65536,
+  "prompt_path": "configs/classification_prompt.json",
+  "prompt_sha256": "9af3da9550c1f4cdd99d60b5a7b465a92fa364aa635c47402e1762ca68f7bc17",
+  "unchanged_from_v2": true
+ },
+ "pairing": {
+  "inconsistent_cap": 30,
+  "concordant_cap": 5,
+  "retrieval_k": 21,
+  "neighbours": 20,
+  "index_identity": "results/index.json as bound in the base configuration",
+  "unchanged_from_v2": true
+ },
+ "routing_config": "configs/corpus_routes.json",
+ "routing_config_sha256": "e78cd08a7a2bcb8c92a7c3c97308d35a8d99f61291da1df4f8110a64c1b10499",
+ "provider_snapshot": {
+  "path": "configs/provider_snapshots/glm-5.3-flash_endpoints_20261116T004830Z.json",
+  "sha256": "c2f4180686a7cf145269fe6bc662486cc38fbf46c26bacd72b2c1a2f7132b0d2"
+ },
+ "eligible_routes": [
+  "gmicloud/fp8",
+  "near-ai/fp8",
+  "novita/fp8",
+  "morph/fp8",
+  "inceptron/fp8"
+ ],
+ "runtime": {
+  "per_provider_cap_start": 128,
+  "adaptive_policy": "v2 policy with maximum 128, restore_step 32, clean_seconds 30; halve on 429, 5xx burst or rising unknown billing",
+  "extraction_workers": 640,
+  "classification_workers": 640,
+  "model_post_wall_deadline_seconds": 480,
+  "identical_retry": "one, same provider, for invalid or truncated output or post-send transport failure",
+  "rejections": "429, 5xx, known-free provider refusal and unopened connections are retried with backoff and are not attempts; five consecutive refusals hold a route for the run",
+  "accounting": "SQLite ledger phases production_extraction and production_classification; per-request worst-case reservation against the real balance; floor 0",
+  "concurrency_source": "Antonio's instruction of 16 November 2026 (maximum parallelism)"
+ },
+ "funding": {
+  "extraction_projection_usd": 46.0,
+  "v2_actual_usd": {
+   "extraction": 43.23,
+   "classification": 8.346419
+  },
+  "classification_projection": "pairs x 8.346419/11526 x 1.5",
+  "rule": "fresh balance before each paid stage; shortfall stops for a top-up, never reduces scope"
+ },
+ "outputs": {
+  "base": "data/derived/production",
+  "results": "results/production",
+  "status": "results/production/status.json"
+ },
+ "v2_outputs_unchanged": true,
+ "batch": "not used: glm-5.3-flash:batch has only fp4/unknown providers"
+}

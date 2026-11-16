@@ -1,0 +1,126 @@
+{
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "enum": [
+        "concordant",
+        "contradictory",
+        "apparent_contradiction",
+        "not_replicated",
+        "not_comparable"
+      ]
+    },
+    "factor": {
+      "type": "string",
+      "enum": [
+        "population",
+        "region",
+        "disease_subtype",
+        "design",
+        "comparator",
+        "molecule_class",
+        "dose",
+        "duration",
+        "outcome_definition",
+        "sample",
+        "unknown",
+        "none",
+        "other"
+      ]
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "diagnostics": {
+      "type": "object",
+      "properties": {
+        "material_extraction_error": {
+          "type": "boolean"
+        },
+        "error_sides": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "a",
+              "b"
+            ]
+          }
+        },
+        "error_fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "result",
+              "groups",
+              "sample_size",
+              "comparison",
+              "analysis",
+              "statistical_evidence",
+              "other_context"
+            ]
+          }
+        },
+        "uncertain_extraction": {
+          "type": "boolean"
+        },
+        "comparison_sufficient": {
+          "type": "boolean"
+        },
+        "source_evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "side": {
+                "type": "string",
+                "enum": [
+                  "a",
+                  "b"
+                ]
+              },
+              "sentence_id": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "quote": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "side",
+              "sentence_id",
+              "quote"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "material_extraction_error",
+        "error_sides",
+        "error_fields",
+        "uncertain_extraction",
+        "comparison_sufficient",
+        "source_evidence",
+        "notes"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "label",
+    "factor",
+    "rationale",
+    "diagnostics"
+  ],
+  "additionalProperties": false
+}

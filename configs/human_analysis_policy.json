@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "status": "active",
+  "mode": "open_until_signed_Antonio_closure",
+  "authority": "INBOX_FROM_CLAUDE.md 2026-11-14 12:13; operational note 12:40 does not change scientific rules",
+  "protocol": {
+    "path": "PROTOCOL_ADDENDUM_06_OPEN_ENDED_HUMAN_COLLECTION.md",
+    "sha256": "7302d8e0cec47e16cbe00f408b46412196dd9873e72c2631104a49605cbc383f"
+  },
+  "bindings": {
+    "evaluation_config": {
+      "path": "configs/evaluation_system.json",
+      "sha256": "d8f7d94abc966626d5153bcb6307678ee34541c942787aeb904380a939c1d80a"
+    },
+    "reference_revision": {
+      "path": "configs/reference_revision.json",
+      "sha256": "80122052b46801be99c8a8aa6b80d6d8ebea9e15e6742377f2b52ef855e13133"
+    },
+    "package_manifest": {
+      "path": "annotation/package/manifest.json",
+      "sha256": "f4f0f3bb8076577d5377e19add6a3706736ac4ac56807544d04c47431ba21dbc"
+    },
+    "human_collection_lock": {
+      "path": "configs/human_collection_lock.json",
+      "sha256": "34de3ae3bae33976460b0324e6f44ab09cd89a6709ea7949036d2a584933e7ea"
+    },
+    "frozen_evaluator": {
+      "path": "src/chl_rag/v2_evaluate.py",
+      "sha256": "697b13a142c88ea03aba5983e300c6dc4180a32c1a4566088a3c11ef0a91b60f"
+    }
+  },
+  "runtime_files": {
+    "facade": {
+      "path": "src/chl_rag/v2_human_analysis.py",
+      "sha256": "184b0922b66bbe543aa4fa29c34eee754775730e380fd366a1c7fd4e373c2190"
+    },
+    "entrypoint": {
+      "path": "scripts/evaluate_v2_human.py",
+      "sha256": "e3cfc5e823b47e48a86d6f5bd8972c2034edf044d579a1922cdac91eb9b7a6ee"
+    }
+  },
+  "closure_record_path": "configs/v2_human_collection_closure.json",
+  "withdrawn_closure_at": "2026-11-15T18:30:00+01:00",
+  "noon_snapshot_at": "2026-11-15T12:00:00+01:00",
+  "noon_author_trigger_below_covered_pairs": 30,
+  "scientific_rules_unchanged": true
+}

@@ -1,0 +1,245 @@
+{
+ "status": "registered",
+ "loader": "amendment08_two_judge_plan",
+ "amendment": 8,
+ "protocol_path": "PROTOCOL_AMENDMENT_08_TWO_JUDGES.md",
+ "protocol_sha256": "32fcc9639a5d8be479e443f4d961b744058bbddd07e9f8df441042c901ff48a3",
+ "pair_binding_record_path": "configs/oracle_binding.json",
+ "pair_binding_record_sha256": "4d66121c2f2196d43d88c321edd72802751c759b79eef1a99f396e265823da6a",
+ "final_references_authorized": true,
+ "active_judges": [
+  "astra",
+  "fable"
+ ],
+ "judge_policy": "two_judges",
+ "reference_design": "astra_api_max_plus_fable_max",
+ "references": {
+  "transport": "provider_batch",
+  "effort": "max",
+  "tasks": [
+   "pair"
+  ],
+  "pair_binding": "61c08a1",
+  "max_attempts": 2,
+  "retry": "second_batch_of_failed_items_only",
+  "truncation": "invalid_with_single_identical_retry",
+  "cutoff_at": "2026-11-16T11:00:00+01:00",
+  "sync_attempt_timeout_seconds": 1800,
+  "poll_interval_seconds": 60,
+  "pilot": {
+   "rule": "ascending_sha256_of_salt_plus_item_id",
+   "salt": "oracle-pilot-20261116:",
+   "pairs": 2,
+   "same_for_both_judges": true,
+   "route": "synchronous_full_price",
+   "valid_pilot_answer_is_final_when_request_identical": true
+  },
+  "astra": {
+   "model": "gpt-6-astra",
+   "transport": "openai_batch",
+   "effort": "max",
+   "max_output_tokens": 128000,
+   "store": false,
+   "prompt_cache": {
+    "mode": "explicit",
+    "ttl": "30m"
+   }
+  },
+  "fable": {
+   "model": "claude-fable-5-2",
+   "transport": "anthropic_message_batches",
+   "effort": "max",
+   "max_tokens": 128000,
+   "cache_ttl": "1h",
+   "anthropic_version": "2023-06-01"
+  },
+  "pre_generation_rejections": {
+   "policy": "retry_with_backoff_until_accepted_not_an_attempt",
+   "covers": [
+    "http_429",
+    "http_529_overloaded",
+    "http_5xx_without_generation",
+    "provider_batch_validation_failure",
+    "connection_error_before_any_output"
+   ],
+   "backoff_seconds": {
+    "base": 15,
+    "factor": 2,
+    "max": 300
+   },
+   "invalid_or_truncated_output": "single_identical_retry",
+   "after_cutoff": "not yet accepted items follow the cutoff rule (synchronous full price)"
+  }
+ },
+ "package": {
+  "items_path": "annotation/study_pairs/items.jsonl",
+  "items_sha256": "dd15e84a15bcbe1751173b434a654913dc718758508049d4928d0dd9eeb3254d",
+  "manifest_path": "annotation/study_pairs/items.manifest.json",
+  "manifest_sha256": "afb71a4c541e23c255b2fda40193cf676e327f437f0c168df89912119d9616a8",
+  "package_sha256": "c8915e23f840e657a21f4e9f393a57856951ad93c389650b951a5f778d746afb",
+  "retired_item_ids": [
+   "v2-pair-1100"
+  ],
+  "retired_record": "metabolic-evidence-deploy.md, 14 November 2026 18:43: v2-pair-1100 retired on the site with retire-item; identical to v2-pair-1083 after the v2.1 rebuild; never assigned or read. Package file and hash unchanged.",
+  "live_item_ids": [
+   "v2-pair-1001",
+   "v2-pair-1002",
+   "v2-pair-1007",
+   "v2-pair-1008",
+   "v2-pair-1011",
+   "v2-pair-1013",
+   "v2-pair-1017",
+   "v2-pair-1019",
+   "v2-pair-1021",
+   "v2-pair-1022",
+   "v2-pair-1030",
+   "v2-pair-1032",
+   "v2-pair-1033",
+   "v2-pair-1040",
+   "v2-pair-1043",
+   "v2-pair-1050",
+   "v2-pair-1051",
+   "v2-pair-1052",
+   "v2-pair-1056",
+   "v2-pair-1059",
+   "v2-pair-1061",
+   "v2-pair-1062",
+   "v2-pair-1063",
+   "v2-pair-1064",
+   "v2-pair-1066",
+   "v2-pair-1069",
+   "v2-pair-1071",
+   "v2-pair-1074",
+   "v2-pair-1079",
+   "v2-pair-1083",
+   "v2-pair-1084",
+   "v2-pair-1087",
+   "v2-pair-1090",
+   "v2-pair-1091",
+   "v2-pair-1098"
+  ],
+  "live_package_sha256": "def4666aaaf96ccbad39cc23bfef3b99d71683a9a0b768e05771f71571c2bd25"
+ },
+ "order_rule": "item_id ascending",
+ "pilot_item_ids": [
+  "v2-pair-1043",
+  "v2-pair-1087"
+ ],
+ "output_root": "annotation/oracles_two_judges",
+ "funding_path": "configs/two_judges_funding.json",
+ "funding_sha256": "240670cf60d6e819486733e065747295cbb44df2866722481d3a3faf0bf412aa",
+ "oracle_release_lock_path": "configs/two_judges_release.json",
+ "anthropic_stop_lift_path": "configs/two_judges_anthropic_lift.json",
+ "reference_runtime_sha256": {
+  "src/chl_rag/two_judge_plan.py": "179ae4f446f372bae3b942d810da206d50bcf1fb7b53162b5f0a0f54ee25c202",
+  "src/chl_rag/two_judges.py": "c85f53288e39a18f5244750da6aec40d75779cbe19bb88bb736409b0dc3f2a98",
+  "src/chl_rag/reference_batches.py": "ca480a2c34497eae3dd09402fb3947089b3d7e0dce10bf6f55322ee03bbee918",
+  "src/chl_rag/reference_oracles.py": "bfa439cc9cc652541cbefb4ac76fc60cbe9cb76c6ec4c2346a7369925cfff076",
+  "src/chl_rag/judges.py": "fb6cf6d3be4dbb83fe363eee07241fc3c4dccfa6cf65f504c583dfc5c1a03b9d",
+  "src/chl_rag/spend_budget.py": "6dfa75965c3c33b154819dd531d0a7ec9391fa224d0f0ede3c1f56e262710611",
+  "src/chl_rag/site_instrument.py": "a26fe074e8fa67144037aac954a04782e65285fa7bcd612a42b7549744c92dcd",
+  "src/chl_rag/pair_instrument.py": "6cdd8dc82bf0432f12a8759e168c76d7b19fc17481c1d63c3926b3f08f03756b",
+  "src/chl_rag/site_presentation.py": "baaa7ead3e3c10306e6edfb8e11c6cc4b44ae3ff1d002efc776093c0a86f855a",
+  "src/chl_rag/annotation_names_study_start.py": "93643d47166915eaf4fccd28a1f4da75999cf632acd3a5deb765674852ff81db",
+  "src/chl_rag/claim_schema.py": "3dfc4a4ae1f8225f1a640fa85a1c359df3be0f0e077e51fb266a0ba10c9c0b8c",
+  "src/chl_rag/extraction.py": "330d443d284236c885e9e7626f388b73a64926fe638a66785c11c25d780241b0",
+  "src/chl_rag/source_text.py": "b3bf03b076228f54c8d2c61a5ab1be8fd265c19e1c774205cf357a8747ea3dec",
+  "src/chl_rag/io.py": "d0717154794328d3d776a9cdebe27a571f6318180d98c34f0f7ee44c7d115206",
+  "configs/instrument.json": "ce6161a93e705d57ed8f276b383148d7c577d50875b6564edc2572d187141581",
+  "configs/oracle_prompt.json": "8ea67caed45b20f592271129fa378a9ef0eb1eb1be34c195f29e7eac67ba6029",
+  "configs/site_instrument.json": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+  "configs/site_guidelines_en.md": "9ccda2e8a3841cc693fe619a61c244221d4c13a2e2563c73860da0164a0cec7d",
+  "scripts/run_reference_batches.py": "3067ddef56cd5941ce24b70ce5176adb51128a6073f213a1c007d723286f42d1"
+ },
+ "allocation_derivation": {
+  "rule": "allocation = 35 x (largest per-pair worst-case reservation at batch price, registered output cap), rounded up to the next 5 USD",
+  "worst_case_formula": "(serialized request bytes + 4096) x the dearest input rate used + output cap x output rate; one token per byte is a bound, not an estimate (unchanged reservation logic)",
+  "prices_usd_per_mtok": {
+   "astra_batch": {
+    "input": 5,
+    "30m_cache_write": 6.25,
+    "output": 25
+   },
+   "astra_standard": {
+    "input": 10,
+    "30m_cache_write": 12.5,
+    "output": 50
+   },
+   "fable_batch": {
+    "input": 4,
+    "1h_cache_write": 8,
+    "output": 20
+   },
+   "fable_standard_sync_5m": {
+    "input": 8,
+    "5m_cache_write": 10,
+    "output": 40
+   }
+  },
+  "measured_on": "the 36 public pair items of annotation/study_pairs/items.jsonl, prepared with the 61c08a1 binding",
+  "per_pair_usd": {
+   "astra_batch": {
+    "min": 3.651194,
+    "median": 3.676963,
+    "max": 3.717475,
+    "sum_35_largest": 128.823186
+   },
+   "astra_full": {
+    "min": 7.302563,
+    "median": 7.3541,
+    "max": 7.435125,
+    "sum_35_largest": 257.652484
+   },
+   "fable_batch": {
+    "min": 3.137,
+    "median": 3.169984,
+    "max": 3.22184,
+    "sum_35_largest": 111.115184
+   },
+   "fable_full": {
+    "min": 5.84139,
+    "median": 5.88262,
+    "max": 5.94744,
+    "sum_35_largest": 206.09888
+   }
+  },
+  "input_bound_tokens": {
+   "astra_bound_tokens": {
+    "min": 72191,
+    "median": 76314,
+    "max": 82796,
+    "sum_35_largest": 2691708
+   },
+   "fable_bound_tokens": {
+    "min": 72125,
+    "median": 76248,
+    "max": 82730,
+    "sum_35_largest": 2689398
+   }
+  },
+  "astra": {
+   "max_batch_per_pair": 3.717475,
+   "times_35": 130.111625,
+   "allocation": 135
+  },
+  "fable": {
+   "max_batch_per_pair": 3.22184,
+   "times_35": 112.7644,
+   "allocation": 115
+  },
+  "fallback_capacity": "after 11:00 the full-price path admits items while reservations fit: about 18 Astra (135/7.44) and 19 Fable (115/5.95) at once when nothing else is reserved; waves continue as items settle"
+ },
+ "decisions_recorded": [
+  "Two final judges: GPT-6 Astra through the OpenAI API and Claude Fable 5.2 through the Anthropic API (Antonio, 16 November 2026).",
+  "One effort level for both judges and both tasks: max. OpenAI documents max for gpt-6-astra; Anthropic documents max for claude-fable-5-2.",
+  "Output caps at the model maxima: Astra max_output_tokens 128000, Fable max_tokens 128000. An output-cap stop is an invalid response with the single identical retry.",
+  "Final run: pair task only, the 35 student pairs. The whole-abstract task is out of this run.",
+  "Per-item batches: each item is its own single-request batch on both providers; all items are submitted at once and polled in parallel; a failed or invalid item gets its single identical retry at once, as a new single-request batch.",
+  "Pilot: 2 pairs, chosen by ascending sha256('oracle-pilot-20261116:' + item_id), the same 2 for both judges, sent through the synchronous full-price path. A valid pilot answer is that item's final answer when its model-visible parameters (model, instructions, prompt, schema, effort, output cap) equal the final ones; the transport difference is recorded. A pilot item that ended invalid after its registered attempts is not sent again (no third attempt).",
+  "Cutoff 11:00 CET on 16 November 2026: open batches are cancelled, completed items kept; items without a result are sent at full price through the synchronous path (OpenAI Responses streamed; Anthropic Messages streamed via _fable_once). For an item never processed that send is its first attempt; for an item that errored or was invalid it is its single identical retry.",
+  "Synchronous admission: all admissible items at once, bounded only by the per-request worst-case reservations and an adaptive cap that halves on HTTP 429 or a 5xx burst and recovers gradually (constants of adaptive_transport).",
+  "Allocations raised to the worst case: 35 x the batch worst-case reservation of one pair request, rounded up to the next 5 USD. Reservations are settled or released as soon as each item ends.",
+  "Pair binding: site instrument 61c08a1 (tag v2.1-layout-20261115) only; the 5208dfa path stays for historical items. Prompt of 39,446 characters accepted. An answer that violates a page-only rule is an invalid response, with the single identical retry, then missing. The oracle uses the final instrument only; students' cross-version answers are handled by the analysis split rule.",
+  "Rejections before generation (HTTP 429, 529/overloaded, 5xx without generation, a provider-side batch validation failure, connection errors before any output) are retried with backoff (15 s doubling, at most 300 s) until accepted and never count as an attempt. Invalid or truncated outputs keep the single identical retry. After 11:00 anything not yet accepted follows the cutoff rule."
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "addendum": "08E (lists prepared before registration; nothing classified)",
+ "encoder": "MedCPT query encoder (primary by the registered criterion)",
+ "claims_sha256": "c84ecd680bcaf08494a7ae2850449fd016e663ebfa544c2fd602783fe2c09f38",
+ "frame_08D_sha256": "ff181a613fb648ae4dc3968640bd6c0fc4f58a9932c95d6570d47f4aa7733543",
+ "new_pairs_enumerated_at_or_above": 0.85,
+ "lists": {
+  "0.88": {
+   "path": "data/derived/production_v21_08e/pairs_08e_tau088.jsonl",
+   "sha256": "87e2dd5c5b9ad057803966a9c2843ad2e604fcac508252001cfc8df085baf1a5",
+   "pairs": 63400,
+   "steps": {
+    "1_controls_T3": 1500,
+    "2a_T1": 9800,
+    "2b_T2": 20298,
+    "3_band_T1T2": 31802
+   },
+   "band": [
+    0.85,
+    0.88
+   ],
+   "classify_through_step_2": 31598
+  }
+ },
+ "offline_request_check": {
+  "requests_built": 3,
+  "api_calls": 0
+ },
+ "seconds": 76.3
+}

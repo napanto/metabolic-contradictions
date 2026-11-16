@@ -1,0 +1,296 @@
+{
+  "stage": "final_evaluation",
+  "judge": "fable",
+  "requested_model": "claude-fable-5-2",
+  "effort": "max",
+  "reference_revision": {
+    "pair_binding": "61c08a1"
+  },
+  "item_id": "v2-pair-1087",
+  "task": "pair",
+  "package_sha256": "def4666aaaf96ccbad39cc23bfef3b99d71683a9a0b768e05771f71571c2bd25",
+  "binding": {
+    "loader": "amendment08_two_judge_plan",
+    "evaluation_config_sha256": "416d06f0c4ef8af0709a3a891b593d6fb23e22af29a368ca6b411643773843f3",
+    "protocol_sha256": "32fcc9639a5d8be479e443f4d961b744058bbddd07e9f8df441042c901ff48a3",
+    "pair_binding_record_sha256": "4d66121c2f2196d43d88c321edd72802751c759b79eef1a99f396e265823da6a",
+    "package_sha256": "c8915e23f840e657a21f4e9f393a57856951ad93c389650b951a5f778d746afb",
+    "live_package_sha256": "def4666aaaf96ccbad39cc23bfef3b99d71683a9a0b768e05771f71571c2bd25",
+    "retired_item_ids": [
+      "v2-pair-1100"
+    ],
+    "reference_revision": {
+      "pair_binding": "61c08a1"
+    }
+  },
+  "item_sha256": "a648907ec70288de54f87ef9f0709560d3f98f592c197b94623b93d43cba6750",
+  "displayed_public_item_sha256": "f16589cd4b3290c170dd038c431e9ce88ca8b32d07ea032096813177e26703be",
+  "prompt_sha256": "933309a80bfa928523748b57b374922a6640bfe26d27965708b6aa1efe63c90e",
+  "instructions_sha256": "975e119783bd3c6411350e1bd7f98ea3e8ba8c73e30d65a0400a05c8119b4f20",
+  "instrument_sha256": "ce6161a93e705d57ed8f276b383148d7c577d50875b6564edc2572d187141581",
+  "pair_instrument_sha256": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+  "canonical_schema_sha256": "625d339248a2e753595c9b0b2a078d931b451a3d75305cb55fd6ca4aa6c2cae7",
+  "wire_schema_sha256": "cf442c2652b8b44f8508a43cbc12cc8ca3e7131b62f03721285288528e7e7acc",
+  "pair_binding": "61c08a1",
+  "pair_wire_version": "v2-pair-required-null-61c08a1",
+  "params_fingerprint": "aebb453957a0e97a56ab5785538a73b4068ea8b51c4d89d68c4f57a10786a5b2",
+  "max_attempts": 2,
+  "output_cap": 128000,
+  "transport_policy": "per_item_batch_then_full_price_after_cutoff; pilot full price",
+  "classifier_outputs_in_prompt": false,
+  "peer_outputs_in_prompt": false,
+  "human_answers_in_prompt": false,
+  "status": "valid",
+  "schema_valid": true,
+  "answer": {
+    "instrument_version": "2.0",
+    "pipeline_version": "2.0",
+    "item_id": "v2-pair-1087",
+    "task": "pair",
+    "path": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "comparison": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "context": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          }
+        }
+      },
+      "q1_relevance": "not_material",
+      "q2": {
+        "exposure": {
+          "answer": "yes"
+        },
+        "outcome": {
+          "answer": "yes"
+        },
+        "comparison": {
+          "answer": "yes"
+        }
+      },
+      "q3": "no",
+      "q4": "effect_vs_no_effect"
+    },
+    "rationale": "A: TRE gave greater body-weight reductions than SOC after 16 weeks (no p-value for weight). B: weight change with TRE vs UE was -1.4 kg (95% CI -4.5 to 1.7; p = 0.53); the authors call weight similar among groups and conclude no significant improvement, so the estimate points the same way but the effect is not confirmed. B's extraction omits the -1.4 kg estimate, the authors' non-significance wording, the group sizes (TRE n = 30, UE n = 29), the comparator and time fields, and the 8-h eating window; these omissions do not change the selected finding. Differences noted: MASLD patients vs general participants with mean BMI 36.2, 16 vs 12 weeks, SOC vs unrestricted eating.",
+    "label": "not_replicated",
+    "factor": "none",
+    "binary_inconsistent": true,
+    "field_problems": {
+      "a": {},
+      "b": {
+        "sample_size": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        },
+        "comparison": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        },
+        "significance": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        },
+        "context": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        }
+      }
+    },
+    "relevance": "not_material",
+    "other_detail": "",
+    "wire_version": "v2-pair-required-null-61c08a1",
+    "reference_wording_revision": "site-61c08a1-2026-11-15-2105"
+  },
+  "raw_response": {
+    "instrument_version": "2.0",
+    "pipeline_version": "2.0",
+    "item_id": "v2-pair-1087",
+    "task": "pair",
+    "path": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "yes",
+            "problems": []
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "comparison": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "context": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          }
+        }
+      },
+      "q1_relevance": "not_material",
+      "q2": {
+        "exposure": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        },
+        "outcome": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        },
+        "comparison": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        }
+      },
+      "q2_primary": null,
+      "q3": "no",
+      "q4": "effect_vs_no_effect",
+      "q5": null
+    },
+    "rationale": "A: TRE gave greater body-weight reductions than SOC after 16 weeks (no p-value for weight). B: weight change with TRE vs UE was -1.4 kg (95% CI -4.5 to 1.7; p = 0.53); the authors call weight similar among groups and conclude no significant improvement, so the estimate points the same way but the effect is not confirmed. B's extraction omits the -1.4 kg estimate, the authors' non-significance wording, the group sizes (TRE n = 30, UE n = 29), the comparator and time fields, and the 8-h eating window; these omissions do not change the selected finding. Differences noted: MASLD patients vs general participants with mean BMI 36.2, 16 vs 12 weeks, SOC vs unrestricted eating."
+  },
+  "attempt_count": 1,
+  "attempt_statuses": [
+    "valid"
+  ],
+  "dispatches": [
+    {
+      "dispatch": 1,
+      "route": "sync",
+      "phase": "pilot",
+      "status": "valid",
+      "counts_as_attempt": true,
+      "attempt": 1,
+      "batch_id": null
+    }
+  ],
+  "finalized_in_phase": "pilot",
+  "missing_reason": null,
+  "cost_usd": 0.871552,
+  "annotator_type": "LLM",
+  "reference_role": "final_two_judge_oracle",
+  "finalized_at": "2026-11-16T01:12:29.740918+00:00"
+}

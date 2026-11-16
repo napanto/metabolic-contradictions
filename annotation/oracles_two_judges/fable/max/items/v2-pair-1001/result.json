@@ -1,0 +1,305 @@
+{
+  "stage": "final_evaluation",
+  "judge": "fable",
+  "requested_model": "claude-fable-5-2",
+  "effort": "max",
+  "reference_revision": {
+    "pair_binding": "61c08a1"
+  },
+  "item_id": "v2-pair-1001",
+  "task": "pair",
+  "package_sha256": "def4666aaaf96ccbad39cc23bfef3b99d71683a9a0b768e05771f71571c2bd25",
+  "binding": {
+    "loader": "amendment08_two_judge_plan",
+    "evaluation_config_sha256": "416d06f0c4ef8af0709a3a891b593d6fb23e22af29a368ca6b411643773843f3",
+    "protocol_sha256": "32fcc9639a5d8be479e443f4d961b744058bbddd07e9f8df441042c901ff48a3",
+    "pair_binding_record_sha256": "4d66121c2f2196d43d88c321edd72802751c759b79eef1a99f396e265823da6a",
+    "package_sha256": "c8915e23f840e657a21f4e9f393a57856951ad93c389650b951a5f778d746afb",
+    "live_package_sha256": "def4666aaaf96ccbad39cc23bfef3b99d71683a9a0b768e05771f71571c2bd25",
+    "retired_item_ids": [
+      "v2-pair-1100"
+    ],
+    "reference_revision": {
+      "pair_binding": "61c08a1"
+    }
+  },
+  "item_sha256": "b72ecefa3d00a41156f3a6c45d1e13c6ad6457274405fc120422742cc220b9f4",
+  "displayed_public_item_sha256": "31902a6235070251fda6c0fe22c89b228f83d28ecacc0b3059b234f6a3999cae",
+  "prompt_sha256": "c537149016507b85c23e68c62ab7db7d1aac982468312b26fe372ee35b89e6bc",
+  "instructions_sha256": "975e119783bd3c6411350e1bd7f98ea3e8ba8c73e30d65a0400a05c8119b4f20",
+  "instrument_sha256": "ce6161a93e705d57ed8f276b383148d7c577d50875b6564edc2572d187141581",
+  "pair_instrument_sha256": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+  "canonical_schema_sha256": "103c6a29ff97a43010c8957f5345bcbb7c85f0fc6a79ef1724fe16c3bfa0e468",
+  "wire_schema_sha256": "6d9abb4cb6a40fadcfca4e2c5d9a86a1bba86dfc91ec72c47ed94fcc545c1850",
+  "pair_binding": "61c08a1",
+  "pair_wire_version": "v2-pair-required-null-61c08a1",
+  "params_fingerprint": "ee638b3ba2ea185bc6dc8dfe7ad705f2c132814547f1ebed7d2cd94dd0620a52",
+  "max_attempts": 2,
+  "output_cap": 128000,
+  "transport_policy": "per_item_batch_then_full_price_after_cutoff; pilot full price",
+  "classifier_outputs_in_prompt": false,
+  "peer_outputs_in_prompt": false,
+  "human_answers_in_prompt": false,
+  "status": "valid",
+  "schema_valid": true,
+  "answer": {
+    "instrument_version": "2.0",
+    "pipeline_version": "2.0",
+    "item_id": "v2-pair-1001",
+    "task": "pair",
+    "path": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "sample_size": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q1_relevance": "not_material",
+      "q2": {
+        "exposure": {
+          "answer": "yes"
+        },
+        "outcome": {
+          "answer": "yes"
+        },
+        "comparison": {
+          "answer": "yes"
+        }
+      },
+      "q3": "no",
+      "q4": "opposite",
+      "q5": {
+        "answer": "yes",
+        "factor": "population"
+      }
+    },
+    "rationale": "A: the negative irisin-glucose correlation (r = -0.259, p = 0.039) is extracted correctly, but the stated objective, the description of the patients (three BMI groups undergoing cholecystectomy or gastric bypass) and the group sizes (15/36/30) are missing. B: the significant positive correlation (p < 0.001) in the entire cohort is extracted correctly; the sample-size row is empty although the abstract gives 60 PCOS cases and 60 controls (no total stated). These omissions do not change either finding. Same marker (plasma vs serum irisin) and same outcome, with correlations in opposite directions. The abstracts describe different populations: mostly middle-aged surgical patients across BMI classes up to >= 40 kg/m2 in A, versus adolescents and young adults, half with PCOS (who had both higher irisin and higher glucose than controls), in B. Plasma versus serum is a further documented difference. B also reports a separate regression result (glucose beta = 0.337, p = 0.029) that is not part of the extracted finding.",
+    "label": "apparent_contradiction",
+    "factor": "population",
+    "binary_inconsistent": true,
+    "field_problems": {
+      "a": {
+        "groups": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        },
+        "sample_size": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        },
+        "analysis": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        }
+      },
+      "b": {
+        "sample_size": {
+          "answer": "no",
+          "problems": [
+            "missing_from_extraction"
+          ]
+        }
+      }
+    },
+    "relevance": "not_material",
+    "other_detail": "",
+    "wire_version": "v2-pair-required-null-61c08a1",
+    "reference_wording_revision": "site-61c08a1-2026-11-15-2105"
+  },
+  "raw_response": {
+    "instrument_version": "2.0",
+    "pipeline_version": "2.0",
+    "item_id": "v2-pair-1001",
+    "task": "pair",
+    "path": {
+      "q1": {
+        "a": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "sample_size": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        },
+        "b": {
+          "result": {
+            "answer": "yes",
+            "problems": []
+          },
+          "groups": {
+            "answer": "yes",
+            "problems": []
+          },
+          "sample_size": {
+            "answer": "no",
+            "problems": [
+              "missing_from_extraction"
+            ]
+          },
+          "comparison": {
+            "answer": "yes",
+            "problems": []
+          },
+          "analysis": {
+            "answer": "yes",
+            "problems": []
+          },
+          "significance": {
+            "answer": "yes",
+            "problems": []
+          },
+          "context": {
+            "answer": "yes",
+            "problems": []
+          }
+        }
+      },
+      "q1_relevance": "not_material",
+      "q2": {
+        "exposure": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        },
+        "outcome": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        },
+        "comparison": {
+          "answer": "yes",
+          "reason": null,
+          "detail": null
+        }
+      },
+      "q2_primary": null,
+      "q3": "no",
+      "q4": "opposite",
+      "q5": {
+        "answer": "yes",
+        "factor": "population",
+        "detail": null
+      }
+    },
+    "rationale": "A: the negative irisin-glucose correlation (r = -0.259, p = 0.039) is extracted correctly, but the stated objective, the description of the patients (three BMI groups undergoing cholecystectomy or gastric bypass) and the group sizes (15/36/30) are missing. B: the significant positive correlation (p < 0.001) in the entire cohort is extracted correctly; the sample-size row is empty although the abstract gives 60 PCOS cases and 60 controls (no total stated). These omissions do not change either finding. Same marker (plasma vs serum irisin) and same outcome, with correlations in opposite directions. The abstracts describe different populations: mostly middle-aged surgical patients across BMI classes up to >= 40 kg/m2 in A, versus adolescents and young adults, half with PCOS (who had both higher irisin and higher glucose than controls), in B. Plasma versus serum is a further documented difference. B also reports a separate regression result (glucose beta = 0.337, p = 0.029) that is not part of the extracted finding."
+  },
+  "attempt_count": 1,
+  "attempt_statuses": [
+    "valid"
+  ],
+  "dispatches": [
+    {
+      "dispatch": 1,
+      "route": "batch",
+      "phase": "full",
+      "status": "valid",
+      "counts_as_attempt": true,
+      "attempt": 1,
+      "batch_id": "msgbatch_01Gd5APR84nmDJxMMUzv5stf"
+    }
+  ],
+  "finalized_in_phase": "full",
+  "missing_reason": null,
+  "cost_usd": 0.821148,
+  "annotator_type": "LLM",
+  "reference_role": "final_two_judge_oracle",
+  "finalized_at": "2026-11-16T01:30:22.079325+00:00"
+}

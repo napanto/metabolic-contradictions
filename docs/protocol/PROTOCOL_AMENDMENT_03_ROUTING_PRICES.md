@@ -1,0 +1,7 @@
+# Operational routing-price update — 12 November 2026
+
+The pinned PrimeIntellect/fp8 endpoint increased its published rates during the run. Successive live endpoint checks recorded prompt/completion rates of USD 0.059/0.538 and 0.069/0.635 per million tokens, replacing the earlier USD 0.014/0.13 rates. The provider tag, model/canonical identifier, quantization and supported decoding parameters were unchanged.
+
+The old price ceiling therefore caused HTTP404 routing rejections before generation. That partial run is archived as an operational failure, not interpreted as classifier performance. Verified current quotes are retained separately from fixed routing ceilings of USD 0.20/2.00 per million input/output tokens. Worst-case reservations use those ceilings. The pilot projection reprices observed token usage at the ceilings before applying the 50% margin, so permissible price movement is budgeted before bulk calls. Frozen development/test configurations and results remain unchanged. Full request hashes include the actual routing-price parameters, and every billable response remains in the shared ledger under the USD 40 cap.
+
+The classifier's scientific prompt, schema, labels, candidate input, model, provider, temperature, seed and reasoning mode are unchanged. Fatal routing/authentication/configuration errors now stop the queue and drain active requests; a rejected pilot cannot justify bulk execution. No human metabolic labels have been collected, and no verdicts from the rejected run enter the final evaluation.

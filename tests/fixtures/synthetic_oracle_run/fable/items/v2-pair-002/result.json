@@ -1,0 +1,77 @@
+{
+  "stage": "final_evaluation",
+  "judge": "fable",
+  "requested_model": "claude-fable-5-2",
+  "effort": "max",
+  "reference_revision": {
+    "base_evaluation_config_sha256": "71846bc1de0422b4b71b9c7ce7ddc4977a79cf6d0204933f0c35955c3efb9903",
+    "reference_revision_sha256": "6559f24d1bd30bd23b53ee695bde11c2c4b8bccd9248ccde4f1504ff6886b2a2",
+    "reference_effective_sha256": "f57a5432bd50a6f4c17effbc051ada36b5ea904bc06def8a80e0a9de7a9e6b27",
+    "site_commit": "b5e77f9",
+    "site_instrument_sha256": "9ad34d2a75ebae868af7532122427982edd964166eecf41c4fe47a84eca44873"
+  },
+  "item_id": "v2-pair-002",
+  "task": "pair",
+  "package_sha256": "d84835f4edc07b062e0b1ea12e9df9e42cbb536579b07bb6fd18f093b05ecd43",
+  "binding": {
+    "reference_revision": {
+      "base_evaluation_config_sha256": "71846bc1de0422b4b71b9c7ce7ddc4977a79cf6d0204933f0c35955c3efb9903",
+      "reference_revision_sha256": "6559f24d1bd30bd23b53ee695bde11c2c4b8bccd9248ccde4f1504ff6886b2a2",
+      "reference_effective_sha256": "f57a5432bd50a6f4c17effbc051ada36b5ea904bc06def8a80e0a9de7a9e6b27",
+      "site_commit": "b5e77f9",
+      "site_instrument_sha256": "9ad34d2a75ebae868af7532122427982edd964166eecf41c4fe47a84eca44873"
+    }
+  },
+  "item_sha256": "e04a0bb87b659afa40e6d68d057cc09eb80992041a4be3e8989f0229a4b09da0",
+  "displayed_public_item_sha256": "c597d96859b8a1d5aa1cf986eb90c8ccf296c2993c8f17a2c89d5a3537d43aab",
+  "prompt_sha256": "2224691ae66b3f3553dfe18e0208b9377d823b47a132362c3f2af556021e5d54",
+  "instructions_sha256": "975e119783bd3c6411350e1bd7f98ea3e8ba8c73e30d65a0400a05c8119b4f20",
+  "instrument_sha256": "ce6161a93e705d57ed8f276b383148d7c577d50875b6564edc2572d187141581",
+  "pair_instrument_sha256": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+  "canonical_schema_sha256": "1682417931aa25fa4e10809adb7e9cf39f54aef0974090c1d808ea00dca794d5",
+  "wire_schema_sha256": "5d2b0bd6063b3351cf7bf9b0b0cdd322097cbbebe6fd5f39e026aea22f514437",
+  "pair_binding": "61c08a1",
+  "pair_wire_version": "v2-pair-required-null-61c08a1",
+  "params_fingerprint": "5fce11ff74dd484a76f37f721289633e4db8cfe66d22246b37f3da6ea8bb03a8",
+  "max_attempts": 2,
+  "output_cap": 128000,
+  "transport_policy": "per_item_batch_then_full_price_after_cutoff; pilot full price",
+  "classifier_outputs_in_prompt": false,
+  "peer_outputs_in_prompt": false,
+  "human_answers_in_prompt": false,
+  "status": "invalid",
+  "schema_valid": false,
+  "answer": null,
+  "raw_response": null,
+  "attempt_count": 2,
+  "attempt_statuses": [
+    "truncated",
+    "invalid"
+  ],
+  "dispatches": [
+    {
+      "dispatch": 1,
+      "route": "batch",
+      "phase": "full",
+      "status": "truncated",
+      "counts_as_attempt": true,
+      "attempt": 1,
+      "batch_id": "msgbatch_2"
+    },
+    {
+      "dispatch": 2,
+      "route": "batch",
+      "phase": "full",
+      "status": "invalid",
+      "counts_as_attempt": true,
+      "attempt": 2,
+      "batch_id": "msgbatch_6"
+    }
+  ],
+  "finalized_in_phase": "full",
+  "missing_reason": null,
+  "cost_usd": 0.3058,
+  "annotator_type": "LLM",
+  "reference_role": "final_two_judge_oracle",
+  "finalized_at": "2026-11-16T00:51:08.490700+00:00"
+}

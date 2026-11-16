@@ -1,0 +1,191 @@
+{
+ "status": "DRAFT",
+ "purpose": "Fields to register in configs/evaluation_system.json (signed) and configs/funding.json (signed) for the two-judge final reference. This file has no effect by itself: every guard reads only the signed configuration.",
+ "prepared_at": "2026-11-16",
+ "decisions_recorded": [
+  "Two final judges: GPT-6 Astra through the OpenAI API and Claude Fable 5.2 through the Anthropic API (Antonio, 16 November 2026).",
+  "One effort level for both judges and both tasks: max. OpenAI documents max for gpt-6-astra; Anthropic documents max for claude-fable-5-2.",
+  "Output caps at the model maxima: Astra max_output_tokens 128000, Fable max_tokens 128000. An output-cap stop is an invalid response with the single identical retry.",
+  "Final run: pair task only, the 35 student pairs. The whole-abstract task is out of this run.",
+  "Per-item batches: each item is its own single-request batch on both providers; all items are submitted at once and polled in parallel; a failed or invalid item gets its single identical retry at once, as a new single-request batch.",
+  "Pilot: 2 pairs, chosen by ascending sha256('oracle-pilot-20261116:' + item_id), the same 2 for both judges, sent through the synchronous full-price path. A valid pilot answer is that item's final answer when its model-visible parameters (model, instructions, prompt, schema, effort, output cap) equal the final ones; the transport difference is recorded. A pilot item that ended invalid after its registered attempts is not sent again (no third attempt).",
+  "Cutoff 11:00 CET on 16 November 2026: open batches are cancelled, completed items kept; items without a result are sent at full price through the synchronous path (OpenAI Responses streamed; Anthropic Messages streamed via _fable_once). For an item never processed that send is its first attempt; for an item that errored or was invalid it is its single identical retry.",
+  "Synchronous admission: all admissible items at once, bounded only by the per-request worst-case reservations and an adaptive cap that halves on HTTP 429 or a 5xx burst and recovers gradually (constants of adaptive_transport).",
+  "Allocations raised to the worst case: 35 x the batch worst-case reservation of one pair request, rounded up to the next 5 USD. Reservations are settled or released as soon as each item ends.",
+  "Pair binding: site instrument 61c08a1 (tag v2.1-layout-20261115) only; the 5208dfa path stays for historical items. Prompt of 39,446 characters accepted. An answer that violates a page-only rule is an invalid response, with the single identical retry, then missing. The oracle uses the final instrument only; students' cross-version answers are handled by the analysis split rule.",
+  "Rejections before generation (HTTP 429, 529/overloaded, 5xx without generation, a provider-side batch validation failure, connection errors before any output) are retried with backoff (15 s doubling, at most 300 s) until accepted and never count as an attempt. Invalid or truncated outputs keep the single identical retry. After 11:00 anything not yet accepted follows the cutoff rule."
+ ],
+ "evaluation_config_fields": {
+  "active_judges": [
+   "astra",
+   "fable"
+  ],
+  "judge_policy": "two_judges",
+  "reference_design": "astra_api_max_plus_fable_max",
+  "references": {
+   "transport": "provider_batch",
+   "effort": "max",
+   "tasks": [
+    "pair"
+   ],
+   "pair_binding": "61c08a1",
+   "max_attempts": 2,
+   "retry": "second_batch_of_failed_items_only",
+   "truncation": "invalid_with_single_identical_retry",
+   "cutoff_at": "2026-11-16T11:00:00+01:00",
+   "sync_attempt_timeout_seconds": 1800,
+   "poll_interval_seconds": 60,
+   "pilot": {
+    "rule": "ascending_sha256_of_salt_plus_item_id",
+    "salt": "oracle-pilot-20261116:",
+    "pairs": 2,
+    "same_for_both_judges": true,
+    "route": "synchronous_full_price",
+    "valid_pilot_answer_is_final_when_request_identical": true
+   },
+   "astra": {
+    "model": "gpt-6-astra",
+    "transport": "openai_batch",
+    "effort": "max",
+    "max_output_tokens": 128000,
+    "store": false,
+    "prompt_cache": {
+     "mode": "explicit",
+     "ttl": "30m"
+    }
+   },
+   "fable": {
+    "model": "claude-fable-5-2",
+    "transport": "anthropic_message_batches",
+    "effort": "max",
+    "max_tokens": 128000,
+    "cache_ttl": "1h",
+    "anthropic_version": "2023-06-01"
+   },
+   "pre_generation_rejections": {
+    "policy": "retry_with_backoff_until_accepted_not_an_attempt",
+    "covers": [
+     "http_429",
+     "http_529_overloaded",
+     "http_5xx_without_generation",
+     "provider_batch_validation_failure",
+     "connection_error_before_any_output"
+    ],
+    "backoff_seconds": {
+     "base": 15,
+     "factor": 2,
+     "max": 300
+    },
+    "invalid_or_truncated_output": "single_identical_retry",
+    "after_cutoff": "not yet accepted items follow the cutoff rule (synchronous full price)"
+   }
+  },
+  "anthropic_stop": {
+   "status": "in_force",
+   "note": "Antonio replaces this with status 'lifted', lifted_at (timezone-aware ISO) and authority {actor: 'Antonio', kind: 'explicit_lift', verbatim, source}. Until then Fable cannot read its key or send anything."
+  }
+ },
+ "funding_fields": {
+  "status": "confirmed",
+  "authority": "Antonio, 16 November 2026: caps raised to the worst case (35 x batch worst case per pair, next 5 USD); Anthropic credit confirmed",
+  "final_astra_openai_funding_confirmed": true,
+  "final_fable_topup_confirmed": true,
+  "vendors": {
+   "openai": {
+    "available_credit": 135,
+    "alert": 135,
+    "phase_alerts": {
+     "final_reference": 135
+    }
+   },
+   "anthropic": {
+    "available_credit": 190,
+    "alert": 190,
+    "phase_alerts": {
+     "development_judging": 110,
+     "final_reference": 115
+    },
+    "new_calls_paused": false,
+    "note": "results/anthropic_spend.json already holds 71.156495 USD of development spend, counted against available_credit and alert; 71.16 + 115 = 186.16, next 5 USD = 190. Antonio confirms the Anthropic account really holds that credit."
+   }
+  }
+ },
+ "allocation_derivation": {
+  "rule": "allocation = 35 x (largest per-pair worst-case reservation at batch price, registered output cap), rounded up to the next 5 USD",
+  "worst_case_formula": "(serialized request bytes + 4096) x the dearest input rate used + output cap x output rate; one token per byte is a bound, not an estimate (unchanged reservation logic)",
+  "prices_usd_per_mtok": {
+   "astra_batch": {
+    "input": 5,
+    "30m_cache_write": 6.25,
+    "output": 25
+   },
+   "astra_standard": {
+    "input": 10,
+    "30m_cache_write": 12.5,
+    "output": 50
+   },
+   "fable_batch": {
+    "input": 4,
+    "1h_cache_write": 8,
+    "output": 20
+   },
+   "fable_standard_sync_5m": {
+    "input": 8,
+    "5m_cache_write": 10,
+    "output": 40
+   }
+  },
+  "measured_on": "the 36 public pair items of annotation/study_pairs/items.jsonl, prepared with the 61c08a1 binding",
+  "per_pair_usd": {
+   "astra_batch": {
+    "min": 3.651194,
+    "median": 3.676963,
+    "max": 3.717475,
+    "sum_35_largest": 128.823186
+   },
+   "astra_full": {
+    "min": 7.302563,
+    "median": 7.3541,
+    "max": 7.435125,
+    "sum_35_largest": 257.652484
+   },
+   "fable_batch": {
+    "min": 3.137,
+    "median": 3.169984,
+    "max": 3.22184,
+    "sum_35_largest": 111.115184
+   },
+   "fable_full": {
+    "min": 5.84139,
+    "median": 5.88262,
+    "max": 5.94744,
+    "sum_35_largest": 206.09888
+   }
+  },
+  "input_bound_tokens": {
+   "astra_bound_tokens": {
+    "min": 72191,
+    "median": 76314,
+    "max": 82796,
+    "sum_35_largest": 2691708
+   },
+   "fable_bound_tokens": {
+    "min": 72125,
+    "median": 76248,
+    "max": 82730,
+    "sum_35_largest": 2689398
+   }
+  },
+  "astra": {
+   "max_batch_per_pair": 3.717475,
+   "times_35": 130.111625,
+   "allocation": 135
+  },
+  "fable": {
+   "max_batch_per_pair": 3.22184,
+   "times_35": 112.7644,
+   "allocation": 115
+  },
+  "fallback_capacity": "after 11:00 the full-price path admits items while reservations fit: about 18 Astra (135/7.44) and 19 Fable (115/5.95) at once when nothing else is reserved; waves continue as items settle"
+ }
+}

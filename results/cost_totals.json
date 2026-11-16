@@ -1,0 +1,53 @@
+{
+ "source": "aggregated from the private cost ledgers; raw call rows are not distributed",
+ "vendors": {
+  "openrouter": {
+   "currency": "USD",
+   "updated_at": "2026-11-16T09:49:20.283605+00:00",
+   "total_cost_usd": 167.899589,
+   "calls_with_unknown_cost": 1151,
+   "phases": {
+    "extraction_development": {
+     "calls": 705,
+     "cost_usd": 12.434798
+    },
+    "production_classification": {
+     "calls": 85671,
+     "cost_usd": 80.762345
+    },
+    "production_extraction": {
+     "calls": 34024,
+     "cost_usd": 74.702445
+    }
+   }
+  },
+  "anthropic": {
+   "currency": "USD",
+   "updated_at": "2026-11-16T01:38:31.705288+00:00",
+   "total_cost_usd": 99.91173,
+   "calls_with_unknown_cost": 0,
+   "phases": {
+    "development_judging": {
+     "calls": 41,
+     "cost_usd": 71.156495
+    },
+    "final_reference": {
+     "calls": 49,
+     "cost_usd": 28.755235
+    }
+   }
+  },
+  "openai": {
+   "currency": "USD",
+   "updated_at": "2026-11-16T01:35:27.444807+00:00",
+   "total_cost_usd": 11.732878,
+   "calls_with_unknown_cost": 0,
+   "phases": {
+    "final_reference": {
+     "calls": 36,
+     "cost_usd": 11.732877
+    }
+   }
+  }
+ }
+}

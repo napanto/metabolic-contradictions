@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "status": "locked",
+  "evaluation_config_sha256": "d8f7d94abc966626d5153bcb6307678ee34541c942787aeb904380a939c1d80a",
+  "configuration_snapshot": {
+    "ADMISSION_MIN_READS": 5,
+    "BUDGET_CAP_CENTS": 31000,
+    "BUDGET_CAP_EUR": "310",
+    "CONTINUE_BATCH": 5,
+    "CONTROL_FIRST_POSITION": 3,
+    "CONTROL_INTERVAL": 8,
+    "CONTROL_MIN_ACCURACY": 0.5,
+    "CONTROL_MIN_COUNT": 2,
+    "ELIGIBLE_PROGRAMMES": {
+      "biotech": {
+        "en": "Biotechnology",
+        "it": "Biotecnologie"
+      },
+      "biotech_ai": {
+        "en": "Biotechnologies and Applied Artificial Intelligence for Health",
+        "it": "Biotechnologies and Applied Artificial Intelligence for Health"
+      },
+      "biotech_molecular": {
+        "en": "Molecular Biotechnology",
+        "it": "Biotecnologie molecolari"
+      },
+      "ctf": {
+        "en": "Pharmaceutical Chemistry and Technology",
+        "it": "Chimica e Tecnologia Farmaceutiche"
+      },
+      "medicine": {
+        "en": "Medicine and Surgery",
+        "it": "Medicina e Chirurgia"
+      },
+      "pharmacy": {
+        "en": "Pharmacy",
+        "it": "Farmacia"
+      }
+    },
+    "EXPECTED_DISAGREEMENT_RATE": 0.3,
+    "EXPECTED_PAIRS_PER_SESSION": 10,
+    "EXPECTED_REPLACEMENT_READS": 4,
+    "EXPECTED_THREE_WAY_RATE": 0.15,
+    "FIXED_FEE_CENTS": 0,
+    "FIXED_FEE_EUR": "0",
+    "FIXED_FEE_MIN_PAIRS": 10,
+    "FOURTH_READS": 4,
+    "HIDDEN_CONTROLS_ENABLED": false,
+    "INITIAL_READS": 2,
+    "INITIAL_REAL_BATCH": 4,
+    "INSTRUMENT_VERSION": "2.0",
+    "LATE_PAYMENT_SECONDS": 7200,
+    "MAX_FIXED_FEES": 20,
+    "MAX_FOURTH_PAIRS": 8,
+    "MAX_SYNTHETIC_SCREENS": 60,
+    "MIN_PAYOUT_PAIRS": 5,
+    "PAID_READ_CAP": 144,
+    "PATTERN_MIN_PAIRS": 5,
+    "PIPELINE_VERSION": "2.0",
+    "PRACTICE_ENABLED": true,
+    "PREVIEW_MODE": false,
+    "PRICE_PER_PAIR_CENTS": 100,
+    "PRICE_PER_PAIR_EUR": "1.00",
+    "QUALIFICATION_ATTEMPTS": 2,
+    "QUALIFICATION_ENABLED": false,
+    "QUALIFICATION_PASS": 4,
+    "QUALIFICATION_SIZE": 6,
+    "QUALITY_MAX_AGREEMENTS": 1,
+    "QUALITY_MIN_MEDIAN_SECONDS": 30,
+    "QUALITY_MIN_SHARED_PAIRS": 6,
+    "QUALITY_MIN_SPEED_PAIRS": 5,
+    "REPLACEMENT_READS": 16,
+    "SOCIAL_PROOF_COPY": {
+      "en": {
+        "early": "Be one of the first participants",
+        "progress": "{percent}% of required reads complete · {participants} participants"
+      },
+      "it": {
+        "early": "Sii tra i primi a partecipare",
+        "progress": "Avanzamento delle letture: {percent}% · {participants} partecipanti"
+      }
+    },
+    "STALE_MINUTES": 30,
+    "TARGET_HOURLY_CENTS": 1000,
+    "TARGET_HOURLY_EUR": "10.00",
+    "THIRD_READS": 3,
+    "TUTORIAL_ENABLED": false,
+    "WORST_CASE_CENTS": 20400
+  },
+  "site_configuration_sha256": "65c3f4255f61d46697c484733c5adec1c99008b46b2f90d90057f5f09c91023a",
+  "locked_at": "2026-11-14T11:52:19+01:00",
+  "frozen_before_first_real_student_read": true,
+  "deployment_confirmed_by": "Claude (coordinator) for Antonio Napolitano: metabolic-evidence.it deployed 2026-11-14 11:49 CET at site commit 055e009 with the signed 40-pair handoff (bbf782e); production DB had 0 sessions and 0 answers when this lock was written",
+  "scientific_rules_match_registered_protocol": true,
+  "reference_revision_sha256": "80122052b46801be99c8a8aa6b80d6d8ebea9e15e6742377f2b52ef855e13133",
+  "note": "Pay 1 EUR per pair (Antonio), payable from 5 pairs; late surplus answers within 2 h are paid as payment only (answers.late_paid), never counted as reads. Site instrument export 78a4775b... (wording-only revision b5e77f9). Codex A: verify eligibility/QC rules against the protocol before signing. Root provenance clarification: bbf782e was the provisional C signature used by the handoff guard and was amended into the single combined signed commit 4bc38bf as requested at11:42. Canonical signed handoff JSONL SHA256 a1a8497ce26651590cf4b01606c701215fb7f3cbe015661e531b6dd0157fa0f4; manifest SHA256 5ac5b7293fa46de2afc29c9c5ccc6b47c5653c555fcbb18867136afd31419736. Package bytes did not change in that amendment."
+}

@@ -1,0 +1,556 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public aggregate result of chl_rag.v21_human_analysis",
+  "$comment": "Aggregates only: no session pseudonym, read identifier, note or individual answer may appear. Pair-level references are written to a separate private file.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "status",
+    "seed",
+    "replicates",
+    "provenance",
+    "package",
+    "demographics",
+    "corrections",
+    "instrument_versions",
+    "students",
+    "q1_checks",
+    "classification_validity",
+    "oracle",
+    "classifier_effort_comparison",
+    "limitations",
+    "participants",
+    "oracle_sensitivity_strict",
+    "factor_agreement"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "rate": {
+      "type": "object",
+      "required": [
+        "successes",
+        "n",
+        "expected",
+        "estimate",
+        "wilson95",
+        "coverage",
+        "missing_reference_bounds"
+      ],
+      "properties": {
+        "successes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "n": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "expected": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "estimate": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "missing_reference_bounds": {
+          "type": [
+            "array",
+            "null"
+          ]
+        }
+      }
+    },
+    "precision": {
+      "type": "object",
+      "required": [
+        "overall",
+        "biomarker",
+        "drug",
+        "diet"
+      ],
+      "properties": {
+        "overall": {
+          "$ref": "#/$defs/rate"
+        },
+        "biomarker": {
+          "$ref": "#/$defs/rate"
+        },
+        "drug": {
+          "$ref": "#/$defs/rate"
+        },
+        "diet": {
+          "$ref": "#/$defs/rate"
+        }
+      }
+    },
+    "agreement": {
+      "type": "object",
+      "required": [
+        "matched_pairs",
+        "matched_reads",
+        "metrics"
+      ],
+      "properties": {
+        "matched_pairs": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "metrics": {
+          "type": "object",
+          "required": [
+            "category_raw_agreement",
+            "category_kappa",
+            "binary_raw_agreement",
+            "binary_kappa"
+          ]
+        }
+      }
+    },
+    "student_population": {
+      "type": "object",
+      "required": [
+        "pairs_expected",
+        "pair_states",
+        "covered_pairs",
+        "resolved_pairs",
+        "by_arm",
+        "reads",
+        "reads_beyond_fourth_ignored",
+        "reads_needed_for_resolution",
+        "minimum_sample",
+        "consensus_categories",
+        "human_human_first_two_reads",
+        "system",
+        "exclusions"
+      ],
+      "properties": {
+        "pairs_expected": {
+          "const": 35
+        },
+        "covered_pairs": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 35
+        },
+        "resolved_pairs": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 35
+        },
+        "minimum_sample": {
+          "type": "object",
+          "required": [
+            "met",
+            "status",
+            "met_by_arm"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "meets_minimum",
+                "descriptive_only"
+              ]
+            }
+          }
+        },
+        "system": {
+          "oneOf": [
+            {
+              "type": "object",
+              "required": [
+                "status"
+              ],
+              "properties": {
+                "status": {
+                  "const": "pending_v21_classification"
+                }
+              }
+            },
+            {
+              "type": "object",
+              "required": [
+                "label_source",
+                "flagged_pairs",
+                "precision",
+                "agreement_with_consensus"
+              ],
+              "properties": {
+                "precision": {
+                  "$ref": "#/$defs/precision"
+                },
+                "agreement_with_consensus": {
+                  "$ref": "#/$defs/agreement"
+                }
+              }
+            }
+          ]
+        },
+        "earlier_v2_label": {
+          "type": "object",
+          "required": [
+            "label_source",
+            "flagged_pairs",
+            "precision",
+            "agreement_with_consensus"
+          ],
+          "properties": {
+            "precision": {
+              "$ref": "#/$defs/precision"
+            }
+          }
+        }
+      }
+    }
+  },
+  "properties": {
+    "generated_at": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "enum": [
+        "final_snapshot",
+        "interim_snapshot"
+      ]
+    },
+    "seed": {
+      "const": 20261124
+    },
+    "replicates": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "answers_sha256",
+        "metadata_sha256",
+        "corrections_sha256",
+        "snapshot_at",
+        "exported_at",
+        "collection_closed",
+        "site_pair_package_sha256",
+        "site_configuration_sha256",
+        "binding_sha256",
+        "package_sha256",
+        "rows",
+        "sessions"
+      ]
+    },
+    "package": {
+      "type": "object",
+      "required": [
+        "live_pairs",
+        "retired",
+        "dropped_before_collection",
+        "by_arm"
+      ],
+      "properties": {
+        "live_pairs": {
+          "const": 35
+        }
+      }
+    },
+    "demographics": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "corrections": {
+      "type": "object",
+      "required": [
+        "entries",
+        "chains_applied",
+        "reads_corrected",
+        "label_changed",
+        "binary_changed"
+      ]
+    },
+    "instrument_versions": {
+      "type": "object",
+      "required": [
+        "segments",
+        "unassigned",
+        "rule",
+        "export_limitation",
+        "layout_segment",
+        "split_basis"
+      ],
+      "properties": {
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "instrument_export_sha256",
+              "reads"
+            ]
+          }
+        }
+      }
+    },
+    "students": {
+      "type": "object",
+      "required": [
+        "primary",
+        "sensitivity_original_answers",
+        "sensitivity_all_accepted_reads",
+        "rules"
+      ],
+      "properties": {
+        "primary": {
+          "$ref": "#/$defs/student_population"
+        },
+        "sensitivity_original_answers": {
+          "$ref": "#/$defs/student_population"
+        },
+        "sensitivity_all_accepted_reads": {
+          "$ref": "#/$defs/student_population"
+        }
+      }
+    },
+    "q1_checks": {
+      "type": "object",
+      "required": [
+        "sides_expected",
+        "reference_rule",
+        "fields",
+        "note"
+      ],
+      "properties": {
+        "sides_expected": {
+          "const": 70
+        },
+        "fields": {
+          "type": "object",
+          "required": [
+            "result",
+            "groups",
+            "sample_size",
+            "comparison",
+            "analysis",
+            "significance",
+            "context"
+          ],
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "correct",
+              "consensus_answers",
+              "read_answers",
+              "read_answers_by_layout_split"
+            ],
+            "properties": {
+              "correct": {
+                "$ref": "#/$defs/rate"
+              }
+            }
+          }
+        }
+      }
+    },
+    "classification_validity": {
+      "type": "object"
+    },
+    "oracle": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "status"
+          ],
+          "properties": {
+            "status": {
+              "const": "pending_oracle_outputs"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "judges",
+            "validity",
+            "oracle_reference"
+          ],
+          "properties": {
+            "judges": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "required": [
+                  "vs_student_consensus",
+                  "reliability",
+                  "vs_individual_reads",
+                  "alone",
+                  "q1_yes_rate"
+                ],
+                "properties": {
+                  "vs_student_consensus": {
+                    "$ref": "#/$defs/agreement"
+                  },
+                  "reliability": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "binary_kappa",
+                      "threshold",
+                      "covered_pairs",
+                      "imprecise"
+                    ],
+                    "properties": {
+                      "status": {
+                        "enum": [
+                          "threshold_met",
+                          "unreliable",
+                          "inconclusive_undefined_kappa"
+                        ]
+                      },
+                      "threshold": {
+                        "const": 0.4
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "inter_judge": {
+              "type": "object",
+              "required": [
+                "pairs_both_valid",
+                "pair",
+                "q1_checks"
+              ]
+            },
+            "oracle_reference": {
+              "type": "object",
+              "required": [
+                "status"
+              ],
+              "properties": {
+                "status": {
+                  "enum": [
+                    "available",
+                    "not_available"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "oracle_sensitivity_strict": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "const": "not_applicable"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "judges",
+            "validity",
+            "oracle_reference",
+            "rule"
+          ]
+        }
+      ]
+    },
+    "classifier_effort_comparison": {
+      "type": "object",
+      "required": [
+        "status",
+        "note"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "descriptive_only",
+            "pending_low_and_high_classifications"
+          ]
+        },
+        "differ": {
+          "type": "object",
+          "required": [
+            "category",
+            "binary",
+            "reference_sides_category",
+            "reference_sides_binary"
+          ]
+        }
+      }
+    },
+    "factor_agreement": {
+      "type": "object",
+      "required": [
+        "pairs_considered",
+        "student_consensus",
+        "oracle",
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "const": "descriptive_only"
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "participants": {
+      "type": "object",
+      "required": [
+        "with_valid_read",
+        "programme_groups",
+        "cell_rule"
+      ],
+      "properties": {
+        "with_valid_read": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "programme_groups": {
+          "type": "object",
+          "properties": {
+            "groups": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "n": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                },
+                "required": [
+                  "group",
+                  "n"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

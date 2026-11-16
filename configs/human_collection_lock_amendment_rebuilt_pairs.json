@@ -1,0 +1,104 @@
+{
+ "schema_version": 1,
+ "status": "amended",
+ "amends": {
+  "path": "configs/human_collection_lock.json",
+  "sha256": "34de3ae3bae33976460b0324e6f44ab09cd89a6709ea7949036d2a584933e7ea"
+ },
+ "amended_at": "2026-11-14T13:47:02+01:00",
+ "authority": "Antonio, 14 November 2026, 13:1x: «Fai tu un test velocissimo se questa variazione nell'ordine dei campi porta ad un miglioramento, poi possiamo estrarre le coppie dal campione e far calcolare le estrazioni solo su quelle […] Tutte queste cose le faresti tu, non codex»; «Devi finire tutto, compreso deploy delle risposte nuove, entro un'ora. Quando metti le nuove domande sul sito di produzione, aggiungi al denominatore quelle risposte dal primo studente e contale come già risolte […] preserva il codice di quello studente, la sua sessione e il suo credito accumulato»; «Non vogliamo tenere un unico prompt?»",
+ "reason": "The first human answers showed a systematic extraction error: result.assertion 'explicit_no_difference'/'not_confirmed' with authors_significance 'significant' (19,129 of 96,673 claims in the full corpus; 15 of the 40 human pairs).",
+ "extraction_revision": {
+  "name": "v2.1",
+  "arm": "order_prompt3",
+  "model": "z-ai/glm-5.3-flash",
+  "reasoning": "high",
+  "max_tokens": 131072,
+  "change": "single extraction prompt plus appended rules; result.assertion generated last in the wire schema",
+  "script_sha256": "79825bb7d9ced52686570eb5dea9b4e8ad0504ddbc229076dc1c928361fde4f5",
+  "test": "40 random F abstracts outside the human subset (seed 20261114); arms control (frozen prompt re-run), order (assertion last only), order_prompt (v1 rules), order_prompt2 (v1 without the counts sentence), order_prompt3 (chosen: assertion rules + count examples + population/material/place), order_prompt4 (rejected: added place/material examples). Each adoption rule was stated before that variant's results: contradictions <= 2%; for v3 also total_n fill not below the frozen run; for v4 also place >= 50% and material improved over v3 (not met, v3 kept). Known limit: context.region fill fell (about 31-38% vs 45-56%)",
+  "test_metrics": "abstracts in common: 39\n                            frozen run       control  order_prompt order_prompt3\nabstracts                           37            39            39            38\nclaims                             280           295           298           290\ndirectional                        20%           19%           83%           85%\nneg                                80%           81%           12%           13%\nHARD neg+significant          62 (22%)      81 (27%)        0 (0%)        0 (0%)\nneg+direction                      52%           62%            3%            3%\ntotal_n filled                     35%           28%           18%           74%\nsample filled                      10%           16%           24%           27%\nregion filled                      54%           51%           38%           38%\nassoc population                   86%           36%           95%           97%\ninvalid                                            0             0             1\n\nabstracts in common: 39\n                            frozen run       control order_prompt3 order_prompt4\nabstracts                           37            39            37            39\nclaims                             275           273           260           289\ndirectional                        21%           20%           83%           82%\nneg                                79%           80%           15%           14%\nHARD neg+significant          62 (23%)      55 (20%)        0 (0%)        0 (0%)\nneg+direction                      49%           59%            3%            3%\ntotal_n filled                     35%           28%           73%           77%\nsample filled                      11%           17%           30%           23%\nregion filled                      51%           45%           31%           29%\nassoc population                   84%           46%           96%          100%\ninvalid                                            0             2             0\n",
+  "scope": "only the 66 abstracts of the 40 frozen human pairs were re-extracted; the corpus-level pipeline output remains v2"
+ },
+ "selection": "unchanged: the 40 human pairs drawn from the frozen v2 frame (seeds 20261121/20261122); each side is the v2.1 claim citing the same result sentences; pairs with no such claim are dropped, never replaced",
+ "old_handoff": {
+  "file_sha256": "a1a8497ce26651590cf4b01606c701215fb7f3cbe015661e531b6dd0157fa0f4",
+  "package_sha256": "9c1f5485134781568ca437adc8272490cdd1336636e03b36bd43356d1d591c31"
+ },
+ "new_handoff": {
+  "file_sha256": "dd15e84a15bcbe1751173b434a654913dc718758508049d4928d0dd9eeb3254d",
+  "package_sha256": "c8915e23f840e657a21f4e9f393a57856951ad93c389650b951a5f778d746afb",
+  "item_count": 36,
+  "dropped": [
+   "v2-pair-039",
+   "v2-pair-042",
+   "v2-pair-085",
+   "v2-pair-099"
+  ],
+  "supersedes": {
+   "v2-pair-1001": "v2-pair-001",
+   "v2-pair-1002": "v2-pair-002",
+   "v2-pair-1007": "v2-pair-007",
+   "v2-pair-1008": "v2-pair-008",
+   "v2-pair-1011": "v2-pair-011",
+   "v2-pair-1013": "v2-pair-013",
+   "v2-pair-1017": "v2-pair-017",
+   "v2-pair-1019": "v2-pair-019",
+   "v2-pair-1021": "v2-pair-021",
+   "v2-pair-1022": "v2-pair-022",
+   "v2-pair-1030": "v2-pair-030",
+   "v2-pair-1032": "v2-pair-032",
+   "v2-pair-1033": "v2-pair-033",
+   "v2-pair-1040": "v2-pair-040",
+   "v2-pair-1043": "v2-pair-043",
+   "v2-pair-1050": "v2-pair-050",
+   "v2-pair-1051": "v2-pair-051",
+   "v2-pair-1052": "v2-pair-052",
+   "v2-pair-1056": "v2-pair-056",
+   "v2-pair-1059": "v2-pair-059",
+   "v2-pair-1061": "v2-pair-061",
+   "v2-pair-1062": "v2-pair-062",
+   "v2-pair-1063": "v2-pair-063",
+   "v2-pair-1064": "v2-pair-064",
+   "v2-pair-1066": "v2-pair-066",
+   "v2-pair-1069": "v2-pair-069",
+   "v2-pair-1071": "v2-pair-071",
+   "v2-pair-1074": "v2-pair-074",
+   "v2-pair-1079": "v2-pair-079",
+   "v2-pair-1083": "v2-pair-083",
+   "v2-pair-1084": "v2-pair-084",
+   "v2-pair-1087": "v2-pair-087",
+   "v2-pair-1090": "v2-pair-090",
+   "v2-pair-1091": "v2-pair-091",
+   "v2-pair-1098": "v2-pair-098",
+   "v2-pair-1100": "v2-pair-100"
+  }
+ },
+ "site": {
+  "commit": "f7f1409",
+  "instrument_export_sha256": "ab8f4870855116c39b2e42472b642b503d3a6e91b0dc3ddf4cce520332db63f7",
+  "configuration_snapshot_sha256": "65c3f4255f61d46697c484733c5adec1c99008b46b2f90d90057f5f09c91023a",
+  "configuration_snapshot_unchanged": true,
+  "instrument_changes": "B5-B9 clarity fixes (relevance notice, codes on empty checks, examples, serum/plasma, population) and a comparison-stage notice: answer from what the abstracts report; codes, answer paths and derivations unchanged",
+  "tags": [
+   "v2.1-rebase-20261114 (deab82e, deployed 13:46)",
+   "v2.1-instrument-20261114 (f7f1409, reloaded 13:56)"
+  ],
+  "previous_instrument_export_sha256": "78a4775b7abcfe225dfb91f73829fcfaf98adbe0afac8e9bc376e4c9a61701a1"
+ },
+ "production_rebase": {
+  "deployed_at": "2026-11-14T13:46:21+01:00",
+  "site_tag": "v2.1-rebase-20261114",
+  "retired": 40,
+  "loaded": 36,
+  "released_reservations": 0,
+  "package_sha256": "c8915e23f840e657a21f4e9f393a57856951ad93c389650b951a5f778d746afb",
+  "backup": "<site-data>/snapshots/pre-v21-rebase-20261114T134621.sqlite3",
+  "old_package_files": "<site-data>/items.v20.jsonl and items.v20.manifest.json",
+  "meter_after": "4/76 = 5%",
+  "first_session_offered_pairs": 32
+ },
+ "first_participant": "session, code, answers and accumulated credit preserved; the 4 valid reads on retired pairs count as resolved in both terms of the study meter; retired pairs are never offered again and a reader of a retired pair is never offered its v2.1 version",
+ "analysis_note": "answers on retired pairs are pilot data on extraction v2; main human analysis uses the v2.1 pairs only",
+ "clarification_2026_11_14": "Antonio, 14 November: the only session before the v2.1 rebase (started 12:11, 4 reads on v2 pairs) was a trial of the v2 site by a collaborator to whom Antonio had sent it as a test, not a recruited participant. Recruited collection started after v2.1: the first other session began at 14:58, after the rebase at 13:46. Wherever these records say 'first participant' or 'first student' for that session, read 'pre-launch trial'. Its reads are on retired pairs and are outside the study analysis."
+}

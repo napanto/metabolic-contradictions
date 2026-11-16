@@ -1,0 +1,926 @@
+{
+  "retrieved_utc": "2026-11-12T16:26:59.631365+00:00",
+  "tool": "chl-inconsistency-rag",
+  "queries": {
+    "BASE": "(\"Diabetes Mellitus, Type 2\"[MeSH] OR \"Metabolic Syndrome\"[MeSH] OR \"Obesity\"[MeSH]) AND \"Humans\"[MeSH] AND hasabstract AND 2016:2025[dp]",
+    "BIO": "(\"Adipokines\"[MeSH] OR irisin[tiab] OR chemerin[tiab] OR omentin[tiab] OR visfatin[tiab] OR vaspin[tiab] OR apelin[tiab] OR resistin[tiab] OR \"zinc-alpha2-glycoprotein\"[tiab] OR FGF21[tiab] OR \"fibroblast growth factor 21\"[tiab])",
+    "DRUG": "(\"Metformin\"[MeSH] OR metformin[tiab] OR \"Glucagon-Like Peptide-1 Receptor Agonists\"[MeSH] OR liraglutide[tiab] OR semaglutide[tiab] OR dulaglutide[tiab] OR exenatide[tiab] OR tirzepatide[tiab] OR \"GLP-1 receptor agonist\"[tiab] OR \"GLP-1 receptor agonists\"[tiab] OR \"Sodium-Glucose Transporter 2 Inhibitors\"[MeSH] OR empagliflozin[tiab] OR dapagliflozin[tiab] OR canagliflozin[tiab] OR ertugliflozin[tiab] OR \"SGLT2 inhibitor\"[tiab] OR \"SGLT2 inhibitors\"[tiab] OR \"Dipeptidyl-Peptidase IV Inhibitors\"[MeSH] OR sitagliptin[tiab] OR saxagliptin[tiab] OR linagliptin[tiab] OR alogliptin[tiab] OR vildagliptin[tiab] OR \"Sulfonylurea Compounds\"[MeSH] OR \"Thiazolidinediones\"[MeSH] OR pioglitazone[tiab] OR \"Hydroxymethylglutaryl-CoA Reductase Inhibitors\"[MeSH] OR statin[tiab] OR statins[tiab])",
+    "DIET": "(\"Diet, Mediterranean\"[MeSH] OR \"Diet, Carbohydrate-Restricted\"[MeSH] OR \"Diet, Ketogenic\"[MeSH] OR \"Intermittent Fasting\"[MeSH] OR \"Caloric Restriction\"[MeSH] OR \"Diet, Vegetarian\"[MeSH] OR \"Diet, Fat-Restricted\"[MeSH] OR \"Dietary Approaches To Stop Hypertension\"[MeSH] OR \"Diet, High-Protein\"[MeSH] OR \"intermittent fasting\"[tiab] OR \"time-restricted eating\"[tiab] OR \"low-carbohydrate\"[tiab] OR \"Mediterranean diet\"[tiab] OR \"Eggs\"[MeSH] OR \"Coffee\"[MeSH] OR \"Red Meat\"[MeSH] OR \"Sugar-Sweetened Beverages\"[MeSH] OR \"Non-Nutritive Sweeteners\"[MeSH] OR \"Dietary Fiber\"[MeSH] OR \"Dairy Products\"[MeSH] OR \"Nuts\"[MeSH] OR \"Whole Grains\"[MeSH])",
+    "DESIGN": "(\"Randomized Controlled Trial\"[pt] OR \"Clinical Trial\"[pt] OR \"Observational Study\"[pt] OR \"Meta-Analysis\"[pt] OR \"Cohort Studies\"[MeSH] OR \"Case-Control Studies\"[MeSH] OR \"Cross-Sectional Studies\"[MeSH])"
+  },
+  "exact_arm_queries": {
+    "biomarker": "(\"Diabetes Mellitus, Type 2\"[MeSH] OR \"Metabolic Syndrome\"[MeSH] OR \"Obesity\"[MeSH]) AND \"Humans\"[MeSH] AND hasabstract AND 2016:2025[dp] AND (\"Adipokines\"[MeSH] OR irisin[tiab] OR chemerin[tiab] OR omentin[tiab] OR visfatin[tiab] OR vaspin[tiab] OR apelin[tiab] OR resistin[tiab] OR \"zinc-alpha2-glycoprotein\"[tiab] OR FGF21[tiab] OR \"fibroblast growth factor 21\"[tiab])",
+    "drug": "(\"Diabetes Mellitus, Type 2\"[MeSH] OR \"Metabolic Syndrome\"[MeSH] OR \"Obesity\"[MeSH]) AND \"Humans\"[MeSH] AND hasabstract AND 2016:2025[dp] AND (\"Metformin\"[MeSH] OR metformin[tiab] OR \"Glucagon-Like Peptide-1 Receptor Agonists\"[MeSH] OR liraglutide[tiab] OR semaglutide[tiab] OR dulaglutide[tiab] OR exenatide[tiab] OR tirzepatide[tiab] OR \"GLP-1 receptor agonist\"[tiab] OR \"GLP-1 receptor agonists\"[tiab] OR \"Sodium-Glucose Transporter 2 Inhibitors\"[MeSH] OR empagliflozin[tiab] OR dapagliflozin[tiab] OR canagliflozin[tiab] OR ertugliflozin[tiab] OR \"SGLT2 inhibitor\"[tiab] OR \"SGLT2 inhibitors\"[tiab] OR \"Dipeptidyl-Peptidase IV Inhibitors\"[MeSH] OR sitagliptin[tiab] OR saxagliptin[tiab] OR linagliptin[tiab] OR alogliptin[tiab] OR vildagliptin[tiab] OR \"Sulfonylurea Compounds\"[MeSH] OR \"Thiazolidinediones\"[MeSH] OR pioglitazone[tiab] OR \"Hydroxymethylglutaryl-CoA Reductase Inhibitors\"[MeSH] OR statin[tiab] OR statins[tiab])",
+    "diet": "(\"Diabetes Mellitus, Type 2\"[MeSH] OR \"Metabolic Syndrome\"[MeSH] OR \"Obesity\"[MeSH]) AND \"Humans\"[MeSH] AND hasabstract AND 2016:2025[dp] AND (\"Diet, Mediterranean\"[MeSH] OR \"Diet, Carbohydrate-Restricted\"[MeSH] OR \"Diet, Ketogenic\"[MeSH] OR \"Intermittent Fasting\"[MeSH] OR \"Caloric Restriction\"[MeSH] OR \"Diet, Vegetarian\"[MeSH] OR \"Diet, Fat-Restricted\"[MeSH] OR \"Dietary Approaches To Stop Hypertension\"[MeSH] OR \"Diet, High-Protein\"[MeSH] OR \"intermittent fasting\"[tiab] OR \"time-restricted eating\"[tiab] OR \"low-carbohydrate\"[tiab] OR \"Mediterranean diet\"[tiab] OR \"Eggs\"[MeSH] OR \"Coffee\"[MeSH] OR \"Red Meat\"[MeSH] OR \"Sugar-Sweetened Beverages\"[MeSH] OR \"Non-Nutritive Sweeteners\"[MeSH] OR \"Dietary Fiber\"[MeSH] OR \"Dairy Products\"[MeSH] OR \"Nuts\"[MeSH] OR \"Whole Grains\"[MeSH])"
+  },
+  "union_query": "(\"Diabetes Mellitus, Type 2\"[MeSH] OR \"Metabolic Syndrome\"[MeSH] OR \"Obesity\"[MeSH]) AND \"Humans\"[MeSH] AND hasabstract AND 2016:2025[dp] AND ((\"Adipokines\"[MeSH] OR irisin[tiab] OR chemerin[tiab] OR omentin[tiab] OR visfatin[tiab] OR vaspin[tiab] OR apelin[tiab] OR resistin[tiab] OR \"zinc-alpha2-glycoprotein\"[tiab] OR FGF21[tiab] OR \"fibroblast growth factor 21\"[tiab]) OR (\"Metformin\"[MeSH] OR metformin[tiab] OR \"Glucagon-Like Peptide-1 Receptor Agonists\"[MeSH] OR liraglutide[tiab] OR semaglutide[tiab] OR dulaglutide[tiab] OR exenatide[tiab] OR tirzepatide[tiab] OR \"GLP-1 receptor agonist\"[tiab] OR \"GLP-1 receptor agonists\"[tiab] OR \"Sodium-Glucose Transporter 2 Inhibitors\"[MeSH] OR empagliflozin[tiab] OR dapagliflozin[tiab] OR canagliflozin[tiab] OR ertugliflozin[tiab] OR \"SGLT2 inhibitor\"[tiab] OR \"SGLT2 inhibitors\"[tiab] OR \"Dipeptidyl-Peptidase IV Inhibitors\"[MeSH] OR sitagliptin[tiab] OR saxagliptin[tiab] OR linagliptin[tiab] OR alogliptin[tiab] OR vildagliptin[tiab] OR \"Sulfonylurea Compounds\"[MeSH] OR \"Thiazolidinediones\"[MeSH] OR pioglitazone[tiab] OR \"Hydroxymethylglutaryl-CoA Reductase Inhibitors\"[MeSH] OR statin[tiab] OR statins[tiab]) OR (\"Diet, Mediterranean\"[MeSH] OR \"Diet, Carbohydrate-Restricted\"[MeSH] OR \"Diet, Ketogenic\"[MeSH] OR \"Intermittent Fasting\"[MeSH] OR \"Caloric Restriction\"[MeSH] OR \"Diet, Vegetarian\"[MeSH] OR \"Diet, Fat-Restricted\"[MeSH] OR \"Dietary Approaches To Stop Hypertension\"[MeSH] OR \"Diet, High-Protein\"[MeSH] OR \"intermittent fasting\"[tiab] OR \"time-restricted eating\"[tiab] OR \"low-carbohydrate\"[tiab] OR \"Mediterranean diet\"[tiab] OR \"Eggs\"[MeSH] OR \"Coffee\"[MeSH] OR \"Red Meat\"[MeSH] OR \"Sugar-Sweetened Beverages\"[MeSH] OR \"Non-Nutritive Sweeteners\"[MeSH] OR \"Dietary Fiber\"[MeSH] OR \"Dairy Products\"[MeSH] OR \"Nuts\"[MeSH] OR \"Whole Grains\"[MeSH]))",
+  "counts": {
+    "union": 29559,
+    "design_union": 14627,
+    "retracted": 26,
+    "retracted_design": 15,
+    "arms": {
+      "biomarker": {
+        "all": 5332,
+        "design": 2207
+      },
+      "drug": {
+        "all": 18422,
+        "design": 9349
+      },
+      "diet": {
+        "all": 6413,
+        "design": 3384
+      }
+    }
+  },
+  "pmids_sha256": "2a0eb3534a1a448ba5c430c306500f85e0cefd80ad3d9a6c118d5eca26a383ff",
+  "membership_sha256": "bdf1bc3f076f9bf4df95f29d577206a5f06254f5eb679cab93704eaae6e91c9e",
+  "search_strategy": "ESearch usehistory=y; >9999 results partitioned by publication year, deduplicated; exact union counts verified",
+  "expected_brief_counts": {
+    "union": 29559,
+    "design_union": 14627,
+    "retracted": 26
+  },
+  "fetched_utc": "2026-11-12T16:34:21.783978+00:00",
+  "batches": [
+    {
+      "file": "data/raw/pubmed/efetch/000000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "9d252349656bd828b6d822c88c8255f304651157a2d4bc6e6c87b80a975d27ba"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/000200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "0e7273b41d5773c58500c5373f3d2c766d54a46001d83d417bb9a4530ab01f3a"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/000400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "a12a0369a3476247d12f9020d30fecc80b8a3a118d46c89d99664c13409a9c2d"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/000600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "8d87f2f62087381fd021edd1f436b164b4e266b980afac56b7c5bc1db6d41bd3"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/000800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "f17c0149bccf86893c49fff88d05fa77a40287c292fe731734149c7109866d39"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/001000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "142725f0f12f67c1556e02c711907d9be18e271d277380d493618a05726b8407"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/001200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "6ad0965f6d5be55ed63665992cb45baed39c367041669168954eafbb0420ebb6"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/001400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "cc45c25e7d27c0c2318fc0c06bc1787a84690e3d3a709fec61e1afea96ef6a07"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/001600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "13b8a961a421413c5edf8fcc32a5d3d9086f152336fdc431d59b3a3dc1393cf5"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/001800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "320dcd8356516207dc59e5957d697fef395362ac8b781fce0b8c21836c743763"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/002000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "bc1f2c33f5c6aa518b02296871b0acbbc156c8cab1d0f7275c1f8efa1737e7fa"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/002200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "5491255a3bd70aa116e4bfeaa72769329205e7c0dc57e221ac01b08a435efbad"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/002400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "9c15921806e3a616ba45d0888d82d79af738f806599c4cff28339d7c1e4f8a83"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/002600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "bba8bf78b5f36bfd2cd6dc22d72faac8158fd18910fa2090d33addfa451d71e1"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/002800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "3aa38fe78ccc1811092210d59243f97d0a53a084278f0e3a4166904a90c41b31"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/003000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "4165cc5b40922720d66ce109053c7c6eb8b256411e04ba15bcafba985e15c0c9"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/003200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "1c3fb1fbee77871e8324f8204a4a4ad71f108488885bf9f0589f11f2a7383add"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/003400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "9af16cd01cbc5529e8b25b70ca7a701220da1247224f4e950da225e98dd6d921"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/003600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "dd6c133306fb3ed5e455d0fda2cd759c29db7db80a6a94efb8edce1c6d017008"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/003800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "aa77ae93b287b2765743a90a88837dfd0566f08f18415b4b01b773f3400c2e1d"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/004000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "09f26e2558681cf4528b211d0b298b7fbf7f90739fc9f6e4dd93ba197b9cde0f"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/004200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "09845887f989a04226dcdb221487c35d98c0058d471d293c4d46f7297636879a"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/004400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "0b75b394d6a8a31d6475b20e100df84017dc3d7d3114b05df45323a9c1357bbd"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/004600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "5ba3338b2c1c1288124b024cf8cc0f3d116b6cc51805bc75bfff80a25560c6e2"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/004800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "9d4905c9a63fe21a996ea7b2e1c5cd30b5a9725b36173935ddad73423cf3bc8f"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/005000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "3bd423ef03576392f53c6bfcdb6304fb819dea0341005b58610d3ab215d4089d"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/005200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "8ee940f9c7393ef7845d1f29b3615e526332b64f99d4694ff67f0725dc5053d8"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/005400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "a9c5e75e2f47e98f9a54f717a94e5e71623e59417dacb5046deda0c871ba4cb7"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/005600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "38721da57fdf955634095b84a85dd2d49c5d07836eaa73c715f34e8dce759892"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/005800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "79522391a4980c19bf514a1619498488c768281d9a13c3b0388e91cc9aa3219a"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/006000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "b70e216bf9821c66cc7ca7f1b0b5f87534f86cffc60f02e45f06612e85a9c1e6"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/006200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "db206b7af817e69ef91e91eb45845d76f40fab40d4b73b01b840e5bfac800b2f"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/006400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "ebf8098434265c2f8d901cee4833206cd8028ab8ed820e5ffcb6810e221940a1"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/006600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "90fbea48ab28c10dfe116e7adcaa0b1508e4803296683cc9fcbe14aba7ef56f9"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/006800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "9399157552065e98ca2c70d79bbd61585a35b2ee77238e26b50ec1d56ffa3c9e"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/007000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "8a50ff65ab89fd5d847c66d7df50aa72decfa7fe8dc0a10035d34f360d68e31f"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/007200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "ba0333e4217418853784ffcb6ddb611bceafe549417c384fda0f7c629224e6d2"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/007400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "9344d73185627ada5fc267aa2b2cf8ff6cb1d4d04be9e3a2eaef3e8e97f74f10"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/007600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "2f99aa327e30ec10a763b24edf58df2722bd6f33780d670abad556506b80f50f"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/007800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "72d6e73609725661e1f4083e979a08a4df29c04c079dcd7b5c0c9b77020f9e9a"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/008000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "f00577742637e42000b0e4cc58376b79955e3df4aac708ab049ce3f7a223c4b9"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/008200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "d55aac82ef13c6f37799982af7a433a4a1639eb600caf281d4809bf81db1f48a"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/008400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "243eacde2368d342add1ebe6633535918217ca99ebe4e9566c3a38e76b232c12"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/008600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "91a7268937b945e8637a53a1a51ffca57a7415d1a55637936d9396ab35c69570"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/008800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "e4afdf35dfcd161a1dd5f515107441a011cd008ba246dfe9523b3f9be0f43105"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/009000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "c5e8a9fa96b1b1ef95940415e5777adf60e72cb69f279615e206f1b7b04a36d4"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/009200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "8f6ee3b4056bbdeb4e7a1b03b5fab59f7ba48da64464b7418b61dc722a3635fa"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/009400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "28fb7eaca5569750d79d2f2453c76d79f4254b309d7b67580f4097e2d46325b8"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/009600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "e79b6bcc1ee2877e0eb1590d564e7ac6b22a80d5c85f11cc7204e8a2658c14f5"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/009800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "495e8533057ca0efdd982abda4d3555815291cd5c3459e4cf27cc93f5c1e2d29"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/010000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "1f9ad9f0b98625f4fae3e95f4a2cc60974101840bf36ec8cdf529ed8444994ce"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/010200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "cd8b105e84b4fea595fda8546c025bc880be49bc7f925a79cadffa9bec2586ac"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/010400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "a8a0519854d26e4c02211dbdfda0c5974f101b561538762aabe10adf1fd4ab86"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/010600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "a933f18b45c0bcedece28199eaad7b7a4582e29801e168b3e5f40acc094cd6be"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/010800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "2e6ead27bd7269b8e251dfe9c767869e13e219516eee1c80d92e452436c3aba0"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/011000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "9fb4a01c66427b118c1a39991842da1c15adccb25724bb455ede49a3f1af5e6c"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/011200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "fd434a8b10fc397c819fd0f5b20bff1153bbdef5de1f9913707ef083e090349e"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/011400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "e099c77dabb088d0445f8a39f1bd509c4ca513f78f8c05bbcbb2bdb482174d21"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/011600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "3722da14db0d2b834a954a3a1f931bd2c7a57940b87c4cf16ffe511dc2a5830d"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/011800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "53f7378c9fae1bc2ddfc53b8a185002750858b0952cefdd680d19c4a68c30346"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/012000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "23d2f2b554864d647333d41f1f9d29a27e92f8c1c3c3797b258510656f9173e8"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/012200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "f021386de60e519d6cee63dd760b76e3faca9b42f519babd20b9b5284e0fb9c3"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/012400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "b4aff4112793ed2c6af824f043760229cd683e7c7cd1fabd6a17de9eafc0fcfb"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/012600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "b171f68ea05b6ff80a8c615dacaa18fd825d2288c33606fe2789646b12d57a5f"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/012800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "9928ad972136b89c3a5cfc4edb21a6443bb6773becac0550e40acf3043a4b9ca"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/013000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "19e1006541e17b38b4300d5c479f27fa806d06490b8b615c58b152e4bab6b124"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/013200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "a32de337c0349b754a65a11b6b0a65584f7436aa57ca5e422222a870aca96b51"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/013400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "69ddaa378f2b82e11d1e6e7b62cba2cc1417a15d2a37d2171e90aa04a9c835d3"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/013600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "611177da4d225725988e873ab183cb1deeb8106166924b63ee8ed94a788c85e5"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/013800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "1ae3a87e55db8a6ee7ecedae45c602424ca86bcf34fc42b6f4c7631554c9d07e"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/014000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "e633490ca54a321d90b2a10a8f43af1cfa32e69aa5f0c3fddef30156cd575804"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/014200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "9aac62717a78a885dbf699c36173cd5eb207d3682a7a9a43ef4ae9103cacb178"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/014400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "74cf9ea612096ad829c84206bffd80e431d8526b3ae96486a7deeaa09f499ae9"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/014600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "86c40a413470896ca90a323e57f5d58398e7141f3977b887c067b1ccb274c8b2"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/014800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "db781e980e4271c81e7ed684c5c9e3215e4b4328cf7bf720f72fd6fe16ea54ce"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/015000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "e07a8381c3c706da44f1476f26187bd15c6067093886575977ffc2a6c8ecab7f"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/015200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "3c38dc8438f725b05b1116607d18f48ac733b99e1ebcc699f7661084e8bd1a42"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/015400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "1028e2f54f8f077093df71b07d7b8d48c9485a18beb253eb3a2b6a76ad775f34"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/015600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "d6f8b04066b6d42e8af5f39a2f9d92fb5e18a12f2c0337f45ed7f232f12986d5"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/015800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "65d0e095f41b8b510a35bd4b56b86ad21d99003cdf06665dff04102bd2e0381b"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/016000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "c20f2313e2484b88148fc273c3e8eabc41fd2d913bc2e1ed9340e9220be6400a"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/016200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "5d88a44a40d25359a0d80718305bc3d50d1556ffd741dae62c7311b8176c0f6d"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/016400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "74387cbe54b14601cdf383f51729eb9b759e251c5343876901469660c7d34b0e"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/016600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "992368ac6adf5be05d98b3b2e63cdb12f4f69b29c66567c96503326c0db21184"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/016800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "f4f832dd1851188420aeb6787e4e3a8f01a152d5a6029202b3e1033faff4cd9c"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/017000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "f50ef907e4abb0a7432e4c055485154cce296076596733bb9b9d6e98fe6afd51"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/017200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "29f95b7d8d7f37f17ecd532c442cc7c7dafbd762199bf4fa7867113517c4bda7"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/017400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "1d5b42500ad84cd35de92f08d8ca34d5d2c507905022c0b7ee919b7b1e8b1115"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/017600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "05c65b3b39ff09b058a7447734d0ed0fd18f606316f3c4ad31db198f8f7ba6eb"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/017800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "23b16c8b2edf2e6b2d47d304ebc3b9e95359fe000b1ec26f1e8b65b37ac5656c"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/018000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "464b366483ac5d51ae4759f283aa38bfd7953d29110f3c4930366d9d1bb0a929"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/018200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "e5ba3bef44ee2f0107ba442775b733a346141c84607b621da9ad7a6f65323f0c"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/018400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "63ee1213dd66c8e5e914a7d72cb0140bcfe1e7f3b13c69656d1da7293f079cd2"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/018600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "e4047ba176e08d9172fb54839019262e60eaf7245551f04e4633226dcf8678af"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/018800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "cf48d22daf6fd74b81c454f6c77291f3d17cc54b1989e423691f50441c008a40"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/019000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "65ab334510025e153b9a395cd109f9505d276305c15b7968be8c4f3499467b26"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/019200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "007ce25a79aabc91f6210b8561c422cd85ff8f2d44d14dec1bb56b08aa3313b6"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/019400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "8ebd49f56c39750a2c43ca9a3d2661663b5b9a3c5efc09ba07005a8997199e5d"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/019600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "70687562b8cf5c7d36013e47bc67d03437aee0847d4bf75c1b50c847901e12b2"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/019800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "e676c04cd5dc6b6ebd2272fc23cb488afb6e1f2fa0b68956ace534b5db8bf022"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/020000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "f3d3031de75591b22415a107be411f319abb4e64c1eda53a362962bd824add0b"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/020200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "37bda167f0251038f1e9005dc05eeaf02c97df430255a3b85f0279d34fbeab57"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/020400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "0be3f69ed57c75696787a7e1771d62729b986a4432ac0fc3efb469b7600fa78d"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/020600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "8eb7e49c107fb35f538c258534512ed1a077ccccf3030ea7466e3d7ee9b236a0"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/020800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "f07bf6b83c568229010123aca7671c4ae1ae94daa8305d299e45c971259641cd"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/021000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "454793ad464976c9fe5743e411f3c84b8f66f37ef5b2735d058d2cd4abe110bd"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/021200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "f87d3c7f0667eeb11f880c5699ada90e90788b5d4c67ae0dfb8a93a866726342"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/021400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "99632972d998f114b70ad1438c01b1f0c805737e4871a6f038f1935ef794c6b8"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/021600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "7d719ec48a417b5a6c97dcf1f2b4b61dc9aa1959d8f7aa4ad6c88cd4e4b03bf7"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/021800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "98bf5dbc825e06aa9d383d0ac0b6cfbeca2cb5b4e90b9d30193cc7600a27c906"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/022000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "b96c0b942c0dad030086ae9190ea78e6375254ce64ef21f9b98fbec7749da46e"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/022200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "2fa92560b70bb19c40182947e72b92ca80ddaed21f0bd53f3451c3ea88511602"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/022400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "cdbcc3dde584f057b04a1179dd864e99117f187e3586add91d8db669a91ad71a"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/022600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "2afabcb2e9882fcb3318d8ae827484574f5d8d0fbd9f0ac2dc8dffe4b1cce8ea"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/022800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "373909c313afaf3f710fab77db30bd12286be71eab5fd0d2bda8bf7ea98a87e4"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/023000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "1021dad1acadcea0e48411abe175609fc157166725a41a3e5cf064a8967f22f0"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/023200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "c04ac48ae9910569160da4567d1159cfd285a6c8ec947a2a09b1f70f02a2e7a6"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/023400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "e48dea2552362821cceb750f16d82e5d702745a24d09de2e949b1651587bb05c"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/023600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "accd61618e1ef8f2cfdd39d83db5026ec89ec6b210262ae1512c78bffb6317ba"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/023800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "da09ff55d4453ccad22ba6e2dcaf43109079e074905abaee6a94b597d55fa91b"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/024000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "572f93f7aa0eae25698f1ae42ee96ff6bd99ecf4b0484cd0108d9b3e89b80571"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/024200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "edfc392b6fd041ce71e41d5a480223da71f665d91577870f8b234dc8723f4116"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/024400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "024985c803d4e5ad2171f6699698357f933e503ec7f934afbd05f0e1622a5aa7"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/024600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "82071ab3badc20500924cb22e981981f89255075e6c8ba256ab28fa1f748f75d"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/024800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "84c756a798a091d6f8b990f72c6ab71e2d6eda5d3c86c744c5c067953f62040f"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/025000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "b713809e5f896dc0e9d495a8c1c3b54eb38395cf1b18d087fd977c8fe23b0082"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/025200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "50403ff025c593151ef731cbb493c4f2387ad05a5aac50edd49b8f00296833af"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/025400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "0a0eed27be058c47a739e9dcfb7e3ac2e6bf77028258fa36572495e50a5bc335"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/025600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "ae21a349d7efe090841abeeb197908ac30d02490b923382e6ffa61fecec7080a"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/025800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "573d7ffa6569cfba3b700fdd5e992f21a820d95aa590927cb18a8b3c6d0cf528"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/026000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "9d5811d320342e3a41fb80bc23b906e536a43375a00cdbcca6575b7beeca7f1c"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/026200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "7841ad3f772ea6aa6adce342d336d18b212268e5f2d2060a9185b22f3988c4ae"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/026400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "e62a1f0535aa1c5ad8875e98af8e33c24769f890e139d15147265568f29e2745"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/026600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "d24cfa1dc3fb2f92287ea6ea42249132478b810ff0a82ee89b8d4383bbc873e3"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/026800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "abc94e6287d70ebe71645ac3fdb879b6aad0a9111a36230c8a13361995c6e318"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/027000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "466ca417939a65b98b570b3b5a0e7a1a3efbcfe7741da52f130468c4c676cf6d"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/027200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "7a7a34665a160cd4c9c02912d779b88c5036b081ed1898b241c68810df7138a0"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/027400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "24f1de9878ed8471000c60da657cf401c9edcf59b42cf580fcf2f17ed1224992"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/027600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "c98070b0034be40fd1498b0cdaff40cc410a4465f9987a9df77a708688d032c2"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/027800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "91257b072b5429a4da1f5b012a524238457916b56e9efd88e0a368f050a00eda"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/028000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "8fe2bc3ee871982db80d05ac3e1c9537585566621eeaeee165f4c1563b6738c9"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/028200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "f6b43e4831cf058fc80206bef135cdee0f35dc06592b195bb467e1a1c59ae860"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/028400.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "b27251931a72297cf69f2b08634a046878e911ef2ef6d8eebb3c16fb4b2dbfab"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/028600.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "5a61597c24211641b487770a5657965cb9c07bc72b192f5423663c12bd062ecd"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/028800.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "d336424fe78bc987fa3eb9e0a83e15abcc6a7dd926cf986da051673f159f6495"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/029000.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "7b14cd166e9ea2300cd52c33441bc445a2e85e5d67c5d9a85a84dffb6d6b9209"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/029200.xml.gz",
+      "pmids": 200,
+      "sha256_uncompressed": "c4a55ccf3c36831333bea4fdfc8af8115908f9e5ea1572bc810557c157718328"
+    },
+    {
+      "file": "data/raw/pubmed/efetch/029400.xml.gz",
+      "pmids": 159,
+      "sha256_uncompressed": "8a6236885b40a51a3e906a8d2a4206d86354fb434c35856342a21ad25ffe3416"
+    }
+  ],
+  "corpus_sha256": "4b27815755068ab067bf5a96546f5bb0f29ff407e891e60c67b5ffae85db9ffe",
+  "record_count": 29559,
+  "priority_counts": {
+    "4": 14932,
+    "2": 6277,
+    "1": 332,
+    "3": 8018
+  },
+  "missing_primary_abstract": [
+    {
+      "pmid": "36036939",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "36226431",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "37796527",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "37966831",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "37966850",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "38055301",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "38060218",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "38315473",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "38648036",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "38776113",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "38787563",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "39008326",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "39058476",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "39093567",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "39093590",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "39212980",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "39320894",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    },
+    {
+      "pmid": "39412809",
+      "design_eligible": false,
+      "other_abstract_types": [
+        "plain-language-summary"
+      ]
+    }
+  ],
+  "abstract_handling": "PubMed hasabstract also matches OtherAbstract plain-language summaries. Preserve their metadata separately; never silently use these as a primary abstract. Empty-primary records remain in frozen membership; exclude from claim extraction.",
+  "structured_abstracts": 16235
+}

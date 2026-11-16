@@ -1,0 +1,82 @@
+{
+ "computed_at": "2026-11-16T06:32:14.703196+00:00",
+ "fresh_balance_usd": 33.437720628,
+ "total_credits": 200,
+ "total_usage": 166.562279372,
+ "ledger_spend_since_0430_CET_usd": 37.0316634658,
+ "ledger_calls_since_0430_CET": 40018,
+ "B_usd": 30.437720628,
+ "B_binding_term": "balance",
+ "c_usd_per_call": 0.000937642469073943,
+ "c_calls": 45224,
+ "c_cost_usd": 42.4039430214,
+ "ledger_pending_rows": 1014,
+ "tau_star": "0.88",
+ "grid": {
+  "0.80": {
+   "new_T1": 72462,
+   "new_T2": 123031,
+   "new_T1T2": 195493,
+   "new_all_signs": 526728,
+   "cost_incl_controls": 184.709,
+   "fits": false
+  },
+  "0.85": {
+   "new_T1": 21114,
+   "new_T2": 40796,
+   "new_T1T2": 61910,
+   "new_all_signs": 187077,
+   "cost_incl_controls": 59.4559,
+   "fits": false
+  },
+  "0.88": {
+   "new_T1": 9800,
+   "new_T2": 20298,
+   "new_T1T2": 30098,
+   "new_all_signs": 97073,
+   "cost_incl_controls": 29.6276,
+   "fits": true
+  },
+  "0.90": {
+   "new_T1": 5993,
+   "new_T2": 12992,
+   "new_T1T2": 18985,
+   "new_all_signs": 63617,
+   "cost_incl_controls": 19.2076,
+   "fits": true
+  },
+  "0.92": {
+   "new_T1": 3177,
+   "new_T2": 7383,
+   "new_T1T2": 10560,
+   "new_all_signs": 36058,
+   "cost_incl_controls": 11.308,
+   "fits": true
+  },
+  "0.94": {
+   "new_T1": 1415,
+   "new_T2": 3807,
+   "new_T1T2": 5222,
+   "new_all_signs": 18193,
+   "cost_incl_controls": 6.3028,
+   "fits": true
+  },
+  "0.96": {
+   "new_T1": 596,
+   "new_T2": 1607,
+   "new_T1T2": 2203,
+   "new_all_signs": 7219,
+   "cost_incl_controls": 3.4721,
+   "fits": true
+  },
+  "0.98": {
+   "new_T1": 115,
+   "new_T2": 464,
+   "new_T1T2": 579,
+   "new_all_signs": 1945,
+   "cost_incl_controls": 1.9494,
+   "fits": true
+  }
+ },
+ "model_API_calls": 0
+}

@@ -1,0 +1,40 @@
+{
+  "status": "confirmed",
+  "authority": "Ordered INBOX decisions; latest03:36/03:38 explicit OpenRouter top-up and entire-real-balance authorization",
+  "vendors": {
+    "openrouter": {
+      "available_credit": 101.76,
+      "alert": null,
+      "phase_alerts": {},
+      "new_calls_paused": false,
+      "paused_at": "2026-11-14T07:37:17.308023+00:00",
+      "headroom_policy": "real_balance_own_inflight_floor",
+      "floor_usd": 0,
+      "authority": "Antonio INBOX03:36/03:38: +50USD, spend all real balance, no floor/margin/phase or account threshold",
+      "external_retained_liability": "audit_only_not_subtracted_again",
+      "historical_own_unknown_liability": "audit_only; newlivecallsreserveworstcase",
+      "comparison_stop_allow_models": [],
+      "pause_authority": null,
+      "requested_topup_usd": 50,
+      "resume_requires": null,
+      "confirmed_topup_usd": 50,
+      "confirmed_total_credits_usd": 150,
+      "confirmed_balance_at_0334_usd": 101.76,
+      "confirmed_at": "2026-11-14T02:40:04.366225+00:00",
+      "authoritative_backend": "SQLite, signed configs/accounting_backend.json"
+    },
+    "anthropic": {
+      "available_credit": 119,
+      "alert": 105,
+      "phase_alerts": {
+        "development_judging": 110,
+        "final_reference": 0
+      },
+      "new_calls_paused": true,
+      "permanently_disabled": true,
+      "authority": "INBOX2026-11-14 00:50 and00:55: no more Anthropic requests or retries for any purpose"
+    }
+  },
+  "final_fable_topup_confirmed": false,
+  "policy": "OpenRouter: actual real balance is the only spending limit; no floor or phase/account alerts. Keep per-request worst-case reservation. No new Anthropic request. Stop if actual-frame classification projection cannot fit remaining balance."
+}

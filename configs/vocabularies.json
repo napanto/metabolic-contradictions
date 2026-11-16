@@ -1,0 +1,1474 @@
+{
+  "version": 2,
+  "basis": "Prespecified query vocabulary and conservative curated string aliases; local concept IDs are not external ontology assertions. Same-abstract PubTator supplies external identifiers. Different outcome measurements retain distinct keys. Drug/class mapping is recorded without merging different molecules.",
+  "concepts": [
+    {
+      "key": "DISEASE:type_2_diabetes",
+      "label": "type 2 diabetes",
+      "aliases": [
+        "type 2 diabetes",
+        "T2D",
+        "T2DM",
+        "type 2 diabetes mellitus",
+        "type II diabetes",
+        "type II diabetes mellitus"
+      ],
+      "family": "DISEASE:type_2_diabetes",
+      "category": "disease"
+    },
+    {
+      "key": "DISEASE:type_1_diabetes",
+      "label": "type 1 diabetes",
+      "aliases": [
+        "type 1 diabetes",
+        "T1D",
+        "T1DM",
+        "type 1 diabetes mellitus"
+      ],
+      "family": "DISEASE:type_1_diabetes",
+      "category": "disease"
+    },
+    {
+      "key": "DISEASE:gestational_diabetes",
+      "label": "gestational diabetes",
+      "aliases": [
+        "gestational diabetes",
+        "GDM",
+        "gestational diabetes mellitus"
+      ],
+      "family": "DISEASE:gestational_diabetes",
+      "category": "disease"
+    },
+    {
+      "key": "DISEASE:diabetes",
+      "label": "diabetes mellitus",
+      "aliases": [
+        "diabetes mellitus",
+        "diabetes",
+        "DM"
+      ],
+      "family": "DISEASE:diabetes",
+      "category": "disease"
+    },
+    {
+      "key": "DISEASE:obesity",
+      "label": "obesity",
+      "aliases": [
+        "obesity",
+        "obese"
+      ],
+      "family": "DISEASE:obesity",
+      "category": "disease"
+    },
+    {
+      "key": "DISEASE:metabolic_syndrome",
+      "label": "metabolic syndrome",
+      "aliases": [
+        "metabolic syndrome",
+        "MetS"
+      ],
+      "family": "DISEASE:metabolic_syndrome",
+      "category": "disease"
+    },
+    {
+      "key": "BIOMARKER:irisin",
+      "label": "irisin",
+      "aliases": [
+        "irisin",
+        "FNDC5"
+      ],
+      "family": "BIOMARKER:irisin",
+      "category": "biomarker"
+    },
+    {
+      "key": "BIOMARKER:adiponectin",
+      "label": "adiponectin",
+      "aliases": [
+        "adiponectin"
+      ],
+      "family": "BIOMARKER:adiponectin",
+      "category": "biomarker"
+    },
+    {
+      "key": "BIOMARKER:leptin",
+      "label": "leptin",
+      "aliases": [
+        "leptin"
+      ],
+      "family": "BIOMARKER:leptin",
+      "category": "biomarker"
+    },
+    {
+      "key": "BIOMARKER:chemerin",
+      "label": "chemerin",
+      "aliases": [
+        "chemerin"
+      ],
+      "family": "BIOMARKER:chemerin",
+      "category": "biomarker"
+    },
+    {
+      "key": "BIOMARKER:omentin",
+      "label": "omentin",
+      "aliases": [
+        "omentin",
+        "omentin-1"
+      ],
+      "family": "BIOMARKER:omentin",
+      "category": "biomarker"
+    },
+    {
+      "key": "BIOMARKER:visfatin",
+      "label": "visfatin",
+      "aliases": [
+        "visfatin",
+        "NAMPT"
+      ],
+      "family": "BIOMARKER:visfatin",
+      "category": "biomarker"
+    },
+    {
+      "key": "BIOMARKER:vaspin",
+      "label": "vaspin",
+      "aliases": [
+        "vaspin"
+      ],
+      "family": "BIOMARKER:vaspin",
+      "category": "biomarker"
+    },
+    {
+      "key": "BIOMARKER:apelin",
+      "label": "apelin",
+      "aliases": [
+        "apelin"
+      ],
+      "family": "BIOMARKER:apelin",
+      "category": "biomarker"
+    },
+    {
+      "key": "BIOMARKER:resistin",
+      "label": "resistin",
+      "aliases": [
+        "resistin"
+      ],
+      "family": "BIOMARKER:resistin",
+      "category": "biomarker"
+    },
+    {
+      "key": "BIOMARKER:fgf21",
+      "label": "FGF21",
+      "aliases": [
+        "FGF21",
+        "fibroblast growth factor 21",
+        "FGF-21"
+      ],
+      "family": "BIOMARKER:fgf21",
+      "category": "biomarker"
+    },
+    {
+      "key": "BIOMARKER:zinc-alpha2-glycoprotein",
+      "label": "zinc-alpha2-glycoprotein",
+      "aliases": [
+        "zinc-alpha2-glycoprotein",
+        "zinc-alpha-2-glycoprotein",
+        "ZAG"
+      ],
+      "family": "BIOMARKER:zinc-alpha2-glycoprotein",
+      "category": "biomarker"
+    },
+    {
+      "key": "DRUGCLASS:sglt2_inhibitors",
+      "label": "SGLT2 inhibitors",
+      "aliases": [
+        "SGLT2 inhibitors",
+        "SGLT2 inhibitor",
+        "SGLT2i",
+        "SGLT-2 inhibitors",
+        "sodium-glucose cotransporter 2 inhibitors",
+        "sodium glucose cotransporter-2 inhibitors",
+        "sodium-glucose transporter 2 inhibitors",
+        "SGLT-2i",
+        "SGLT-2is",
+        "SGLT2is",
+        "SGLT2-i",
+        "SGLT-2 inhibitor"
+      ],
+      "family": "DRUGCLASS:sglt2_inhibitors",
+      "category": "drug_class",
+      "class_key": "DRUGCLASS:sglt2_inhibitors"
+    },
+    {
+      "key": "DRUGCLASS:glp1_receptor_agonists",
+      "label": "GLP-1 receptor agonists",
+      "aliases": [
+        "GLP-1 receptor agonists",
+        "GLP-1 receptor agonist",
+        "GLP1 receptor agonists",
+        "GLP-1 RA",
+        "GLP-1 RAs",
+        "GLP1RA",
+        "glucagon-like peptide-1 receptor agonists",
+        "GLP-1RA",
+        "GLP-1RAs",
+        "GLP1-RA",
+        "GLP1-RAs",
+        "GLP1RAs",
+        "GLP-1 agonist",
+        "GLP-1 agonists",
+        "glucagon-like peptide 1 receptor agonist"
+      ],
+      "family": "DRUGCLASS:glp1_receptor_agonists",
+      "category": "drug_class",
+      "class_key": "DRUGCLASS:glp1_receptor_agonists"
+    },
+    {
+      "key": "DRUGCLASS:dpp4_inhibitors",
+      "label": "DPP-4 inhibitors",
+      "aliases": [
+        "DPP-4 inhibitors",
+        "DPP-4 inhibitor",
+        "DPP4 inhibitors",
+        "DPP4i",
+        "dipeptidyl peptidase-4 inhibitors",
+        "dipeptidyl peptidase-4 inhibitor",
+        "dipeptidyl-peptidase IV inhibitors",
+        "DPP4 inhibitor",
+        "DPP-4i",
+        "DPP-4is",
+        "DPP4is"
+      ],
+      "family": "DRUGCLASS:dpp4_inhibitors",
+      "category": "drug_class",
+      "class_key": "DRUGCLASS:dpp4_inhibitors"
+    },
+    {
+      "key": "DRUGCLASS:sulfonylureas",
+      "label": "sulfonylureas",
+      "aliases": [
+        "sulfonylureas",
+        "sulfonylurea",
+        "sulphonylureas",
+        "sulfonylurea compounds"
+      ],
+      "family": "DRUGCLASS:sulfonylureas",
+      "category": "drug_class",
+      "class_key": "DRUGCLASS:sulfonylureas"
+    },
+    {
+      "key": "DRUGCLASS:thiazolidinediones",
+      "label": "thiazolidinediones",
+      "aliases": [
+        "thiazolidinediones",
+        "thiazolidinedione",
+        "TZDs",
+        "TZD"
+      ],
+      "family": "DRUGCLASS:thiazolidinediones",
+      "category": "drug_class",
+      "class_key": "DRUGCLASS:thiazolidinediones"
+    },
+    {
+      "key": "DRUGCLASS:statins",
+      "label": "statins",
+      "aliases": [
+        "statins",
+        "statin",
+        "HMG-CoA reductase inhibitors",
+        "hydroxymethylglutaryl-CoA reductase inhibitors"
+      ],
+      "family": "DRUGCLASS:statins",
+      "category": "drug_class",
+      "class_key": "DRUGCLASS:statins"
+    },
+    {
+      "key": "DRUGCLASS:biguanides",
+      "label": "biguanides",
+      "aliases": [
+        "biguanides",
+        "biguanide"
+      ],
+      "family": "DRUGCLASS:biguanides",
+      "category": "drug_class",
+      "class_key": "DRUGCLASS:biguanides"
+    },
+    {
+      "key": "DRUG:metformin",
+      "label": "metformin",
+      "aliases": [
+        "metformin"
+      ],
+      "family": "DRUG:metformin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:biguanides"
+    },
+    {
+      "key": "DRUG:canagliflozin",
+      "label": "canagliflozin",
+      "aliases": [
+        "canagliflozin"
+      ],
+      "family": "DRUG:canagliflozin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:sglt2_inhibitors"
+    },
+    {
+      "key": "DRUG:dapagliflozin",
+      "label": "dapagliflozin",
+      "aliases": [
+        "dapagliflozin"
+      ],
+      "family": "DRUG:dapagliflozin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:sglt2_inhibitors"
+    },
+    {
+      "key": "DRUG:empagliflozin",
+      "label": "empagliflozin",
+      "aliases": [
+        "empagliflozin"
+      ],
+      "family": "DRUG:empagliflozin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:sglt2_inhibitors"
+    },
+    {
+      "key": "DRUG:ertugliflozin",
+      "label": "ertugliflozin",
+      "aliases": [
+        "ertugliflozin"
+      ],
+      "family": "DRUG:ertugliflozin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:sglt2_inhibitors"
+    },
+    {
+      "key": "DRUG:liraglutide",
+      "label": "liraglutide",
+      "aliases": [
+        "liraglutide"
+      ],
+      "family": "DRUG:liraglutide",
+      "category": "drug",
+      "class_key": "DRUGCLASS:glp1_receptor_agonists"
+    },
+    {
+      "key": "DRUG:semaglutide",
+      "label": "semaglutide",
+      "aliases": [
+        "semaglutide"
+      ],
+      "family": "DRUG:semaglutide",
+      "category": "drug",
+      "class_key": "DRUGCLASS:glp1_receptor_agonists"
+    },
+    {
+      "key": "DRUG:dulaglutide",
+      "label": "dulaglutide",
+      "aliases": [
+        "dulaglutide"
+      ],
+      "family": "DRUG:dulaglutide",
+      "category": "drug",
+      "class_key": "DRUGCLASS:glp1_receptor_agonists"
+    },
+    {
+      "key": "DRUG:exenatide",
+      "label": "exenatide",
+      "aliases": [
+        "exenatide"
+      ],
+      "family": "DRUG:exenatide",
+      "category": "drug",
+      "class_key": "DRUGCLASS:glp1_receptor_agonists"
+    },
+    {
+      "key": "DRUG:lixisenatide",
+      "label": "lixisenatide",
+      "aliases": [
+        "lixisenatide"
+      ],
+      "family": "DRUG:lixisenatide",
+      "category": "drug",
+      "class_key": "DRUGCLASS:glp1_receptor_agonists"
+    },
+    {
+      "key": "DRUG:sitagliptin",
+      "label": "sitagliptin",
+      "aliases": [
+        "sitagliptin"
+      ],
+      "family": "DRUG:sitagliptin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:dpp4_inhibitors"
+    },
+    {
+      "key": "DRUG:saxagliptin",
+      "label": "saxagliptin",
+      "aliases": [
+        "saxagliptin"
+      ],
+      "family": "DRUG:saxagliptin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:dpp4_inhibitors"
+    },
+    {
+      "key": "DRUG:linagliptin",
+      "label": "linagliptin",
+      "aliases": [
+        "linagliptin"
+      ],
+      "family": "DRUG:linagliptin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:dpp4_inhibitors"
+    },
+    {
+      "key": "DRUG:alogliptin",
+      "label": "alogliptin",
+      "aliases": [
+        "alogliptin"
+      ],
+      "family": "DRUG:alogliptin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:dpp4_inhibitors"
+    },
+    {
+      "key": "DRUG:vildagliptin",
+      "label": "vildagliptin",
+      "aliases": [
+        "vildagliptin"
+      ],
+      "family": "DRUG:vildagliptin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:dpp4_inhibitors"
+    },
+    {
+      "key": "DRUG:pioglitazone",
+      "label": "pioglitazone",
+      "aliases": [
+        "pioglitazone"
+      ],
+      "family": "DRUG:pioglitazone",
+      "category": "drug",
+      "class_key": "DRUGCLASS:thiazolidinediones"
+    },
+    {
+      "key": "DRUG:rosiglitazone",
+      "label": "rosiglitazone",
+      "aliases": [
+        "rosiglitazone"
+      ],
+      "family": "DRUG:rosiglitazone",
+      "category": "drug",
+      "class_key": "DRUGCLASS:thiazolidinediones"
+    },
+    {
+      "key": "DRUG:glimepiride",
+      "label": "glimepiride",
+      "aliases": [
+        "glimepiride"
+      ],
+      "family": "DRUG:glimepiride",
+      "category": "drug",
+      "class_key": "DRUGCLASS:sulfonylureas"
+    },
+    {
+      "key": "DRUG:glipizide",
+      "label": "glipizide",
+      "aliases": [
+        "glipizide"
+      ],
+      "family": "DRUG:glipizide",
+      "category": "drug",
+      "class_key": "DRUGCLASS:sulfonylureas"
+    },
+    {
+      "key": "DRUG:gliclazide",
+      "label": "gliclazide",
+      "aliases": [
+        "gliclazide"
+      ],
+      "family": "DRUG:gliclazide",
+      "category": "drug",
+      "class_key": "DRUGCLASS:sulfonylureas"
+    },
+    {
+      "key": "DRUG:glyburide",
+      "label": "glyburide",
+      "aliases": [
+        "glyburide",
+        "glibenclamide"
+      ],
+      "family": "DRUG:glyburide",
+      "category": "drug",
+      "class_key": "DRUGCLASS:sulfonylureas"
+    },
+    {
+      "key": "DRUG:atorvastatin",
+      "label": "atorvastatin",
+      "aliases": [
+        "atorvastatin"
+      ],
+      "family": "DRUG:atorvastatin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:statins"
+    },
+    {
+      "key": "DRUG:rosuvastatin",
+      "label": "rosuvastatin",
+      "aliases": [
+        "rosuvastatin"
+      ],
+      "family": "DRUG:rosuvastatin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:statins"
+    },
+    {
+      "key": "DRUG:simvastatin",
+      "label": "simvastatin",
+      "aliases": [
+        "simvastatin"
+      ],
+      "family": "DRUG:simvastatin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:statins"
+    },
+    {
+      "key": "DRUG:pravastatin",
+      "label": "pravastatin",
+      "aliases": [
+        "pravastatin"
+      ],
+      "family": "DRUG:pravastatin",
+      "category": "drug",
+      "class_key": "DRUGCLASS:statins"
+    },
+    {
+      "key": "DRUG:tirzepatide",
+      "label": "tirzepatide",
+      "aliases": [
+        "tirzepatide"
+      ],
+      "family": "DRUG:tirzepatide",
+      "category": "drug",
+      "class_key": "DRUGCLASS:dual_gip_glp1_agonists"
+    },
+    {
+      "key": "DRUGCLASS:dual_gip_glp1_agonists",
+      "label": "dual GIP/GLP-1 receptor agonists",
+      "aliases": [
+        "dual GIP/GLP-1 receptor agonists",
+        "dual GIP and GLP-1 receptor agonist"
+      ],
+      "family": "DRUGCLASS:dual_gip_glp1_agonists",
+      "category": "drug_class",
+      "class_key": "DRUGCLASS:dual_gip_glp1_agonists"
+    },
+    {
+      "key": "DIET:mediterranean",
+      "label": "Mediterranean diet",
+      "aliases": [
+        "Mediterranean diet",
+        "Mediterranean dietary pattern",
+        "MedDiet",
+        "Mediterranean diet adherence",
+        "adherence to Mediterranean diet"
+      ],
+      "family": "DIET:mediterranean",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:low_carbohydrate",
+      "label": "low-carbohydrate diet",
+      "aliases": [
+        "low-carbohydrate diet",
+        "low carbohydrate diet",
+        "carbohydrate-restricted diet",
+        "low-carb diet"
+      ],
+      "family": "DIET:low_carbohydrate",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:ketogenic",
+      "label": "ketogenic diet",
+      "aliases": [
+        "ketogenic diet",
+        "ketogenic diets",
+        "keto diet"
+      ],
+      "family": "DIET:ketogenic",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:intermittent_fasting",
+      "label": "intermittent fasting",
+      "aliases": [
+        "intermittent fasting",
+        "intermittent energy restriction"
+      ],
+      "family": "DIET:intermittent_fasting",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:time_restricted_eating",
+      "label": "time-restricted eating",
+      "aliases": [
+        "time-restricted eating",
+        "time restricted feeding",
+        "time-restricted feeding",
+        "time restricted eating",
+        "TRE",
+        "time-restricted eating (TRE)",
+        "time-restricted feeding (TRF)"
+      ],
+      "family": "DIET:time_restricted_eating",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:caloric_restriction",
+      "label": "caloric restriction",
+      "aliases": [
+        "caloric restriction",
+        "calorie restriction",
+        "energy restriction",
+        "calorie-restricted diet",
+        "hypocaloric diet",
+        "low-calorie diet",
+        "low calorie diet",
+        "low-energy diet",
+        "low energy diet"
+      ],
+      "family": "DIET:caloric_restriction",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:vegetarian",
+      "label": "vegetarian diet",
+      "aliases": [
+        "vegetarian diet",
+        "vegetarian dietary pattern"
+      ],
+      "family": "DIET:vegetarian",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:vegan",
+      "label": "vegan diet",
+      "aliases": [
+        "vegan diet",
+        "plant-only diet"
+      ],
+      "family": "DIET:vegan",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:low_fat",
+      "label": "low-fat diet",
+      "aliases": [
+        "low-fat diet",
+        "low fat diet",
+        "fat-restricted diet"
+      ],
+      "family": "DIET:low_fat",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:dash",
+      "label": "DASH diet",
+      "aliases": [
+        "DASH diet",
+        "DASH",
+        "dietary approaches to stop hypertension"
+      ],
+      "family": "DIET:dash",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:high_protein",
+      "label": "high-protein diet",
+      "aliases": [
+        "high-protein diet",
+        "high protein diet",
+        "protein-enriched diet"
+      ],
+      "family": "DIET:high_protein",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:eggs",
+      "label": "egg consumption",
+      "aliases": [
+        "egg consumption",
+        "egg intake",
+        "eggs",
+        "egg",
+        "dietary eggs",
+        "whole eggs"
+      ],
+      "family": "DIET:eggs",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:coffee",
+      "label": "coffee consumption",
+      "aliases": [
+        "coffee consumption",
+        "coffee intake",
+        "coffee"
+      ],
+      "family": "DIET:coffee",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:red_meat",
+      "label": "red meat consumption",
+      "aliases": [
+        "red meat consumption",
+        "red meat intake",
+        "red meat"
+      ],
+      "family": "DIET:red_meat",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:sugar_sweetened_beverages",
+      "label": "sugar-sweetened beverages",
+      "aliases": [
+        "sugar-sweetened beverages",
+        "sugar sweetened beverages",
+        "SSBs",
+        "sugar-sweetened beverage consumption"
+      ],
+      "family": "DIET:sugar_sweetened_beverages",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:non_nutritive_sweeteners",
+      "label": "non-nutritive sweeteners",
+      "aliases": [
+        "non-nutritive sweeteners",
+        "nonnutritive sweeteners",
+        "non nutritive sweeteners",
+        "artificial sweeteners",
+        "non-nutritive sweetener intake"
+      ],
+      "family": "DIET:non_nutritive_sweeteners",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:dietary_fiber",
+      "label": "dietary fiber",
+      "aliases": [
+        "dietary fiber",
+        "dietary fibre",
+        "fiber intake",
+        "fibre intake",
+        "dietary fiber intake"
+      ],
+      "family": "DIET:dietary_fiber",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:dairy",
+      "label": "dairy products",
+      "aliases": [
+        "dairy products",
+        "dairy intake",
+        "dairy product consumption",
+        "dairy consumption"
+      ],
+      "family": "DIET:dairy",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:nuts",
+      "label": "nuts",
+      "aliases": [
+        "nuts",
+        "nut consumption",
+        "nut intake",
+        "tree nuts"
+      ],
+      "family": "DIET:nuts",
+      "category": "diet"
+    },
+    {
+      "key": "DIET:whole_grains",
+      "label": "whole grains",
+      "aliases": [
+        "whole grains",
+        "whole-grain intake",
+        "whole grain consumption",
+        "whole-grain consumption"
+      ],
+      "family": "DIET:whole_grains",
+      "category": "diet"
+    },
+    {
+      "key": "OUTCOME:hba1c",
+      "label": "HbA1c",
+      "aliases": [
+        "HbA1c",
+        "hemoglobin A1c",
+        "haemoglobin A1c",
+        "glycated hemoglobin",
+        "glycated haemoglobin",
+        "glycosylated hemoglobin"
+      ],
+      "family": "glycemia",
+      "measurement": "hba1c",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:fasting_glucose",
+      "label": "fasting plasma glucose",
+      "aliases": [
+        "fasting plasma glucose",
+        "fasting blood glucose",
+        "FPG",
+        "FBG",
+        "fasting glucose"
+      ],
+      "family": "glycemia",
+      "measurement": "fasting_glucose",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:postprandial_glucose",
+      "label": "postprandial glucose",
+      "aliases": [
+        "postprandial glucose",
+        "postprandial blood glucose",
+        "postprandial plasma glucose"
+      ],
+      "family": "glycemia",
+      "measurement": "postprandial_glucose",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:glucose",
+      "label": "blood glucose",
+      "aliases": [
+        "blood glucose",
+        "plasma glucose",
+        "glucose",
+        "glycemia",
+        "glycaemia"
+      ],
+      "family": "glycemia",
+      "measurement": "unspecified_glucose",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:homa_ir",
+      "label": "HOMA-IR",
+      "aliases": [
+        "HOMA-IR",
+        "homeostasis model assessment of insulin resistance",
+        "homeostatic model assessment of insulin resistance",
+        "HOMA IR",
+        "HOMA insulin resistance"
+      ],
+      "family": "insulin_homeostasis",
+      "measurement": "homa_ir",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:insulin_resistance",
+      "label": "insulin resistance",
+      "aliases": [
+        "insulin resistance"
+      ],
+      "family": "insulin_homeostasis",
+      "measurement": "unspecified_insulin_resistance",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:insulin_sensitivity",
+      "label": "insulin sensitivity",
+      "aliases": [
+        "insulin sensitivity"
+      ],
+      "family": "insulin_homeostasis",
+      "measurement": "unspecified_insulin_sensitivity",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:clamp_insulin_sensitivity",
+      "label": "clamp insulin sensitivity",
+      "aliases": [
+        "clamp insulin sensitivity",
+        "insulin sensitivity measured by hyperinsulinemic-euglycemic clamp",
+        "M value",
+        "M-value"
+      ],
+      "family": "insulin_homeostasis",
+      "measurement": "clamp",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:fasting_insulin",
+      "label": "fasting insulin",
+      "aliases": [
+        "fasting insulin",
+        "fasting plasma insulin",
+        "fasting serum insulin"
+      ],
+      "family": "insulin_homeostasis",
+      "measurement": "fasting_insulin",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:body_weight",
+      "label": "body weight",
+      "aliases": [
+        "body weight",
+        "weight",
+        "bodyweight"
+      ],
+      "family": "adiposity",
+      "measurement": "weight",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:bmi",
+      "label": "body mass index",
+      "aliases": [
+        "body mass index",
+        "BMI"
+      ],
+      "family": "adiposity",
+      "measurement": "bmi",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:waist_circumference",
+      "label": "waist circumference",
+      "aliases": [
+        "waist circumference",
+        "WC"
+      ],
+      "family": "adiposity",
+      "measurement": "waist_circumference",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:body_fat",
+      "label": "body fat",
+      "aliases": [
+        "body fat",
+        "fat mass",
+        "body fat mass"
+      ],
+      "family": "adiposity",
+      "measurement": "fat_mass",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:amputation",
+      "label": "amputation",
+      "aliases": [
+        "amputation",
+        "amputations"
+      ],
+      "family": "amputation",
+      "measurement": "amputation_unspecified",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:lower_limb_amputation",
+      "label": "lower-limb amputation",
+      "aliases": [
+        "lower-limb amputation",
+        "lower limb amputation",
+        "lower extremity amputation",
+        "lower-extremity amputation",
+        "lower limb amputations",
+        "lower-extremity amputations",
+        "lower extremity amputations",
+        "LEA"
+      ],
+      "family": "amputation",
+      "measurement": "lower_limb_amputation",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:major_amputation",
+      "label": "major amputation",
+      "aliases": [
+        "major amputation",
+        "major lower-extremity amputation",
+        "major lower limb amputation"
+      ],
+      "family": "amputation",
+      "measurement": "major_amputation",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:heart_failure_hospitalization",
+      "label": "hospitalization for heart failure",
+      "aliases": [
+        "hospitalization for heart failure",
+        "hospitalisation for heart failure",
+        "heart failure hospitalization",
+        "heart failure hospitalisation",
+        "HHF",
+        "hHF"
+      ],
+      "family": "heart_failure",
+      "measurement": "hospitalization",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:heart_failure",
+      "label": "heart failure",
+      "aliases": [
+        "heart failure",
+        "HF"
+      ],
+      "family": "heart_failure",
+      "measurement": "heart_failure_unspecified",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:all_cause_mortality",
+      "label": "all-cause mortality",
+      "aliases": [
+        "all-cause mortality",
+        "all cause mortality",
+        "death from any cause",
+        "overall mortality",
+        "all-cause death",
+        "all cause death",
+        "all-cause deaths",
+        "death from all causes"
+      ],
+      "family": "mortality",
+      "measurement": "all_cause",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:cardiovascular_mortality",
+      "label": "cardiovascular death",
+      "aliases": [
+        "cardiovascular death",
+        "cardiovascular mortality",
+        "CV death"
+      ],
+      "family": "mortality",
+      "measurement": "cardiovascular",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:mace",
+      "label": "major adverse cardiovascular events",
+      "aliases": [
+        "major adverse cardiovascular events",
+        "MACE",
+        "major cardiovascular events"
+      ],
+      "family": "cardiovascular_events",
+      "measurement": "mace_unspecified",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:systolic_blood_pressure",
+      "label": "systolic blood pressure",
+      "aliases": [
+        "systolic blood pressure",
+        "SBP"
+      ],
+      "family": "blood_pressure",
+      "measurement": "systolic",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:diastolic_blood_pressure",
+      "label": "diastolic blood pressure",
+      "aliases": [
+        "diastolic blood pressure",
+        "DBP"
+      ],
+      "family": "blood_pressure",
+      "measurement": "diastolic",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:ldl_cholesterol",
+      "label": "LDL cholesterol",
+      "aliases": [
+        "LDL cholesterol",
+        "LDL-C",
+        "low-density lipoprotein cholesterol"
+      ],
+      "family": "lipids",
+      "measurement": "ldl_cholesterol",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:hdl_cholesterol",
+      "label": "HDL cholesterol",
+      "aliases": [
+        "HDL cholesterol",
+        "HDL-C",
+        "high-density lipoprotein cholesterol"
+      ],
+      "family": "lipids",
+      "measurement": "hdl_cholesterol",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:triglycerides",
+      "label": "triglycerides",
+      "aliases": [
+        "triglycerides",
+        "triglyceride levels",
+        "serum triglycerides"
+      ],
+      "family": "lipids",
+      "measurement": "triglycerides",
+      "category": "outcome"
+    },
+    {
+      "key": "OUTCOME:total_cholesterol",
+      "label": "total cholesterol",
+      "aliases": [
+        "total cholesterol",
+        "TC"
+      ],
+      "family": "lipids",
+      "measurement": "total_cholesterol",
+      "category": "outcome"
+    },
+    {
+      "key": "COMPARATOR:placebo",
+      "label": "placebo",
+      "aliases": [
+        "placebo",
+        "placebo treatment"
+      ],
+      "family": "COMPARATOR:placebo",
+      "category": "comparator"
+    },
+    {
+      "key": "COMPARATOR:baseline",
+      "label": "baseline",
+      "aliases": [
+        "baseline",
+        "pretreatment",
+        "pre-treatment",
+        "before treatment"
+      ],
+      "family": "COMPARATOR:baseline",
+      "category": "comparator"
+    },
+    {
+      "key": "COMPARATOR:healthy_controls",
+      "label": "healthy controls",
+      "aliases": [
+        "healthy controls",
+        "healthy control",
+        "non-diabetic controls",
+        "nondiabetic controls",
+        "non-diabetic subjects",
+        "healthy subjects"
+      ],
+      "family": "COMPARATOR:healthy_controls",
+      "category": "comparator"
+    },
+    {
+      "key": "COMPARATOR:usual_diet",
+      "label": "usual diet",
+      "aliases": [
+        "usual diet",
+        "habitual diet",
+        "usual dietary intake"
+      ],
+      "family": "COMPARATOR:usual_diet",
+      "category": "comparator"
+    },
+    {
+      "key": "COMPARATOR:usual_care",
+      "label": "usual care",
+      "aliases": [
+        "usual care",
+        "standard care",
+        "standard of care"
+      ],
+      "family": "COMPARATOR:usual_care",
+      "category": "comparator"
+    },
+    {
+      "key": "COMPARATOR:no_exposure",
+      "label": "no exposure",
+      "aliases": [
+        "no exposure",
+        "non-users",
+        "nonusers",
+        "no treatment",
+        "untreated"
+      ],
+      "family": "COMPARATOR:no_exposure",
+      "category": "comparator"
+    },
+    {
+      "key": "BIOMARKER:hmw_adiponectin",
+      "label": "high-molecular-weight adiponectin",
+      "aliases": [
+        "high-molecular-weight adiponectin",
+        "HMW-adiponectin",
+        "HMW adiponectin"
+      ],
+      "family": "BIOMARKER:adiponectin",
+      "category": "biomarker",
+      "measurement": "hmw_adiponectin",
+      "link_aliases": [
+        "adiponectin"
+      ]
+    },
+    {
+      "key": "BIOMARKER:total_adiponectin",
+      "label": "total adiponectin",
+      "aliases": [
+        "total adiponectin"
+      ],
+      "family": "BIOMARKER:adiponectin",
+      "category": "biomarker",
+      "measurement": "total_adiponectin",
+      "link_aliases": [
+        "adiponectin"
+      ]
+    },
+    {
+      "key": "BIOMARKER:hmw_total_adiponectin_ratio",
+      "label": "HMW/total adiponectin ratio",
+      "aliases": [
+        "HMW/total adiponectin ratio",
+        "HMW-to-total adiponectin ratio"
+      ],
+      "family": "BIOMARKER:hmw_total_adiponectin_ratio",
+      "category": "biomarker",
+      "measurement": "hmw_total_ratio"
+    },
+    {
+      "key": "BIOMARKER:leptin_adiponectin_ratio",
+      "label": "leptin:adiponectin ratio",
+      "aliases": [
+        "leptin:adiponectin ratio",
+        "leptin-to-adiponectin ratio",
+        "leptin/adiponectin ratio"
+      ],
+      "family": "BIOMARKER:leptin_adiponectin_ratio",
+      "category": "biomarker",
+      "measurement": "leptin_adiponectin_ratio"
+    },
+    {
+      "key": "DIET:very_low_calorie",
+      "label": "very-low-calorie diet",
+      "aliases": [
+        "very-low-calorie diet",
+        "very low calorie diet",
+        "VLCD",
+        "very-low-energy diet"
+      ],
+      "family": "DIET:caloric_restriction",
+      "category": "diet",
+      "facets": {
+        "energy_restriction": "very_low_calorie"
+      }
+    },
+    {
+      "key": "DIET:very_low_calorie_ketogenic",
+      "label": "very-low-calorie ketogenic diet",
+      "aliases": [
+        "very-low-calorie ketogenic diet",
+        "very low calorie ketogenic diet"
+      ],
+      "family": "DIET:ketogenic",
+      "category": "diet",
+      "facets": {
+        "energy_restriction": "very_low_calorie",
+        "ketogenic": true
+      }
+    },
+    {
+      "key": "DIET:very_low_carbohydrate_ketogenic",
+      "label": "very-low-carbohydrate ketogenic diet",
+      "aliases": [
+        "very-low-carbohydrate ketogenic diet",
+        "very low carbohydrate ketogenic diet"
+      ],
+      "family": "DIET:ketogenic",
+      "category": "diet",
+      "facets": {
+        "carbohydrate_restriction": "very_low",
+        "ketogenic": true
+      }
+    },
+    {
+      "key": "DIET:early_time_restricted_eating",
+      "label": "early time-restricted eating",
+      "aliases": [
+        "early time-restricted eating",
+        "early TRE",
+        "early time restricted eating",
+        "early time-restricted feeding",
+        "eTRE"
+      ],
+      "family": "DIET:time_restricted_eating",
+      "category": "diet",
+      "facets": {
+        "timing": "early"
+      }
+    },
+    {
+      "key": "OUTCOME:mortality_unspecified",
+      "label": "mortality",
+      "aliases": [
+        "mortality",
+        "death",
+        "deaths"
+      ],
+      "family": "mortality",
+      "category": "outcome",
+      "measurement": "cause_unspecified"
+    },
+    {
+      "key": "OUTCOME:overall_survival",
+      "label": "overall survival",
+      "aliases": [
+        "overall survival"
+      ],
+      "family": "survival",
+      "category": "outcome",
+      "measurement": "overall_survival"
+    },
+    {
+      "key": "OUTCOME:hypoglycemia",
+      "label": "hypoglycemia",
+      "aliases": [
+        "hypoglycemia",
+        "hypoglycaemia",
+        "hypoglycemic events",
+        "hypoglycaemic events"
+      ],
+      "family": "hypoglycemia",
+      "category": "outcome",
+      "facets": {
+        "severity": "unspecified"
+      },
+      "measurement": "any_hypoglycemia"
+    },
+    {
+      "key": "OUTCOME:severe_hypoglycemia",
+      "label": "severe hypoglycemia",
+      "aliases": [
+        "severe hypoglycemia",
+        "severe hypoglycaemia",
+        "severe hypoglycemic events",
+        "severe hypoglycaemic events"
+      ],
+      "family": "hypoglycemia",
+      "category": "outcome",
+      "facets": {
+        "severity": "severe"
+      },
+      "measurement": "severe_hypoglycemia"
+    },
+    {
+      "key": "OUTCOME:egfr",
+      "label": "estimated glomerular filtration rate",
+      "aliases": [
+        "estimated glomerular filtration rate",
+        "estimated GFR",
+        "estimated glomerular filtration rate (eGFR)"
+      ],
+      "family": "renal_function",
+      "category": "outcome",
+      "case_sensitive_aliases": [
+        "eGFR"
+      ],
+      "pubtator_types": [],
+      "measurement": "estimated_glomerular_filtration_rate"
+    },
+    {
+      "key": "OUTCOME:hba1c_change",
+      "label": "HbA1c change",
+      "aliases": [
+        "HbA1c change",
+        "change in HbA1c",
+        "HbA1c changes",
+        "change in glycated hemoglobin"
+      ],
+      "family": "glycemia",
+      "category": "outcome",
+      "facets": {
+        "quantity": "change",
+        "direction_convention": "as_reported"
+      },
+      "measurement": "hba1c_change_signed"
+    },
+    {
+      "key": "OUTCOME:hba1c_reduction",
+      "label": "HbA1c reduction",
+      "aliases": [
+        "HbA1c reduction",
+        "reduction in HbA1c",
+        "HbA1c reductions",
+        "glycated hemoglobin reduction"
+      ],
+      "family": "glycemia",
+      "category": "outcome",
+      "facets": {
+        "quantity": "reduction",
+        "direction_convention": "as_reported"
+      },
+      "measurement": "hba1c_reduction_magnitude"
+    },
+    {
+      "key": "OUTCOME:body_weight_change",
+      "label": "body weight change",
+      "aliases": [
+        "body weight change",
+        "weight change",
+        "change in body weight",
+        "bodyweight change",
+        "change in weight"
+      ],
+      "family": "adiposity",
+      "category": "outcome",
+      "facets": {
+        "quantity": "change",
+        "direction_convention": "as_reported"
+      },
+      "measurement": "body_weight_change_signed"
+    },
+    {
+      "key": "OUTCOME:weight_loss",
+      "label": "weight loss",
+      "aliases": [
+        "weight loss",
+        "body weight loss",
+        "weight reduction",
+        "body weight reduction",
+        "reduction in body weight"
+      ],
+      "family": "adiposity",
+      "category": "outcome",
+      "facets": {
+        "quantity": "reduction",
+        "direction_convention": "as_reported"
+      },
+      "measurement": "weight_loss_magnitude"
+    }
+  ],
+  "ambiguous_aliases": {
+    "LCD": "low-calorie versus low-carbohydrate diet",
+    "VLCKD": "very-low-calorie versus very-low-carbohydrate ketogenic diet"
+  },
+  "protected_combinations": [
+    "IDegLira",
+    "iGlarLixi"
+  ],
+  "refinement_basis": "Unlabeled frequent-string normalization before metabolic pair classification and annotation sampling. Original development vocabulary archived separately; no model or prompt selection changes."
+}

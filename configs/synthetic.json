@@ -1,0 +1,2045 @@
+{
+  "schema_version": "2.0",
+  "purpose": "SYNTHETIC DEVELOPMENT ACCEPTANCE ONLY: six invented abstracts, twelve atomic microcases; never study evaluation or participant data.",
+  "created_before_selection": true,
+  "cases": [
+    {
+      "case_id": "synthetic-v2-01",
+      "article": {
+        "pmid": "899900001",
+        "title": "SYNTHETIC DEVELOPMENT FIXTURE 1: invented substances and findings",
+        "abstract": "Twenty adults received the fictional food Nuvora for four weeks. After Nuvora, marker Alben decreased from baseline while marker Borin increased from baseline.",
+        "sections": [
+          {
+            "text": "Twenty adults received the fictional food Nuvora for four weeks.",
+            "label": "METHODS",
+            "nlm_category": "METHODS"
+          },
+          {
+            "text": "After Nuvora, marker Alben decreased from baseline while marker Borin increased from baseline.",
+            "label": "RESULTS",
+            "nlm_category": "RESULTS"
+          }
+        ],
+        "year": 2026,
+        "arms": [
+          "diet"
+        ],
+        "publication_types": [
+          "Synthetic fixture"
+        ],
+        "design_eligible": true,
+        "priority": 1,
+        "retracted": false,
+        "synthetic": true
+      },
+      "expected_model_output": {
+        "study": {
+          "design": null,
+          "aims_reported": null,
+          "total_n": null,
+          "evidence": []
+        },
+        "claims": [
+          {
+            "arm": "diet",
+            "exposure": "Nuvora",
+            "exposure_class": null,
+            "outcome": "marker Alben",
+            "kind": "effect",
+            "comparison": {
+              "type": "within_group_change",
+              "index_group": {
+                "label": "Nuvora cohort",
+                "population": "adults",
+                "role": "cohort",
+                "n": {
+                  "value": 20,
+                  "unit": "participants",
+                  "scope": "not_reported",
+                  "reported_text": "Twenty adults",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "Twenty adults"
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Twenty adults"
+                  }
+                ]
+              },
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": "baseline",
+              "outcome_time": "four weeks",
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "After Nuvora, marker Alben decreased from baseline while marker Borin increased from baseline."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": "four weeks",
+              "dose": null,
+              "sample": null,
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "four weeks"
+                }
+              ]
+            }
+          },
+          {
+            "arm": "diet",
+            "exposure": "Nuvora",
+            "exposure_class": null,
+            "outcome": "marker Borin",
+            "kind": "effect",
+            "comparison": {
+              "type": "within_group_change",
+              "index_group": {
+                "label": "Nuvora cohort",
+                "population": "adults",
+                "role": "cohort",
+                "n": {
+                  "value": 20,
+                  "unit": "participants",
+                  "scope": "not_reported",
+                  "reported_text": "Twenty adults",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "Twenty adults"
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Twenty adults"
+                  }
+                ]
+              },
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": "baseline",
+              "outcome_time": "four weeks",
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "+",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "After Nuvora, marker Alben decreased from baseline while marker Borin increased from baseline."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": "four weeks",
+              "dose": null,
+              "sample": null,
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "four weeks"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "expected_atomic_results": [
+        {
+          "result_id": "synthetic-v2-01-r1",
+          "claim": {
+            "arm": "diet",
+            "exposure": "Nuvora",
+            "exposure_class": null,
+            "outcome": "marker Alben",
+            "kind": "effect",
+            "comparison": {
+              "type": "within_group_change",
+              "index_group": {
+                "label": "Nuvora cohort",
+                "population": "adults",
+                "role": "cohort",
+                "n": {
+                  "value": 20,
+                  "unit": "participants",
+                  "scope": "not_reported",
+                  "reported_text": "Twenty adults",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "Twenty adults"
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Twenty adults"
+                  }
+                ]
+              },
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": "baseline",
+              "outcome_time": "four weeks",
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "After Nuvora, marker Alben decreased from baseline while marker Borin increased from baseline."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": "four weeks",
+              "dose": null,
+              "sample": null,
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "four weeks"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "result_id": "synthetic-v2-01-r2",
+          "claim": {
+            "arm": "diet",
+            "exposure": "Nuvora",
+            "exposure_class": null,
+            "outcome": "marker Borin",
+            "kind": "effect",
+            "comparison": {
+              "type": "within_group_change",
+              "index_group": {
+                "label": "Nuvora cohort",
+                "population": "adults",
+                "role": "cohort",
+                "n": {
+                  "value": 20,
+                  "unit": "participants",
+                  "scope": "not_reported",
+                  "reported_text": "Twenty adults",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "Twenty adults"
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Twenty adults"
+                  }
+                ]
+              },
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": "baseline",
+              "outcome_time": "four weeks",
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "+",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "After Nuvora, marker Alben decreased from baseline while marker Borin increased from baseline."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": "four weeks",
+              "dose": null,
+              "sample": null,
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "four weeks"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "critical_acceptance_checks": [
+        "Extract two distinct outcomes from the same sentence.",
+        "Keep both changes within one group; do not invent a control."
+      ]
+    },
+    {
+      "case_id": "synthetic-v2-02",
+      "article": {
+        "pmid": "899900002",
+        "title": "SYNTHETIC DEVELOPMENT FIXTURE 2: invented substances and findings",
+        "abstract": "The fictional medicine Velorin was compared with placebo in adults younger than 40 years and adults aged 40 years or older. Response was higher with Velorin than placebo among adults younger than 40 years, but there was no difference among adults aged 40 years or older.",
+        "sections": [
+          {
+            "text": "The fictional medicine Velorin was compared with placebo in adults younger than 40 years and adults aged 40 years or older.",
+            "label": "METHODS",
+            "nlm_category": "METHODS"
+          },
+          {
+            "text": "Response was higher with Velorin than placebo among adults younger than 40 years, but there was no difference among adults aged 40 years or older.",
+            "label": "RESULTS",
+            "nlm_category": "RESULTS"
+          }
+        ],
+        "year": 2026,
+        "arms": [
+          "drug"
+        ],
+        "publication_types": [
+          "Synthetic fixture"
+        ],
+        "design_eligible": true,
+        "priority": 1,
+        "retracted": false,
+        "synthetic": true
+      },
+      "expected_model_output": {
+        "study": {
+          "design": null,
+          "aims_reported": null,
+          "total_n": null,
+          "evidence": []
+        },
+        "claims": [
+          {
+            "arm": "drug",
+            "exposure": "Velorin",
+            "exposure_class": null,
+            "outcome": "response",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Velorin",
+                "population": "adults younger than 40 years",
+                "role": "intervention",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Velorin"
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo",
+                "population": "adults younger than 40 years",
+                "role": "control",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "placebo"
+                  }
+                ]
+              },
+              "comparator": "placebo",
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": "Velorin versus placebo"
+            },
+            "subgroup": {
+              "description": "adults younger than 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "adults younger than 40 years"
+                }
+              ]
+            },
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "+",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "Response was higher with Velorin than placebo among adults younger than 40 years, but there was no difference among adults aged 40 years or older."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          },
+          {
+            "arm": "drug",
+            "exposure": "Velorin",
+            "exposure_class": null,
+            "outcome": "response",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Velorin",
+                "population": "adults aged 40 years or older",
+                "role": "intervention",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Velorin"
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo",
+                "population": "adults aged 40 years or older",
+                "role": "control",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "placebo"
+                  }
+                ]
+              },
+              "comparator": "placebo",
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": "Velorin versus placebo"
+            },
+            "subgroup": {
+              "description": "adults aged 40 years or older",
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "adults aged 40 years or older"
+                }
+              ]
+            },
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "explicit_no_difference",
+              "estimate_direction": null,
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "Response was higher with Velorin than placebo among adults younger than 40 years, but there was no difference among adults aged 40 years or older."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        ]
+      },
+      "expected_atomic_results": [
+        {
+          "result_id": "synthetic-v2-02-r1",
+          "claim": {
+            "arm": "drug",
+            "exposure": "Velorin",
+            "exposure_class": null,
+            "outcome": "response",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Velorin",
+                "population": "adults younger than 40 years",
+                "role": "intervention",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Velorin"
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo",
+                "population": "adults younger than 40 years",
+                "role": "control",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "placebo"
+                  }
+                ]
+              },
+              "comparator": "placebo",
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": "Velorin versus placebo"
+            },
+            "subgroup": {
+              "description": "adults younger than 40 years",
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "adults younger than 40 years"
+                }
+              ]
+            },
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "+",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "Response was higher with Velorin than placebo among adults younger than 40 years, but there was no difference among adults aged 40 years or older."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        },
+        {
+          "result_id": "synthetic-v2-02-r2",
+          "claim": {
+            "arm": "drug",
+            "exposure": "Velorin",
+            "exposure_class": null,
+            "outcome": "response",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Velorin",
+                "population": "adults aged 40 years or older",
+                "role": "intervention",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Velorin"
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "placebo",
+                "population": "adults aged 40 years or older",
+                "role": "control",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "placebo"
+                  }
+                ]
+              },
+              "comparator": "placebo",
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": "Velorin versus placebo"
+            },
+            "subgroup": {
+              "description": "adults aged 40 years or older",
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "adults aged 40 years or older"
+                }
+              ]
+            },
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "explicit_no_difference",
+              "estimate_direction": null,
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "Response was higher with Velorin than placebo among adults younger than 40 years, but there was no difference among adults aged 40 years or older."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "critical_acceptance_checks": [
+        "Preserve both subgroup results, including the exception.",
+        "Do not infer equal or nonreported subgroup sizes."
+      ]
+    },
+    {
+      "case_id": "synthetic-v2-03",
+      "article": {
+        "pmid": "899900003",
+        "title": "SYNTHETIC DEVELOPMENT FIXTURE 3: invented substances and findings",
+        "abstract": "The trial enrolled 120 adults; 90 were analysed, including 42 receiving fictional medicine Dorafen and 48 receiving placebo. The Dorafen group had a reduction in marker Cevin from baseline. The placebo group also had a reduction in marker Cevin from baseline; no between-group estimate was reported.",
+        "sections": [
+          {
+            "text": "The trial enrolled 120 adults; 90 were analysed, including 42 receiving fictional medicine Dorafen and 48 receiving placebo.",
+            "label": "METHODS",
+            "nlm_category": "METHODS"
+          },
+          {
+            "text": "The Dorafen group had a reduction in marker Cevin from baseline. The placebo group also had a reduction in marker Cevin from baseline; no between-group estimate was reported.",
+            "label": "RESULTS",
+            "nlm_category": "RESULTS"
+          }
+        ],
+        "year": 2026,
+        "arms": [
+          "drug"
+        ],
+        "publication_types": [
+          "Synthetic fixture"
+        ],
+        "design_eligible": true,
+        "priority": 1,
+        "retracted": false,
+        "synthetic": true
+      },
+      "expected_model_output": {
+        "study": {
+          "design": "trial",
+          "aims_reported": null,
+          "total_n": {
+            "value": 120,
+            "unit": "participants",
+            "scope": "enrolled",
+            "reported_text": "120 adults",
+            "evidence": [
+              {
+                "sentence_id": 1,
+                "quote": "120 adults"
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "sentence_id": 1,
+              "quote": "trial enrolled 120 adults"
+            }
+          ]
+        },
+        "claims": [
+          {
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Cevin",
+            "kind": "effect",
+            "comparison": {
+              "type": "within_group_change",
+              "index_group": {
+                "label": "Dorafen",
+                "population": "adults",
+                "role": "intervention",
+                "n": {
+                  "value": 42,
+                  "unit": "participants",
+                  "scope": "analysed",
+                  "reported_text": "42 receiving fictional medicine Dorafen",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "42 receiving fictional medicine Dorafen"
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Dorafen"
+                  }
+                ]
+              },
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": "baseline",
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": "90 analysed adults",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "90 were analysed"
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "The Dorafen group had a reduction in marker Cevin from baseline."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          },
+          {
+            "arm": "drug",
+            "exposure": "placebo",
+            "exposure_class": null,
+            "outcome": "marker Cevin",
+            "kind": "effect",
+            "comparison": {
+              "type": "within_group_change",
+              "index_group": {
+                "label": "placebo",
+                "population": "adults",
+                "role": "control",
+                "n": {
+                  "value": 48,
+                  "unit": "participants",
+                  "scope": "analysed",
+                  "reported_text": "48 receiving placebo",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "48 receiving placebo"
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "placebo"
+                  }
+                ]
+              },
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": "baseline",
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": "90 analysed adults",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "90 were analysed"
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "The placebo group also had a reduction in marker Cevin from baseline; no between-group estimate was reported."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        ]
+      },
+      "expected_atomic_results": [
+        {
+          "result_id": "synthetic-v2-03-r1",
+          "claim": {
+            "arm": "drug",
+            "exposure": "Dorafen",
+            "exposure_class": null,
+            "outcome": "marker Cevin",
+            "kind": "effect",
+            "comparison": {
+              "type": "within_group_change",
+              "index_group": {
+                "label": "Dorafen",
+                "population": "adults",
+                "role": "intervention",
+                "n": {
+                  "value": 42,
+                  "unit": "participants",
+                  "scope": "analysed",
+                  "reported_text": "42 receiving fictional medicine Dorafen",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "42 receiving fictional medicine Dorafen"
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Dorafen"
+                  }
+                ]
+              },
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": "baseline",
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": "90 analysed adults",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "90 were analysed"
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "The Dorafen group had a reduction in marker Cevin from baseline."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        },
+        {
+          "result_id": "synthetic-v2-03-r2",
+          "claim": {
+            "arm": "drug",
+            "exposure": "placebo",
+            "exposure_class": null,
+            "outcome": "marker Cevin",
+            "kind": "effect",
+            "comparison": {
+              "type": "within_group_change",
+              "index_group": {
+                "label": "placebo",
+                "population": "adults",
+                "role": "control",
+                "n": {
+                  "value": 48,
+                  "unit": "participants",
+                  "scope": "analysed",
+                  "reported_text": "48 receiving placebo",
+                  "evidence": [
+                    {
+                      "sentence_id": 1,
+                      "quote": "48 receiving placebo"
+                    }
+                  ]
+                },
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "placebo"
+                  }
+                ]
+              },
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": "baseline",
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": "90 analysed adults",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "90 were analysed"
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "The placebo group also had a reduction in marker Cevin from baseline; no between-group estimate was reported."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "critical_acceptance_checks": [
+        "Retain two within-group changes without inventing a Dorafen-versus-placebo effect.",
+        "Keep total enrolled120 distinct from analysed90 and group42/48."
+      ]
+    },
+    {
+      "case_id": "synthetic-v2-04",
+      "article": {
+        "pmid": "899900004",
+        "title": "SYNTHETIC DEVELOPMENT FIXTURE 4: invented substances and findings",
+        "abstract": "The investigators used linear regression with adjustment for age, and separately analysed a subgroup of women without adjustment. Higher fictional biomarker Etrin was associated with higher response after age adjustment. In the subgroup of women, higher Etrin was associated with lower response in the unadjusted analysis.",
+        "sections": [
+          {
+            "text": "The investigators used linear regression with adjustment for age, and separately analysed a subgroup of women without adjustment.",
+            "label": "METHODS",
+            "nlm_category": "METHODS"
+          },
+          {
+            "text": "Higher fictional biomarker Etrin was associated with higher response after age adjustment. In the subgroup of women, higher Etrin was associated with lower response in the unadjusted analysis.",
+            "label": "RESULTS",
+            "nlm_category": "RESULTS"
+          }
+        ],
+        "year": 2026,
+        "arms": [
+          "biomarker"
+        ],
+        "publication_types": [
+          "Synthetic fixture"
+        ],
+        "design_eligible": true,
+        "priority": 1,
+        "retracted": false,
+        "synthetic": true
+      },
+      "expected_model_output": {
+        "study": {
+          "design": null,
+          "aims_reported": null,
+          "total_n": null,
+          "evidence": []
+        },
+        "claims": [
+          {
+            "arm": "biomarker",
+            "exposure": "Etrin",
+            "exposure_class": null,
+            "outcome": "response",
+            "kind": "association",
+            "comparison": {
+              "type": "association",
+              "index_group": null,
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": "linear regression",
+              "adjustment": "adjusted",
+              "covariates": [
+                "age"
+              ],
+              "analysis_population": null,
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "The investigators used linear regression with adjustment for age, and separately analysed a subgroup of women without adjustment."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "+",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "Higher fictional biomarker Etrin was associated with higher response after age adjustment."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          },
+          {
+            "arm": "biomarker",
+            "exposure": "Etrin",
+            "exposure_class": null,
+            "outcome": "response",
+            "kind": "association",
+            "comparison": {
+              "type": "association",
+              "index_group": null,
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": {
+              "description": "women",
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "subgroup of women"
+                }
+              ]
+            },
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "women",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "The investigators used linear regression with adjustment for age, and separately analysed a subgroup of women without adjustment."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "In the subgroup of women, higher Etrin was associated with lower response in the unadjusted analysis."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        ]
+      },
+      "expected_atomic_results": [
+        {
+          "result_id": "synthetic-v2-04-r1",
+          "claim": {
+            "arm": "biomarker",
+            "exposure": "Etrin",
+            "exposure_class": null,
+            "outcome": "response",
+            "kind": "association",
+            "comparison": {
+              "type": "association",
+              "index_group": null,
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": "linear regression",
+              "adjustment": "adjusted",
+              "covariates": [
+                "age"
+              ],
+              "analysis_population": null,
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "The investigators used linear regression with adjustment for age, and separately analysed a subgroup of women without adjustment."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "+",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "Higher fictional biomarker Etrin was associated with higher response after age adjustment."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        },
+        {
+          "result_id": "synthetic-v2-04-r2",
+          "claim": {
+            "arm": "biomarker",
+            "exposure": "Etrin",
+            "exposure_class": null,
+            "outcome": "response",
+            "kind": "association",
+            "comparison": {
+              "type": "association",
+              "index_group": null,
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": {
+              "description": "women",
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "subgroup of women"
+                }
+              ]
+            },
+            "analysis": {
+              "method": null,
+              "adjustment": "unadjusted",
+              "covariates": null,
+              "analysis_population": "women",
+              "evidence": [
+                {
+                  "sentence_id": 1,
+                  "quote": "The investigators used linear regression with adjustment for age, and separately analysed a subgroup of women without adjustment."
+                }
+              ]
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "In the subgroup of women, higher Etrin was associated with lower response in the unadjusted analysis."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "critical_acceptance_checks": [
+        "Do not treat age adjustment as an age subgroup.",
+        "Keep the women-only unadjusted finding separate."
+      ]
+    },
+    {
+      "case_id": "synthetic-v2-05",
+      "article": {
+        "pmid": "899900005",
+        "title": "SYNTHETIC DEVELOPMENT FIXTURE 5: invented substances and findings",
+        "abstract": "The fictional diet Fendra was compared with a control diet. For outcome Gemin, the mean difference was -2 units with a 95% confidence interval from -5 to 1, was not statistically significant, and the authors did not confirm a difference. For outcome Helin, the mean difference was -4 units and was significant (p=0.01).",
+        "sections": [
+          {
+            "text": "The fictional diet Fendra was compared with a control diet.",
+            "label": "METHODS",
+            "nlm_category": "METHODS"
+          },
+          {
+            "text": "For outcome Gemin, the mean difference was -2 units with a 95% confidence interval from -5 to 1, was not statistically significant, and the authors did not confirm a difference. For outcome Helin, the mean difference was -4 units and was significant (p=0.01).",
+            "label": "RESULTS",
+            "nlm_category": "RESULTS"
+          }
+        ],
+        "year": 2026,
+        "arms": [
+          "diet"
+        ],
+        "publication_types": [
+          "Synthetic fixture"
+        ],
+        "design_eligible": true,
+        "priority": 1,
+        "retracted": false,
+        "synthetic": true
+      },
+      "expected_model_output": {
+        "study": {
+          "design": null,
+          "aims_reported": null,
+          "total_n": null,
+          "evidence": []
+        },
+        "claims": [
+          {
+            "arm": "diet",
+            "exposure": "Fendra",
+            "exposure_class": null,
+            "outcome": "outcome Gemin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Fendra",
+                "population": null,
+                "role": "intervention",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Fendra"
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "control diet",
+                "population": null,
+                "role": "control",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "control diet"
+                  }
+                ]
+              },
+              "comparator": "control diet",
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "not_confirmed",
+              "estimate_direction": "-",
+              "estimate": {
+                "measure": "mean difference",
+                "value": -2,
+                "unit": "units"
+              },
+              "p_value": null,
+              "confidence_interval": {
+                "level": 95,
+                "lower": -5,
+                "upper": 1,
+                "target": "Gemin difference",
+                "reported_text": "95% confidence interval from -5 to 1"
+              },
+              "authors_significance": "not_significant",
+              "significance_basis": [
+                "confidence_interval",
+                "explicit_wording"
+              ],
+              "significance_wording": "was not statistically significant",
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "For outcome Gemin, the mean difference was -2 units with a 95% confidence interval from -5 to 1, was not statistically significant, and the authors did not confirm a difference."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          },
+          {
+            "arm": "diet",
+            "exposure": "Fendra",
+            "exposure_class": null,
+            "outcome": "outcome Helin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Fendra",
+                "population": null,
+                "role": "intervention",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Fendra"
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "control diet",
+                "population": null,
+                "role": "control",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "control diet"
+                  }
+                ]
+              },
+              "comparator": "control diet",
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": {
+                "measure": "mean difference",
+                "value": -4,
+                "unit": "units"
+              },
+              "p_value": {
+                "operator": "=",
+                "value": 0.01,
+                "target": "Helin difference",
+                "reported_text": "p=0.01"
+              },
+              "confidence_interval": null,
+              "authors_significance": "significant",
+              "significance_basis": [
+                "p_value",
+                "explicit_wording"
+              ],
+              "significance_wording": "was significant",
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "For outcome Helin, the mean difference was -4 units and was significant (p=0.01)."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        ]
+      },
+      "expected_atomic_results": [
+        {
+          "result_id": "synthetic-v2-05-r1",
+          "claim": {
+            "arm": "diet",
+            "exposure": "Fendra",
+            "exposure_class": null,
+            "outcome": "outcome Gemin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Fendra",
+                "population": null,
+                "role": "intervention",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Fendra"
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "control diet",
+                "population": null,
+                "role": "control",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "control diet"
+                  }
+                ]
+              },
+              "comparator": "control diet",
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "not_confirmed",
+              "estimate_direction": "-",
+              "estimate": {
+                "measure": "mean difference",
+                "value": -2,
+                "unit": "units"
+              },
+              "p_value": null,
+              "confidence_interval": {
+                "level": 95,
+                "lower": -5,
+                "upper": 1,
+                "target": "Gemin difference",
+                "reported_text": "95% confidence interval from -5 to 1"
+              },
+              "authors_significance": "not_significant",
+              "significance_basis": [
+                "confidence_interval",
+                "explicit_wording"
+              ],
+              "significance_wording": "was not statistically significant",
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "For outcome Gemin, the mean difference was -2 units with a 95% confidence interval from -5 to 1, was not statistically significant, and the authors did not confirm a difference."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        },
+        {
+          "result_id": "synthetic-v2-05-r2",
+          "claim": {
+            "arm": "diet",
+            "exposure": "Fendra",
+            "exposure_class": null,
+            "outcome": "outcome Helin",
+            "kind": "effect",
+            "comparison": {
+              "type": "between_group",
+              "index_group": {
+                "label": "Fendra",
+                "population": null,
+                "role": "intervention",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "Fendra"
+                  }
+                ]
+              },
+              "reference_group": {
+                "label": "control diet",
+                "population": null,
+                "role": "control",
+                "n": null,
+                "evidence": [
+                  {
+                    "sentence_id": 1,
+                    "quote": "control diet"
+                  }
+                ]
+              },
+              "comparator": "control diet",
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": {
+                "measure": "mean difference",
+                "value": -4,
+                "unit": "units"
+              },
+              "p_value": {
+                "operator": "=",
+                "value": 0.01,
+                "target": "Helin difference",
+                "reported_text": "p=0.01"
+              },
+              "confidence_interval": null,
+              "authors_significance": "significant",
+              "significance_basis": [
+                "p_value",
+                "explicit_wording"
+              ],
+              "significance_wording": "was significant",
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "For outcome Helin, the mean difference was -4 units and was significant (p=0.01)."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "critical_acceptance_checks": [
+        "Preserve negative point estimate separately from nonconfirmation and a crossing-null interval.",
+        "Do not derive a p-value from the interval or transfer p=0.01 between outcomes."
+      ]
+    },
+    {
+      "case_id": "synthetic-v2-06",
+      "article": {
+        "pmid": "899900006",
+        "title": "SYNTHETIC DEVELOPMENT FIXTURE 6: invented substances and findings",
+        "abstract": "The study examined fictional biomarker Ivrin and subgroup differences. Higher Ivrin was associated with lower outcome Jorin; the interaction with age had p=0.03, and significance of the main association was not reported. In relation to Ivrin, outcome Korin increased, but the comparison group and time point were not stated.",
+        "sections": [
+          {
+            "text": "The study examined fictional biomarker Ivrin and subgroup differences.",
+            "label": "METHODS",
+            "nlm_category": "METHODS"
+          },
+          {
+            "text": "Higher Ivrin was associated with lower outcome Jorin; the interaction with age had p=0.03, and significance of the main association was not reported. In relation to Ivrin, outcome Korin increased, but the comparison group and time point were not stated.",
+            "label": "RESULTS",
+            "nlm_category": "RESULTS"
+          }
+        ],
+        "year": 2026,
+        "arms": [
+          "biomarker"
+        ],
+        "publication_types": [
+          "Synthetic fixture"
+        ],
+        "design_eligible": true,
+        "priority": 1,
+        "retracted": false,
+        "synthetic": true
+      },
+      "expected_model_output": {
+        "study": {
+          "design": null,
+          "aims_reported": null,
+          "total_n": null,
+          "evidence": []
+        },
+        "claims": [
+          {
+            "arm": "biomarker",
+            "exposure": "Ivrin",
+            "exposure_class": null,
+            "outcome": "outcome Jorin",
+            "kind": "association",
+            "comparison": {
+              "type": "association",
+              "index_group": null,
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": {
+                "operator": "=",
+                "value": 0.03,
+                "target": "interaction with age",
+                "reported_text": "interaction with age had p=0.03"
+              },
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [
+                "p_value"
+              ],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "Higher Ivrin was associated with lower outcome Jorin; the interaction with age had p=0.03, and significance of the main association was not reported."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          },
+          {
+            "arm": "biomarker",
+            "exposure": "Ivrin",
+            "exposure_class": null,
+            "outcome": "outcome Korin",
+            "kind": "effect",
+            "comparison": {
+              "type": "unclear",
+              "index_group": null,
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "unclear",
+              "estimate_direction": "+",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "In relation to Ivrin, outcome Korin increased, but the comparison group and time point were not stated."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        ]
+      },
+      "expected_atomic_results": [
+        {
+          "result_id": "synthetic-v2-06-r1",
+          "claim": {
+            "arm": "biomarker",
+            "exposure": "Ivrin",
+            "exposure_class": null,
+            "outcome": "outcome Jorin",
+            "kind": "association",
+            "comparison": {
+              "type": "association",
+              "index_group": null,
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "directional",
+              "estimate_direction": "-",
+              "estimate": null,
+              "p_value": {
+                "operator": "=",
+                "value": 0.03,
+                "target": "interaction with age",
+                "reported_text": "interaction with age had p=0.03"
+              },
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [
+                "p_value"
+              ],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 2,
+                  "quote": "Higher Ivrin was associated with lower outcome Jorin; the interaction with age had p=0.03, and significance of the main association was not reported."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        },
+        {
+          "result_id": "synthetic-v2-06-r2",
+          "claim": {
+            "arm": "biomarker",
+            "exposure": "Ivrin",
+            "exposure_class": null,
+            "outcome": "outcome Korin",
+            "kind": "effect",
+            "comparison": {
+              "type": "unclear",
+              "index_group": null,
+              "reference_group": null,
+              "comparator": null,
+              "reference_time": null,
+              "outcome_time": null,
+              "orientation_text": null
+            },
+            "subgroup": null,
+            "analysis": {
+              "method": null,
+              "adjustment": "not_reported",
+              "covariates": null,
+              "analysis_population": null,
+              "evidence": []
+            },
+            "result": {
+              "assertion": "unclear",
+              "estimate_direction": "+",
+              "estimate": null,
+              "p_value": null,
+              "confidence_interval": null,
+              "authors_significance": "not_reported",
+              "significance_basis": [],
+              "significance_wording": null,
+              "authors_trend_wording": null,
+              "hedged": false,
+              "evidence": [
+                {
+                  "sentence_id": 3,
+                  "quote": "In relation to Ivrin, outcome Korin increased, but the comparison group and time point were not stated."
+                }
+              ]
+            },
+            "context": {
+              "region": null,
+              "duration": null,
+              "dose": null,
+              "sample": null,
+              "evidence": []
+            }
+          }
+        }
+      ],
+      "critical_acceptance_checks": [
+        "Keep interaction p-value target separate from the main association.",
+        "Unclear comparison stays unclear; do not create a comparator, baseline or zero result."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "pipeline_version": "2.0",
+  "instrument_version": "2.0",
+  "human_package_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "site_pair_package_sha256": "c8915e23f840e657a21f4e9f393a57856951ad93c389650b951a5f778d746afb",
+  "site_configuration_sha256": "23b06daa3bc6bc7af08e4c94fc53f44a8c4ee600ad02d2c4390d9bb9086440cc",
+  "site_instrument_sha256": "dfe916b7cc795efedfbc60ea0f2e8be44ff91c41f74f56777bb9edde840b1eb3",
+  "answers_sha256": "6511d69d4822cfe67eca5f5d23a52fc8017757f42372e4d7da491e10045eadb9",
+  "participant_corrections": 2,
+  "participant_corrections_sha256": "dc3752cc56aefda35b5e6720cca45470146fcd115976ee053dce197dca91bebb",
+  "human_collection_lock_sha256": "a5b83109bdb0ccb6bfe7a398fb8407d37501f506d49a022a888cfd1c54df089a",
+  "reference_revision_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "snapshot_at": "2026-11-16T11:00:00.000000+00:00",
+  "exported_at": "2026-11-16T11:00:00.000000+00:00",
+  "collection_closed": false,
+  "eligibility": {
+    "242aacea8fef4aaf886100914fd01328": {
+      "eligible": true,
+      "confirmed_at": "2026-11-14T13:57:00.000000+00:00",
+      "basis": "adult_unipi_approved_programme"
+    },
+    "29e0442d4a464dd7953791742218a38c": {
+      "eligible": true,
+      "confirmed_at": "2026-11-14T13:58:00.000000+00:00",
+      "basis": "adult_unipi_approved_programme"
+    },
+    "42c27ae3b5da4075a8d2ad7ed2937540": {
+      "eligible": true,
+      "confirmed_at": "2026-11-14T13:58:00.000000+00:00",
+      "basis": "adult_unipi_approved_programme"
+    },
+    "4a0df397e6bb4ba09f5b5bc76da3adcf": {
+      "eligible": true,
+      "confirmed_at": "2026-11-14T13:59:00.000000+00:00",
+      "basis": "adult_unipi_approved_programme"
+    },
+    "4fff8c92e9814a878dcc0fbb8cd05664": {
+      "eligible": true,
+      "confirmed_at": "2026-11-14T13:56:00.000000+00:00",
+      "basis": "adult_unipi_approved_programme"
+    },
+    "ca932e2ddc2148c1a86116456f184da5": {
+      "eligible": false,
+      "confirmed_at": "2026-11-14T14:00:00.000000+00:00",
+      "basis": "operator_review"
+    },
+    "d180cc8ea7db44fe845e1b2e266fd603": {
+      "eligible": true,
+      "confirmed_at": "2026-11-14T13:55:00.000000+00:00",
+      "basis": "adult_unipi_approved_programme"
+    },
+    "d3086b983dbf455cb0c3c710296230e7": {
+      "eligible": true,
+      "confirmed_at": "2026-11-14T13:55:00.000000+00:00",
+      "basis": "adult_unipi_approved_programme"
+    }
+  },
+  "demographics": {
+    "population": "unique_sessions_with_accepted_eligible_real_read",
+    "sessions": 6,
+    "programme": {
+      "biotechnology": 1,
+      "medicine_and_surgery": 2,
+      "pharmacy": 2,
+      "biomedical_engineering": 1
+    },
+    "year": {
+      "3": 6
+    },
+    "programme_missing": 0,
+    "year_missing": 0
+  }
+}

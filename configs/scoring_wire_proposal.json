@@ -1,0 +1,338 @@
+{
+  "status": "inactive_proposal",
+  "version": "v2-scoring-wire-compact-1",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "c": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "i": {
+              "type": "string"
+            },
+            "c": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "i": {
+                    "type": "string"
+                  },
+                  "j": {
+                    "enum": [
+                      "supported",
+                      "unsupported",
+                      "unclear"
+                    ]
+                  },
+                  "e": {
+                    "type": "array",
+                    "items": {
+                      "enum": [
+                        "invented_comparison",
+                        "reversed_direction"
+                      ]
+                    }
+                  },
+                  "r": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "g": {
+                    "type": "object",
+                    "properties": {
+                      "g0": {
+                        "type": "object",
+                        "properties": {
+                          "j": {
+                            "enum": [
+                              "supported",
+                              "unsupported",
+                              "unclear",
+                              "not_represented"
+                            ]
+                          },
+                          "d": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "i": {
+                                  "type": "string"
+                                },
+                                "j": {
+                                  "enum": [
+                                    "supported",
+                                    "unsupported",
+                                    "unclear"
+                                  ]
+                                },
+                                "m": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "required": [
+                                "i",
+                                "j",
+                                "m"
+                              ],
+                              "additionalProperties": false
+                            }
+                          }
+                        },
+                        "required": [
+                          "j",
+                          "d"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "g1": {
+                        "type": "object",
+                        "properties": {
+                          "j": {
+                            "enum": [
+                              "supported",
+                              "unsupported",
+                              "unclear",
+                              "not_represented"
+                            ]
+                          },
+                          "d": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "i": {
+                                  "type": "string"
+                                },
+                                "j": {
+                                  "enum": [
+                                    "supported",
+                                    "unsupported",
+                                    "unclear"
+                                  ]
+                                },
+                                "m": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "required": [
+                                "i",
+                                "j",
+                                "m"
+                              ],
+                              "additionalProperties": false
+                            }
+                          }
+                        },
+                        "required": [
+                          "j",
+                          "d"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "g2": {
+                        "type": "object",
+                        "properties": {
+                          "j": {
+                            "enum": [
+                              "supported",
+                              "unsupported",
+                              "unclear",
+                              "not_represented"
+                            ]
+                          },
+                          "d": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "i": {
+                                  "type": "string"
+                                },
+                                "j": {
+                                  "enum": [
+                                    "supported",
+                                    "unsupported",
+                                    "unclear"
+                                  ]
+                                },
+                                "m": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "required": [
+                                "i",
+                                "j",
+                                "m"
+                              ],
+                              "additionalProperties": false
+                            }
+                          }
+                        },
+                        "required": [
+                          "j",
+                          "d"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "g3": {
+                        "type": "object",
+                        "properties": {
+                          "j": {
+                            "enum": [
+                              "supported",
+                              "unsupported",
+                              "unclear",
+                              "not_represented"
+                            ]
+                          },
+                          "d": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "i": {
+                                  "type": "string"
+                                },
+                                "j": {
+                                  "enum": [
+                                    "supported",
+                                    "unsupported",
+                                    "unclear"
+                                  ]
+                                },
+                                "m": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "required": [
+                                "i",
+                                "j",
+                                "m"
+                              ],
+                              "additionalProperties": false
+                            }
+                          }
+                        },
+                        "required": [
+                          "j",
+                          "d"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "g4": {
+                        "type": "object",
+                        "properties": {
+                          "j": {
+                            "enum": [
+                              "supported",
+                              "unsupported",
+                              "unclear",
+                              "not_represented"
+                            ]
+                          },
+                          "d": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "i": {
+                                  "type": "string"
+                                },
+                                "j": {
+                                  "enum": [
+                                    "supported",
+                                    "unsupported",
+                                    "unclear"
+                                  ]
+                                },
+                                "m": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "required": [
+                                "i",
+                                "j",
+                                "m"
+                              ],
+                              "additionalProperties": false
+                            }
+                          }
+                        },
+                        "required": [
+                          "j",
+                          "d"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "g0",
+                      "g1",
+                      "g2",
+                      "g3",
+                      "g4"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "o": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "n": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "i",
+                  "j",
+                  "e",
+                  "r",
+                  "g",
+                  "o",
+                  "n"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "i",
+            "c"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "c"
+    ],
+    "additionalProperties": false
+  },
+  "format_instructions": "The response uses a lossless compact JSON encoding. This changes output notation only, never the annotation rules.\nThe input preserves every source passage and candidate assertion; candidate assertions can be wrong. Each candidate has a short alias; each claim has a short claim_id. Every emitted detail has a short detail_id plus its immutable canonical_path and full text. The source-only inventory has short result_id and detail_id values. Use those short IDs, not paths or copied text, in the response.\nReturn c as the array of candidates. For each candidate, i is its alias and c is its claim array. For each claim: i is claim_id; j is the unchanged supported/unsupported/unclear core judgment; e lists the unchanged critical-error names; r lists matching inventory result IDs; g contains all five field groups; o is duplicate claim_id within this same candidate or null; n is the required note-text field; use an empty string when no note is needed.\nThe group keys are g0=comparison, g1=significance, g2=population, g3=sample_size, g4=analysis. Each group has j for its unchanged group judgment and d for every emitted detail. Each detail has i for detail_id, j for its unchanged support judgment, and m for matching inventory detail IDs. Keep supported/unsupported/unclear/not_represented words exactly; no abbreviated or reinterpreted judgments.\nReturn every candidate, claim and emitted detail row exactly once. Do not invent IDs, omit difficult rows, repeat declaration rows, or match another field group's expected details. Use an empty array when no inventory result or detail matches. Reference lists and critical flags are preserved exactly, including any repetition; repetition does not add matching credit. Only the code copies known paths/text and restores original identifiers; you supply all judgments, matches, critical flags, duplicate references and notes. Do not restate immutable paths or field values in the output.",
+  "canonical_schema_unchanged": true,
+  "per_claim_judgments_unchanged": true,
+  "raw_outputs_and_maps_required": true
+}

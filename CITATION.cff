@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Context-aware inconsistency mining in metabolic literature"
+type: software
+authors:
+  - family-names: Napolitano
+    given-names: Antonio
+    affiliation: "University of Pisa"
+date-released: 2026-11-16
+year: 2026
+license: MIT
+keywords:
+  - biomedical literature
+  - contradiction detection
+  - large language models
+  - type 2 diabetes
+  - metabolic syndrome

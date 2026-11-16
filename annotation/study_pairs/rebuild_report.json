@@ -1,0 +1,602 @@
+[
+ {
+  "item_id": "v2-pair-001",
+  "old_key": "biomarker|BIOMARKER:irisin|OUTCOME:glucose|comparison:association",
+  "status": "kept",
+  "new_key": "biomarker|BIOMARKER:irisin|OUTCOME:glucose|comparison:association",
+  "same_key": true,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-002",
+  "old_key": "biomarker|BIOMARKER:irisin|OUTCOME:hba1c|comparison:association",
+  "status": "kept",
+  "new_key": "biomarker|BIOMARKER:irisin|OUTCOME:hba1c|comparison:association",
+  "same_key": true,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-007",
+  "old_key": "biomarker|BIOMARKER:irisin|OUTCOME:triglycerides|comparison:association",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-008",
+  "old_key": "biomarker|BIOMARKER:adiponectin|TEXT:ldl|comparison:association",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-011",
+  "old_key": "biomarker|BIOMARKER:irisin|TEXT:fasting plasma glucose fpg|comparison:association",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-013",
+  "old_key": "biomarker|BIOMARKER:irisin|FAMILY:adiposity|comparison:association",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-017",
+  "old_key": "biomarker|BIOMARKER:irisin|TEXT:fasting plasma glucose fpg|comparison:association",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-019",
+  "old_key": "biomarker|BIOMARKER:adiponectin|OUTCOME:hba1c|comparison:association",
+  "status": "kept",
+  "new_key": "biomarker|BIOMARKER:adiponectin|OUTCOME:hba1c|comparison:association",
+  "same_key": true,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-021",
+  "old_key": "biomarker|BIOMARKER:irisin|TEXT:fasting plasma glucose fpg|comparison:association",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-022",
+  "old_key": "biomarker|BIOMARKER:adiponectin|TEXT:ldl|comparison:association",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-030",
+  "old_key": "biomarker|BIOMARKER:resistin|FAMILY:adiposity|comparison:association",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-032",
+  "old_key": "biomarker|TEXT:roux en y gastric bypass rygb|FAMILY:adiposity|comparison:within_group_change",
+  "status": "kept",
+  "new_key": "biomarker|TEXT:roux en y gastric bypass rygb|FAMILY:adiposity|comparison:within_group_change",
+  "same_key": true,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-033",
+  "old_key": "biomarker|BIOMARKER:adiponectin|DISEASE:metabolic_syndrome|comparison:association",
+  "status": "kept",
+  "new_key": "biomarker|BIOMARKER:adiponectin|DISEASE:metabolic_syndrome|comparison:association",
+  "same_key": true,
+  "evidence_jaccard_sum": 1.5,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-039",
+  "old_key": "drug|DRUGCLASS:glp1_receptor_agonists|OUTCOME:bmi|comparison:within_group_change",
+  "status": "dropped",
+  "why": "no new claim for the same finding"
+ },
+ {
+  "item_id": "v2-pair-040",
+  "old_key": "drug|DRUGCLASS:sulfonylureas|OUTCOME:all_cause_mortality|comparison:between_group",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-042",
+  "old_key": "drug|DRUG:dulaglutide|OUTCOME:hypoglycemia|comparison:between_group",
+  "status": "dropped",
+  "why": "no new claim for the same finding"
+ },
+ {
+  "item_id": "v2-pair-043",
+  "old_key": "drug|DRUG:liraglutide|TEXT:lean body mass|comparison:within_group_change",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   false,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-050",
+  "old_key": "drug|DRUGCLASS:sglt2_inhibitors|RETRIEVED_TEXT:3976eea1d256b3bd|comparison:between_group",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-051",
+  "old_key": "drug|DRUG:metformin|OUTCOME:ldl_cholesterol|comparison:within_group_change",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-052",
+  "old_key": "drug|DRUGCLASS:glp1_receptor_agonists|RETRIEVED_TEXT:0680164275008b09|comparison:between_group",
+  "status": "kept",
+  "new_key": "drug|DRUGCLASS:glp1_receptor_agonists|RETRIEVED_TEXT:0680164275008b09|comparison:between_group",
+  "same_key": true,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-056",
+  "old_key": "drug|DRUGCLASS:sulfonylureas|TEXT:myocardial infarction|comparison:between_group",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 1.5,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-059",
+  "old_key": "drug|DRUG:metformin|TEXT:vitamin b12 deficiency|comparison:association",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-061",
+  "old_key": "drug|DRUG:metformin|RETRIEVED_TEXT:f6a15694cb3beca9|comparison:between_group",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 1.0,
+  "same_comparison_type": [
+   false,
+   true
+  ],
+  "word_fallback": [
+   true,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-062",
+  "old_key": "drug|DRUGCLASS:sglt2_inhibitors|OUTCOME:triglycerides|comparison:within_group_change",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-063",
+  "old_key": "drug|DRUG:dapagliflozin|OUTCOME:systolic_blood_pressure|comparison:between_group",
+  "status": "kept",
+  "new_key": "drug|DRUG:dapagliflozin|OUTCOME:systolic_blood_pressure|comparison:between_group",
+  "same_key": true,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-064",
+  "old_key": "drug|DRUG:sitagliptin|RETRIEVED_TEXT:c4a2fff5adbfe434|comparison:between_group",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 1.5,
+  "same_comparison_type": [
+   true,
+   false
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-066",
+  "old_key": "drug|DRUG:semaglutide|TEXT:systolic blood pressure sbp|comparison:between_group",
+  "status": "kept",
+  "new_key": "drug|DRUG:semaglutide|TEXT:change from baseline in systolic blood pressure sbp|comparison:between_group",
+  "same_key": false,
+  "evidence_jaccard_sum": 1.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   true
+  ]
+ },
+ {
+  "item_id": "v2-pair-069",
+  "old_key": "diet|TEXT:diet|OUTCOME:ldl_cholesterol|comparison:within_group_change",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-071",
+  "old_key": "diet|TEXT:diet|OUTCOME:triglycerides|comparison:within_group_change",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   false,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-074",
+  "old_key": "diet|TEXT:milk intake|TEXT:bmi z score|comparison:association",
+  "status": "kept",
+  "new_key": "diet|TEXT:milk intake|TEXT:bmi z score|comparison:association",
+  "same_key": true,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-079",
+  "old_key": "diet|DIET:ketogenic|OUTCOME:body_weight|comparison:between_group",
+  "status": "kept",
+  "new_key": "diet|DIET:ketogenic|FAMILY:adiposity|comparison:between_group",
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-083",
+  "old_key": "diet|DIET:low_carbohydrate|FAMILY:adiposity|comparison:between_group",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 1.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   true
+  ]
+ },
+ {
+  "item_id": "v2-pair-084",
+  "old_key": "diet|TEXT:total dairy|TEXT:incident type 2 diabetes t2d|comparison:association",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-085",
+  "old_key": "diet|TEXT:diet|OUTCOME:triglycerides|comparison:within_group_change",
+  "status": "dropped",
+  "why": "no new claim for the same finding"
+ },
+ {
+  "item_id": "v2-pair-087",
+  "old_key": "diet|DIET:time_restricted_eating|OUTCOME:body_weight|comparison:between_group",
+  "status": "kept",
+  "new_key": "diet|DIET:time_restricted_eating|OUTCOME:body_weight|comparison:between_group",
+  "same_key": true,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-090",
+  "old_key": "diet|TEXT:low carbohydrate diet lcd|FAMILY:adiposity|comparison:between_group",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-091",
+  "old_key": "diet|TEXT:low carbohydrate diet lcd|OUTCOME:ldl_cholesterol|comparison:between_group",
+  "status": "kept",
+  "new_key": "diet|TEXT:low carbohydrate diet lcd|OUTCOME:ldl_cholesterol|comparison:between_group",
+  "same_key": true,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-098",
+  "old_key": "diet|DIET:time_restricted_eating|OUTCOME:body_weight|comparison:between_group",
+  "status": "kept",
+  "new_key": "diet|DIET:time_restricted_eating|OUTCOME:body_weight|comparison:between_group",
+  "same_key": true,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ },
+ {
+  "item_id": "v2-pair-099",
+  "old_key": "diet|DIET:time_restricted_eating|OUTCOME:body_fat|comparison:between_group",
+  "status": "dropped",
+  "why": "no new claim for the same finding"
+ },
+ {
+  "item_id": "v2-pair-100",
+  "old_key": "diet|DIET:low_carbohydrate|FAMILY:adiposity|comparison:between_group",
+  "status": "kept",
+  "new_key": null,
+  "same_key": false,
+  "evidence_jaccard_sum": 2.0,
+  "same_comparison_type": [
+   true,
+   true
+  ],
+  "word_fallback": [
+   false,
+   false
+  ]
+ }
+]

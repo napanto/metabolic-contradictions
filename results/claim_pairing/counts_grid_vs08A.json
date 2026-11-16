@@ -1,0 +1,239 @@
+{
+ "addendum": "08E DRAFT (unregistered): counts only, nothing selected",
+ "claims_path": "./data/derived/production/full/claims_normalized.jsonl",
+ "claims_sha256": "c84ecd680bcaf08494a7ae2850449fd016e663ebfa544c2fd602783fe2c09f38",
+ "frames": [
+  {
+   "path": "./data/derived/production/full/pairs_candidates.jsonl",
+   "sha256": "965ddfbdefdbbed9ebef48d5c80299df5e41a503c521f8267b1ba0b965405345"
+  }
+ ],
+ "existing_frame_pairs": 11092,
+ "eligible_claims": 79485,
+ "unique_exposure_texts": 21833,
+ "unique_outcome_texts": 35539,
+ "encoder": "ncbi/MedCPT-Query-Encoder (configs/medcpt.json revision), CLS, L2-normalised, max_length 64",
+ "encode_seconds": {
+  "exposure": 288.7,
+  "outcome": 384.3
+ },
+ "grid": {
+  "partitions": 9,
+  "units": 70656,
+  "unit_pairs_at_t_min": 400260,
+  "seconds": 22.5,
+  "thresholds": {
+   "0.80": {
+    "claim_pairs_by_pattern": {
+     "concordant": 364203,
+     "effect_null": 132174,
+     "opposite": 75237
+    },
+    "potential_contradictions": 207411,
+    "enumerated_split": true,
+    "key_compatible": {
+     "effect_null": 7049,
+     "opposite": 1774
+    },
+    "in_existing_frame_not_key": {
+     "opposite": 402,
+     "effect_null": 825
+    },
+    "new_not_in_existing_frames": {
+     "effect_null": 124300,
+     "opposite": 73061
+    }
+   },
+   "0.85": {
+    "claim_pairs_by_pattern": {
+     "concordant": 150361,
+     "effect_null": 47607,
+     "opposite": 23258
+    },
+    "potential_contradictions": 70865,
+    "enumerated_split": true,
+    "key_compatible": {
+     "effect_null": 5416,
+     "opposite": 1535
+    },
+    "in_existing_frame_not_key": {
+     "opposite": 300,
+     "effect_null": 661
+    },
+    "new_not_in_existing_frames": {
+     "effect_null": 41530,
+     "opposite": 21423
+    }
+   },
+   "0.88": {
+    "claim_pairs_by_pattern": {
+     "concordant": 88179,
+     "effect_null": 25914,
+     "opposite": 11668
+    },
+    "potential_contradictions": 37582,
+    "enumerated_split": true,
+    "key_compatible": {
+     "effect_null": 4685,
+     "opposite": 1443
+    },
+    "in_existing_frame_not_key": {
+     "opposite": 221,
+     "effect_null": 504
+    },
+    "new_not_in_existing_frames": {
+     "effect_null": 20725,
+     "opposite": 10004
+    }
+   },
+   "0.90": {
+    "claim_pairs_by_pattern": {
+     "concordant": 63414,
+     "effect_null": 17914,
+     "opposite": 7680
+    },
+    "potential_contradictions": 25594,
+    "enumerated_split": true,
+    "key_compatible": {
+     "effect_null": 4156,
+     "opposite": 1354
+    },
+    "in_existing_frame_not_key": {
+     "opposite": 186,
+     "effect_null": 430
+    },
+    "new_not_in_existing_frames": {
+     "effect_null": 13328,
+     "opposite": 6140
+    }
+   },
+   "0.92": {
+    "claim_pairs_by_pattern": {
+     "concordant": 40314,
+     "effect_null": 11352,
+     "opposite": 4511
+    },
+    "potential_contradictions": 15863,
+    "enumerated_split": true,
+    "key_compatible": {
+     "effect_null": 3542,
+     "opposite": 1100
+    },
+    "in_existing_frame_not_key": {
+     "opposite": 138,
+     "effect_null": 301
+    },
+    "new_not_in_existing_frames": {
+     "effect_null": 7509,
+     "opposite": 3273
+    }
+   },
+   "0.94": {
+    "claim_pairs_by_pattern": {
+     "concordant": 23714,
+     "effect_null": 6672,
+     "opposite": 2477
+    },
+    "potential_contradictions": 9149,
+    "enumerated_split": true,
+    "key_compatible": {
+     "effect_null": 2608,
+     "opposite": 930
+    },
+    "in_existing_frame_not_key": {
+     "opposite": 84,
+     "effect_null": 200
+    },
+    "new_not_in_existing_frames": {
+     "effect_null": 3864,
+     "opposite": 1463
+    }
+   },
+   "0.96": {
+    "claim_pairs_by_pattern": {
+     "concordant": 12359,
+     "effect_null": 3547,
+     "opposite": 1377
+    },
+    "potential_contradictions": 4924,
+    "enumerated_split": true,
+    "key_compatible": {
+     "effect_null": 1852,
+     "opposite": 725
+    },
+    "in_existing_frame_not_key": {
+     "opposite": 49,
+     "effect_null": 86
+    },
+    "new_not_in_existing_frames": {
+     "opposite": 603,
+     "effect_null": 1609
+    }
+   },
+   "0.98": {
+    "claim_pairs_by_pattern": {
+     "concordant": 6801,
+     "effect_null": 1883,
+     "opposite": 682
+    },
+    "potential_contradictions": 2565,
+    "enumerated_split": true,
+    "key_compatible": {
+     "opposite": 537,
+     "effect_null": 1387
+    },
+    "in_existing_frame_not_key": {
+     "effect_null": 31,
+     "opposite": 27
+    },
+    "new_not_in_existing_frames": {
+     "opposite": 118,
+     "effect_null": 465
+    }
+   }
+  }
+ },
+ "overlap_with_registered_frames": {
+  "0.80": {
+   "frame_contradiction_pairs_eligible": 6373,
+   "found_by_semantic_route": 4807,
+   "not_comparable_by_semantic_constraints": 340
+  },
+  "0.85": {
+   "frame_contradiction_pairs_eligible": 6373,
+   "found_by_semantic_route": 4201,
+   "not_comparable_by_semantic_constraints": 340
+  },
+  "0.88": {
+   "frame_contradiction_pairs_eligible": 6373,
+   "found_by_semantic_route": 3667,
+   "not_comparable_by_semantic_constraints": 340
+  },
+  "0.90": {
+   "frame_contradiction_pairs_eligible": 6373,
+   "found_by_semantic_route": 3352,
+   "not_comparable_by_semantic_constraints": 340
+  },
+  "0.92": {
+   "frame_contradiction_pairs_eligible": 6373,
+   "found_by_semantic_route": 2828,
+   "not_comparable_by_semantic_constraints": 340
+  },
+  "0.94": {
+   "frame_contradiction_pairs_eligible": 6373,
+   "found_by_semantic_route": 2264,
+   "not_comparable_by_semantic_constraints": 340
+  },
+  "0.96": {
+   "frame_contradiction_pairs_eligible": 6373,
+   "found_by_semantic_route": 1690,
+   "not_comparable_by_semantic_constraints": 340
+  },
+  "0.98": {
+   "frame_contradiction_pairs_eligible": 6373,
+   "found_by_semantic_route": 1230,
+   "not_comparable_by_semantic_constraints": 340
+  }
+ },
+ "total_seconds": 705.8
+}

@@ -1,0 +1,267 @@
+{
+  "type": "object",
+  "properties": {
+    "instrument_version": {
+      "const": "2.0",
+      "type": "string"
+    },
+    "pipeline_version": {
+      "const": "2.0",
+      "type": "string"
+    },
+    "item_id": {
+      "type": "string"
+    },
+    "task": {
+      "const": "extraction_assessment",
+      "type": "string"
+    },
+    "claim_assessments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "field_correctness": {
+            "type": "object",
+            "properties": {
+              "exposure_or_condition": {
+                "type": "string",
+                "enum": [
+                  "matches_abstract",
+                  "does_not_match_abstract",
+                  "cannot_judge_from_abstract"
+                ]
+              },
+              "measured_outcome": {
+                "type": "string",
+                "enum": [
+                  "matches_abstract",
+                  "does_not_match_abstract",
+                  "cannot_judge_from_abstract"
+                ]
+              },
+              "direction": {
+                "type": "string",
+                "enum": [
+                  "matches_abstract",
+                  "does_not_match_abstract",
+                  "cannot_judge_from_abstract"
+                ]
+              },
+              "finding_type": {
+                "type": "string",
+                "enum": [
+                  "matches_abstract",
+                  "does_not_match_abstract",
+                  "cannot_judge_from_abstract"
+                ]
+              },
+              "comparison_reference": {
+                "type": "string",
+                "enum": [
+                  "matches_abstract",
+                  "does_not_match_abstract",
+                  "cannot_judge_from_abstract"
+                ]
+              },
+              "population_and_study_context": {
+                "type": "string",
+                "enum": [
+                  "matches_abstract",
+                  "does_not_match_abstract",
+                  "cannot_judge_from_abstract"
+                ]
+              }
+            },
+            "required": [
+              "exposure_or_condition",
+              "measured_outcome",
+              "direction",
+              "finding_type",
+              "comparison_reference",
+              "population_and_study_context"
+            ],
+            "additionalProperties": false
+          },
+          "source_support": {
+            "type": "string",
+            "enum": [
+              "supported_by_abstract",
+              "not_supported_by_abstract",
+              "cannot_judge_from_abstract"
+            ]
+          },
+          "structured_field_correctness": {
+            "type": "object",
+            "properties": {
+              "comparison_structure": {
+                "type": "string",
+                "enum": [
+                  "matches_abstract",
+                  "does_not_match_abstract",
+                  "cannot_judge_from_abstract"
+                ]
+              },
+              "population_scope": {
+                "type": "string",
+                "enum": [
+                  "matches_abstract",
+                  "does_not_match_abstract",
+                  "cannot_judge_from_abstract"
+                ]
+              },
+              "sample_size_and_scope": {
+                "type": "string",
+                "enum": [
+                  "matches_abstract",
+                  "does_not_match_abstract",
+                  "cannot_judge_from_abstract"
+                ]
+              },
+              "study_design_and_analysis": {
+                "type": "string",
+                "enum": [
+                  "matches_abstract",
+                  "does_not_match_abstract",
+                  "cannot_judge_from_abstract"
+                ]
+              },
+              "statistical_evidence": {
+                "type": "string",
+                "enum": [
+                  "matches_abstract",
+                  "does_not_match_abstract",
+                  "cannot_judge_from_abstract"
+                ]
+              }
+            },
+            "required": [
+              "comparison_structure",
+              "population_scope",
+              "sample_size_and_scope",
+              "study_design_and_analysis",
+              "statistical_evidence"
+            ],
+            "additionalProperties": false
+          },
+          "structured_field_problems": {
+            "type": "object",
+            "properties": {
+              "comparison_structure": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "wrong_value",
+                    "not_supported_by_abstract",
+                    "missing_from_extraction",
+                    "wrong_group_time",
+                    "wrong_direction",
+                    "wrong_exposure_outcome",
+                    "planned_as_observed"
+                  ]
+                },
+                "uniqueItems": true
+              },
+              "population_scope": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "wrong_value",
+                    "not_supported_by_abstract",
+                    "missing_from_extraction",
+                    "wrong_group_time",
+                    "wrong_direction",
+                    "wrong_exposure_outcome",
+                    "planned_as_observed"
+                  ]
+                },
+                "uniqueItems": true
+              },
+              "sample_size_and_scope": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "wrong_value",
+                    "not_supported_by_abstract",
+                    "missing_from_extraction",
+                    "wrong_group_time",
+                    "wrong_direction",
+                    "wrong_exposure_outcome",
+                    "planned_as_observed"
+                  ]
+                },
+                "uniqueItems": true
+              },
+              "study_design_and_analysis": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "wrong_value",
+                    "not_supported_by_abstract",
+                    "missing_from_extraction",
+                    "wrong_group_time",
+                    "wrong_direction",
+                    "wrong_exposure_outcome",
+                    "planned_as_observed"
+                  ]
+                },
+                "uniqueItems": true
+              },
+              "statistical_evidence": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "wrong_value",
+                    "not_supported_by_abstract",
+                    "missing_from_extraction",
+                    "wrong_group_time",
+                    "wrong_direction",
+                    "wrong_exposure_outcome",
+                    "planned_as_observed"
+                  ]
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "comparison_structure",
+              "population_scope",
+              "sample_size_and_scope",
+              "study_design_and_analysis",
+              "statistical_evidence"
+            ],
+            "additionalProperties": false
+          },
+          "source_note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "claim_id",
+          "field_correctness",
+          "source_support",
+          "structured_field_correctness",
+          "structured_field_problems",
+          "source_note"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "instrument_version",
+    "pipeline_version",
+    "item_id",
+    "task",
+    "claim_assessments"
+  ],
+  "additionalProperties": false
+}

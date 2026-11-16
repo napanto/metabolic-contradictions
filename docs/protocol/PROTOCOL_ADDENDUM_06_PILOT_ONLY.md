@@ -1,0 +1,17 @@
+# Amendment 06 operational addendum: explicit five-item Astra pilot only
+
+Prospective authority: INBOX_FROM_CLAUDE.md, 2026-11-14 10:18 entry and 10:20 addendum. Antonio's exact words at 2026-11-14T10:17:00+01:00 were:
+
+> Ti do l'autorizzazione di controllare solo queste 5 coppie
+
+The recorded context explicitly identifies the registered pilot as three C pairs and two C extraction abstracts. This addendum authorizes only those five seeded pilot items after C and its human subset are frozen and signed. It does not authorize the whole145-item run. Standard bounded identical retries within those five items remain allowed. Fable remains disabled.
+
+The base evaluation configuration remains byte-identical, SHA256 afff5c500863af50d1a40fa18af7c9a4d81b297f4bea5eae7adf8f78de8245ce. The approved 5208dfa instrument, wording, schemas, prompt construction, source presentation, seed20261123 pilot ordering, effortmax, four-call isolation limit and feasibility formula do not change. GLM requests, production identity and the operational/SQLite companions do not change. The existing reference wording amendment and independent review remain incorporated through exact additional-file hashes in the reference companion.
+
+Execution authorization must now state scope explicitly: pilot_only or full_run. Missing or unknown scope fails closed. Under pilot_only, the full CLI phase is rejected even when feasibility passes; direct per-item calls and every retry must name one of the exact five IDs from the signed sampled manifest and its seeded order. The low-level Astra transport also checks that the complete request equals the frozen item's ordinary reference request. The signed release binds the base configuration and current reference revision, exact authority quote and time. Changing the release scope does not alter scientific request/cache identity; the release record remains separate per-attempt provenance.
+
+After the pilot, all further Astra calls remain held until a separate explicit full-run go from Antonio and a newly signed full_run release. A later full-run release may reuse validated pilot records without rerunning those five items. Passing feasibility is evidence about timing/validity only, never authorization.
+
+The local pilot report gives validity out of5, per-item elapsed time, task medians, known cost or explicitly unknown cost, the registered remaining-time projection/verdict and a full145 time projection using the same task medians, margin1.5 and concurrency4. It includes the number of pilot items in the human46 subset. For overlapping items it reveals validity/time only. For items outside that subset it may expose a pair category or extraction coarse counts. Extraction's seven checks mean the six common fields plus evidence support; count each check type once if at least one v2 claim is incorrect/unsupported, and count uncertainty separately. Diagnostic problem types are enum-only occurrence counts. Do not expose source/claim text, values, notes, item/claim IDs, D0 outcomes or human answers. Local processing is not permission to send private oracle records to an AI.
+
+This is a prospective dispatch/reporting change before any C oracle output. Activating the reviewed replacement changes reference execution provenance, not the instrument. Complete activation/signature validation before freezing C so its manifest, private D0 companion, human package and future release all bind the final reference revision. The previous source and companion remain archived; no old result is repaired or relabeled.

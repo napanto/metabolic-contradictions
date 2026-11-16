@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "status": "registered",
+  "kind": "reference",
+  "base_config_path": "configs/evaluation_system.json",
+  "base_config_sha256": "d8f7d94abc966626d5153bcb6307678ee34541c942787aeb904380a939c1d80a",
+  "production_binding_changed": false,
+  "glm_prompts_changed": false,
+  "compatibility_module_sha256": "18149aa88ece29df52b844483425a51a57c7ba768ade6b9b18bdee7f7f7d8c6f",
+  "protocol_path": "PROTOCOL_ADDENDUM_06_SITE_WORDING_B5E77F9.md",
+  "protocol_sha256": "7843f746f1943ea87161c922828d451def148c41284a82dd84db06dac3d40c05",
+  "review_path": "results/site_wording_b5e77f9_review.json",
+  "review_sha256": "5235da98971fb1c1fa182835d2ba5ed2fcc83baa39c93ae6874af099daecf764",
+  "site_commit": "b5e77f9",
+  "site_export_sha256": "78a4775b7abcfe225dfb91f73829fcfaf98adbe0afac8e9bc376e4c9a61701a1",
+  "artifact_paths": {
+    "instrument": "configs/instrument_study_start.json",
+    "oracle_prompt": "configs/oracle_prompt_study_start.json",
+    "site_instrument": "configs/v2_site_instrument_b5e77f9.json",
+    "site_guidelines": "configs/site_guidelines_en_study_start.md",
+    "pair_schema": "configs/pair_annotation_schema_study_start.json",
+    "extraction_schema": "configs/extraction_annotation_schema_study_start.json",
+    "pair_runtime": "src/chl_rag/pair_instrument_study_start.py",
+    "instrument_runtime": "src/chl_rag/instrument_study_start.py",
+    "comparison_runtime": "src/chl_rag/extraction_comparison_study_start.py",
+    "comparison_prompt": "configs/extraction_comparison_prompt_study_start.json",
+    "annotation_names_runtime": "src/chl_rag/annotation_names_study_start.py"
+  },
+  "replacements": {
+    "src/chl_rag/v2_evaluate.py": {
+      "original_sha256": "248d7d4beefbdde173f780560e0d951cca632cfca9ab9d4d54d5f2a65c64ae06",
+      "approved_sha256": "697b13a142c88ea03aba5983e300c6dc4180a32c1a4566088a3c11ef0a91b60f",
+      "archive_path": "staging/reference_revision/original/src/chl_rag/v2_evaluate.py"
+    },
+    "src/chl_rag/sampling.py": {
+      "original_sha256": "1a93f98beadf96ea7269297abdc0b4167429eb69648598ae9309588907c99056",
+      "approved_sha256": "c4ae1f5ae66146898bd38274a2eba1b880ae994c47fa7534a4252289926cf95c",
+      "archive_path": "staging/reference_revision/original/src/chl_rag/sampling.py"
+    },
+    "src/chl_rag/reference_oracles.py": {
+      "original_sha256": "8331cccc0bd46ce0b0c0be33a6b1bbb1c387c07bc894d3116426c482e7d945e2",
+      "approved_sha256": "645dde0da4aa6bd0a14963e262c216aa281d2d9884852b837100e6eacf43106a",
+      "archive_path": "staging/reference_revision/original/src/chl_rag/reference_oracles.py"
+    },
+    "configs/instrument_original.json": {
+      "original_sha256": "db168875b66c9db2be01f849f81709d4c526f6a0acd4be77894d409b5d2ef7e5",
+      "approved_sha256": "5fa393a5f85a0c513fd3db9fb83635e698732d423582e3793c6b9e7ecbbe7b75",
+      "archive_path": "staging/reference_revision/original/configs/instrument_original.json"
+    },
+    "configs/oracle_prompt_original.json": {
+      "original_sha256": "e75d4cbdcd36ca04482139916a27f67de5285275fdd235b16fdfd87bce7a5887",
+      "approved_sha256": "79ff5a3bbfd924fda7a18a8834a3ce85cef3fdccdccb8489896a9c7542b59562",
+      "archive_path": "staging/reference_revision/original/configs/oracle_prompt_original.json"
+    },
+    "configs/pair_annotation_schema_original.json": {
+      "original_sha256": "24586a0641051eed153e7add6be3208130758fea16b46e97a7873c0e42230dff",
+      "approved_sha256": "cb879a4a197382cacb62251e946b1f50904211f6d7d8f2879606ec073d0bc0f2",
+      "archive_path": "staging/reference_revision/original/configs/pair_annotation_schema_original.json"
+    },
+    "configs/extraction_annotation_schema_original.json": {
+      "original_sha256": "a2239b01478c79b69798f4ee306664215e14f8c808fa5243818cc03545a19a7c",
+      "approved_sha256": "d33976af28ae94c1f7f787d71a700276641153b79f998c648ee1b9ed0c1cdcdf",
+      "archive_path": "staging/reference_revision/original/configs/extraction_annotation_schema_original.json"
+    },
+    "configs/extraction_comparison_prompt_original.json": {
+      "original_sha256": "e356e6aa8eede3e8ff0879d0bfee299eb2c6b1c94859dd5ebadeee4bb81f8ef4",
+      "approved_sha256": "8b97b93ae8ac9f23a3073eef8cf3e1f9c0f038400a7facbe537cf430a0deab66",
+      "archive_path": "staging/reference_revision/original/configs/extraction_comparison_prompt_original.json"
+    },
+    "src/chl_rag/pair_instrument_original.py": {
+      "original_sha256": "267558d9e480e025be15eeb0e749c050f5a390fa6121f15fca5a3de92ed57002",
+      "approved_sha256": "b288142d1c4d1c5402069417ee5649998dbecc0d1e9998fa89f48674cac55fb6",
+      "archive_path": "staging/reference_revision/original/src/chl_rag/pair_instrument_original.py"
+    },
+    "src/chl_rag/instrument_original.py": {
+      "original_sha256": "aa68dbd2def85b619816e9c53e5942b098298a1b6aceef5e031b5cfecf8b9598",
+      "approved_sha256": "92035a8c26592ece07cd9a134c54655ed1d079c2b67afec29782366c6b44a2a2",
+      "archive_path": "staging/reference_revision/original/src/chl_rag/instrument_original.py"
+    },
+    "src/chl_rag/extraction_comparison_original.py": {
+      "original_sha256": "4f5aa57fbfbdde3a12177f8aae6979c8edb56a695eff275327157d1eece45b67",
+      "approved_sha256": "d8650310192c5a6b9050d41e2c9ed1ea3e8834c231072fb2605a5d3fac767e8b",
+      "archive_path": "staging/reference_revision/original/src/chl_rag/extraction_comparison_original.py"
+    }
+  },
+  "new_files": {
+    "configs/instrument_study_start.json": "5fa393a5f85a0c513fd3db9fb83635e698732d423582e3793c6b9e7ecbbe7b75",
+    "configs/oracle_prompt_study_start.json": "79ff5a3bbfd924fda7a18a8834a3ce85cef3fdccdccb8489896a9c7542b59562",
+    "configs/site_instrument_study_start.json": "9ad34d2a75ebae868af7532122427982edd964166eecf41c4fe47a84eca44873",
+    "configs/site_guidelines_en_study_start.md": "80d1371e00450835f9a3ea0ba8fd7723e6c18c84574d24777c92f53b265aab93",
+    "configs/pair_annotation_schema_study_start.json": "cb879a4a197382cacb62251e946b1f50904211f6d7d8f2879606ec073d0bc0f2",
+    "configs/extraction_annotation_schema_study_start.json": "d33976af28ae94c1f7f787d71a700276641153b79f998c648ee1b9ed0c1cdcdf",
+    "src/chl_rag/pair_instrument_study_start.py": "b288142d1c4d1c5402069417ee5649998dbecc0d1e9998fa89f48674cac55fb6",
+    "src/chl_rag/instrument_study_start.py": "92035a8c26592ece07cd9a134c54655ed1d079c2b67afec29782366c6b44a2a2",
+    "src/chl_rag/extraction_comparison_study_start.py": "d8650310192c5a6b9050d41e2c9ed1ea3e8834c231072fb2605a5d3fac767e8b",
+    "configs/extraction_comparison_prompt_study_start.json": "8b97b93ae8ac9f23a3073eef8cf3e1f9c0f038400a7facbe537cf430a0deab66",
+    "src/chl_rag/annotation_names_study_start.py": "93643d47166915eaf4fccd28a1f4da75999cf632acd3a5deb765674852ff81db",
+    "src/chl_rag/v2_annotation.py": "5657c92424265a18b1405b2f656da8f2852cfbbcd0d36aa5db1e317f98685842",
+    "annotation/v2_index.html": "52d0e2b1969f9270acc2da5ac5bdda6fc372ebf989362d5ef5810dc7a13c6f79",
+    "src/chl_rag/reference_revision.py": "0130479bc8bb95cbd68d9bf179ac1a5038a772b43dcd71677534a309d5fd140b",
+    "src/chl_rag/v2_author_export.py": "b12b49f38634b07b1a405963f0d328c50c093730105176d64e214467c33a3b82",
+    "src/chl_rag/pair_instrument_first_site.py": "267558d9e480e025be15eeb0e749c050f5a390fa6121f15fca5a3de92ed57002",
+    "src/chl_rag/instrument_first_site.py": "f273ef793700688d6539ba1216a02e238250c0c2d39ea0b2792a3f5030673b8b",
+    "src/chl_rag/extraction_comparison_first_site.py": "618e067a55f0b83553aad2bdddfc92d59430a5858453d35de64c8f19e5de6df8",
+    "configs/instrument_first_site.json": "db168875b66c9db2be01f849f81709d4c526f6a0acd4be77894d409b5d2ef7e5",
+    "configs/oracle_prompt_first_site.json": "e75d4cbdcd36ca04482139916a27f67de5285275fdd235b16fdfd87bce7a5887",
+    "configs/pair_annotation_schema_first_site.json": "24586a0641051eed153e7add6be3208130758fea16b46e97a7873c0e42230dff",
+    "configs/extraction_annotation_schema_first_site.json": "a2239b01478c79b69798f4ee306664215e14f8c808fa5243818cc03545a19a7c",
+    "configs/extraction_comparison_prompt_first_site.json": "e356e6aa8eede3e8ff0879d0bfee299eb2c6b1c94859dd5ebadeee4bb81f8ef4",
+    "src/chl_rag/frozen_compat.py": "18149aa88ece29df52b844483425a51a57c7ba768ade6b9b18bdee7f7f7d8c6f",
+    "PROTOCOL_ADDENDUM_06_REFERENCE_5208DFA.md": "71c18cd0165557080c56b81badfba7ed26799e3274cca8721468e6d77384e313",
+    "results/reference_wording_review_5208dfa.json": "d12f703f0d9ae21d99ab031bf1c21fa18254d7cbb18d04450cdc63c5c429cf30",
+    "src/chl_rag/v2_pilot_report.py": "7c26ff8fffee89e8c694835639bea8dfb3fefb6d3c4b922c6dff9dc943cb7264",
+    "scripts/report_v2_oracle_pilot.py": "25bb35d3eef4ad5837980e79d62b85a07ac904b8689f153234ab94206806c2e3",
+    "PROTOCOL_ADDENDUM_06_PILOT_ONLY.md": "11d62cf580f12b77b937c24ed8865d1155c01cd8acc84ae8a169924f62149c00",
+    "results/pilot_scope_independent_review.json": "a78573a1dfdae27cbe23c9631763bd1c2161052fc3128a76992dfac864242b60",
+    "configs/v2_site_instrument_b5e77f9.json": "78a4775b7abcfe225dfb91f73829fcfaf98adbe0afac8e9bc376e4c9a61701a1"
+  },
+  "instruction_scope": "Preserve all approved oracle/GLM prompts and pilot-only gate; rebind deployed site wording and distinguish its export hash from the frozen oracle source snapshot.",
+  "site_wording_revision": {
+    "authority": "INBOX_FROM_CLAUDE.md 2026-11-14 11:26",
+    "changed_string_leaves": 5,
+    "deployed_site_commit": "b5e77f9",
+    "deployed_site_sha256": "78a4775b7abcfe225dfb91f73829fcfaf98adbe0afac8e9bc376e4c9a61701a1",
+    "frozen_oracle_site_commit": "5208dfa",
+    "frozen_oracle_site_sha256": "9ad34d2a75ebae868af7532122427982edd964166eecf41c4fe47a84eca44873",
+    "oracle_prompt_bytes_changed": false,
+    "glm_prompt_bytes_changed": false,
+    "codes_paths_derivations_changed": false,
+    "pilot_runtime_sha256": "645dde0da4aa6bd0a14963e262c216aa281d2d9884852b837100e6eacf43106a"
+  }
+}

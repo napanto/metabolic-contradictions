@@ -1,0 +1,25 @@
+{
+ "status": "confirmed",
+ "authority": "Antonio, 16 November 2026: caps raised to the worst case (35 x batch worst case per pair, next 5 USD); Anthropic credit confirmed",
+ "final_astra_openai_funding_confirmed": true,
+ "final_fable_topup_confirmed": true,
+ "vendors": {
+  "openai": {
+   "available_credit": 135,
+   "alert": 135,
+   "phase_alerts": {
+    "final_reference": 135
+   }
+  },
+  "anthropic": {
+   "available_credit": 190,
+   "alert": 190,
+   "phase_alerts": {
+    "development_judging": 110,
+    "final_reference": 115
+   },
+   "new_calls_paused": false,
+   "note": "results/anthropic_spend.json already holds 71.156495 USD of development spend, counted against available_credit and alert; 71.16 + 115 = 186.16, next 5 USD = 190. Antonio confirms the Anthropic account really holds that credit."
+  }
+ }
+}

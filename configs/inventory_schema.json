@@ -1,0 +1,356 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "pmid": {
+      "type": "string"
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "result_id": {
+            "type": "string"
+          },
+          "anchors": {
+            "type": "object",
+            "properties": {
+              "result_sentence_ids": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              },
+              "exposure": {
+                "type": "string"
+              },
+              "outcome": {
+                "type": "string"
+              },
+              "comparison": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "subgroup": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "analysis": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "time": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "result_sentence_ids",
+              "exposure",
+              "outcome",
+              "comparison",
+              "subgroup",
+              "analysis",
+              "time"
+            ],
+            "additionalProperties": false
+          },
+          "statement": {
+            "type": "string"
+          },
+          "multi_result_sentence": {
+            "type": "boolean"
+          },
+          "field_details": {
+            "type": "object",
+            "properties": {
+              "comparison": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "detail_id": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "sentence_id": {
+                            "type": "integer"
+                          },
+                          "quote": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "sentence_id",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "metadata_evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "detail_id",
+                    "text",
+                    "evidence",
+                    "metadata_evidence"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "significance": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "detail_id": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "sentence_id": {
+                            "type": "integer"
+                          },
+                          "quote": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "sentence_id",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "metadata_evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "detail_id",
+                    "text",
+                    "evidence",
+                    "metadata_evidence"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "population": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "detail_id": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "sentence_id": {
+                            "type": "integer"
+                          },
+                          "quote": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "sentence_id",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "metadata_evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "detail_id",
+                    "text",
+                    "evidence",
+                    "metadata_evidence"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "sample_size": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "detail_id": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "sentence_id": {
+                            "type": "integer"
+                          },
+                          "quote": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "sentence_id",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "metadata_evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "detail_id",
+                    "text",
+                    "evidence",
+                    "metadata_evidence"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "analysis": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "detail_id": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "sentence_id": {
+                            "type": "integer"
+                          },
+                          "quote": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "sentence_id",
+                          "quote"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "metadata_evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "detail_id",
+                    "text",
+                    "evidence",
+                    "metadata_evidence"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "comparison",
+              "significance",
+              "population",
+              "sample_size",
+              "analysis"
+            ],
+            "additionalProperties": false
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "sentence_id": {
+                  "type": "integer"
+                },
+                "quote": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sentence_id",
+                "quote"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "result_id",
+          "anchors",
+          "statement",
+          "multi_result_sentence",
+          "field_details",
+          "evidence"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "pmid",
+    "results"
+  ],
+  "additionalProperties": false
+}
